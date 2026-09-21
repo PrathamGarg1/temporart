@@ -1,0 +1,2011 @@
+[
+  {
+    "row_id": "train-70",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The comment is a neutral observation about someone's appearance and does not contain abuse or hate."
+  },
+  {
+    "row_id": "train-171",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is a poetic expression of heartbreak and does not contain abusive language or hate speech."
+  },
+  {
+    "row_id": "train-175",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "Religious hate and derogatory reference to a Maulana"
+  },
+  {
+    "row_id": "train-238",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The comment is playful and humorous, with no abusive or offensive language."
+  },
+  {
+    "row_id": "train-260",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "Abusive language and hate speech towards a nationality, with implied threats and derogatory tone."
+  },
+  {
+    "row_id": "train-386",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "uses animal slurs and violent imagery in an abusive context"
+  },
+  {
+    "row_id": "train-404",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.8,
+    "reason": "Unintelligible or garbled text, no abusive content identifiable"
+  },
+  {
+    "row_id": "train-666",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Comment is non-abusive; it appears to be a general statement or opinion without any offensive language."
+  },
+  {
+    "row_id": "train-972",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text expresses emotional hurt and disappointment but does not contain abusive language or slurs."
+  },
+  {
+    "row_id": "train-2555",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "जस्ट एक अजीब तरह का टिप्पणी, कोई अपशब्द या बुरा भाषा नहीं"
+  },
+  {
+    "row_id": "train-2651",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is a normal, non-abusive message about daily activities."
+  },
+  {
+    "row_id": "train-2825",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "The text contains strong criticism and shaming, implying guilt over a tragic event, which can be considered abusive in tone."
+  },
+  {
+    "row_id": "train-2918",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "uses derogatory term 'nangi' (naked) and implies shame or insult towards a woman"
+  },
+  {
+    "row_id": "train-3045",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Emotional expression, not abusive"
+  },
+  {
+    "row_id": "train-3296",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is promoting a weight-related inquiry and does not contain abusive content."
+  },
+  {
+    "row_id": "train-3350",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "uses offensive language and slurs"
+  },
+  {
+    "row_id": "train-3623",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Positive and friendly comment"
+  },
+  {
+    "row_id": "train-4107",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "uses offensive language and slur"
+  },
+  {
+    "row_id": "train-4139",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Playful and affectionate tone with emojis indicating fun and enjoyment"
+  },
+  {
+    "row_id": "train-4774",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "Caste/religious reference with offensive tone"
+  },
+  {
+    "row_id": "train-5164",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.7,
+    "reason": "मन के तरीके से बुरा भाव दिखाता है"
+  },
+  {
+    "row_id": "train-5565",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.8,
+    "reason": "Casual and humorous tone, no abusive content"
+  },
+  {
+    "row_id": "train-5627",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "Abusive and derogatory reference to Pakistan and use of offensive language"
+  },
+  {
+    "row_id": "train-5642",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Slogans or chants like this are not abusive"
+  },
+  {
+    "row_id": "train-6919",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Complimentary comment about appearance"
+  },
+  {
+    "row_id": "train-7030",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Positive and respectful comment about clothing"
+  },
+  {
+    "row_id": "train-7095",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "positive comment with compliments and emojis"
+  },
+  {
+    "row_id": "train-1005",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is in Hinglish/Hindi and refers to a program starting in the jungle, with no abusive language detected."
+  },
+  {
+    "row_id": "train-1113",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text appears to be playful and uses emojis indicating humor, not abusive content."
+  },
+  {
+    "row_id": "train-1140",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "जिस्म नामक राजनीतिक टिप्पणी है, लेकिन कोई अपशब्द या बुराई नहीं है"
+  },
+  {
+    "row_id": "train-1391",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is poetic and affectionate, expressing trust and does not contain any abusive language."
+  },
+  {
+    "row_id": "train-1512",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is in Hinglish/Hindi and appears to be a comment about watching programs, with no abusive language detected."
+  },
+  {
+    "row_id": "train-1535",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Uses animal metaphors in a degrading way, implies objectification and aggression"
+  },
+  {
+    "row_id": "train-1719",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Positive and friendly interaction"
+  },
+  {
+    "row_id": "train-1875",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The message is flirtatious but not abusive or offensive."
+  },
+  {
+    "row_id": "train-1959",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "poetic text about beauty and human form, no abusive content"
+  },
+  {
+    "row_id": "train-2083",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The message is affectionate and uses emoticons to express romantic interest, not abusive."
+  },
+  {
+    "row_id": "train-2152",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is poetic and talks about love and pain, but does not contain abusive language or hate speech."
+  },
+  {
+    "row_id": "train-2362",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text uses playful and humorous language with emojis, indicating no abusive intent."
+  },
+  {
+    "row_id": "train-2704",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "emotional expression, not abusive"
+  },
+  {
+    "row_id": "train-2898",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "abusive language with self-deprecating and potentially harmful tone"
+  },
+  {
+    "row_id": "train-3079",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "Use of offensive language and slur 'sala harami' indicates abuse"
+  },
+  {
+    "row_id": "train-3095",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is poetic and expresses a sentiment of friendship; no abusive language detected."
+  },
+  {
+    "row_id": "train-3124",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.8,
+    "reason": "The comment is critical but does not contain abuse, slurs, or hate speech."
+  },
+  {
+    "row_id": "train-3180",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is a playful comment about the benefits of wearing glasses and does not contain abuse or hate."
+  },
+  {
+    "row_id": "train-3219",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.85,
+    "reason": "The text is metaphorical and critical of modern love, but not abusive or offensive."
+  },
+  {
+    "row_id": "train-3319",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "insult"
+  },
+  {
+    "row_id": "train-3399",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is a humorous or sarcastic comment encouraging sharing a video, with no abusive intent detected."
+  },
+  {
+    "row_id": "train-3451",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Respectful and celebratory text with no abusive content"
+  },
+  {
+    "row_id": "train-3461",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.8,
+    "reason": "The text is non-abusive; it discusses a female sarpanch winning an election due to a promise of availability at night, which is not abusive or offensive."
+  },
+  {
+    "row_id": "train-3521",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Inspirational message about hard work and changing history, no abusive content"
+  },
+  {
+    "row_id": "train-3562",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "abusive language and derogatory reference"
+  },
+  {
+    "row_id": "train-3629",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "जोक/मजाक के रूप में लिखा गया है, कोई अपशब्द या अपमानजनक भाषा नहीं है"
+  },
+  {
+    "row_id": "train-3661",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "affectionate term used, no abusive intent"
+  },
+  {
+    "row_id": "train-3955",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is in Hinglish/Hindi and appears to be a romantic or affectionate message, not abusive."
+  },
+  {
+    "row_id": "train-4030",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Abusive tone with insult and potential caste/religious hate"
+  },
+  {
+    "row_id": "train-4052",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Neutral statement about a person's name"
+  },
+  {
+    "row_id": "train-4054",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "छेड़छाड़ और अश्लील भाषा का उपयोग"
+  },
+  {
+    "row_id": "train-4079",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The message is a friendly morning greeting with emojis and no abusive content."
+  },
+  {
+    "row_id": "train-4074",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is a romantic or emotional song lyric in Hinglish/Hindi, expressing longing for a spouse. It does not contain abuse, slurs, threats, or hate speech."
+  },
+  {
+    "row_id": "train-4096",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "uses a derogatory comparison"
+  },
+  {
+    "row_id": "train-4218",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Request for support and views, no abusive content"
+  },
+  {
+    "row_id": "train-4307",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.8,
+    "reason": "Caste-based slur"
+  },
+  {
+    "row_id": "train-4348",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "The text promotes caste and religious discrimination, implying that people will not listen to someone regardless of their identity in modern times, which is abusive."
+  },
+  {
+    "row_id": "train-4363",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is complimentary and affectionate, with no abusive content."
+  },
+  {
+    "row_id": "train-4375",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "uses offensive language and slur"
+  },
+  {
+    "row_id": "train-4458",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "Inappropriate sexual innuendo and symbols"
+  },
+  {
+    "row_id": "train-4560",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is in a conversational tone and mentions drinking tea and experiencing pain, with an emoji indicating it's not abusive."
+  },
+  {
+    "row_id": "train-4738",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Complimentary and affectionate comment"
+  },
+  {
+    "row_id": "train-4754",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Statement is neutral and refers to a numbered bucket of water, no abusive content detected."
+  },
+  {
+    "row_id": "train-4937",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text expresses affection and does not contain abusive language."
+  },
+  {
+    "row_id": "train-5043",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The message is a friendly and affectionate greeting with no abusive content."
+  },
+  {
+    "row_id": "train-5075",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "neutral question"
+  },
+  {
+    "row_id": "train-5153",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text expresses religious preference without any abusive language or intent."
+  },
+  {
+    "row_id": "train-5291",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.8,
+    "reason": "Not abusive; appears to be a playful or casual request for a number."
+  },
+  {
+    "row_id": "train-5302",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The comment is in a mocking tone but does not contain direct abuse, slurs, or hate speech."
+  },
+  {
+    "row_id": "train-5325",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.85,
+    "reason": "Religious chanting and political opinion without abusive language"
+  },
+  {
+    "row_id": "train-5385",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Abusive language with offensive terms like 'saala' and negative sentiment"
+  },
+  {
+    "row_id": "train-5400",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "abusive language and anger emojis directed at someone for mistreating a child"
+  },
+  {
+    "row_id": "train-5796",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The phrase is a poetic or metaphorical expression and does not contain abuse or hate."
+  },
+  {
+    "row_id": "train-5815",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is a poetic and humorous reflection on life, without any abusive or offensive content."
+  },
+  {
+    "row_id": "train-6277",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "abusive language and threat"
+  },
+  {
+    "row_id": "train-6693",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "No abusive content detected"
+  },
+  {
+    "row_id": "train-6773",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "It is a suggestion or opinion about a team decision, not abusive."
+  },
+  {
+    "row_id": "train-6868",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is in Hinglish/Hindi and does not contain abusive language or hate speech."
+  },
+  {
+    "row_id": "train-6937",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.8,
+    "reason": "Casual and playful tone with emojis, no abusive content detected"
+  },
+  {
+    "row_id": "train-7369",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "जानबूझकर अश्लीलता नहीं है, बल्कि मजाक और रोमांटिक अल्पविराम के रूप में लिखा गया है"
+  },
+  {
+    "row_id": "train-7446",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Positive and friendly message about enjoying the rain."
+  },
+  {
+    "row_id": "train-7546",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is critical of political parties and individuals but does not contain insults, slurs, threats, or hate speech."
+  },
+  {
+    "row_id": "train-7619",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Abusive language and hate speech against Muslims, with religious and political slurs."
+  },
+  {
+    "row_id": "train-7620",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Accusations of political conspiracy and implying targeted harm, with loaded language like 'shahid bana' (killing for show) and caste/political slurs"
+  },
+  {
+    "row_id": "train-7655",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The comment is a playful or teasing question in Hinglish/Hindi and does not contain abuse or hate."
+  },
+  {
+    "row_id": "train-7650",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.8,
+    "reason": "The text is in Hinglish/Hindi and discusses a metaphorical or hypothetical situation about understanding relationships, without any abusive language or intent."
+  },
+  {
+    "row_id": "train-7715",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "uses offensive language and degrading terms"
+  },
+  {
+    "row_id": "train-7773",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "uses sarcasm to mock people's shamelessness"
+  },
+  {
+    "row_id": "train-7777",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Neutral greeting in Hinglish"
+  },
+  {
+    "row_id": "train-7776",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Romantic expression, no abusive content"
+  },
+  {
+    "row_id": "train-7808",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The statement is a polite disagreement and does not contain abusive language."
+  },
+  {
+    "row_id": "train-7816",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "The phrase implies a disrespectful or suggestive comment, which can be considered abusive in context."
+  },
+  {
+    "row_id": "train-7893",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "Use of offensive language and calls for violent death"
+  },
+  {
+    "row_id": "train-7953",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "abusive language, implies tolerance of abuse as a virtue"
+  },
+  {
+    "row_id": "train-8144",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "ज्ञात टीवी शो और धार्मिक उपलब्धि के संदर्भ में बिना किसी अपमानजनक या घृणित भावना के"
+  },
+  {
+    "row_id": "train-8178",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is a polite statement of disengagement without any abusive language."
+  },
+  {
+    "row_id": "train-8226",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is philosophical and positive, with no abusive language."
+  },
+  {
+    "row_id": "train-8233",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text appears to be a satirical or critical comment about social practices like dowry, without direct abuse or hate speech."
+  },
+  {
+    "row_id": "train-8314",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Neutral request to leave something for a few days"
+  },
+  {
+    "row_id": "train-8380",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "No abusive language detected"
+  },
+  {
+    "row_id": "train-8385",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Compliment about appearance"
+  },
+  {
+    "row_id": "train-8471",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "Religious hate"
+  },
+  {
+    "row_id": "train-8569",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Neutral invitation, no abusive content"
+  },
+  {
+    "row_id": "train-8665",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "neutral comment about appearance"
+  },
+  {
+    "row_id": "train-8682",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Tone is playful and uses emojis, no abusive language detected."
+  },
+  {
+    "row_id": "train-8714",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "uses offensive language and caste-based slur"
+  },
+  {
+    "row_id": "train-8775",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Text is in Hinglish/Hindi and does not contain abusive language or hate speech."
+  },
+  {
+    "row_id": "train-8801",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is in Hinglish/Hindi and does not contain abusive language or hate speech."
+  },
+  {
+    "row_id": "train-9077",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "हिंदी/हिंग्लिश में अभद्र भाषा का उपयोग"
+  },
+  {
+    "row_id": "train-9121",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "uses offensive language and derogatory terms"
+  },
+  {
+    "row_id": "train-9126",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Emotional expression of love and sadness, no abusive content"
+  },
+  {
+    "row_id": "train-9265",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is humorous and talks about old age behavior in a lighthearted way without any abusive language or intent."
+  },
+  {
+    "row_id": "train-9328",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "abusive language, insult"
+  },
+  {
+    "row_id": "train-9340",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "positive and complimentary message"
+  },
+  {
+    "row_id": "train-9459",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.8,
+    "reason": "Supporting a group does not constitute abuse"
+  },
+  {
+    "row_id": "train-9526",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Religious or cultural chant, not abusive"
+  },
+  {
+    "row_id": "train-9535",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.85,
+    "reason": "The comment is flirtatious but not abusive; it does not contain insults, slurs, or threats."
+  },
+  {
+    "row_id": "train-9564",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is a neutral question about who is making such videos."
+  },
+  {
+    "row_id": "train-9583",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is in Hindi/Hinglish and does not contain abusive language or hate speech."
+  },
+  {
+    "row_id": "train-9702",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "Use of derogatory term 'sale'"
+  },
+  {
+    "row_id": "train-9732",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The statement is a general observation about thirst and does not contain abusive content."
+  },
+  {
+    "row_id": "train-9760",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is in Hinglish/Hindi and appears to be a colloquial or metaphorical statement, not abusive."
+  },
+  {
+    "row_id": "train-9848",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "uses offensive and vulgar language"
+  },
+  {
+    "row_id": "train-9917",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Request for follow and profile visit, no abusive content"
+  },
+  {
+    "row_id": "train-9919",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.8,
+    "reason": "The comment is mocking or joking about an encounter, likely in a non-serious tone due to the use of laughing emojis."
+  },
+  {
+    "row_id": "train-10047",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "uses offensive language like 'harami' and implies moral judgment in a derogatory tone"
+  },
+  {
+    "row_id": "train-10062",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is a respectful and devotional phrase, not abusive."
+  },
+  {
+    "row_id": "train-10165",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text expresses frustration about rising prices and difficulty managing household expenses, but does not contain abusive language or hate speech."
+  },
+  {
+    "row_id": "train-10191",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is a romantic expression in Hindi/Hinglish and does not contain abusive content."
+  },
+  {
+    "row_id": "train-10234",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.8,
+    "reason": "यह टिप्पणी नाराजगी और अपमान का प्रदर्शन करती है, जिसमें लड़कियों के चुनौतीपूर्ण व्यवहार की आलोचना की जा रही है।"
+  },
+  {
+    "row_id": "train-10438",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is motivational and advises staying happy and not getting involved in others' matters. No abusive content detected."
+  },
+  {
+    "row_id": "train-10445",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Implies mockery or disrespect towards someone (beda garg), suggesting a negative or abusive intent."
+  },
+  {
+    "row_id": "train-10449",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is in Hinglish/Hindi and appears to be a friendly or encouraging message ('bro' and 'खुशी दो' suggest giving happiness). There is no abusive language detected."
+  },
+  {
+    "row_id": "train-10568",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Positive and respectful tone"
+  },
+  {
+    "row_id": "train-10634",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is in Hinglish/Hindi and appears to be a casual or playful comment, not abusive."
+  },
+  {
+    "row_id": "train-10674",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Abusive tone with mocking and derogatory language"
+  },
+  {
+    "row_id": "train-10817",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "uses offensive language and slur 'saale'"
+  },
+  {
+    "row_id": "train-10944",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Abusive tone towards parents abandoning children"
+  },
+  {
+    "row_id": "train-10990",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.8,
+    "reason": "No abusive content detected"
+  },
+  {
+    "row_id": "train-10997",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "Abusive language including insults ('Congressi ghadha'), hate speech, and derogatory remarks towards political figures and their supporters."
+  },
+  {
+    "row_id": "train-11043",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Religious reference in a poetic context without any abusive intent"
+  },
+  {
+    "row_id": "train-11063",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Implies regret over harming someone, using metaphor of killing a dog, potentially threatening or violent context."
+  },
+  {
+    "row_id": "train-11138",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The statement is a general complaint or opinion, not abusive or offensive."
+  },
+  {
+    "row_id": "train-11192",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is poetic and affectionate, expressing love for one's father and hand gestures; no abusive content detected."
+  },
+  {
+    "row_id": "train-11369",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is a casual request and does not contain abusive language."
+  },
+  {
+    "row_id": "train-11395",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "neutral question"
+  },
+  {
+    "row_id": "train-11418",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "Abusive language with threat and derogatory term"
+  },
+  {
+    "row_id": "train-11483",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is a compliment and does not contain abusive language."
+  },
+  {
+    "row_id": "train-11822",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The message is friendly and greetings in Hinglish/Hindi with emojis, no abusive content."
+  },
+  {
+    "row_id": "train-11843",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Gender-based discrimination and criticism of government policy"
+  },
+  {
+    "row_id": "train-11907",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "affectionate tone with no abusive intent"
+  },
+  {
+    "row_id": "train-11941",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text uses informal and exaggerated expressions but does not contain abuse or hate."
+  },
+  {
+    "row_id": "train-11950",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "ईमानदारी और नेकी के लिबास के बारे में बात करते हुए अपमानजनक शब्दों का उपयोग"
+  },
+  {
+    "row_id": "train-11965",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "uses a vulgar term and is disrespectful"
+  },
+  {
+    "row_id": "train-11983",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is playful and apologetic in tone, with no abusive content."
+  },
+  {
+    "row_id": "train-11988",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.8,
+    "reason": "Abusive language referring to someone as 'saand' (donkey) with a derogatory implication"
+  },
+  {
+    "row_id": "train-11990",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is a question asking about preferences and does not contain abusive language."
+  },
+  {
+    "row_id": "train-11998",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Positive sentiment with emojis, no abuse detected"
+  },
+  {
+    "row_id": "train-12068",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is in Hinglish/Hindi and expresses a personal preference, not abusive content."
+  },
+  {
+    "row_id": "train-12109",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "abusive language targeting the person and their family"
+  },
+  {
+    "row_id": "train-12118",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The phrase is a playful or casual command, not abusive."
+  },
+  {
+    "row_id": "train-12127",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.8,
+    "reason": "Neutral statement, no abuse detected"
+  },
+  {
+    "row_id": "train-12166",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.8,
+    "reason": "uses 'kutta' (dog) as a derogatory term"
+  },
+  {
+    "row_id": "train-12228",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "गंदे वीडियो का उल्लेख अश्लीलता या अप्रिय सामग्री के रूप में है"
+  },
+  {
+    "row_id": "train-12225",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "uses offensive metaphor (जंगली कुत्ते) implying abuse"
+  },
+  {
+    "row_id": "train-12271",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "uses offensive language and implies sexual abuse"
+  },
+  {
+    "row_id": "train-12272",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The comment is a playful or teasing remark, not abusive."
+  },
+  {
+    "row_id": "train-12311",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is polite and does not contain abusive language."
+  },
+  {
+    "row_id": "train-12342",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The comment is critical of the cricket team's performance but does not contain abuse, slurs, or hate speech."
+  },
+  {
+    "row_id": "train-12378",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Abusive language and metaphor implying disrespect or mockery towards a religious figure"
+  },
+  {
+    "row_id": "train-12403",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is complimentary and expresses admiration for the singing, with no abusive content."
+  },
+  {
+    "row_id": "train-12465",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "abusive tone, implies insult"
+  },
+  {
+    "row_id": "train-12486",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "Hate speech and offensive language"
+  },
+  {
+    "row_id": "train-12548",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Emotional expression, not abusive"
+  },
+  {
+    "row_id": "train-12557",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "uses a derogatory term for a woman"
+  },
+  {
+    "row_id": "train-12715",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Respectful advice about traditions and family dignity"
+  },
+  {
+    "row_id": "train-12769",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.8,
+    "reason": "abusive language"
+  },
+  {
+    "row_id": "train-12786",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "abusive terms like 'dogla hindu' and 'pappu' used"
+  },
+  {
+    "row_id": "train-12940",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.8,
+    "reason": "Insult"
+  },
+  {
+    "row_id": "train-13065",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.8,
+    "reason": "abusive tone and use of 'gadhi' as a derogatory term"
+  },
+  {
+    "row_id": "train-13082",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is using enthusiastic language with fire emojis but does not contain abuse or hate."
+  },
+  {
+    "row_id": "train-13106",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "Abusive language including slurs and offensive references"
+  },
+  {
+    "row_id": "train-13134",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "Refers to celebrating the killing of a rapist, which is violent and promotes hatred."
+  },
+  {
+    "row_id": "train-13349",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "uses derogatory term 'gobar bhakton' and makes offensive generalizations"
+  },
+  {
+    "row_id": "train-13370",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is a non-abusive, sentimental message about love and trust, with no offensive or harmful language."
+  },
+  {
+    "row_id": "train-13382",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "abusive language, insults, and anger emojis"
+  },
+  {
+    "row_id": "train-13424",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.8,
+    "reason": "It's a competitive statement showing preference for a game, not abusive."
+  },
+  {
+    "row_id": "train-13603",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "threatening language involving bombs"
+  },
+  {
+    "row_id": "train-13866",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.85,
+    "reason": "The text uses aggressive and violent imagery but does not directly target any individual or group with abuse, threats, or hate speech."
+  },
+  {
+    "row_id": "train-14006",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "abusive language with caste/religious hate"
+  },
+  {
+    "row_id": "train-14081",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Positive and friendly message"
+  },
+  {
+    "row_id": "train-14102",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is a respectful statement wishing peace for the person's soul and does not contain abusive content."
+  },
+  {
+    "row_id": "train-14177",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Abusive tone with anger emojis and disrespectful language"
+  },
+  {
+    "row_id": "train-14271",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "ज्वलनशील या अपमानजनक नहीं है"
+  },
+  {
+    "row_id": "train-14276",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The message is a warning or a call to action, but not abusive or offensive in nature."
+  },
+  {
+    "row_id": "train-14312",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The comment is playful and uses colloquial language, not abusive."
+  },
+  {
+    "row_id": "train-14596",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Complimentary comment about presentation"
+  },
+  {
+    "row_id": "train-14747",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "affectionate expression"
+  },
+  {
+    "row_id": "train-14953",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The message is a friendly greeting and does not contain any abusive content."
+  },
+  {
+    "row_id": "train-14976",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "Abusive language with caste-based slur and insult"
+  },
+  {
+    "row_id": "train-15005",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is in Hindi/Hinglish and expresses a wish or hope, without any abusive language or intent."
+  },
+  {
+    "row_id": "train-15069",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is poetic and inspirational, expressing resilience and determination. No abusive language is present."
+  },
+  {
+    "row_id": "train-15115",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "The text is abusive as it uses strong language to insult someone's honor and dignity."
+  },
+  {
+    "row_id": "train-15112",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Abusive tone with metaphor implying threat and aggression"
+  },
+  {
+    "row_id": "train-15153",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "Abusive and inflammatory language, promotes hate and targets individuals/communities"
+  },
+  {
+    "row_id": "train-15197",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is in Hindi/Hinglish and does not contain abusive language or hate speech."
+  },
+  {
+    "row_id": "train-15198",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Religious devotion and prayer, no abusive content"
+  },
+  {
+    "row_id": "train-15284",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "छेड़खाने वाली बात, बुरा महसूस कराने वाला टोन"
+  },
+  {
+    "row_id": "train-15388",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "गंदे कमेंट करने वालों के बारे में बुरा भाव व्यक्त कर रहा है"
+  },
+  {
+    "row_id": "train-15391",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "No abusive content detected"
+  },
+  {
+    "row_id": "train-15420",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.7,
+    "reason": "The text is suggestive but not abusive or insulting."
+  },
+  {
+    "row_id": "train-15430",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is a poetic expression of emotions and does not contain abusive language or harmful content."
+  },
+  {
+    "row_id": "train-15463",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "लिखा गया है कि देश फिर से गुलामी के कगार पर है, जो अपमानजनक और धोखा देने वाला है।"
+  },
+  {
+    "row_id": "train-15520",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is in Hinglish/Hindi and appears to be a statement about perception or misunderstanding, with no explicit abuse or hate language detected."
+  },
+  {
+    "row_id": "train-15530",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Request for photo of necklace is not abusive"
+  },
+  {
+    "row_id": "train-15797",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is playful and does not contain abuse or hate."
+  },
+  {
+    "row_id": "train-15839",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is playful and uses emojis to convey friendliness, not abusive in nature."
+  },
+  {
+    "row_id": "train-15848",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Positive and appreciative statement"
+  },
+  {
+    "row_id": "train-15981",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is in Hinglish/Hindi and does not contain abusive language or hate speech."
+  },
+  {
+    "row_id": "train-15987",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is a poetic statement about friendship and love, with no abusive content."
+  },
+  {
+    "row_id": "train-16079",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Complimentary comment about appearance"
+  },
+  {
+    "row_id": "train-16201",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "Abusive language with anger and disrespect towards parents"
+  },
+  {
+    "row_id": "train-16229",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.8,
+    "reason": "Religious hate"
+  },
+  {
+    "row_id": "train-16251",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "neutral question about clothing"
+  },
+  {
+    "row_id": "train-16332",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is a proud statement about being from Delhi and not being afraid of anyone. It does not contain abuse or hate speech."
+  },
+  {
+    "row_id": "train-16358",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The comment is in Hinglish/Hindi and appears to be a request or suggestion, not abusive."
+  },
+  {
+    "row_id": "train-16470",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.85,
+    "reason": "The message is a moral lesson about respecting others and implies consequences if one doesn't, but does not contain direct abuse, slurs, or hate speech."
+  },
+  {
+    "row_id": "train-16515",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "Abusive language and offensive reference to drugs and religious figures"
+  },
+  {
+    "row_id": "train-16598",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "Abusive language with insults and offensive terms like 'kutia' and 'sala'"
+  },
+  {
+    "row_id": "train-16615",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is supportive and does not contain abusive language or hate speech."
+  },
+  {
+    "row_id": "train-16645",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Emotional expression, no abuse detected"
+  },
+  {
+    "row_id": "train-16654",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Comment is a general statement about love and does not contain abuse or hate speech."
+  },
+  {
+    "row_id": "train-16706",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.8,
+    "reason": "जाता है बात करने के शौक के साथ, लेकिन कोई अपशब्द या धमकी नहीं"
+  },
+  {
+    "row_id": "train-16733",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is metaphorical and does not contain abuse or hate."
+  },
+  {
+    "row_id": "train-16802",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The message is a respectful and polite greeting in Hindi/Hinglish."
+  },
+  {
+    "row_id": "train-16827",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Not abusive, appears to be a question or statement without offensive content."
+  },
+  {
+    "row_id": "train-16846",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "No abusive content detected"
+  },
+  {
+    "row_id": "train-16854",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is a positive, spiritual message promoting unity, equality, and harmony, with no abusive content."
+  },
+  {
+    "row_id": "train-16860",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text expresses disappointment and frustration in sports context, not abusive"
+  },
+  {
+    "row_id": "train-16877",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.8,
+    "reason": "Abusive language used to insult politicians and imply gullibility of people."
+  },
+  {
+    "row_id": "train-16924",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Use of 'terrorist' in a derogatory context"
+  },
+  {
+    "row_id": "train-16965",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is in Hinglish/Hindi and appears to be a personal or conversational statement, not containing abuse, slurs, or hate speech."
+  },
+  {
+    "row_id": "train-17080",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Text is affectionate and playful, no abusive content detected."
+  },
+  {
+    "row_id": "train-17077",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Abusive tone with implied insult and provocation"
+  },
+  {
+    "row_id": "train-17088",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is casual and friendly, with no abusive language or intent."
+  },
+  {
+    "row_id": "train-17244",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.95,
+    "reason": "Caste-based slur"
+  },
+  {
+    "row_id": "train-17311",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is poetic and complimentary, not abusive."
+  },
+  {
+    "row_id": "train-17373",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "uses dehumanizing language implying children are not human but animal-like"
+  },
+  {
+    "row_id": "train-17495",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Hurtful caste-based slur"
+  },
+  {
+    "row_id": "train-17540",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "हानिकारक भाषा का उपयोग"
+  },
+  {
+    "row_id": "train-17577",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Comment is complimentary and suggests improving appearance"
+  },
+  {
+    "row_id": "train-17726",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "insult"
+  },
+  {
+    "row_id": "train-17754",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "uses derogatory language and slang to mock someone"
+  },
+  {
+    "row_id": "train-17890",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.8,
+    "reason": "uses derogatory animal metaphor"
+  },
+  {
+    "row_id": "train-17950",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "The text is in Hindi/Hinglish and does not contain abusive language or hate speech."
+  },
+  {
+    "row_id": "train-17970",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "objectifying women, implies they should dress modestly to avoid attention"
+  },
+  {
+    "row_id": "train-17974",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "Caste-based insult"
+  },
+  {
+    "row_id": "train-18034",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "abusive language towards women, implies disrespect and stereotypes"
+  },
+  {
+    "row_id": "train-18068",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is poetic and does not contain abusive language or hate speech."
+  },
+  {
+    "row_id": "train-18079",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "neutral statement"
+  },
+  {
+    "row_id": "train-18086",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "The text uses strong language like 'darrindon' (savages) and discusses a disturbing incident affecting a student's education, indicating abuse or threat context."
+  },
+  {
+    "row_id": "train-18157",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "छेड़खानी का अर्थ"
+  },
+  {
+    "row_id": "train-18425",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "uses dehumanizing language and metaphor implying abuse"
+  },
+  {
+    "row_id": "train-18433",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is promoting love and discouraging hatred, with no abusive language or intent."
+  },
+  {
+    "row_id": "train-18585",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.95,
+    "reason": "Positive and harmless wishes"
+  },
+  {
+    "row_id": "train-18595",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.85,
+    "reason": "Neutral comment questioning something being a Bhojpuri item"
+  },
+  {
+    "row_id": "train-18717",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is humorous and does not contain abuse or hate speech."
+  },
+  {
+    "row_id": "train-18826",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is a request for a 'jabardast fanti' (something exciting) and does not contain abuse or hate."
+  },
+  {
+    "row_id": "train-18926",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Comment is complimentary and non-abusive"
+  },
+  {
+    "row_id": "train-18973",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "objectifying and implies sexual attention"
+  },
+  {
+    "row_id": "train-19556",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.85,
+    "reason": "The text expresses emotional distress and longing, but does not contain abusive language or hate speech."
+  },
+  {
+    "row_id": "train-19631",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "Involves disrespect towards parents"
+  },
+  {
+    "row_id": "train-19680",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Innocuous and playful, no abusive content"
+  },
+  {
+    "row_id": "train-19707",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.85,
+    "reason": "Abusive language and insults"
+  },
+  {
+    "row_id": "train-19753",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "Emotional expression about a child's pain, no abusive language"
+  },
+  {
+    "row_id": "train-19783",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "uses derogatory terms and accuses of theft"
+  },
+  {
+    "row_id": "train-19885",
+    "old_label": 1,
+    "new_label": 0,
+    "confidence": 0.9,
+    "reason": "abusive language and slur used"
+  },
+  {
+    "row_id": "train-20004",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "No abusive content detected"
+  },
+  {
+    "row_id": "train-20151",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is a critique of economic policies, not abusive."
+  },
+  {
+    "row_id": "train-20156",
+    "old_label": 0,
+    "new_label": 1,
+    "confidence": 0.9,
+    "reason": "The text is in Hinglish/Hindi and appears to be a playful or humorous statement encouraging likes and follows, with no abusive content detected."
+  }
+]

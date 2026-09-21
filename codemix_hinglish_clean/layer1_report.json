@@ -1,0 +1,14 @@
+{
+  "train_in": 18920,
+  "dropped_leak_or_spike_or_dup": 2126,
+  "relabeled_applied": 287,
+  "rescued_merged": 1168,
+  "train_out": 18244,
+  "train_labels": {
+    "0": 10335,
+    "1": 7627
+  },
+  "val_frozen": 6375,
+  "test_frozen": true,
+  "pending_rescue_merged": 282
+}

@@ -1,0 +1,27 @@
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+[pilot] progress accepted=45 quarantine=5
+[pilot] progress accepted=89 quarantine=11
+[pilot] progress accepted=137 quarantine=13
+[pilot] progress accepted=184 quarantine=16
+[pilot] progress accepted=227 quarantine=23
+[pilot] progress accepted=272 quarantine=28
+{
+  "tag": "pilot",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 3,
+  "accepted": 272,
+  "quarantined": 28,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8133333333333334,
+  "mean_score_delta": -0.1043923297239577,
+  "by_fail": {
+    "abuse_score_drop": 28
+  },
+  "accepted_path": "/Users/prathamgarg/Desktop/senior-sde-audit-surakshanet/codemix_hinglish/pilot/pilot.csv",
+  "quarantine_path": "/Users/prathamgarg/Desktop/senior-sde-audit-surakshanet/codemix_hinglish/pilot/pilot_quarantine.csv"
+}

@@ -1,0 +1,517 @@
+<canvas id="gl"></canvas>
+<div class="veil"></div>
+<div class="grain"></div>
+
+<div class="inst"><span><b>Indian Institute of Technology Ropar</b> · B.Tech Project · Mid-semester briefing</span><span>Aamod Jain, Pratham Garg · Guide: Geeta Yadav · 20 September 2026</span></div>
+<div class="brand" id="chapter">Title</div>
+<div class="goal" id="goal"><b>This slide</b> · Who we are, and what this twenty-minute briefing is about.</div>
+<div class="progress-bar" id="progress"></div>
+<div class="slide-counter" id="counter">1 / 22</div>
+<div class="slide-nav" id="slideNav"></div>
+<div class="rail" aria-hidden="true">
+  <span style="left:0">problem</span>
+  <span style="left:22%">system</span>
+  <span style="left:44%">gap</span>
+  <span style="left:66%">method</span>
+  <span style="left:88%">evidence</span>
+  <i id="token"></i>
+</div>
+
+<div id="flowWorld">
+  <div class="thought" id="thought">Hypothesis: map Devanagari to Roman letters and call that Hinglish.</div>
+  <div class="pipe" id="flow">
+    <div class="stops">
+      <div class="station" id="nA">
+        <i class="dot">A</i>
+        <div class="stage">
+          <b>Read incoming WhatsApp text</b>
+          <em>A Chrome content script watches WhatsApp Web and takes text from the page. Outgoing drafts are ignored.</em>
+        </div>
+      </div>
+      <div class="station" id="nB">
+        <i class="dot">B</i>
+        <div class="stage">
+          <b>Score it with MiniLM INT8</b>
+          <em>The same 113 MB ONNX model runs in WebAssembly on this laptop, in about 28 milliseconds.</em>
+        </div>
+      </div>
+      <div class="station" id="nC">
+        <i class="dot">C</i>
+        <div class="stage">
+          <b>Paint a local banner</b>
+          <em>A warning appears on this screen. The log is incidents.json on disk. There is no upload and no auto-block.</em>
+        </div>
+      </div>
+      <div class="station" id="nD">
+        <i class="dot">D</i>
+        <div class="stage">
+          <b>Transliterate the script</b>
+          <em>This only maps letters. The sentence is still Hindi, so the code-mixing index stays near zero.</em>
+        </div>
+      </div>
+      <div class="station accent" id="nQ">
+        <i class="dot">D</i>
+        <div class="stage">
+          <b>Rewrite offline with Qwen</b>
+          <em>Bedrock writes conversational Hinglish once. Gates then decide train versus quarantine. This never runs in Chrome.</em>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="fcaption" id="flowCap"><i>Fig. 1.</i> Inference is three on-device steps. Conversion is training-time work and is not on this line.</p>
+</div>
+
+<div class="deck">
+
+  <div class="slide is-title active" data-slide="0" data-chapter="Title" data-token="40" data-goal="This slide · Who we are, and what this twenty-minute briefing is about.">
+    <div class="copycol">
+      <p class="seal" data-in>B.Tech Project &nbsp;·&nbsp; Mid-semester briefing &nbsp;·&nbsp; 20 minutes</p>
+      <h1 data-in>SurakshaNet scores WhatsApp on this laptop. This semester we taught it Hinglish without moving that detector.</h1>
+      <p class="copy" data-in>Assume no earlier context. Part one is the shipped Chrome product. Part two is the data work: why Devanagari labels are not enough, what failed, what we kept, and which numbers we will defend.</p>
+      <p class="who" data-in>Aamod Jain and Pratham Garg. Guide: Geeta Yadav. Indian Institute of Technology Ropar.</p>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="1" data-chapter="Problem" data-token="80" data-goal="This slide · The problem only. Abuse arrives on WhatsApp, and the chat cannot leave the phone.">
+    <div class="copycol">
+      <h2 data-in>Abusive messages arrive on WhatsApp Web. Uploading the chat to score them would already be the wrong system.</h2>
+      <p class="copy" data-in>The product requirement is local: an incoming line is scored on this device, a banner may appear, and nothing is sent to a server. Automatic blocking is also out of scope. That privacy constraint is why this is a systems project first, and a language project second.</p>
+      <p class="defn" data-in><b>Term — on-device.</b> Inference runs inside Chrome on the user’s laptop. The model file, the score, and the incident log never leave the machine.</p>
+    </div>
+    <div class="viz">
+      <div class="wa" data-in>
+        <div class="wa-rail"><b>Chats</b><span>Aarav</span><span>Group · notes</span><span>Amma</span></div>
+        <div class="wa-chat">
+          <div class="wa-head">Aarav<i>web.whatsapp.com · scored on this device</i></div>
+          <div class="wa-body">
+            <div class="bubble">kal meeting hai 4 baje</div>
+            <div class="bubble">bro notes share kar dena</div>
+            <div class="bubble me">haan, 4 baje hi hai</div>
+          </div>
+          <div class="wa-flag"><b>SurakshaNet</b> local MiniLM INT8 · <em>p 0.11 · not abuse</em></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="2" data-chapter="System" data-token="120" data-goal="This slide · The Chrome constraint. Size, incoming-only, fail closed.">
+    <div class="copycol">
+      <h2 data-in>The detector is a Chrome extension, so the model has to fit in the browser and may only read incoming text.</h2>
+      <p class="copy" data-in>We ship as Manifest V3. If WhatsApp changes its page structure, the extension fails closed rather than guessing. The incident log is a local JSON file. That size limit is the reason a 471 MB Hindi model was never a shipping option, even when it scored better on Devanagari.</p>
+      <p class="defn" data-in><b>Term — Chrome MV3.</b> Manifest V3 is the current Chrome extension platform. It caps what we can bundle and forbids a silent cloud round-trip at inference.</p>
+    </div>
+    <div class="viz">
+      <div class="overlap">
+        <img class="shot" src="{{IMG_DESK}}" alt="Laptop on a desk, network cable unplugged">
+        <div class="log-float" data-in>
+          <header><b>SurakshaNet</b> · local incident log</header>
+          <ul class="log">
+            <li>kal meeting hai 4 baje <span>p 0.11</span></li>
+            <li>bro notes share kar dena <span>p 0.08</span></li>
+          </ul>
+          <div class="log-foot">incidents.json · this device only · no upload</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="3" data-chapter="System" data-flow="abc" data-token="180" data-goal="This slide · The shipped pipeline only. Three steps. Watch them appear.">
+    <div class="copycol">
+      <h2 data-in>The shipped product is three steps: read the chat, score it here, paint a banner.</h2>
+      <p class="copy" data-in>Call them A, B and C. Every later idea in this talk has to leave those three steps alone. Conversion of Hindi into Hinglish is training-time work. It is not a fourth box on this line, and it does not run when a message arrives.</p>
+    </div>
+    <div class="viz"></div>
+  </div>
+
+  <div class="slide" data-slide="4" data-chapter="System" data-token="220" data-goal="This slide · Why MiniLM INT8, not the larger Hindi model from the literature.">
+    <div class="copycol">
+      <h2 data-in>XLM-R would score Hindi better, but 471 megabytes cannot ship inside Chrome.</h2>
+      <p class="copy" data-in>The MACD paper ceiling on Hindi is XLM-R at 86.34%. We cannot carry that. We fine-tune multilingual MiniLM and quantize it to INT8. Hindi dropped by under 0.11 percentage points. Latency is 28 milliseconds. The detector is small enough. The missing language is the real problem.</p>
+      <p class="defn" data-in><b>Term — INT8.</b> 8-bit integer quantization shrinks the ONNX weights so the model fits in the extension. FP32 is the full-precision checkpoint we train; INT8 is what Chrome loads.</p>
+    </div>
+    <div class="viz">
+      <div class="stack" data-in>
+        <div class="stack-top">What actually fits inside a Chrome MV3 extension</div>
+        <div class="lay"><b>A</b><span>Content script reads incoming WhatsApp DOM text only.</span><em>fits</em></div>
+        <div class="lay"><b>B</b><span>MiniLM INT8 in WebAssembly. Poster Hindi 84.66%. 28 ms per line.</span><em>113 MB</em></div>
+        <div class="lay"><b>C</b><span>Banner plus incidents.json on disk. No auto-block, no upload.</span><em>local</em></div>
+        <div class="lay overflow"><b>×</b><span>XLM-R Hindi is stronger on Devanagari, and it is still rejected because it does not fit.</span><em>471 MB</em></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="5" data-chapter="Gap" data-token="260" data-goal="This slide · Poster numbers are real. Hinglish was never measured.">
+    <div class="copycol">
+      <h2 data-in>The poster measured Hindi and English. It never measured how India actually types on WhatsApp.</h2>
+      <p class="copy" data-in>Train set 42,487. Hindi 84.66%, mixed Hindi-plus-English 88.01%. Those bars are real. The striped bar is not a low score. It is a measurement we did not have. Filling it, without touching A, B or C, is the rest of this talk.</p>
+    </div>
+    <div class="viz">
+      <figure class="fig">
+        <div class="bars">
+          <div class="barline" data-in><span>Hindi Devanagari</span><div class="bar"><i data-w="0.8466"></i></div><em>84.66%</em></div>
+          <div class="barline" data-in><span>Hindi + English</span><div class="bar"><i data-w="0.8801"></i></div><em>88.01%</em></div>
+          <div class="barline" data-in><span>Hinglish chat</span><div class="bar"><i class="hole" data-w="1"></i></div><em>not tested</em></div>
+        </div>
+        <p class="fcaption" style="position:static;padding:12px 0 0;bottom:auto"><i>Fig. 2.</i> Poster test. The hole is the research gap, not a result.</p>
+      </figure>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="6" data-chapter="Gap" data-token="300" data-goal="This slide · Define Hinglish. Left is the corpus. Right is the traffic.">
+    <div class="copycol">
+      <h2 data-in>Labeled MACD is Devanagari. WhatsApp traffic is Roman Hinglish with Hindi grammar.</h2>
+      <p class="copy" data-in>We have gold labels for the left screen. The product sees the right screen. If we train only on script, the model can look accurate in a paper and still miss ordinary Indian chat. The meeting line is not abuse. It is the register we were missing.</p>
+      <p class="defn" data-in><b>Term — Hinglish.</b> Hindi as the matrix language, written in Roman letters, with English words mixed in. It is not ITRANS, and it is not Devanagari typed in another font.</p>
+    </div>
+    <div class="viz">
+      <div class="pair">
+        <div class="wa" data-in>
+          <div class="wa-rail"><b>MACD</b><span>labeled</span><span>Devanagari</span></div>
+          <div class="wa-chat">
+            <div class="wa-head">How the corpus is written<i>this is what we can label</i></div>
+            <div class="wa-body"><div class="bubble dv">कल मीटिंग है चार बजे</div></div>
+            <div class="wa-flag"><b>Source</b> Hindi script · same meaning · not how people type</div>
+          </div>
+        </div>
+        <div class="wa" data-in>
+          <div class="wa-rail"><b>Chat</b><span>traffic</span><span>Hinglish</span></div>
+          <div class="wa-chat">
+            <div class="wa-head">How people actually type<i>this is what the extension sees</i></div>
+            <div class="wa-body">
+              <div class="bubble">kal meeting hai 4 baje</div>
+              <div class="bubble">bro notes share kar dena</div>
+            </div>
+            <div class="wa-flag"><b>Target</b> Roman letters · Hindi grammar · English words mixed in</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="7" data-chapter="Gap" data-token="340" data-goal="This slide · The two source datasets. Define MACD and Davidson. Define label 0.">
+    <div class="copycol">
+      <h2 data-in>We inherit two labeled corpora. We do not invent a new abuse ontology.</h2>
+      <p class="copy" data-in>MACD is Hindi ShareChat-scale comments (Gupta et al., 2022). Davidson is English (2017). Class 0 is abusive, class 1 is not. That mapping is frozen for the whole project. On briefing slides we show class-1 text only. Class 0 is kept as a count, not as a quote.</p>
+      <p class="defn" data-in><b>Term — MACD.</b> Multilingual Abusive Comment Detection. Hindi comments with published labels. There is no aligned English sentence sitting next to each row.</p>
+    </div>
+    <div class="viz">
+      <div class="rows">
+        <table>
+          <thead><tr><th>Corpus</th><th>Language</th><th>What it gives us</th><th>What it does not</th></tr></thead>
+          <tbody>
+            <tr data-in>
+              <td>MACD (Gupta et al., 2022)</td>
+              <td>Hindi Devanagari</td>
+              <td>Gold labels, ShareChat-scale comments</td>
+              <td>No English pair, no Hinglish</td>
+            </tr>
+            <tr data-in>
+              <td>Davidson (2017)</td>
+              <td>English</td>
+              <td>English hate/abuse signal for mixed training</td>
+              <td>Not Indian chat</td>
+            </tr>
+            <tr data-in>
+              <td>Label map, frozen</td>
+              <td>—</td>
+              <td><span class="pill warn">0 · abusive</span> &nbsp; <span class="pill ok">1 · not abuse</span></td>
+              <td>We do not relabel the ontology</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide is-section" data-slide="8" data-chapter="Question" data-token="380" data-goal="This slide · The research question only. Read it slowly.">
+    <div class="copycol">
+      <p class="act" data-in>Research question</p>
+      <h2 data-in>Can we rewrite MACD Hindi into conversational Hinglish, keep the published labels honest, and measure the detector on a test we freeze before training?</h2>
+      <p class="copy" data-in>Three constraints ride with that sentence. The Chrome path does not change. Synthetic or cleaned rows may try to help train, but they may not touch the frozen test. If a rewrite sanitizes class 0, the label is false and the row cannot enter train.</p>
+    </div>
+    <div class="viz">
+      <div class="rq" data-in>
+        <div class="k">One question, three non-negotiables</div>
+        <p>Same MiniLM in Chrome. Same labels. Frozen Hinglish test of 6,368 lines, locked before we look at errors.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="9" data-chapter="Method" data-token="420" data-goal="This slide · Why mixer libraries are closed. Define HinGE, WAC, PAC.">
+    <div class="copycol">
+      <h2 data-in>WAC and PAC need a parallel English sentence. MACD does not have one, so those mixers cannot build this train set.</h2>
+      <p class="copy" data-in>HinGE is a human Hinglish benchmark from IIT Gandhinagar. Its rule systems, WAC and PAC, align Hindi with an English pair and then mix. That is the right paper for generation quality later. It is the wrong tool for constructing MACD train rows, because we would have to invent the missing English side.</p>
+      <p class="defn" data-in><b>Terms — HinGE, WAC, PAC.</b> HinGE: human-generated Hinglish, n ≈ 1,964. WAC: word-aligned code-mixing. PAC: phrase-aligned code-mixing. Both require bitext.</p>
+    </div>
+    <div class="viz">
+      <figure class="fig">
+        <div class="method">
+          <div class="blk" data-in>
+            <b>MACD Hindi is the source</b>
+            <em>Published labels. No aligned English sentence sits next to them. Inventing one would be a different thesis.</em>
+          </div>
+          <span class="arr">→</span>
+          <div class="method-col">
+            <div class="blk dead" data-in>
+              <b>WAC / PAC mixers</b>
+              <em>Need a parallel English sentence. This path is closed for training-set construction.</em>
+            </div>
+            <div class="blk hi" data-in>
+              <b>Hindi-only rewrite</b>
+              <em>The only honest path left: Hindi in, Hinglish out, label unchanged.</em>
+            </div>
+          </div>
+        </div>
+        <figcaption><i>Fig. 3.</i> No bitext means the mixer papers do not apply to train-set construction. We still use HinGE later, as an evaluation of the converter.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="10" data-chapter="Method" data-flow="abcd" data-thought="1" data-token="480" data-goal="This slide · Failed experiment one: transliteration. Define CMI and WER.">
+    <div class="copycol">
+      <h2 data-in>The cheap hypothesis was to transliterate Devanagari and call that Hinglish. It fails a mix-depth test.</h2>
+      <p class="copy" data-in>indic_transliteration maps letters. It needs no GPU. If the output were conversational mix, its code-mixing index would rise and its word-error rate against ITRANS would stay low. What we got was still Hindi in a different script. So we replace that step. We do not add a fifth box at inference.</p>
+      <p class="defn" data-in><b>Terms — CMI and WER.</b> CMI, code-mixing index (Das and Gambäck): 0 means one language, higher means a deeper mix. WER, word error rate: (substitutions + deletions + insertions) / reference length. Low WER versus ITRANS means “just transliteration.”</p>
+    </div>
+    <div class="viz"></div>
+  </div>
+
+  <div class="slide" data-slide="11" data-chapter="Method" data-token="520" data-goal="This slide · Show the three strings. Only the third is the target register.">
+    <div class="copycol">
+      <h2 data-in>Transliteration changed the script. The language was still Hindi, so CMI stayed near zero.</h2>
+      <p class="copy" data-in><em>kala mITiMga hai cAra baje</em> is not how anyone chats. Every token is still Hindi. Script conversion is not the register in the research question. The target is the third column: English letters, Hindi grammar, English words inside the sentence.</p>
+    </div>
+    <div class="viz">
+      <div class="compare">
+        <article data-in>
+          <h3>1. Hindi in MACD</h3>
+          <p class="dv">कल मीटिंग है चार बजे</p>
+          <p class="note">Labeled world. Devanagari script, Hindi grammar, gold class labels.</p>
+        </article>
+        <article class="no" data-in>
+          <h3>2. After indic_transliteration</h3>
+          <p>kala mITiMga hai cAra baje</p>
+          <p class="note">Rejected. Same Hindi sentence, only the letters changed. CMI stays about 0.</p>
+        </article>
+        <article class="yes" data-in>
+          <h3>3. Conversational Hinglish</h3>
+          <p>kal meeting hai 4 baje</p>
+          <p class="note">The target register. English letters, Hindi grammar, English words mixed in.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="12" data-chapter="Method" data-flow="qwen" data-morph="1" data-token="600" data-goal="This slide · The method we actually ran: Qwen3-32B, offline, once.">
+    <div class="copycol">
+      <h2 data-in>We replaced transliteration with Qwen3-32B and took that step off the laptop.</h2>
+      <p class="copy" data-in>A, B and C do not move. Qwen runs once, offline, on Bedrock Mantle in us-east-1. Hindi in, conversational Hinglish out. 31,663 lines were converted. Qwen is a converter, not a detector, and it is not shipped inside Chrome. If the detector had to call Qwen live, the privacy claim would already be false.</p>
+    </div>
+    <div class="viz"></div>
+  </div>
+
+  <div class="slide" data-slide="13" data-chapter="Method" data-token="660" data-goal="This slide · Gates only. Define quarantine and the Δp rule. Watch the funnel.">
+    <div class="copycol">
+      <h2 data-in>Qwen likes to sanitize abuse. Quarantine exists so a polite sentence cannot keep label 0.</h2>
+      <p class="copy" data-in>A row is accepted only if it is Roman, non-empty, not a refusal, still fires the abuse lexicon when the source was class 0, and does not collapse the MiniLM abuse score by more than 0.15. Failures go to quarantine. They are not deleted from the record. They are held out of train. On the converted test split, 89.9% of abusive lines still fire. Yield is 94.7%.</p>
+      <p class="defn" data-in><b>Term — quarantine.</b> A held-out file of rejected rewrites, with a reason code: score drop, missing lexicon stem, collapsed length, refusal, or leftover Devanagari. Train quarantine n = 1,263.</p>
+    </div>
+    <div class="viz">
+      <figure class="fig">
+        <div class="mill">
+          <div class="gate">
+            <svg class="spine" viewBox="0 0 2 260" preserveAspectRatio="none" aria-hidden="true"><line data-draw x1="1" y1="0" x2="1" y2="260" stroke="#e24a1a" stroke-width="2"/></svg>
+            <div class="gstep" data-in><b>Rewrite on Bedrock</b><span>Qwen3-32B. Hindi in, Hinglish out.</span><em>31,663</em></div>
+            <div class="gstep" data-in><b>Lexicon must still fire</b><span>Class-0 stems cannot disappear in the rewrite.</span><em>89.9%</em></div>
+            <div class="gstep" data-in><b>Score cannot collapse</b><span>The Δp gate below. Otherwise the label drifted.</span><em>Δp</em></div>
+            <div class="gsplit">
+              <div data-in><b>Train</b><span>94.7% yield. These rows may teach MiniLM.</span></div>
+              <div class="bad" data-in><b>Quarantine</b><span>1,263 train spikes. Held out, with reasons.</span></div>
+            </div>
+          </div>
+          <aside class="frozen" data-in>
+            <b>Δp gate</b>
+            <div class="tex" data-tex="p_{\mathrm{mix}} \ge p_{\mathrm{hi}} - 0.15"></div>
+            <p>p is MiniLM’s probability of class 0. If Hinglish looks far less abusive than the Hindi source, the rewrite is quarantined.</p>
+          </aside>
+        </div>
+        <p class="fcaption" style="position:static;padding:12px 0 0;bottom:auto"><i>Fig. 4.</i> Conversion funnel. If a row looks cleaner than its label, it does not enter train.</p>
+      </figure>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="14" data-chapter="Method" data-token="720" data-goal="This slide · Freeze the test before training. Synth never enters it.">
+    <div class="copycol">
+      <h2 data-in>The Hinglish test of 6,368 lines was frozen before we trained. Later cleaning is not allowed to move it.</h2>
+      <p class="copy" data-in>If we rewrote the test after looking at errors, 84.36% would no longer be comparable to the poster. Layer-1 cleaning and 977 synthetic rows were tried on train only. They are allowed to fail. They are not allowed onto this split. Rescued quarantine from val/test, if any, goes into train, never back into test.</p>
+    </div>
+    <div class="viz">
+      <div class="contract">
+        <article class="ok" data-in>
+          <b>Allowed, because it does not move the test</b>
+          Clean train. Quarantine spikes. Hold synth out of val/test. Report CMI even when it is low. Retrain MiniLM on gated Qwen.
+        </article>
+        <article class="bad" data-in>
+          <b>Not allowed, because it would make 84.36% meaningless</b>
+          Rewrite the frozen 6,368 after looking at errors. Ship a nearby ablation because it looks more sophisticated. Put Qwen inside Chrome.
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="15" data-chapter="Evidence" data-token="780" data-goal="This slide · The training mistake. Hindi fell to 70.04%. Then we put MACD Hindi back.">
+    <div class="copycol">
+      <h2 data-in>The first mix dropped Hindi MACD from train. Devanagari Hindi fell to 70.04%. That run is not the model.</h2>
+      <p class="copy" data-in>Hinglish-only training taught the detector the new register and forgot the old one. The corrected protocol puts Hindi MACD back, keeps Davidson English at 80/10/10, and adds gated Hinglish. Train 58,929 / val 15,581 / test 15,575. Hindi recovered to 85.14%, which is above the poster 84.66%.</p>
+    </div>
+    <div class="viz">
+      <ol class="seq">
+        <li class="bad" data-in>
+          <i>1</i>
+          <div><b>Failed mix — Hindi left out</b><span>Train = Davidson 80% + Hinglish only. Hindi Devanagari test accuracy 70.04% (n = 6,728). The poster language collapsed.</span></div>
+        </li>
+        <li class="ok" data-in>
+          <i>2</i>
+          <div><b>Corrected protocol — Hindi restored</b><span>Train = Hindi MACD + Davidson 80% + gated Hinglish. Same frozen Hinglish test. Hindi INT8 85.14%. This is the shipped mix.</span></div>
+        </li>
+        <li data-in>
+          <i>3</i>
+          <div><b>Why this is in the talk</b><span>A Hinglish gain that costs Hindi is not a product. We report the failed run so the 85% is not a lucky number.</span></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="16" data-chapter="Evidence" data-token="840" data-goal="This slide · Shipped INT8 numbers only. Same detector, frozen test.">
+    <div class="copycol">
+      <h2 data-in>The shipped INT8 model fills the Hinglish bar at 84.36% without changing the detector.</h2>
+      <p class="copy" data-in>Frozen Hinglish n = 6,368. Hindi recovered to 85.14%. English 96.73%. Mixed 86.54% is lower than the poster 88.01% because Hinglish is now inside the mix, which is the honest comparison. Same MiniLM. Same 113 MB. Same 28 ms.</p>
+    </div>
+    <div class="viz">
+      <figure class="fig">
+        <div class="bars">
+          <div class="barline" data-in><span>Hinglish</span><div class="bar"><i class="flag" data-w="0.8436"></i></div><em>84.36%</em></div>
+          <div class="barline" data-in><span>Hindi</span><div class="bar"><i data-w="0.8514"></i></div><em>85.14%</em></div>
+          <div class="barline" data-in><span>English</span><div class="bar"><i data-w="0.9673"></i></div><em>96.73%</em></div>
+          <div class="barline" data-in><span>Mixed test</span><div class="bar"><i data-w="0.8654"></i></div><em>86.54%</em></div>
+        </div>
+        <p class="fcaption" style="position:static;padding:12px 0 0;bottom:auto"><i>Fig. 5.</i> Frozen test, INT8. Orange is the new measurement. Teal is the languages the poster already knew.</p>
+      </figure>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="17" data-chapter="Evidence" data-token="900" data-goal="This slide · Converter quality on HinGE. Define BLEU. Qwen ≈ PAC, not WAC.">
+    <div class="copycol">
+      <h2 data-in>On HinGE, Hindi-only Qwen matches PAC on BLEU and loses to WAC on mix depth, which is expected without bitext.</h2>
+      <p class="copy" data-in>We ran the same converter on HinGE Hindi (n = 1,964) and compared it with the published WAC and PAC outputs against human Hinglish. Qwen BLEU is 17.7, PAC is 17.9, WAC is 16.4. WAC still wins WER and CMI because it aligns English and Hindi. Our production converter is Hindi-only, like MACD. This table evaluates the converter. It does not replace the detector numbers.</p>
+      <p class="defn" data-in><b>Term — BLEU.</b> A precision metric against a reference translation. Higher is closer to the human Hinglish string. It is not abuse-detection accuracy.</p>
+    </div>
+    <div class="viz">
+      <div class="rows">
+        <table>
+          <thead><tr><th>System</th><th>Input</th><th>BLEU</th><th>WER</th><th>CMI</th></tr></thead>
+          <tbody>
+            <tr data-in><td>Human HinGE</td><td>—</td><td>—</td><td>—</td><td>35.6</td></tr>
+            <tr data-in><td>WAC</td><td>Hindi + English pair</td><td>16.4</td><td>0.65</td><td>28.9</td></tr>
+            <tr data-in><td>PAC</td><td>Hindi + English pair</td><td>17.9</td><td>0.67</td><td>24.3</td></tr>
+            <tr data-in><td>Qwen3-32B</td><td>Hindi only</td><td>17.7</td><td>0.71</td><td>22.7</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="18" data-chapter="Evidence" data-token="960" data-goal="This slide · Mix depth honesty. CMI 13.7 versus humans 35.6. Define the formula.">
+    <div class="copycol">
+      <h2 data-in>MACD rewrites mix more shallowly than HinGE humans. We report that rather than hide it.</h2>
+      <p class="copy" data-in>Mean CMI on 31,663 Qwen rewrites is 13.7. A quarter of them have CMI = 0: romanized Hindi or English, not a mix. HinGE humans sit at 35.6. The formula below is Das and Gambäck: if one language dominates the tagged tokens, CMI falls. A deeper mixer that still keeps class-0 stems is the open problem.</p>
+    </div>
+    <div class="viz">
+      <div class="formula" data-in>
+        <div class="tex" data-tex="\mathrm{CMI}=100\left(1-\frac{\max_i w_i}{n}\right)"></div>
+        <p>n is the number of language-tagged tokens, excluding emojis and other universal tokens. w_i is the count in language i. CMI = 0 if only one language remains.</p>
+        <div class="cmi" style="box-shadow:none;padding:16px 0 0;background:transparent">
+          <div class="cmi-row" data-in><span>Qwen on MACD</span><div class="chips"><i class="en"></i><i class="en"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><em>13.7</em></div>
+          <div class="cmi-row" data-in><span>HinGE humans</span><div class="chips"><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i></div><em>35.6</em></div>
+          <p class="legend"><span><i class="hi"></i>Hindi token</span><span><i class="en"></i>English token inside the mix</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="19" data-chapter="Evidence" data-token="1020" data-goal="This slide · Ablations that lost. Close is not shipped.">
+    <div class="copycol">
+      <h2 data-in>Layer-1 cleaning and extra synth both scored lower on the same frozen test. Close is not shipped.</h2>
+      <p class="copy" data-in>Layer-1 dropped leaks, spikes and duplicates, then judged disagreements (train out 18,244 after rescue). Adding 977 synthetic hard rows, down-weighted at 0.5, was the next try. Both deltas are negative on INT8 Hinglish. We do not swap the model because a nearby recipe looks more sophisticated.</p>
+    </div>
+    <div class="viz">
+      <div class="rows">
+        <table>
+          <thead><tr><th>Training recipe</th><th>Frozen Hinglish INT8</th><th>Delta</th><th>Decision</th></tr></thead>
+          <tbody>
+            <tr data-in>
+              <td>Gated Qwen · 18,920 lines<span class="why">Hindi restored + Davidson 80% + Hinglish. The corrected protocol.</span></td>
+              <td>84.36%</td>
+              <td>—</td>
+              <td><span class="pill ok">shipped</span></td>
+            </tr>
+            <tr data-in>
+              <td>Layer-1 clean of that train set<span class="why">Drops, relabel, quarantine rescue. Test still frozen.</span></td>
+              <td>83.76%</td>
+              <td>−0.60</td>
+              <td><span class="pill hold">held out</span></td>
+            </tr>
+            <tr data-in>
+              <td>Plus 977 synthetic hard rows<span class="why">Never allowed onto the frozen 6,368.</span></td>
+              <td>83.64%</td>
+              <td>−0.72</td>
+              <td><span class="pill hold">held out</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="20" data-chapter="Evidence" data-token="1080" data-goal="This slide · Error analysis. Many misses are noisy MACD gold, not just a weak model.">
+    <div class="copycol">
+      <h2 data-in>On the frozen val split, the largest error bucket is not obfuscation. It is the source label looking wrong.</h2>
+      <p class="copy" data-in>INT8 val Hinglish: 507 false positives, 528 missed abuse, n = 6,375. Cluster labels are a research reading of the errors, not a second gold. “Source label wrong” is the mode. That matters for the viva: some of the remaining 16% is MACD noise, and cleaning it on the test set is exactly the thing the freeze forbids.</p>
+    </div>
+    <div class="viz">
+      <div class="rows">
+        <table>
+          <thead><tr><th>Error bucket on val</th><th>Count</th><th>What it suggests</th></tr></thead>
+          <tbody>
+            <tr data-in><td>Source label looks wrong</td><td>497</td><td>MACD gold is noisy. We do not move the frozen test to chase it.</td></tr>
+            <tr data-in><td>False-positive, other</td><td>253</td><td>The detector over-fires on some Roman chat.</td></tr>
+            <tr data-in><td>Benign-looking insult</td><td>184</td><td>Abuse without a strong lexicon stem.</td></tr>
+            <tr data-in><td>Sarcasm / obfuscation / other</td><td>smaller</td><td>Real remaining hardness, not the majority.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="21" data-chapter="Close" data-token="1160" data-goal="This slide · What we will defend, and the measurement that is still open.">
+    <div class="copycol">
+      <h2 data-in>We will defend on-device scoring, a frozen Hinglish test, and a converter that is not inside Chrome.</h2>
+      <p class="copy" data-in>WhatsApp is scored on this laptop at 113 MB and 28 ms. Hinglish is 84.36% on 6,368 held-out lines. Hindi was recovered after a 70.04% failure. The converter is gated Qwen, not transliteration, and not untested synth. CMI 13.7 is reported. The open problem is mix depth toward human Hinglish, without sanitizing class 0 and without unfreezing the test.</p>
+    </div>
+    <div class="viz">
+      <div class="cols">
+        <article data-in>
+          <div class="k">Closed this semester</div>
+          <b>On-device path, with a Hinglish bar</b>
+          <p>A, B, C stay on the laptop. 84.36% on a freeze we did not move. Nearby ablations lost, so they are not the model.</p>
+        </article>
+        <article data-in>
+          <div class="k">Still open</div>
+          <b>Mix depth toward HinGE humans</b>
+          <p>Raise CMI toward 35.6 without falsifying labels, without unfreezing n = 6,368, and without turning the converter into the detector.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+</div>

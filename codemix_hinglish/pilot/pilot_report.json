@@ -1,0 +1,10 @@
+{
+  "tag": "pilot_final",
+  "accepted": 286,
+  "quarantined": 14,
+  "abusive_accept_rate": 0.9066666666666666,
+  "mean_score_delta": -0.09754825174825175,
+  "by_fail": {
+    "abuse_score_drop": 14
+  }
+}

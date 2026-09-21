@@ -1,0 +1,2506 @@
+{
+  "scorer": "/Users/prathamgarg/Desktop/senior-sde-audit-surakshanet/assets/models/custom-macd-model",
+  "note": "Frozen Hinglish CSVs. abusive=0, non-abusive=1. pred=0 if p_abuse>=0.5.",
+  "splits": {
+    "val": {
+      "split": "val",
+      "metrics": {
+        "n": 6375,
+        "accuracy": 0.8376470588235294,
+        "f1_macro": 0.8375731365532317,
+        "f1_abusive": 0.834108030133034,
+        "f1_non_abusive": 0.8410382429734294,
+        "tp_abusive": 2602,
+        "tn_non_abusive": 2738,
+        "fp_false_abuse": 507,
+        "fn_missed_abuse": 528,
+        "matrix": {
+          "true0_pred0": 2602,
+          "true0_pred1": 528,
+          "true1_pred0": 507,
+          "true1_pred1": 2738
+        }
+      },
+      "n_fp": 507,
+      "n_fn": 528,
+      "n_borderline": 122,
+      "bucket_counts": {
+        "source_label_wrong": 497,
+        "obfuscation": 32,
+        "false_positive_other": 253,
+        "benign_looking_insult": 184,
+        "sarcasm": 46,
+        "caste_religious": 18,
+        "english_heavy_mix": 4,
+        "softened_slur": 1
+      },
+      "samples": {
+        "fn": [
+          {
+            "row_id": "val-1",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.1814,
+            "bucket": "source_label_wrong",
+            "text": "Aapke paas pukhta saboot hai ya nahi? Yahan usi Aadhaar card ke kaaran majaad ki yojanaon ka fayda janta ko mil raha hai",
+            "hindi_text": "आपके पास पुख्ता सबूत है, क्या या फिर कुछ भी। उसी आधार कार्ड के कारण वर्तमान सरकार की योजनाओं का फायदा मिल रहा है, जनता को",
+            "hindi_abuse": 0.0077,
+            "hinglish_abuse": 0.0189
+          },
+          {
+            "row_id": "val-15",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.1468,
+            "bucket": "source_label_wrong",
+            "text": "Chandni raat aur chudail ka gana mera shona kya khaya khana 🤔",
+            "hindi_text": "चांदनी रात और चुड़ैल का गाना मेरी शोना ने क्या खाया खाना🤔",
+            "hindi_abuse": 0.0114,
+            "hinglish_abuse": 0.0107
+          },
+          {
+            "row_id": "val-18",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0208,
+            "bucket": "source_label_wrong",
+            "text": "Aapko pata hai chedna kise jata hai, bahun mein bhare chedne ka bharpur anand lena",
+            "hindi_text": "आप को पता है छेड़ा किसे जाता है बाहों में भर कर छेड़ने का भरपुर आनंद लेना",
+            "hindi_abuse": 0.0071,
+            "hinglish_abuse": 0.9737
+          },
+          {
+            "row_id": "val-22",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0224,
+            "bucket": "source_label_wrong",
+            "text": "2022 me pata chal jayega kon kitne paani me hai",
+            "hindi_text": "2022 मे पता चल जायेगा कौन कितने पानी मे है",
+            "hindi_abuse": 0.0107,
+            "hinglish_abuse": 0.0156
+          },
+          {
+            "row_id": "val-24",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0193,
+            "bucket": "source_label_wrong",
+            "text": "Sun loonde, humse panga leke aur bari mahfil me danga, dono dangerous hai 😏",
+            "hindi_text": "सुन बे लोंडे 👤👥 हम से पंगा 👊  और भरी महफ़िल मे दंगा 🔫 दोनो खतरनाक 👹 है😏😏😏😏",
+            "hindi_abuse": 0.0272,
+            "hinglish_abuse": 0.0236
+          },
+          {
+            "row_id": "val-23",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0194,
+            "bucket": "source_label_wrong",
+            "text": "Pani piyena hai to glass se piye, Bisleri bottle me kya rakha hai 😎, pani piyena hai to glass se piye, Bisleri bottle me kya rakha hai aur seva karna hai to ma-baap ki karein, in ladkiyon me kya rakha hai",
+            "hindi_text": "पानी पीना 🥛 है तो गिलास से पीजिए। बिस्लेरी बोतल में क्या रखा है 😎,,,पानी पीना है तो गिलास से पीजिए  बिसलेरी बोतल में क्या रखा है और सेवा करनी है तो मा बाप की की",
+            "hindi_abuse": 0.0572,
+            "hinglish_abuse": 0.0222
+          },
+          {
+            "row_id": "val-39",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0356,
+            "bucket": "source_label_wrong",
+            "text": "Chuhon se shaadi karne ko chhod do to",
+            "hindi_text": "चूहों से शादी करना छोड़ दो तो",
+            "hindi_abuse": 0.0071,
+            "hinglish_abuse": 0.9956
+          },
+          {
+            "row_id": "val-41",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.007,
+            "bucket": "source_label_wrong",
+            "text": "Baba ji ya laad chhat Gujarat",
+            "hindi_text": "बाबाजी या लाड़ चाट गुजरात",
+            "hindi_abuse": 0.0092,
+            "hinglish_abuse": 0.0056
+          },
+          {
+            "row_id": "val-45",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0853,
+            "bucket": "source_label_wrong",
+            "text": "Tulsi ke pattu success ka kaarano nahi, patton ka rate to badh jaye. Loh ke chullay pehne se career badh jaye to sona chandi mehenga ho jaye. Haldi ka paani badha do to dinar asli ho jaye, haldi wala baniya haldiyon ki dukaan band kar dega.",
+            "hindi_text": "तुलसी के पत्तों से सफलता मिले तो पत्ते महंगे हो जाएंगे लोहे का छल्ला धारण करने से कैरियर की बढ़ोतरी हो तो सोना चांदी सस्ता हो जाएगा हल्दी पानी में बहाने से धन ल",
+            "hindi_abuse": 0.0101,
+            "hinglish_abuse": 0.0796
+          },
+          {
+            "row_id": "val-61",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0314,
+            "bucket": "source_label_wrong",
+            "text": "Ma ki kasam... tumhe dekhke yeh laga hai ki kauwa chala hansi ke chala aur apni chal bhool gaya....==🤣😂🤣😂",
+            "hindi_text": "मां कसम...  तुम्हें देखकर ऐसा लाता है           की कौआ चला हंस की चल और अपनी  चाल भूल गया....==🤣😂🤣😂",
+            "hindi_abuse": 0.0079,
+            "hinglish_abuse": 0.0293
+          },
+          {
+            "row_id": "val-81",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.4581,
+            "bucket": "benign_looking_insult",
+            "text": "Aheer ko paalo",
+            "hindi_text": "अहीर को पेलो",
+            "hindi_abuse": 0.9967,
+            "hinglish_abuse": 0.9782
+          },
+          {
+            "row_id": "val-80",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0145,
+            "bucket": "source_label_wrong",
+            "text": "Suna tha tere shehar me bafa bhi milti hai, toote hue dil ki daba bhi milti hai — yehi sochkar aaye the tere shehar. Magar yahan toh dil lagaane ki saza bhi milti hai.",
+            "hindi_text": "सुना था तेरे शहर बफा भी मिलती हे  टूटे हुए दिल की दबा भी मिलती हे यही सोचकर आए थे तेरे शहर मगर यहां तो दिल लगाने की सजा भी मिलती हे।।",
+            "hindi_abuse": 0.0064,
+            "hinglish_abuse": 0.0166
+          },
+          {
+            "row_id": "val-86",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0787,
+            "bucket": "benign_looking_insult",
+            "text": "Yar, kapa kuch jada nahi hai",
+            "hindi_text": "यार कपडा कुछ जादा नही है",
+            "hindi_abuse": 0.9574,
+            "hinglish_abuse": 0.952
+          },
+          {
+            "row_id": "val-88",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.2215,
+            "bucket": "sarcasm",
+            "text": "Yeh toh high nahi hai 😂😂😂, kya joke kiya re",
+            "hindi_text": "👙👙याए तो हाई नही 😂😂😂😅किया मजाक है",
+            "hindi_abuse": 0.9992,
+            "hinglish_abuse": 0.9555
+          },
+          {
+            "row_id": "val-97",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0478,
+            "bucket": "source_label_wrong",
+            "text": "Jay Maan bhadriya ki sa jay ho marwar ki sa",
+            "hindi_text": "जय माँ bhadriya की सा जय हो marwar की सा",
+            "hindi_abuse": 0.0051,
+            "hinglish_abuse": 0.0109
+          },
+          {
+            "row_id": "val-102",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0886,
+            "bucket": "source_label_wrong",
+            "text": "Aunty, ladki toh banti hai, ladke kyun nahi banate?",
+            "hindi_text": "लडकी बनती तो है मौसी  जो लड़के नहीं बनते",
+            "hindi_abuse": 0.0728,
+            "hinglish_abuse": 0.9896
+          },
+          {
+            "row_id": "val-144",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0358,
+            "bucket": "benign_looking_insult",
+            "text": "Hain to single hai, hume kaise pata chalega jo log kya kya chatte hai 😐😐😐😐🙁",
+            "hindi_text": "हम तो सिंगल है  हमे कैसे पता चलेगा की  लोग क्या क्या चाट लेते है😐😐😐😐😐😐🙁",
+            "hindi_abuse": 0.6942,
+            "hinglish_abuse": 0.9748
+          },
+          {
+            "row_id": "val-148",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.1684,
+            "bucket": "source_label_wrong",
+            "text": "Wahi dhoti wala purush jo salwar pehkar ke bhaga tha. Maine sahi kaha na 😁😁😁😁",
+            "hindi_text": "वही धोती वाला पुरुष जो सलवार पहन के भागा था।  मैंने सही कहा ना 😁😁😁😁",
+            "hindi_abuse": 0.0382,
+            "hinglish_abuse": 0.0695
+          },
+          {
+            "row_id": "val-152",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.1112,
+            "bucket": "benign_looking_insult",
+            "text": "Gajwa ek hind hoane nahi dega",
+            "hindi_text": "गजवा ए हिंद होने नहीं देगै",
+            "hindi_abuse": 0.9485,
+            "hinglish_abuse": 0.9816
+          },
+          {
+            "row_id": "val-160",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.3696,
+            "bucket": "benign_looking_insult",
+            "text": "Ab bahut ho gaya hai, ek dabang actor bana hi jao, bardaasht nahi ho raha hai hum se aise roz roz video dekh dekh kar ek picture bana hi dalo",
+            "hindi_text": "अब बहुत हो गया है एक दबंग एक्टर बन ही जाओ बर्दाश्त नहीं हो रहा हम से ऐसे रोज रोज वीडियो देख देख कर ek picture banaa hi dalo",
+            "hindi_abuse": 0.0113,
+            "hinglish_abuse": 0.9913
+          },
+          {
+            "row_id": "val-163",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0134,
+            "bucket": "source_label_wrong",
+            "text": "Phereb ka month chal raha hai janab, ab kade utarege ishq mohabbat ke naam par",
+            "hindi_text": "फरेब का महीना चल रहा है जनाब अब कपडे उतरेगे इश्क़ मोहब्बत केे नाम पर",
+            "hindi_abuse": 0.009,
+            "hinglish_abuse": 0.0132
+          },
+          {
+            "row_id": "val-181",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0156,
+            "bucket": "source_label_wrong",
+            "text": "Vimal kon sa share kha raha hai, apni beti ko cheez deta hai",
+            "hindi_text": "विमल कौन सा शैर खाता है अपनी बेटी को चीज दवाता",
+            "hindi_abuse": 0.0759,
+            "hinglish_abuse": 0.0108
+          },
+          {
+            "row_id": "val-186",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0121,
+            "bucket": "benign_looking_insult",
+            "text": "Tumhare liye jahan, jahan hai.",
+            "hindi_text": "तुम्हारे लिए जगह. जहन्नम है.",
+            "hindi_abuse": 0.1095,
+            "hinglish_abuse": 0.0053
+          },
+          {
+            "row_id": "val-189",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0278,
+            "bucket": "source_label_wrong",
+            "text": "1984 mein Babar ki mazar par Indira Begum bhi sar rghadne Kabul gayi thi, tab Begum ne kaha ki main apne purajan se milne aayi hoon jaisa ki bhoopurva videsh mantri Sree Natwasinh ne apni book one life is not enough mein likha hai",
+            "hindi_text": "1984 में बाबर की मजार पर इन्दिरा बेगम भी सर रगड़ने काबुल गई थी तब बेगम ने कहा कि मैं अपने पूर्वजों से मिलने आई हूं जैसा कि भूतपूर्व विदेश मंत्री श्री नटवरसिंह न",
+            "hindi_abuse": 0.018,
+            "hinglish_abuse": 0.9767
+          },
+          {
+            "row_id": "val-194",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0217,
+            "bucket": "source_label_wrong",
+            "text": "Ab bechari paani paani ho jayegi 😂😂🙏",
+            "hindi_text": "अब बेचारी पानी पानी हो जायेगी 🤪🤣🤣🙏",
+            "hindi_abuse": 0.0189,
+            "hinglish_abuse": 0.0429
+          },
+          {
+            "row_id": "val-207",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.1096,
+            "bucket": "source_label_wrong",
+            "text": "Ha yeh clear ho chuka hai. Tanie apne gaon ka gunda hai. Paise byaj lena dena ka kaam karta tha. Jo nahi deta uska fasal, khet, tractor aur ghar kabza kar leta tha. Aur marana peetana saman bati thi. Tabhi apne bhashan mein kaha tha ki main",
+            "hindi_text": "हा यह स्पष्ट हो चुका है। टेनी अपने गांव का गुंडा है। पैसे ब्याज लेने देने का काम करता था। जो नही देता उसका फसल, खेत, ट्रैक्टर और घर कब्जा कर लेता था। और मारना प",
+            "hindi_abuse": 0.0314,
+            "hinglish_abuse": 0.0229
+          },
+          {
+            "row_id": "val-218",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0146,
+            "bucket": "source_label_wrong",
+            "text": "Lagta hai chacha ne bhi enjoy kiya hai",
+            "hindi_text": "लगता हे चाचा ने भी इन्जोय कीया हे",
+            "hindi_abuse": 0.0298,
+            "hinglish_abuse": 0.0121
+          },
+          {
+            "row_id": "val-244",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0571,
+            "bucket": "benign_looking_insult",
+            "text": "Tumko to ek naak bhane wale ladke ke saath hi jana hai, to apne hone wale pati ke baare me koi aisa kah sakta hai kya 😜😜",
+            "hindi_text": "तुमको तो एक नाक बहने वाले लड़के के साथ ही जाना है  तो अपने होने वाले पति के बारे में कोई ऐसा कहता है क्या 😜😜",
+            "hindi_abuse": 0.5908,
+            "hinglish_abuse": 0.9475
+          },
+          {
+            "row_id": "val-258",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0082,
+            "bucket": "source_label_wrong",
+            "text": "Shri Anil Londe",
+            "hindi_text": "श्री अनिल लांडे",
+            "hindi_abuse": 0.0052,
+            "hinglish_abuse": 0.0425
+          },
+          {
+            "row_id": "val-261",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.012,
+            "bucket": "source_label_wrong",
+            "text": "Khushboo Gaziapuri, man jaao",
+            "hindi_text": "खुशबू गाजीपुरी मान जाओ",
+            "hindi_abuse": 0.0049,
+            "hinglish_abuse": 0.0057
+          },
+          {
+            "row_id": "val-248",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0623,
+            "bucket": "benign_looking_insult",
+            "text": "Maine toh jitni nafrat gharkwallon se nahi ki usse jyada apne pati se hai ki uske pati usko saath le jaye ke liye taiyar hai, uske har fayisalay mein uske saath khada hai aur mera pati mere saath le jaye ke liye taiyar nahi hai aur maine ek",
+            "hindi_text": "मुझे तो जितनी नफरत घरवालों से नहीं होगी उससे ज्यादा अपने पति से है कि उसका पति उसे साथ ले जाने के लिए तैयार है उसके हर फैसले में उसके साथ खड़ा है और मेरा पति मु",
+            "hindi_abuse": 0.9281,
+            "hinglish_abuse": 0.7789
+          },
+          {
+            "row_id": "val-276",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0202,
+            "bucket": "source_label_wrong",
+            "text": "Hm to dana dalne jate hain, chhat par kabootaron ko. Hame chidiya se kya matlab. 😣😜😝🤣🤣🤣🤣😜🤣",
+            "hindi_text": "हम तो दाना डालने जाते हैं ।    छत पर कबूतरों को।  हमें चिड़िया से क्या मतलब।। 🤣😜😝🤣🤣🤣🤣😜🤣",
+            "hindi_abuse": 0.026,
+            "hinglish_abuse": 0.9686
+          },
+          {
+            "row_id": "val-283",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0237,
+            "bucket": "source_label_wrong",
+            "text": "Ek din aayega jab duniya ki sarri aurat keval akeli reh jaye, aurat ke paas jaane se bhi darta reh jaye, aurat adamiyon se nafrat karte reh jaye, aur phir bhi unke samne shadi ke liye bhi bhik mangane lage. Wahi din aayega jab aurat adamiyo",
+            "hindi_text": "1 दिन ऐसा आएगा कि दुनिया की सारी औरतें अकेली ही रहेंगी मर्द औरतों से नफरत करने लगेंगे और औरतों के पास जाने से भी डरने लगेंगे बहुत जल्द हो समय आने वाला है जब औरत",
+            "hindi_abuse": 0.063,
+            "hinglish_abuse": 0.0261
+          },
+          {
+            "row_id": "val-305",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0076,
+            "bucket": "source_label_wrong",
+            "text": "Bhai tumhara Akhilesh Yadav",
+            "hindi_text": "बाप तुम्हारा अखिलेश यादव",
+            "hindi_abuse": 0.0076,
+            "hinglish_abuse": 0.0048
+          },
+          {
+            "row_id": "val-311",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.1174,
+            "bucket": "obfuscation",
+            "text": "Maa ka land hai yeh toh",
+            "hindi_text": "मां का लैंड त",
+            "hindi_abuse": 0.9947,
+            "hinglish_abuse": 0.973
+          },
+          {
+            "row_id": "val-319",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0157,
+            "bucket": "source_label_wrong",
+            "text": "Mobile ko smart samajhun ga tab jab khud chalke ake kehna ke malik ↔️ hamara desh 🧔kato uta 🇮🇳bharat ho gaya 🤗 Jai mata di 🚩🙏",
+            "hindi_text": "मोबाइल को स्मार्ट तो तब समझूंगा जब खुद चलकर आकर कहे मालिक ↔️ हमारा देश 🧔कटुआ मुक्त 🇮🇳भारत हो गया 🤗        जय माता दी🚩🙏",
+            "hindi_abuse": 0.0061,
+            "hinglish_abuse": 0.0171
+          },
+          {
+            "row_id": "val-343",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0092,
+            "bucket": "source_label_wrong",
+            "text": "Good beta dance karo",
+            "hindi_text": "गुड बेटा डांस",
+            "hindi_abuse": 0.0052,
+            "hinglish_abuse": 0.0165
+          },
+          {
+            "row_id": "val-338",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.3757,
+            "bucket": "benign_looking_insult",
+            "text": "Ram bhakton ko janjiron mein kaadne ka sapna mat dekho, kyunki hum wahi adamkhore sher hain ki hum jiski bhi shikar karte hain to uska jism kya uska rooh bhi kaam jati hai 😎 Jay jay shri Ram 🚩🙏",
+            "hindi_text": "राम भक्तों को जंजीरों में कैद करने का**  सपना मत देखो** * क्योंकि हम वह आदमखोर शेर हैं ** कि हम जिस का भी शिकार करते हैं **   उसका जिस्म क्या उसका रूह भी  कांप ",
+            "hindi_abuse": 0.9971,
+            "hinglish_abuse": 0.9395
+          },
+          {
+            "row_id": "val-348",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0342,
+            "bucket": "source_label_wrong",
+            "text": "Cccccccckk#akgw#",
+            "hindi_text": "सीसीसीसीसीसी kk#akgw#",
+            "hindi_abuse": 0.0051,
+            "hinglish_abuse": 0.0154
+          },
+          {
+            "row_id": "val-356",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.4634,
+            "bucket": "benign_looking_insult",
+            "text": "Aap apni behen ki video kaise bana rahe ho?",
+            "hindi_text": "अपने बहन वीडियो बनाते कैसे करते हो क्या आप",
+            "hindi_abuse": 0.0711,
+            "hinglish_abuse": 0.0119
+          }
+        ],
+        "fp": [
+          {
+            "row_id": "val-4",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9956,
+            "bucket": "source_label_wrong",
+            "text": "Jo anpadh log din-rot hindu muslim kar rahe hain unhe sochna chahiye aur dekhna chahiye, inke baap dada ka bhi siya nahi gaya, fauj nahi gaya, kisi bhi desh ki seva nahi ki, lambi lambi baatein karte hue kya hoga",
+            "hindi_text": "जो अनपढ़ लोग दिन-रात हिंदू मुस्लिम करते रहते हैं उन्हें सोचना चाहिए और देखना चाहिए इनके बाप दादा का भी सेना में नहीं गए फौज में नहीं गए देश की कोई सेवा नहीं की ",
+            "hindi_abuse": 0.9664,
+            "hinglish_abuse": 0.998
+          },
+          {
+            "row_id": "val-21",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.98,
+            "bucket": "source_label_wrong",
+            "text": "Jya gadi malkani dusaryanchi gadivarat kaam karun gadi malka banale, tya he asla kaam karuch shakata nahi. Pan je bapaachi kashatarat udya marte tya he asla kaam karte. Tyanna jaaniv naastey. (Driving kasa hai, he ikhadya driver barobar fea",
+            "hindi_text": "ज्या गाडी मालकांनी दुसर्यांच्या गाडीवरती काम करुन गाडीमालक झालेत. ते हे असलं काम करुच शकत नाहित .पण जे बापाच्या कष्टावरती ऊड्या मारतात ते हे असलं काम करतात.त्या",
+            "hindi_abuse": 0.9477,
+            "hinglish_abuse": 0.9959
+          },
+          {
+            "row_id": "val-29",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9238,
+            "bucket": "source_label_wrong",
+            "text": "Kitna accha paratha pila hua hai, aur agar aur pilaoge toh phat jayega",
+            "hindi_text": "कितना अच्छा पराठा फुला हुआ है और फुलायेगी तो फट जायेगी",
+            "hindi_abuse": 0.9968,
+            "hinglish_abuse": 0.9741
+          },
+          {
+            "row_id": "val-26",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.595,
+            "bucket": "obfuscation",
+            "text": "Aapke koti koti dhanyavad jo aapne apni jaan jokhim mein daal kar itni mahatvapur sankhyaa humein di. Is khabar ko sunkar pure brahmaand mein divya jyoti prajwalit ho gayi hai. Dev daanav, sur asur, gandharv, nag, kinnar, nar nari sab krita",
+            "hindi_text": "आपका कोटि कोटि धन्यवाद जो आपने अपनी जान जोखिम में डालकर इतनी महत्वपूर्ण सूचना हमें दी । इस खबर को सुनकर पूरे ब्रह्माण्ड में दिव्य ज्योति प्रज्ज्वलित हुई है । दे",
+            "hindi_abuse": 0.0051,
+            "hinglish_abuse": 0.9929
+          },
+          {
+            "row_id": "val-52",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9873,
+            "bucket": "source_label_wrong",
+            "text": "Tanki phat gayi hogi bacche ki 😂😂😂😂😂",
+            "hindi_text": "टंकी फट गई होगी बच्चे की 😂😂😂😂😂",
+            "hindi_abuse": 0.9816,
+            "hinglish_abuse": 0.5135
+          },
+          {
+            "row_id": "val-69",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9697,
+            "bucket": "false_positive_other",
+            "text": "Ye adha chhahra bhi hai aur thesda bhi hai, dono tareeko se hai",
+            "hindi_text": "यह आधा चहरा भी है और टेढ़ा भी है दो तरीके से है",
+            "hindi_abuse": 0.0149,
+            "hinglish_abuse": 0.9822
+          },
+          {
+            "row_id": "val-99",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.7835,
+            "bucket": "false_positive_other",
+            "text": "Nishchay shabda na sakhna ke palike da dukh jalay 😢😢",
+            "hindi_text": "निःशब्द सहन करण्या पलीकडे दुःख झाले 😢😢",
+            "hindi_abuse": 0.0085,
+            "hinglish_abuse": 0.0597
+          },
+          {
+            "row_id": "val-109",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9918,
+            "bucket": "source_label_wrong",
+            "text": "Kal bhains gay, sefay hai",
+            "hindi_text": "⚫ काली  भैंस  गाय🐄  सफेद है",
+            "hindi_abuse": 0.9809,
+            "hinglish_abuse": 0.1481
+          },
+          {
+            "row_id": "val-111",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9131,
+            "bucket": "false_positive_other",
+            "text": "Itna barish ho rahi hai ke coal ke khadano mein pani bhari gaya hai to kya ho raha hai?",
+            "hindi_text": "इतना बारिश हो रही है की कोयला के खदानों में पानी भर गया है तो क्या हो",
+            "hindi_abuse": 0.0162,
+            "hinglish_abuse": 0.027
+          },
+          {
+            "row_id": "val-121",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9783,
+            "bucket": "source_label_wrong",
+            "text": "Apne apko chudail bol rahi ho 😛😝😜",
+            "hindi_text": "अपने आप को चुड़ैल बोल रही हो 😛😝😜",
+            "hindi_abuse": 0.9981,
+            "hinglish_abuse": 0.0176
+          },
+          {
+            "row_id": "val-132",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.5276,
+            "bucket": "sarcasm",
+            "text": "Ek kahavat hai ki... medhak ko sone ki int pe bhi kyun nahi baitha doge to bhi wo saala nale mein hi chhalaang lagayega🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣...............Jai Shri Ram🚩🚩🚩🚩🚩....",
+            "hindi_text": "एक कहावत है की ...मेढ़क को सोने की ईंट पर भी क्यो न बैठा दोगे तो भी वह साला नाले में ही छलांग लगाएगा🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣...............जय श्री राम🚩🚩🚩🚩🚩....",
+            "hindi_abuse": 0.9711,
+            "hinglish_abuse": 0.0159
+          },
+          {
+            "row_id": "val-138",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9762,
+            "bucket": "false_positive_other",
+            "text": "Pehle shaadi kar lo tab na",
+            "hindi_text": "पहले शादी कर लो तब ना",
+            "hindi_abuse": 0.0141,
+            "hinglish_abuse": 0.9955
+          },
+          {
+            "row_id": "val-141",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9959,
+            "bucket": "source_label_wrong",
+            "text": "Namak khaye bhi namak haraam karte ho be, tum sayad nahi sudhrega, chamcha aega to Modi hi jai shri ram",
+            "hindi_text": "नमक खा के भी नमक हरामि  करते हो बे तुम सायाद नही सुधरो गे चमचो आए गा तो मोदी ही जय श्री राम",
+            "hindi_abuse": 0.9992,
+            "hinglish_abuse": 0.9749
+          },
+          {
+            "row_id": "val-142",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9734,
+            "bucket": "source_label_wrong",
+            "text": "Ab ladkiya aur 3 saal papa mummy ko loot sakti hai ji bhar ke aur bhai ko bhi kuta bhalu girgit bhi bol sakti hai 🥺🥺🥺🥺🥺❓🙏",
+            "hindi_text": "अब लडकिया ओर 3 साल पापा ममी को लूट सकती है जी भर के ओर भाई को भी कुता भालू गिरगिट भी बोल सकती है 🥺🥺🥺🥺🥺❓🙏",
+            "hindi_abuse": 0.9731,
+            "hinglish_abuse": 0.9599
+          },
+          {
+            "row_id": "val-157",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.5409,
+            "bucket": "false_positive_other",
+            "text": "Kutta se darr nahi lagta hai kya aapko bhaiya 😥😥",
+            "hindi_text": "कुत्ते से डर  नहीं लगता है क्या आपको भैया😥😥",
+            "hindi_abuse": 0.8799,
+            "hinglish_abuse": 0.0262
+          },
+          {
+            "row_id": "val-159",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9771,
+            "bucket": "source_label_wrong",
+            "text": "Kash koi mere se bhi bolte band karo cute kamine comments karo aao inbox me baat karte hai 😜🤭",
+            "hindi_text": "काश कोई मेरे से भी बोलती बंद करो cute kamine  कॉमेंट्स करना आओ  इनबॉक्स में बात करते है🤭🤭",
+            "hindi_abuse": 0.9474,
+            "hinglish_abuse": 0.9152
+          },
+          {
+            "row_id": "val-165",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9299,
+            "bucket": "false_positive_other",
+            "text": "Tumse milega ka deal karta hai",
+            "hindi_text": "तुम्से मिल्नेका दील कर्ता है",
+            "hindi_abuse": 0.0051,
+            "hinglish_abuse": 0.0104
+          },
+          {
+            "row_id": "val-193",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.8238,
+            "bucket": "false_positive_other",
+            "text": "Indian culture ke kapre pehne hue apni matru sanskriti aur kanun banane laga. Desh ka palan karte hue apna rang dikhaane laga. Ab tak Vishwavidyalaya Yojana 2021, Jay Hind. 🌾",
+            "hindi_text": "🇮🇳 अपना रंग दिखाना शुरू देश का पालन किया👀अपने कपड़े पहने हुए अपनी मातृ संस्कृति एवं कानून बना लिए🚩 आज तक  विश्वविद्यालय योजना 2021,🙏 जय हिंद 🌾",
+            "hindi_abuse": 0.0195,
+            "hinglish_abuse": 0.0145
+          },
+          {
+            "row_id": "val-199",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.6128,
+            "bucket": "false_positive_other",
+            "text": "Baat chehra ki nahi hai balki patti karne wale ki hai, bohot hoshiaari se bana hai",
+            "hindi_text": "बात चेहरे की नही है बल्कि पेटींग करने वाले की है बड़ी होशियारी से बनाई है",
+            "hindi_abuse": 0.008,
+            "hinglish_abuse": 0.9043
+          },
+          {
+            "row_id": "val-212",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9918,
+            "bucket": "source_label_wrong",
+            "text": "Aur madam ji ye vo kutta nahi hai, isko badname mat karo😂",
+            "hindi_text": "और मैडम जी ये वो कुत्ता नहीं है इस को बदनाम मत करो😂",
+            "hindi_abuse": 0.9973,
+            "hinglish_abuse": 0.9957
+          },
+          {
+            "row_id": "val-223",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9949,
+            "bucket": "false_positive_other",
+            "text": "Jija sale ko chudwaye ga",
+            "hindi_text": "जीजा साली ko",
+            "hindi_abuse": 0.0159,
+            "hinglish_abuse": 0.9992
+          },
+          {
+            "row_id": "val-246",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9702,
+            "bucket": "false_positive_other",
+            "text": "Bhabhi film ka ye gaana Rajinder Krishan ji ki rachna, Rafi ji ke sur aur Chitra Gupta ji ka sangeet, aur kya chahiye gaane ko... Haare hue insaan ki ruh se nikalne wala dar aur use udasianat ki charm seema tak le jata hai, ye hi is gaane k",
+            "hindi_text": "भाभी फिल्म का यह गीत राजिंदर कृष्ण जी की रचना,  Rafi जी के सुर और चित्रगुप्त जी का संगीत और क्या चाहिए गीत को.....हारे हुए इंसान की रूह से निकलने वाला दर्द उसे ",
+            "hindi_abuse": 0.0063,
+            "hinglish_abuse": 0.9896
+          },
+          {
+            "row_id": "val-290",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9913,
+            "bucket": "source_label_wrong",
+            "text": "Agar glat se chote kapde pe ban lag jaye lockdown ki tarah to balatkar bhi band ho jayeenge",
+            "hindi_text": "गलत अगर छोटे कपड़े पर बैन लग जाए लॉक डाउन के  तरह तो बलात कर भी बंद हो जाएंगे",
+            "hindi_abuse": 0.9782,
+            "hinglish_abuse": 0.9988
+          },
+          {
+            "row_id": "val-295",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.6608,
+            "bucket": "sarcasm",
+            "text": "Mujhe toh galti se meri rishtedar aur dost bhi call nahi karte, koi aur kya ghanta call karega 🤣🤣🤣🤣🤣",
+            "hindi_text": "मुझे तो गलती से मेरे रिश्तेदार और दोस्त भी कॉल नहीं करते है ,,,  कोई और क्या घंटा कॉल करेगा 🤣🤣🤣🤣🤣",
+            "hindi_abuse": 0.0112,
+            "hinglish_abuse": 0.0157
+          },
+          {
+            "row_id": "val-297",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9379,
+            "bucket": "false_positive_other",
+            "text": "Aansoo woh nahi hai jo paani banke aankhon se bhad jaye, aansoo usko kehate hain jo tarp ke aankhon me ruk jaye",
+            "hindi_text": "आंसू वह नहीं है जो पानी बनकर आंख से बह जाए आंसू उसे कहते हैं जो तड़प के आंखों में रह जाए",
+            "hindi_abuse": 0.0089,
+            "hinglish_abuse": 0.9872
+          },
+          {
+            "row_id": "val-303",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.5929,
+            "bucket": "caste_religious",
+            "text": "Ye BJP party se hai UP me 😠😠😠🤬🤬",
+            "hindi_text": "ये bjp कि पार्टी से है UP मे 😠😠😠🤬🤬",
+            "hindi_abuse": 0.9941,
+            "hinglish_abuse": 0.9707
+          },
+          {
+            "row_id": "val-310",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9677,
+            "bucket": "source_label_wrong",
+            "text": "Pehle kotedar ko sambhaliye jo dena baki kha jate he 4-5 kg anaaj ek card par soof karte he to socho kitne garib he to kotedar ko kitna faida he ye aap nahi samajho gaye modi ji",
+            "hindi_text": "पहले कोटेदरो को संभालिए जो देने के बजाय खा जाते हे 4-5 किलो अनाज एक कार्ड पर साफ कर देते है तो सोचो कितने गरीब हे तो कोटेदारों को कितना फायदा हे ये आप नही समझो ",
+            "hindi_abuse": 0.9795,
+            "hinglish_abuse": 0.9957
+          },
+          {
+            "row_id": "val-314",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.878,
+            "bucket": "source_label_wrong",
+            "text": "Sasur lad mat, lad mat, Bittoo mera hai",
+            "hindi_text": "सासू लाड मत लाड मत बिट्टू मेरा है",
+            "hindi_abuse": 0.9063,
+            "hinglish_abuse": 0.9966
+          },
+          {
+            "row_id": "val-333",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9773,
+            "bucket": "false_positive_other",
+            "text": "Salo, panch saal toh aise hi maut masti me bitha dete ho, apne wale wada bhool jate ho to kya karooge",
+            "hindi_text": "सालों पांच साल तो यूं ही मौज मस्ती मे बिता देते हो खुद का किये हुए वादे भूल जाते हो तो क्या करोगे",
+            "hindi_abuse": 0.0065,
+            "hinglish_abuse": 0.9906
+          },
+          {
+            "row_id": "val-340",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9916,
+            "bucket": "source_label_wrong",
+            "text": "Gareebon ko bhi kuch paisa kamane do, sarkar to inkomtax se kam le legi",
+            "hindi_text": "गरीबों को भी कुछ पैसा कमाने दो सरकार तो इनकमटैक्स से कमा लेगा",
+            "hindi_abuse": 0.9332,
+            "hinglish_abuse": 0.9864
+          },
+          {
+            "row_id": "val-346",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9594,
+            "bucket": "source_label_wrong",
+            "text": "Maut ka naam to yahi badnam hai sir, asli dard to jindagi deti hai😎",
+            "hindi_text": "मौत का नाम तो☢️ यूँही बदनाम है सर ⚛️ असली दर्द तो हमे जिदंगी देती है😎",
+            "hindi_abuse": 0.9925,
+            "hinglish_abuse": 0.0204
+          },
+          {
+            "row_id": "val-383",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.7397,
+            "bucket": "false_positive_other",
+            "text": "Bakri ka doodh 😁😁😁😁😁 Meri toh le jayein karo",
+            "hindi_text": "बकरी का दूध😁😁😁😁😁मेरे से ले जाए करे",
+            "hindi_abuse": 0.0233,
+            "hinglish_abuse": 0.9625
+          },
+          {
+            "row_id": "val-389",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9843,
+            "bucket": "source_label_wrong",
+            "text": "Gandu ma ka pyar hai jo log hansi raha hai unke kitna ghadha koi nahi hai. Social media ka zamana hai, koi bhi apni bejhati bhardasht nahi kar sakte kitna accha sanskaar 🙏🙏🙏🙏",
+            "hindi_text": "गधो माँ का प्यार है   जो लोग हँस रहे है उनके कितना गधा कोई नहीं है । सोशल मीडिया का जमाना है कोई भी अपनी बेज्जती बर्दाश्त नहीं कर सकता कितना अच्छा संस्कार 🙏🙏🙏🙏",
+            "hindi_abuse": 0.9624,
+            "hinglish_abuse": 0.0113
+          },
+          {
+            "row_id": "val-398",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9911,
+            "bucket": "false_positive_other",
+            "text": "Aajkal ye surma, ye hotthon ki laali, ye payal, ye bindi, ye kaanon ki baali, kaayal hai tera bikhare baalon ka.",
+            "hindi_text": "💞💞💞ए काजल ये💞💞💞 सूरमा ये होठों की💞💞 लाली ये पायल ये💞💞 बिंदी ये कानो💞💞💞 की बाली ये कायल है💞💞💞 तेरे बिखरे बालो का💞💞💞💞",
+            "hindi_abuse": 0.0044,
+            "hinglish_abuse": 0.9821
+          },
+          {
+            "row_id": "val-392",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9807,
+            "bucket": "source_label_wrong",
+            "text": "China, dekh lo in logon ka kya hal kar rakha hai. Russia me dekh lo, Japan me to inke liye entry hi nahi hai. America wale to unke kapde utarwa dete hai. Yeh Bharat me gandagi kar sakte hain bas kyunki inko abhi yahan koi achha guru nahi mi",
+            "hindi_text": "चाईना, में देखलो इन लोगों का क्या हाल कर रखा है रूस में देखलो जापान में तो इन लोगों के लिए एन्ट्री भी नहीं है अमेरिका वाले तो कपड़े उतरवा देते हैं ये भारत में ग",
+            "hindi_abuse": 0.9855,
+            "hinglish_abuse": 0.9831
+          },
+          {
+            "row_id": "val-401",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.8901,
+            "bucket": "source_label_wrong",
+            "text": "Sari rasio ka ek hi jawab hai, pagal samajh rakha hai,",
+            "hindi_text": "सारी रसियों का एक ही जवाब है पागल समझ रखा है,",
+            "hindi_abuse": 0.9853,
+            "hinglish_abuse": 0.7994
+          },
+          {
+            "row_id": "val-405",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.6043,
+            "bucket": "false_positive_other",
+            "text": "Maut par sindoor lagake rakho, na chor leke bhagein ge na chhoray line marenge, baat janhit mein jari hai",
+            "hindi_text": "माथे पर सिंदूर लगाके रखो ना चोर लेके भागेंगे और ना छोरे लाईन मारेंगे, बात जनहित में जारी",
+            "hindi_abuse": 0.9954,
+            "hinglish_abuse": 0.0431
+          },
+          {
+            "row_id": "val-407",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9319,
+            "bucket": "false_positive_other",
+            "text": "Wallahumassalam warahmatullahi allah aap dono behno ki jodi salamat rakhe Shahid Hoshangabad Madhya Pradesh India",
+            "hindi_text": "वालेकुम अस्सलाम व रहमतुल्लाह अल्लाह आप दोनों बहनों की जोड़ी सलामत रखे शाहिद होशंगाबाद मध्य प्रदेश इंडिया",
+            "hindi_abuse": 0.0082,
+            "hinglish_abuse": 0.0158
+          },
+          {
+            "row_id": "val-425",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9171,
+            "bucket": "false_positive_other",
+            "text": "Aise harakate mat kiya karo ji",
+            "hindi_text": "अासे हरखते मत कीया करो जी",
+            "hindi_abuse": 0.0118,
+            "hinglish_abuse": 0.9985
+          },
+          {
+            "row_id": "val-424",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9825,
+            "bucket": "sarcasm",
+            "text": "Karwa Chauth wale din kuch maa ya apni betiya rani ko jabardast tarah paani pila-pila ke check karegi... taaki agar kisi ke boyfriend ho to pata chale...! 😂😜🤣😜😂😜",
+            "hindi_text": "करवा चौथ वाले दिन  कुछ माताएं  अपनी-अपनी बिटिया रानी को जबरदस्ती  पानी पिला - पिलाकर चेक करेंगी....  ताकि अगर कोई ब्यॉयफ्रैंड हो तो पता चल सके.....!  😂😜🤣😜😂😜",
+            "hindi_abuse": 0.0084,
+            "hinglish_abuse": 0.9909
+          }
+        ]
+      },
+      "bucket_samples": {
+        "source_label_wrong": [
+          {
+            "row_id": "val-1",
+            "error": "fn",
+            "text": "Aapke paas pukhta saboot hai ya nahi? Yahan usi Aadhaar card ke kaaran majaad ki yojanaon ka fayda janta ko mil raha hai",
+            "p_abuse": 0.1814
+          },
+          {
+            "row_id": "val-4",
+            "error": "fp",
+            "text": "Jo anpadh log din-rot hindu muslim kar rahe hain unhe sochna chahiye aur dekhna chahiye, inke baap dada ka bhi siya nahi gaya, fauj nahi gaya, kisi bhi desh ki seva nahi ki, lambi lambi baatein karte ",
+            "p_abuse": 0.9956
+          },
+          {
+            "row_id": "val-15",
+            "error": "fn",
+            "text": "Chandni raat aur chudail ka gana mera shona kya khaya khana 🤔",
+            "p_abuse": 0.1468
+          },
+          {
+            "row_id": "val-18",
+            "error": "fn",
+            "text": "Aapko pata hai chedna kise jata hai, bahun mein bhare chedne ka bharpur anand lena",
+            "p_abuse": 0.0208
+          },
+          {
+            "row_id": "val-22",
+            "error": "fn",
+            "text": "2022 me pata chal jayega kon kitne paani me hai",
+            "p_abuse": 0.0224
+          },
+          {
+            "row_id": "val-21",
+            "error": "fp",
+            "text": "Jya gadi malkani dusaryanchi gadivarat kaam karun gadi malka banale, tya he asla kaam karuch shakata nahi. Pan je bapaachi kashatarat udya marte tya he asla kaam karte. Tyanna jaaniv naastey. (Driving",
+            "p_abuse": 0.98
+          },
+          {
+            "row_id": "val-24",
+            "error": "fn",
+            "text": "Sun loonde, humse panga leke aur bari mahfil me danga, dono dangerous hai 😏",
+            "p_abuse": 0.0193
+          },
+          {
+            "row_id": "val-23",
+            "error": "fn",
+            "text": "Pani piyena hai to glass se piye, Bisleri bottle me kya rakha hai 😎, pani piyena hai to glass se piye, Bisleri bottle me kya rakha hai aur seva karna hai to ma-baap ki karein, in ladkiyon me kya rakha",
+            "p_abuse": 0.0194
+          }
+        ],
+        "obfuscation": [
+          {
+            "row_id": "val-26",
+            "error": "fp",
+            "text": "Aapke koti koti dhanyavad jo aapne apni jaan jokhim mein daal kar itni mahatvapur sankhyaa humein di. Is khabar ko sunkar pure brahmaand mein divya jyoti prajwalit ho gayi hai. Dev daanav, sur asur, g",
+            "p_abuse": 0.595
+          },
+          {
+            "row_id": "val-311",
+            "error": "fn",
+            "text": "Maa ka land hai yeh toh",
+            "p_abuse": 0.1174
+          },
+          {
+            "row_id": "val-382",
+            "error": "fn",
+            "text": "Jab ek baap apne nasherdar beta ke release hone par aatisbaazi kar sakta hai to hum log apne tyoharon par dil khola kar aatisbaazi kyun nahi kar sakte? Hum Diwali par aatisbaazi kare to pollution hogi",
+            "p_abuse": 0.1197
+          },
+          {
+            "row_id": "val-1265",
+            "error": "fp",
+            "text": "CM bhai McD's kha raha hai, chutiya ban raha hai",
+            "p_abuse": 0.9964
+          },
+          {
+            "row_id": "val-1318",
+            "error": "fn",
+            "text": "Modi ji ne bilkul footpath par la diya becharon ko, Gandhiji ke samne isliye ro raha hai kyunki ab bilkul majboor ho chuke hain.",
+            "p_abuse": 0.1231
+          },
+          {
+            "row_id": "val-1011",
+            "error": "fn",
+            "text": "Mc he takla",
+            "p_abuse": 0.1065
+          },
+          {
+            "row_id": "val-3451",
+            "error": "fp",
+            "text": "We to such a sadhu betha betha paani mein patthar fenka rha tha... achaanak ek mendhak paani se nikla... aur bola...... tu paani mein to a saale bataata hu tujhe apni wali ke chakkar mein toone meri w",
+            "p_abuse": 0.9837
+          },
+          {
+            "row_id": "val-3863",
+            "error": "fn",
+            "text": "Abey ganda log tum log dhyaan se suno, yogi nahi yogya sarkar bol rahe hain.",
+            "p_abuse": 0.3778
+          }
+        ],
+        "false_positive_other": [
+          {
+            "row_id": "val-69",
+            "error": "fp",
+            "text": "Ye adha chhahra bhi hai aur thesda bhi hai, dono tareeko se hai",
+            "p_abuse": 0.9697
+          },
+          {
+            "row_id": "val-99",
+            "error": "fp",
+            "text": "Nishchay shabda na sakhna ke palike da dukh jalay 😢😢",
+            "p_abuse": 0.7835
+          },
+          {
+            "row_id": "val-111",
+            "error": "fp",
+            "text": "Itna barish ho rahi hai ke coal ke khadano mein pani bhari gaya hai to kya ho raha hai?",
+            "p_abuse": 0.9131
+          },
+          {
+            "row_id": "val-138",
+            "error": "fp",
+            "text": "Pehle shaadi kar lo tab na",
+            "p_abuse": 0.9762
+          },
+          {
+            "row_id": "val-157",
+            "error": "fp",
+            "text": "Kutta se darr nahi lagta hai kya aapko bhaiya 😥😥",
+            "p_abuse": 0.5409
+          },
+          {
+            "row_id": "val-165",
+            "error": "fp",
+            "text": "Tumse milega ka deal karta hai",
+            "p_abuse": 0.9299
+          },
+          {
+            "row_id": "val-193",
+            "error": "fp",
+            "text": "Indian culture ke kapre pehne hue apni matru sanskriti aur kanun banane laga. Desh ka palan karte hue apna rang dikhaane laga. Ab tak Vishwavidyalaya Yojana 2021, Jay Hind. 🌾",
+            "p_abuse": 0.8238
+          },
+          {
+            "row_id": "val-199",
+            "error": "fp",
+            "text": "Baat chehra ki nahi hai balki patti karne wale ki hai, bohot hoshiaari se bana hai",
+            "p_abuse": 0.6128
+          }
+        ],
+        "benign_looking_insult": [
+          {
+            "row_id": "val-81",
+            "error": "fn",
+            "text": "Aheer ko paalo",
+            "p_abuse": 0.4581
+          },
+          {
+            "row_id": "val-86",
+            "error": "fn",
+            "text": "Yar, kapa kuch jada nahi hai",
+            "p_abuse": 0.0787
+          },
+          {
+            "row_id": "val-144",
+            "error": "fn",
+            "text": "Hain to single hai, hume kaise pata chalega jo log kya kya chatte hai 😐😐😐😐🙁",
+            "p_abuse": 0.0358
+          },
+          {
+            "row_id": "val-152",
+            "error": "fn",
+            "text": "Gajwa ek hind hoane nahi dega",
+            "p_abuse": 0.1112
+          },
+          {
+            "row_id": "val-160",
+            "error": "fn",
+            "text": "Ab bahut ho gaya hai, ek dabang actor bana hi jao, bardaasht nahi ho raha hai hum se aise roz roz video dekh dekh kar ek picture bana hi dalo",
+            "p_abuse": 0.3696
+          },
+          {
+            "row_id": "val-186",
+            "error": "fn",
+            "text": "Tumhare liye jahan, jahan hai.",
+            "p_abuse": 0.0121
+          },
+          {
+            "row_id": "val-244",
+            "error": "fn",
+            "text": "Tumko to ek naak bhane wale ladke ke saath hi jana hai, to apne hone wale pati ke baare me koi aisa kah sakta hai kya 😜😜",
+            "p_abuse": 0.0571
+          },
+          {
+            "row_id": "val-248",
+            "error": "fn",
+            "text": "Maine toh jitni nafrat gharkwallon se nahi ki usse jyada apne pati se hai ki uske pati usko saath le jaye ke liye taiyar hai, uske har fayisalay mein uske saath khada hai aur mera pati mere saath le j",
+            "p_abuse": 0.0623
+          }
+        ],
+        "sarcasm": [
+          {
+            "row_id": "val-88",
+            "error": "fn",
+            "text": "Yeh toh high nahi hai 😂😂😂, kya joke kiya re",
+            "p_abuse": 0.2215
+          },
+          {
+            "row_id": "val-132",
+            "error": "fp",
+            "text": "Ek kahavat hai ki... medhak ko sone ki int pe bhi kyun nahi baitha doge to bhi wo saala nale mein hi chhalaang lagayega🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣...............Jai Shri Ram🚩🚩🚩🚩🚩....",
+            "p_abuse": 0.5276
+          },
+          {
+            "row_id": "val-295",
+            "error": "fp",
+            "text": "Mujhe toh galti se meri rishtedar aur dost bhi call nahi karte, koi aur kya ghanta call karega 🤣🤣🤣🤣🤣",
+            "p_abuse": 0.6608
+          },
+          {
+            "row_id": "val-424",
+            "error": "fp",
+            "text": "Karwa Chauth wale din kuch maa ya apni betiya rani ko jabardast tarah paani pila-pila ke check karegi... taaki agar kisi ke boyfriend ho to pata chale...! 😂😜🤣😜😂😜",
+            "p_abuse": 0.9825
+          },
+          {
+            "row_id": "val-1269",
+            "error": "fp",
+            "text": "Humein hamari bhains kya bandh di, sab shehar wale na jaane kya kya bol rhe hain are bhai behen aap bhi to usi bhains ka doodh pite ho, vapas chod lenge hum hamari bhains 🤣🤣🤣",
+            "p_abuse": 0.989
+          },
+          {
+            "row_id": "val-1306",
+            "error": "fp",
+            "text": "Bhakto ke liye mahangaii gupshad rog hai, darra to hota hai par kahne me shame aati hai 😂😂",
+            "p_abuse": 0.7466
+          },
+          {
+            "row_id": "val-1417",
+            "error": "fn",
+            "text": "Wah khana aurangzeb premi sheruddin gau khao",
+            "p_abuse": 0.4032
+          },
+          {
+            "row_id": "val-1507",
+            "error": "fp",
+            "text": "Chinta se chaturai ghate dukh se ghate shariir, aashiqi se buddhi bhrist ho ve kah gaye sant Kabir ⭐🤣🤣🤣",
+            "p_abuse": 0.8256
+          }
+        ],
+        "caste_religious": [
+          {
+            "row_id": "val-303",
+            "error": "fp",
+            "text": "Ye BJP party se hai UP me 😠😠😠🤬🤬",
+            "p_abuse": 0.5929
+          },
+          {
+            "row_id": "val-1090",
+            "error": "fp",
+            "text": "Jail me ek Hindu bus driver band tha, ek reporter uski interview len ke jail me pahuch gaya aur pucha - \"Tumhara jurm kya hai?\" Usne bataya ki main pahadi ilaake me bus chala raha tha. Ek baar main ya",
+            "p_abuse": 0.9808
+          },
+          {
+            "row_id": "val-1135",
+            "error": "fn",
+            "text": "Nusrat jahan ke bacche ke birth certificate me pita ka naam Yashdas Gupta hai, matlab BJP wale ne khel diya 😳😳😂🤣",
+            "p_abuse": 0.364
+          },
+          {
+            "row_id": "val-711",
+            "error": "fp",
+            "text": "Koi kehta hai hum Muslim hai, koi kehta hai hum Hindu hai, nahi ji, hum log ek bhai bhai hai, dharm alag alag hai, lekin Bhagwan ek hi hai.",
+            "p_abuse": 0.6886
+          },
+          {
+            "row_id": "val-5349",
+            "error": "fp",
+            "text": "Arre bhai BJP ke liye giraavo khud hi pada ki sepe aap to BJP se ghabraho yaar nigama kitne taraf se ye 💕👌👌",
+            "p_abuse": 0.9697
+          },
+          {
+            "row_id": "val-479",
+            "error": "fn",
+            "text": "Gareeb janta ko marwaye BJP, yeh bhi likhna chahiye tha",
+            "p_abuse": 0.059
+          },
+          {
+            "row_id": "val-1069",
+            "error": "fn",
+            "text": "Hindu log Kashmir se kyun bhej gaye the?",
+            "p_abuse": 0.3216
+          },
+          {
+            "row_id": "val-1838",
+            "error": "fp",
+            "text": "Iski aatma to mar gayi par sharir jinda hai. Ram janm bhoomi par hindu ko marwane ke liye ab karm bhogana hai. Jai hind.",
+            "p_abuse": 0.9714
+          }
+        ],
+        "english_heavy_mix": [
+          {
+            "row_id": "val-3900",
+            "error": "fn",
+            "text": "You people should be ashamed to forget even your mother's troubles for money.",
+            "p_abuse": 0.3045
+          },
+          {
+            "row_id": "val-3438",
+            "error": "fn",
+            "text": "On the spot mar sale ko mile to 😠😠",
+            "p_abuse": 0.126
+          },
+          {
+            "row_id": "val-3546",
+            "error": "fp",
+            "text": "Do samne aur teen in do insaanon ke chitra me",
+            "p_abuse": 0.9694
+          },
+          {
+            "row_id": "val-5636",
+            "error": "fp",
+            "text": "I hate you I hate you I hate you I hate you",
+            "p_abuse": 0.9653
+          }
+        ],
+        "softened_slur": [
+          {
+            "row_id": "val-5603",
+            "error": "fn",
+            "text": "Bhade se apni ammi ko fase de",
+            "p_abuse": 0.2729
+          }
+        ]
+      },
+      "errors_path": "/Users/prathamgarg/Desktop/senior-sde-audit-surakshanet/codemix_synth/val_errors.csv"
+    },
+    "train": {
+      "split": "train",
+      "metrics": {
+        "n": 18920,
+        "accuracy": 0.9371564482029598,
+        "f1_macro": 0.9371388016893287,
+        "f1_abusive": 0.9360855775950114,
+        "f1_non_abusive": 0.9381920257836461,
+        "tp_abusive": 8707,
+        "tn_non_abusive": 9024,
+        "fp_false_abuse": 605,
+        "fn_missed_abuse": 584,
+        "matrix": {
+          "true0_pred0": 8707,
+          "true0_pred1": 584,
+          "true1_pred0": 605,
+          "true1_pred1": 9024
+        }
+      },
+      "n_fp": 605,
+      "n_fn": 584,
+      "n_borderline": 231,
+      "bucket_counts": {
+        "sarcasm": 74,
+        "source_label_wrong": 345,
+        "false_positive_other": 326,
+        "benign_looking_insult": 299,
+        "obfuscation": 110,
+        "caste_religious": 32,
+        "english_heavy_mix": 2,
+        "softened_slur": 1
+      },
+      "samples": {
+        "fn": [
+          {
+            "row_id": "train-70",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0607,
+            "bucket": "source_label_wrong",
+            "text": "Aapke maang me sindoor bhi nazar a raha hai.",
+            "hindi_text": "आपके मांग में सिंदूर भी नजर आ रहा है।",
+            "hindi_abuse": 0.0091,
+            "hinglish_abuse": 0.0049
+          },
+          {
+            "row_id": "train-128",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0552,
+            "bucket": "benign_looking_insult",
+            "text": "Das saal me uska shirt be nahi pata, budhha abhi nahi hua, aur bacche bade ho gaye. Das saal baad bhi uska shirt wahi ka wahi hai.",
+            "hindi_text": "दस साल मे उसका शॉट बी फाटा नही बुड्ढा अभी हुआ नही और बच्चे बडे हो गये दस साल बाद भी उसका का शर्ट वही का वही",
+            "hindi_abuse": 0.8216,
+            "hinglish_abuse": 0.8961
+          },
+          {
+            "row_id": "train-171",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0155,
+            "bucket": "source_label_wrong",
+            "text": "Dil hi dil kahan hai ab, seese se bhi nazuk hota tha par dil laganewale pattaar ban gaya hai",
+            "hindi_text": "दिल ही दिल कहा है अब  सीसे से बि नाजुक होता था  पर दिल लगाने वाले पत्थर बन गया है",
+            "hindi_abuse": 0.0073,
+            "hinglish_abuse": 0.0343
+          },
+          {
+            "row_id": "train-193",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0167,
+            "bucket": "benign_looking_insult",
+            "text": "Thokar khaate hain aur muskurate hain, is dil ko sabr karna sikhate hain. Ham dar se leke bhi logo ko yaad karte hain aur logo dar deke bhi logo ko bhool jate hain.",
+            "hindi_text": "ठोकर खाते हैं और मुस्कुराते हैं इस दिल को सब्र करना सिखाते हैं    हम दर्द लेकर भी लोगों को याद करते हैं और लोग दर्द देकर भी लोगों को भूल जाते हैं",
+            "hindi_abuse": 0.9443,
+            "hinglish_abuse": 0.9804
+          },
+          {
+            "row_id": "train-221",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.3283,
+            "bucket": "benign_looking_insult",
+            "text": "Budhape me pahle hi haddi nahi judti",
+            "hindi_text": "बुढापे में हड्डी भी नहीं जुड़ती",
+            "hindi_abuse": 0.1294,
+            "hinglish_abuse": 0.9762
+          },
+          {
+            "row_id": "train-238",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0878,
+            "bucket": "source_label_wrong",
+            "text": "10 rupaye ki Pepsi Aayar bhai sexy 😅😂",
+            "hindi_text": "10 रुपए की पेप्सी अय्यर भाई सेक्सी 😅😂",
+            "hindi_abuse": 0.0279,
+            "hinglish_abuse": 0.0213
+          },
+          {
+            "row_id": "train-243",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0272,
+            "bucket": "source_label_wrong",
+            "text": "Ab hamari keyu aaye, ab to tum se hi maza le rahi ho ge 💔💔👏",
+            "hindi_text": "अब हमारी कयु आये अब तो तुम स का से मजा ले रही होगी✍💔💔👏",
+            "hindi_abuse": 0.0214,
+            "hinglish_abuse": 0.0218
+          },
+          {
+            "row_id": "train-333",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0758,
+            "bucket": "source_label_wrong",
+            "text": "R kya tumne to Shridevi bhi fail kar diya",
+            "hindi_text": "R क्या तुमने तो श्रीदेवी भी फेल कर दी",
+            "hindi_abuse": 0.0327,
+            "hinglish_abuse": 0.9621
+          },
+          {
+            "row_id": "train-354",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.2695,
+            "bucket": "benign_looking_insult",
+            "text": "Indian Army Kashmir ki aisii thand mein, jahan par hamesha barf ki baarish hoti hai, us barf mein hamare army 24 ghanta duty karte hain. Hamare Indian Army ko maut se darr nahi lagta, unhe thand se bhi darr nahi lagta. Lekin hamare Narendra",
+            "hindi_text": "इंडियन आर्मी कश्मीर की ऐसी ठंड में, जहां पर हमेशा बर्फ की बारिश होती है, उस बर्फ में हमारे आर्मी 24 घंटा ड्यूटी करते हैं, ,, हमारे इंडियन आर्मी को मौत से डर नही",
+            "hindi_abuse": 0.0432,
+            "hinglish_abuse": 0.9097
+          },
+          {
+            "row_id": "train-419",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0245,
+            "bucket": "source_label_wrong",
+            "text": "Meri jholi chhoti pad gayi re, itna diya meri maa ka",
+            "hindi_text": "मेरी झोली छोटी पढ़ गई रे इतना दिया मेरी माँ का",
+            "hindi_abuse": 0.0089,
+            "hinglish_abuse": 0.3642
+          },
+          {
+            "row_id": "train-420",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.3819,
+            "bucket": "benign_looking_insult",
+            "text": "Rape, sexual harassment, eve teasing, tight clothes pahana, sab kuch hota hai. Bollywood mein.",
+            "hindi_text": "रेप बलात्कार छेड़छाड़  अधनंगे कपड़े पहनना, ये सब भी होता है। बॉलीवुड में।",
+            "hindi_abuse": 0.9946,
+            "hinglish_abuse": 0.96
+          },
+          {
+            "row_id": "train-438",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.2264,
+            "bucket": "sarcasm",
+            "text": "Badega babu ki baday badtay, kya fark pata hai 😂",
+            "hindi_text": "बिगड़े बाप की बिगड़ी औलाद है क्या फर्क़ पड़ता है 😂",
+            "hindi_abuse": 0.9977,
+            "hinglish_abuse": 0.9536
+          },
+          {
+            "row_id": "train-453",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0206,
+            "bucket": "source_label_wrong",
+            "text": "Sahi kaha bhai, mujhe to call girl lag rahi hai",
+            "hindi_text": "सही कहा भाई मुझे तो call girl लग रही हैं",
+            "hindi_abuse": 0.073,
+            "hinglish_abuse": 0.0055
+          },
+          {
+            "row_id": "train-476",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.1788,
+            "bucket": "benign_looking_insult",
+            "text": "Tab to pakkay bhikh mangoge ab",
+            "hindi_text": "तब तो पक्का भीख मांगोगे अब",
+            "hindi_abuse": 0.9859,
+            "hinglish_abuse": 0.9643
+          },
+          {
+            "row_id": "train-499",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.2921,
+            "bucket": "obfuscation",
+            "text": "Is MC ko Assa-Ram jaisa pati chahiye",
+            "hindi_text": "इस mc को   आसाराम जैसा पति चाहिये",
+            "hindi_abuse": 0.9982,
+            "hinglish_abuse": 0.9513
+          },
+          {
+            "row_id": "train-540",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0419,
+            "bucket": "benign_looking_insult",
+            "text": "(•‿•) :- Saza ban jaati hai :-) Gujaraye hue wakt ki nishanien nahi jaan ke kyun (kuch wakt ke liye meherbaan hote hai log (•‿•) (●♡∀♡) 😦😦🤔🤔",
+            "hindi_text": "(•‿•) :-सजा बन जाती है          :-) गुजरे हुए वक़्त की निशानियां   न जाने क्यूं             ( कुछ वक़्त के लिए  मेहरबां होते है लोग(•‿•)   (●♡∀♡) 😦😦🤔🤔",
+            "hindi_abuse": 0.9985,
+            "hinglish_abuse": 0.9988
+          },
+          {
+            "row_id": "train-579",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.3595,
+            "bucket": "benign_looking_insult",
+            "text": "Tum bhowkte rehho, aayega toh Modi he",
+            "hindi_text": "तुम भौंकते रहो  आयेगा तो  मोदी ही",
+            "hindi_abuse": 0.9989,
+            "hinglish_abuse": 0.9904
+          },
+          {
+            "row_id": "train-647",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.2659,
+            "bucket": "benign_looking_insult",
+            "text": "Jab Shri Ram Janmabhoomi ka faisla Supreme Court me latka hua tha tab to ek baar bhi Ayodhya nahi gaye, to ab ye naatak kyun. 😏😏",
+            "hindi_text": "जब श्री रामजन्मभूमि का फैसला सुप्रीम कोर्ट में लटका हुआ था तब तो एक बार भी अयोध्या नहीं गये, तो अब ये नौटंकी क्यों। 😏😏",
+            "hindi_abuse": 0.9823,
+            "hinglish_abuse": 0.9591
+          },
+          {
+            "row_id": "train-666",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0367,
+            "bucket": "source_label_wrong",
+            "text": "Itna bada toh bahut chhota hai aur bada hona chahiye",
+            "hindi_text": "इतना बड़ा तो बहुत छोटा है और बड़ा होना चाहिए",
+            "hindi_abuse": 0.0947,
+            "hinglish_abuse": 0.0366
+          },
+          {
+            "row_id": "train-930",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0174,
+            "bucket": "benign_looking_insult",
+            "text": "Ye sahi baat hai, yeh harakatein tobi hoti hai jab mamma ghar par nahi hai 😜😜😜😜",
+            "hindi_text": "सही बात है ये हरकते तभी होती है जब मम्मा घर पर nhi हो 😜😜😜😜",
+            "hindi_abuse": 0.9667,
+            "hinglish_abuse": 0.9873
+          },
+          {
+            "row_id": "train-972",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0905,
+            "bucket": "source_label_wrong",
+            "text": "Itta jhoot bhi kahi chalta kya......hamare dil par kya beet rahi hogi ye tumhare baate sunker......😥",
+            "hindi_text": "इत्ता झूट भी कही चलता क्या......हमारे दिल पर क्या बीत रही होगी ये तुम्हारी बाते सुनकर......😥",
+            "hindi_abuse": 0.0123,
+            "hinglish_abuse": 0.0202
+          },
+          {
+            "row_id": "train-1179",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.2973,
+            "bucket": "sarcasm",
+            "text": "Kanto bhare raaste pe koi aapka saath dega...?😜😜😜😜 Pati/patni, bhai/bahan, premee/dost - ji nahin yaad rakhna... Ekmatra aapki chappal saath degi...! Har baar emotional hone ki zaroorat nahin, kabhi practically bhi socha karo!! 😂😂😂😂😂😂",
+            "hindi_text": "कांटो भरे रास्ते पे कौन आपका साथ देगा...?😜😜😜😜 पति / पत्नी  भाई / बहन  प्रेमी / दोस्त - जी नहीं याद रखना.. एकमात्र आपकी चप्पल साथ देगी...! हर बार emotional होने ",
+            "hindi_abuse": 0.9821,
+            "hinglish_abuse": 0.8503
+          },
+          {
+            "row_id": "train-1451",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.3477,
+            "bucket": "benign_looking_insult",
+            "text": "Ye jo tum kar rahe ho, ham log 10 saal pehle karke chhod diya.",
+            "hindi_text": "यह जो तुम कर रहे हो हम लोग 10 साल पहले करके छोड़ दिया",
+            "hindi_abuse": 0.0235,
+            "hinglish_abuse": 0.9813
+          },
+          {
+            "row_id": "train-1583",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.2512,
+            "bucket": "benign_looking_insult",
+            "text": "Take it slow slow, le le pani mein!",
+            "hindi_text": "पानी में ले ले जरा धीरे धीरे से लेना",
+            "hindi_abuse": 0.9141,
+            "hinglish_abuse": 0.8726
+          },
+          {
+            "row_id": "train-1663",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0278,
+            "bucket": "source_label_wrong",
+            "text": "Kisi ki chahat pe zinda rehne wale hum na the; kisi par mar mitne wale hum na the; adat si pad gayi, tumhe yad karne ki; varna kisi ko yad karne wale hum na the. Kisi ki chahat pe zinda rehne wale hum na the; kisi par mar mitne wale hum na ",
+            "hindi_text": "किसी की चाहत पे ज़िंदा रहने वाले हम ना थे; किसी पर मर मिटने वाले हम ना थे; आदत सी पड़ गयी, तुम्हे याद करने की; वरना किसी को याद करने वाले हम ना थे.किसी की चाहत पे",
+            "hindi_abuse": 0.028,
+            "hinglish_abuse": 0.978
+          },
+          {
+            "row_id": "train-1750",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.3875,
+            "bucket": "benign_looking_insult",
+            "text": "Snake ko kitna bhi doodh pilaa do, dusanaa nahi chhoda, yahi hai hal in mahaa-gathbandhan walo ka hai. Jay Shri Ram 🚩🚩",
+            "hindi_text": "सांप को कितना भी दूध पिला दो डसना नहीं छोड़ता यही हाल इन महागठजोड़ वालों का है। जय श्रीराम🚩🚩",
+            "hindi_abuse": 0.9985,
+            "hinglish_abuse": 0.9632
+          },
+          {
+            "row_id": "train-1882",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0699,
+            "bucket": "source_label_wrong",
+            "text": "Main to pagal hoon, to bolti rehti hoon, tumhara man hota tabhi tum jawab dete ho.",
+            "hindi_text": "मैं तो पागल हूं तो बोलती रहती हूं तुम्हारा मन होता तभी तुम जवाब देते हो",
+            "hindi_abuse": 0.0315,
+            "hinglish_abuse": 0.013
+          },
+          {
+            "row_id": "train-2243",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.3311,
+            "bucket": "benign_looking_insult",
+            "text": "Namaste app ki size kya hai, niche aur upar ka?",
+            "hindi_text": "नमस्ते app ki size  kya hai नीचे और ऊपर का",
+            "hindi_abuse": 0.9844,
+            "hinglish_abuse": 0.9873
+          },
+          {
+            "row_id": "train-2456",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0112,
+            "bucket": "benign_looking_insult",
+            "text": "Aapki shaadi hui kya nahi.",
+            "hindi_text": "आपकि शादी हूवि कय नहि",
+            "hindi_abuse": 0.9738,
+            "hinglish_abuse": 0.9827
+          },
+          {
+            "row_id": "train-2495",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.1122,
+            "bucket": "benign_looking_insult",
+            "text": "Gulaabo ko injury kaise lag gayi... kya koi responsibility nahi hai? 🐰",
+            "hindi_text": "🙄गुलाबो को चोट कैसे लग गयी🤔....🐰",
+            "hindi_abuse": 0.9959,
+            "hinglish_abuse": 0.9967
+          },
+          {
+            "row_id": "train-2555",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.2729,
+            "bucket": "benign_looking_insult",
+            "text": "Ye peed RBI se paani leta hai, zhandu!",
+            "hindi_text": "ये पेड़ rbi से पानी लेता है झंडू",
+            "hindi_abuse": 0.0611,
+            "hinglish_abuse": 0.0101
+          },
+          {
+            "row_id": "train-2651",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0147,
+            "bucket": "source_label_wrong",
+            "text": "We're going later to talk, going to the washroom to take a bath, also need to worship, need to bring a little stuff from market for friend's home.",
+            "hindi_text": "हम बाद में बात करते हैं वॉशरूम में नहाने जा रहे हैं पूजा भी करनी है  थोड़ा सामान लाना है मार्केट से   फ्रेंड के घर के लिए",
+            "hindi_abuse": 0.0317,
+            "hinglish_abuse": 0.0056
+          },
+          {
+            "row_id": "train-2741",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.1483,
+            "bucket": "source_label_wrong",
+            "text": "Then only ocean mein paani ki kami nahi hoti kyunki koi kuch nahi kar raha hai",
+            "hindi_text": "तभी तो समंदर में पानी की कमी नहीं होती क्योंकि आंसू बहा रहा है कोई",
+            "hindi_abuse": 0.0151,
+            "hinglish_abuse": 0.9788
+          },
+          {
+            "row_id": "train-3045",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0138,
+            "bucket": "source_label_wrong",
+            "text": "When your blood relatives themselves don't spare you, then what's the fate of those who are related to your heart.",
+            "hindi_text": "जब आप के खून के रिश्तेदार मच्छरों भी नही छोड़ते। तो बेचारे दिल के रिश्तेदारों की क्या बिसात",
+            "hindi_abuse": 0.0496,
+            "hinglish_abuse": 0.009
+          },
+          {
+            "row_id": "train-3087",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0093,
+            "bucket": "source_label_wrong",
+            "text": "Here is the rewritten Hinglish line:",
+            "hindi_text": "🌹🙏🌹🎂 जय हो बाबा रामदेव रूणेचा रा सरकार 🎂🌹🙏🌹",
+            "hindi_abuse": 0.0043,
+            "hinglish_abuse": 0.0092
+          },
+          {
+            "row_id": "train-3184",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.022,
+            "bucket": "source_label_wrong",
+            "text": "Bro Ramdev Baba ki chela hai kya?",
+            "hindi_text": "भाई रामदेव बाबा की चेली है क्या",
+            "hindi_abuse": 0.0328,
+            "hinglish_abuse": 0.975
+          },
+          {
+            "row_id": "train-3268",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.4478,
+            "bucket": "benign_looking_insult",
+            "text": "Sarman nahi aayi. Ha tujhe sarman nahi aayi",
+            "hindi_text": "सरम नहीं आई।  हा तुझे सरम नहीं आई",
+            "hindi_abuse": 0.9983,
+            "hinglish_abuse": 0.9569
+          },
+          {
+            "row_id": "train-3296",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0467,
+            "bucket": "source_label_wrong",
+            "text": "How to reduce or increase weight, ask me how: 👉 <number>",
+            "hindi_text": "वजन घटाएं या बढ़ाएं पूछिए कैसे:  👉  <number> ",
+            "hindi_abuse": 0.018,
+            "hinglish_abuse": 0.0131
+          },
+          {
+            "row_id": "train-3623",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0597,
+            "bucket": "source_label_wrong",
+            "text": "Mast saman hai yaar",
+            "hindi_text": "मस्त समान है यार",
+            "hindi_abuse": 0.0338,
+            "hinglish_abuse": 0.1158
+          },
+          {
+            "row_id": "train-3714",
+            "label": 0,
+            "pred": 1,
+            "p_abuse": 0.0101,
+            "bucket": "source_label_wrong",
+            "text": "Here is the rewritten Hinglish line:",
+            "hindi_text": "जहानुम से हो",
+            "hindi_abuse": 0.0064,
+            "hinglish_abuse": 0.0092
+          }
+        ],
+        "fp": [
+          {
+            "row_id": "train-13",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.8247,
+            "bucket": "sarcasm",
+            "text": "Tumhare peechey padhe hain, bahut saare namune hai. Kisiko toh friend request accept karo 😂😂😂😂🤣😂😀😀😀😁😁",
+            "hindi_text": "तुम्हारे पीछे पड़े हैं  बहुत सारे नमूने हैं   किसी का तो फ्रेंड रिक्वेस्ट एक्सेप्ट कर लो😂😂😂😂🤣😂😀😀😀😁😁",
+            "hindi_abuse": 0.0098,
+            "hinglish_abuse": 0.7099
+          },
+          {
+            "row_id": "train-21",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9901,
+            "bucket": "source_label_wrong",
+            "text": "Aapne sahi kaha. DNA test karke har ek Bharat me haraam ki kamai wale haraamkhore ko nikalna chahiye.",
+            "hindi_text": "आपने सही कहा।डीएनए जांच करके एक एक भारत में हराम की कमाई खाते पड़े हरामखोर को निकालना चाहिए।",
+            "hindi_abuse": 0.9976,
+            "hinglish_abuse": 0.9774
+          },
+          {
+            "row_id": "train-53",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.8654,
+            "bucket": "false_positive_other",
+            "text": "Aajad desh Bharat me jitni mehila aajad hai. Sayad duniya me kahin nahi hogi. Bas farak itna hai ki ameer ghar se lekar office tak har jagah aajad hai. Aur wahi gareeb inki zuthan saaf karna se lekar lateeing bathroom saaf karte gulam hai. ",
+            "hindi_text": "🙏🙏आजाद देश भारत मे जितनी महीलाऐ आजाद हैं।सायद दूनिया मे कही नही होगीं।बस फर्क इतना है। कि अमीर घऱ से लेकर ओफिस तक हर जगह आजाद है।और वही गरीब इनकी झुठन साफ करने ",
+            "hindi_abuse": 0.0048,
+            "hinglish_abuse": 0.9956
+          },
+          {
+            "row_id": "train-138",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.8158,
+            "bucket": "false_positive_other",
+            "text": "Inke video banane se pehle kapde toh badal lete",
+            "hindi_text": "कपड़े तो बदल देता ईनके विडियो बनाने से पहले",
+            "hindi_abuse": 0.0131,
+            "hinglish_abuse": 0.9517
+          },
+          {
+            "row_id": "train-177",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9612,
+            "bucket": "false_positive_other",
+            "text": "Doodh ka doodh, paani ka paani 😄😄",
+            "hindi_text": "दूध का दूध पानी का पानी 😄😄",
+            "hindi_abuse": 0.0207,
+            "hinglish_abuse": 0.5866
+          },
+          {
+            "row_id": "train-210",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9135,
+            "bucket": "false_positive_other",
+            "text": "Jhandwale, tum swadeshie bano! Tum HMT ki ghadi peheno, jabki Modi 2 lakh ki Movado pehenta hai! Tum fast-track ke chashme peheno, woh Bulgari pehenta hai! Tum bajaj ka scooter chalao, woh 13 crore ki car mein ghumta hai! Baaki dil pe mat l",
+            "hindi_text": "झंडभक्तो.. तुम स्वदेशी बनो.! तुम HMT की घड़ी पहनो, हालांकि मोदी 2 लाख की मोवाडो पहनता है.! तुम फास्ट-ट्रैक के चश्मे पहनो, वो बुल्गरी पहनता है.! तुम बजाज का स्कू",
+            "hindi_abuse": 0.03,
+            "hinglish_abuse": 0.0265
+          },
+          {
+            "row_id": "train-233",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9946,
+            "bucket": "false_positive_other",
+            "text": "Sexy dik rahi ho",
+            "hindi_text": "सेक्सी दिक रही हो",
+            "hindi_abuse": 0.0466,
+            "hinglish_abuse": 0.0334
+          },
+          {
+            "row_id": "train-254",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.7358,
+            "bucket": "false_positive_other",
+            "text": "Abhi aap bahut chhote ho, bacche, mummy papa mana nahi karte aisi video banane ke liye. Padhai par dhyan do, abhi aapki age nahi hai, ye galat hai beta, shame karo please.",
+            "hindi_text": "अभी बहुत छोटे हो आप बच्चे mummy Papa मना नहीं करते ऐसी वीडियो बनाने के लिए पढ़ाई पर ध्यान दो अभी आपकी age नही है ये गलत है बेटा  शर्म करो please",
+            "hindi_abuse": 0.0143,
+            "hinglish_abuse": 0.9358
+          },
+          {
+            "row_id": "train-260",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9852,
+            "bucket": "source_label_wrong",
+            "text": "Jo bhonkti hai, India me sukon nahi hai, aazadi bhi nahi hai. Aankhen phad ke dekh lo ke halat kya hai wahan. Ab soch lo, India jaise mauj kahi nahi milegi jo khaati ho yahan ki gaati ho Pakistan ki 🤔🤔🚩🚩⚔️🔱🚩🚩",
+            "hindi_text": "जो भोंकती है इंडिया मे सुकून आज़ादी नही है आँखें फाड़ के देख लो क्या हालात है  वहाँ   के अब सोच लो इंडिया जैसी मौज कही नहीं पाओगी जो खाती हो यहाँ की गाती हो पाक",
+            "hindi_abuse": 0.9954,
+            "hinglish_abuse": 0.9894
+          },
+          {
+            "row_id": "train-282",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9191,
+            "bucket": "false_positive_other",
+            "text": "Kunsa band? Kaisa band? Aise fake political andolanwale logo ke kahne par main apne shirt ke button bhi nahi band karta 😠",
+            "hindi_text": "कौन सा बन्द? कैसा बन्द? ऐसे फर्जी राजनीतिक आंदोलनकारियों के कहने पर मैं तो अपने शर्ट के बटन तक न बन्द करूँ😠",
+            "hindi_abuse": 0.0168,
+            "hinglish_abuse": 0.9903
+          },
+          {
+            "row_id": "train-349",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.964,
+            "bucket": "false_positive_other",
+            "text": "Aapka ye bayaan bilkul galat hai 99% cases fake hai",
+            "hindi_text": "आपका ये बयान बिलकुल गलत है 99% केस फर्जी है",
+            "hindi_abuse": 0.0097,
+            "hinglish_abuse": 0.9862
+          },
+          {
+            "row_id": "train-353",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.99,
+            "bucket": "false_positive_other",
+            "text": "100 crore chor ke ghar bhasa lete, tekoay",
+            "hindi_text": "100,कोटी,चोरुन,घरी बसा लेत,तेकाय",
+            "hindi_abuse": 0.0047,
+            "hinglish_abuse": 0.8629
+          },
+          {
+            "row_id": "train-386",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.98,
+            "bucket": "source_label_wrong",
+            "text": "Kutta ne bandar ke bacche ko mar dalua toh sabhi vanarsenane meeting bulai aur usme khun ka badla khun sab kahne lage toh mukhiya vanar ne kahya ab din ho ya raat bas kutto ko chun chun kar marne hai tab se ye tapori gang ke beech me gangwa",
+            "hindi_text": "कुत्ते ने बंदर के बच्चे को मार डाला तो सारी वानरसेनाने मीटींग बुलाइ और उसमे खून का बदला खून सब कहने लगे तो मुखिया वानर ने कहाँ अब दिन हो या रात बस कुत्तो को चुन",
+            "hindi_abuse": 0.9815,
+            "hinglish_abuse": 0.9974
+          },
+          {
+            "row_id": "train-393",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9951,
+            "bucket": "obfuscation",
+            "text": "Tum amma se bola dena, baccho logon Ramphal ke jhad phelte hain, amma thodi si chutwana dena bol dena",
+            "hindi_text": "तुम अम्मा से बोला देना बच्चे लोगों रामफल के झाड़ खेलते हैं अम्मा थोड़ी सी छटवा देना बोल देना",
+            "hindi_abuse": 0.0882,
+            "hinglish_abuse": 0.9992
+          },
+          {
+            "row_id": "train-462",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.8358,
+            "bucket": "obfuscation",
+            "text": "Ek gaon me bijli aane wali thi... log khush hone se nache lage! Ek kutta bhi nache laga...! Kisi ne pucha: tu kyun naach raha hai...? Kutta bola: kambey to lagenge bhi yaar 😜😂",
+            "hindi_text": "एक गाँव में बिजली आनी थी... लोग खुश होकर नाच रहे थे! एक कुत्ता भी नाचने लगा..!  किसी ने पूछा: तू क्यूँ नाच रहा है...? कुत्ता बोला: खंबे भी तो लगेंगे🤓🤓😂🤓🤓",
+            "hindi_abuse": 0.0187,
+            "hinglish_abuse": 0.9908
+          },
+          {
+            "row_id": "train-470",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.6966,
+            "bucket": "false_positive_other",
+            "text": "Asmaan jitna neela hai, surajmukhi jitna peela hai, paani jitna gila hai, aapka screw utna hi loose hai. 😄😄😃🙈🙈😍😍",
+            "hindi_text": "आसमान जितना नीला है, सूरजमुखी जितना पीला है, पानी जितना गीला है, आपका स्क्रू उतना ही ढीला है।😀😀😃🙊🙈🙈😍😍😍",
+            "hindi_abuse": 0.9279,
+            "hinglish_abuse": 0.0462
+          },
+          {
+            "row_id": "train-491",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.5286,
+            "bucket": "false_positive_other",
+            "text": "Ab na shikwa na gila, na koi malaal raha sitam unke bhi be-misal raha, sabr apna bhi kamal raha",
+            "hindi_text": "अब ना शिकवा ना गिला     न कोई मलाल रहा सितम उनके भी बेमिसाल रहे  सब्र अपना भी कमाल रहा",
+            "hindi_abuse": 0.0097,
+            "hinglish_abuse": 0.0205
+          },
+          {
+            "row_id": "train-504",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9938,
+            "bucket": "obfuscation",
+            "text": "Gandey paani meh naha ke to khujli ho jayega",
+            "hindi_text": "खुजली हो जाएगा गंदा पानी में नहाने से",
+            "hindi_abuse": 0.0205,
+            "hinglish_abuse": 0.6558
+          },
+          {
+            "row_id": "train-520",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.5329,
+            "bucket": "sarcasm",
+            "text": "Jis hotel me saree peke bina jana nahi hai waha bharatiya khana bane se roko, jab saree nahi pehne se nahi a sakte to bharatiya taste bhi nahi banane denge. Or bharatiya logo ko koi mat jana hotel dekho kitna band hota hai 🤣🤣 Or hotel walo ",
+            "hindi_text": "जिस होटल मे साड़ी पहन कर  नहीं जाना है वहा भारतीय  खाना बने से रोको बोलो ज़ब साड़ी  पहन कर नहीं आ सकते तो भारतीय टिस भी नहीं बनाने देंगे और भारतीय  लोगो भी कोई मत ",
+            "hindi_abuse": 0.0219,
+            "hinglish_abuse": 0.0321
+          },
+          {
+            "row_id": "train-553",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.6709,
+            "bucket": "caste_religious",
+            "text": "Nahi gunda raj, nahi corruption, pura majority ke BJP sarkar",
+            "hindi_text": "न गुंडा राज न भ्रष्टाचार पूर्ण बहुमत की भाजपा सरकार",
+            "hindi_abuse": 0.0096,
+            "hinglish_abuse": 0.9979
+          },
+          {
+            "row_id": "train-558",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9946,
+            "bucket": "false_positive_other",
+            "text": "Sharam a gayi kya?",
+            "hindi_text": "शरमा गई का",
+            "hindi_abuse": 0.0151,
+            "hinglish_abuse": 0.816
+          },
+          {
+            "row_id": "train-609",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9315,
+            "bucket": "false_positive_other",
+            "text": "School band hai, but darru ki dukaan khuli hai, desh terki kar raha hai, bacche anpadh ho raha hai",
+            "hindi_text": "स्कूल बंद है दारू की दुकान खुली है देश तरकी कर रहा है बच्चे अनपढ़ हो रहे",
+            "hindi_abuse": 0.7044,
+            "hinglish_abuse": 0.0315
+          },
+          {
+            "row_id": "train-611",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.6545,
+            "bucket": "false_positive_other",
+            "text": "Bacche se kabhie joke na karo, bacche ko gussa a jata hai",
+            "hindi_text": "बच्चे से कभी मजाक नहीं करना चाहिए बच्चे को गुस्सा आ जाता है",
+            "hindi_abuse": 0.0177,
+            "hinglish_abuse": 0.0205
+          },
+          {
+            "row_id": "train-638",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.8696,
+            "bucket": "false_positive_other",
+            "text": "Un logo ne jnan arjit ki ye to desh vikreta hai. Vaise bhi aapko batadu ghar nahi chhoda chudaya gaya tha",
+            "hindi_text": "उन लोंगो ज्ञान अर्जित की ये तो देश विक्रेता है । वैसे भी आपको बता दु घर नही छोड़ा छुड़ाया गया था",
+            "hindi_abuse": 0.008,
+            "hinglish_abuse": 0.033
+          },
+          {
+            "row_id": "train-689",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9728,
+            "bucket": "source_label_wrong",
+            "text": "Bhagwan tere dhande ko aur badhaye",
+            "hindi_text": "भगवान तेरे धंधे को और बढ़ाएं",
+            "hindi_abuse": 0.97,
+            "hinglish_abuse": 0.0054
+          },
+          {
+            "row_id": "train-694",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.5891,
+            "bucket": "false_positive_other",
+            "text": "Pahle gane ko fir ek expression ke saath video banao",
+            "hindi_text": "पहले गाने को फिर एक एक्सप्रेशन के साथ वीडियो banao",
+            "hindi_abuse": 0.0075,
+            "hinglish_abuse": 0.0269
+          },
+          {
+            "row_id": "train-729",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9309,
+            "bucket": "false_positive_other",
+            "text": "Tension mat le Pakistan ki kutte, sher ghaayal hua hai aur ghaayal sher bahut khateranak hota hai King kohali",
+            "hindi_text": "टेंशन मत ले पाकिस्तानी कुत्ते शेर घायल हुआ है और घायल शेर बहुत खतरनाक होता है King kohali",
+            "hindi_abuse": 0.0239,
+            "hinglish_abuse": 0.2622
+          },
+          {
+            "row_id": "train-736",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.7472,
+            "bucket": "false_positive_other",
+            "text": "Aapke hone wala dekho toh bohot maza aata hai",
+            "hindi_text": "आपके होंठ देखने में बहुत मजा आता है",
+            "hindi_abuse": 0.009,
+            "hinglish_abuse": 0.9846
+          },
+          {
+            "row_id": "train-741",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9637,
+            "bucket": "source_label_wrong",
+            "text": "Dekh te hi reh gaye Saniya ke sasural wale, final me pahuch gaya Dhawan ke saale 😎😎😂😂",
+            "hindi_text": "देख ते ही रह गए सानिया के ससुराल वाले ,फाइनल में पहुंच गए धवन के साले 😎😎😂😂",
+            "hindi_abuse": 0.9678,
+            "hinglish_abuse": 0.9737
+          },
+          {
+            "row_id": "train-757",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.8038,
+            "bucket": "false_positive_other",
+            "text": "Kya sexy dikh raha hai jaanu",
+            "hindi_text": "काय सेक्सी दिसतेस जानु",
+            "hindi_abuse": 0.0415,
+            "hinglish_abuse": 0.5374
+          },
+          {
+            "row_id": "train-822",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9908,
+            "bucket": "false_positive_other",
+            "text": "Ye drunkard wala gadi chalate hoga.",
+            "hindi_text": "शराब पीकर गाड़ी चलाते होगे।",
+            "hindi_abuse": 0.0065,
+            "hinglish_abuse": 0.9958
+          },
+          {
+            "row_id": "train-1342",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9812,
+            "bucket": "obfuscation",
+            "text": "Ek baar aake dekha, saath land kitna bada rhta hai, tera ko maza aa jata daru peekar.",
+            "hindi_text": "एक बार आकर देख साथ लैंड कितना बड़ा रहता है तेरे को मजा आ जाता दारू पीकर",
+            "hindi_abuse": 0.6091,
+            "hinglish_abuse": 0.2697
+          },
+          {
+            "row_id": "train-1419",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.6727,
+            "bucket": "sarcasm",
+            "text": "Punha video duet kela...banav...te porega nus tanche dole pusatya na paani na bhaav...abhinay...neet paha re bhaavano",
+            "hindi_text": "पण हा विडीयो डुएट केलाय .....बनाव.....ते पोरगं नुसतंच डोळे पुसतंय ना पानी ना भाव...अभिनय...नीट पहा रे भावांनो",
+            "hindi_abuse": 0.0152,
+            "hinglish_abuse": 0.9741
+          },
+          {
+            "row_id": "train-1839",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9195,
+            "bucket": "obfuscation",
+            "text": "Ye soch-samaji chaalbaazi hai, koi rail ki patti mein kutte ko kyun band karega, aur koi jab bachane jaayege to phir an waqt par koi video kaise suit kar lega.",
+            "hindi_text": "ये सोची-समझी चालबाजी है, कोई रेल की पटरी में कुत्ते को क्यों बांधेगा,और कोई जब बचाने जायेगा तभी ऐन वक्त पर कोई विडियो कैसे सूट कर लेगा।",
+            "hindi_abuse": 0.441,
+            "hinglish_abuse": 0.9875
+          },
+          {
+            "row_id": "train-1986",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.8531,
+            "bucket": "false_positive_other",
+            "text": "She toh khud kar leti hai, hum thodi bolte the karne ke liye.",
+            "hindi_text": "वह तो खुद कर लेती हैं हम थोड़ी बोले थे करने के लिए",
+            "hindi_abuse": 0.0114,
+            "hinglish_abuse": 0.9532
+          },
+          {
+            "row_id": "train-2047",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.7068,
+            "bucket": "false_positive_other",
+            "text": "Kitne baar China ko chod diya",
+            "hindi_text": "चीन को कीत़नी बार छोड़ा",
+            "hindi_abuse": 0.0188,
+            "hinglish_abuse": 0.999
+          },
+          {
+            "row_id": "train-2290",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.6353,
+            "bucket": "false_positive_other",
+            "text": "Orangabad la kuch nahi kar raha",
+            "hindi_text": "औरंगाबाद ला काय काम करता",
+            "hindi_abuse": 0.005,
+            "hinglish_abuse": 0.9971
+          },
+          {
+            "row_id": "train-2373",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.6223,
+            "bucket": "false_positive_other",
+            "text": "Gadi wale ko pakadne ka tha",
+            "hindi_text": "गाडी वाले को पकड ने का था",
+            "hindi_abuse": 0.0116,
+            "hinglish_abuse": 0.9761
+          },
+          {
+            "row_id": "train-2529",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9339,
+            "bucket": "obfuscation",
+            "text": "Chhota wala ped narial ka DJ doggi kutta ka bachcha baitha hai.",
+            "hindi_text": "छोटा वाला पेड़ नारियल का डीजे डॉगी कुत्ता का बच्चा बैठा है",
+            "hindi_abuse": 0.0157,
+            "hinglish_abuse": 0.9782
+          },
+          {
+            "row_id": "train-2725",
+            "label": 1,
+            "pred": 0,
+            "p_abuse": 0.9424,
+            "bucket": "sarcasm",
+            "text": "Dekho bhakto! TV mat tod dena kal ke gussay mein!!! Todna hai to radio tod. Saste bhi hain aur man ki baat bhi karte hain. 😂😂😂😂",
+            "hindi_text": "देखो भक्तो! कल के गुस्से में TV मत तोड़ देना !!!   तोड़ना है तो रेडियो तोड़ो। सस्ते भी हैं और मन की बात भी करते हैं। 😂😂😂😂",
+            "hindi_abuse": 0.0162,
+            "hinglish_abuse": 0.0129
+          }
+        ]
+      },
+      "bucket_samples": {
+        "sarcasm": [
+          {
+            "row_id": "train-13",
+            "error": "fp",
+            "text": "Tumhare peechey padhe hain, bahut saare namune hai. Kisiko toh friend request accept karo 😂😂😂😂🤣😂😀😀😀😁😁",
+            "p_abuse": 0.8247
+          },
+          {
+            "row_id": "train-438",
+            "error": "fn",
+            "text": "Badega babu ki baday badtay, kya fark pata hai 😂",
+            "p_abuse": 0.2264
+          },
+          {
+            "row_id": "train-520",
+            "error": "fp",
+            "text": "Jis hotel me saree peke bina jana nahi hai waha bharatiya khana bane se roko, jab saree nahi pehne se nahi a sakte to bharatiya taste bhi nahi banane denge. Or bharatiya logo ko koi mat jana hotel dek",
+            "p_abuse": 0.5329
+          },
+          {
+            "row_id": "train-1179",
+            "error": "fn",
+            "text": "Kanto bhare raaste pe koi aapka saath dega...?😜😜😜😜 Pati/patni, bhai/bahan, premee/dost - ji nahin yaad rakhna... Ekmatra aapki chappal saath degi...! Har baar emotional hone ki zaroorat nahin, kabhi p",
+            "p_abuse": 0.2973
+          },
+          {
+            "row_id": "train-1419",
+            "error": "fp",
+            "text": "Punha video duet kela...banav...te porega nus tanche dole pusatya na paani na bhaav...abhinay...neet paha re bhaavano",
+            "p_abuse": 0.6727
+          },
+          {
+            "row_id": "train-2725",
+            "error": "fp",
+            "text": "Dekho bhakto! TV mat tod dena kal ke gussay mein!!! Todna hai to radio tod. Saste bhi hain aur man ki baat bhi karte hain. 😂😂😂😂",
+            "p_abuse": 0.9424
+          },
+          {
+            "row_id": "train-3626",
+            "error": "fp",
+            "text": "Chappal choti ho jaaye to paon mein nahi aati; wah wah! Chappal choti ho jaaye to paon mein nahi aati; aur girlfriend moti ho jaaye to baahon mein nahi aati. 😜😜😜",
+            "p_abuse": 0.5308
+          },
+          {
+            "row_id": "train-6587",
+            "error": "fp",
+            "text": "Election aayee hai to bharti nikal rahi hai. Chunaav khatam bharti radd 🤣🤣🤣",
+            "p_abuse": 0.9055
+          }
+        ],
+        "source_label_wrong": [
+          {
+            "row_id": "train-21",
+            "error": "fp",
+            "text": "Aapne sahi kaha. DNA test karke har ek Bharat me haraam ki kamai wale haraamkhore ko nikalna chahiye.",
+            "p_abuse": 0.9901
+          },
+          {
+            "row_id": "train-70",
+            "error": "fn",
+            "text": "Aapke maang me sindoor bhi nazar a raha hai.",
+            "p_abuse": 0.0607
+          },
+          {
+            "row_id": "train-171",
+            "error": "fn",
+            "text": "Dil hi dil kahan hai ab, seese se bhi nazuk hota tha par dil laganewale pattaar ban gaya hai",
+            "p_abuse": 0.0155
+          },
+          {
+            "row_id": "train-238",
+            "error": "fn",
+            "text": "10 rupaye ki Pepsi Aayar bhai sexy 😅😂",
+            "p_abuse": 0.0878
+          },
+          {
+            "row_id": "train-243",
+            "error": "fn",
+            "text": "Ab hamari keyu aaye, ab to tum se hi maza le rahi ho ge 💔💔👏",
+            "p_abuse": 0.0272
+          },
+          {
+            "row_id": "train-260",
+            "error": "fp",
+            "text": "Jo bhonkti hai, India me sukon nahi hai, aazadi bhi nahi hai. Aankhen phad ke dekh lo ke halat kya hai wahan. Ab soch lo, India jaise mauj kahi nahi milegi jo khaati ho yahan ki gaati ho Pakistan ki 🤔",
+            "p_abuse": 0.9852
+          },
+          {
+            "row_id": "train-333",
+            "error": "fn",
+            "text": "R kya tumne to Shridevi bhi fail kar diya",
+            "p_abuse": 0.0758
+          },
+          {
+            "row_id": "train-386",
+            "error": "fp",
+            "text": "Kutta ne bandar ke bacche ko mar dalua toh sabhi vanarsenane meeting bulai aur usme khun ka badla khun sab kahne lage toh mukhiya vanar ne kahya ab din ho ya raat bas kutto ko chun chun kar marne hai ",
+            "p_abuse": 0.98
+          }
+        ],
+        "false_positive_other": [
+          {
+            "row_id": "train-53",
+            "error": "fp",
+            "text": "Aajad desh Bharat me jitni mehila aajad hai. Sayad duniya me kahin nahi hogi. Bas farak itna hai ki ameer ghar se lekar office tak har jagah aajad hai. Aur wahi gareeb inki zuthan saaf karna se lekar ",
+            "p_abuse": 0.8654
+          },
+          {
+            "row_id": "train-138",
+            "error": "fp",
+            "text": "Inke video banane se pehle kapde toh badal lete",
+            "p_abuse": 0.8158
+          },
+          {
+            "row_id": "train-177",
+            "error": "fp",
+            "text": "Doodh ka doodh, paani ka paani 😄😄",
+            "p_abuse": 0.9612
+          },
+          {
+            "row_id": "train-210",
+            "error": "fp",
+            "text": "Jhandwale, tum swadeshie bano! Tum HMT ki ghadi peheno, jabki Modi 2 lakh ki Movado pehenta hai! Tum fast-track ke chashme peheno, woh Bulgari pehenta hai! Tum bajaj ka scooter chalao, woh 13 crore ki",
+            "p_abuse": 0.9135
+          },
+          {
+            "row_id": "train-233",
+            "error": "fp",
+            "text": "Sexy dik rahi ho",
+            "p_abuse": 0.9946
+          },
+          {
+            "row_id": "train-254",
+            "error": "fp",
+            "text": "Abhi aap bahut chhote ho, bacche, mummy papa mana nahi karte aisi video banane ke liye. Padhai par dhyan do, abhi aapki age nahi hai, ye galat hai beta, shame karo please.",
+            "p_abuse": 0.7358
+          },
+          {
+            "row_id": "train-282",
+            "error": "fp",
+            "text": "Kunsa band? Kaisa band? Aise fake political andolanwale logo ke kahne par main apne shirt ke button bhi nahi band karta 😠",
+            "p_abuse": 0.9191
+          },
+          {
+            "row_id": "train-349",
+            "error": "fp",
+            "text": "Aapka ye bayaan bilkul galat hai 99% cases fake hai",
+            "p_abuse": 0.964
+          }
+        ],
+        "benign_looking_insult": [
+          {
+            "row_id": "train-128",
+            "error": "fn",
+            "text": "Das saal me uska shirt be nahi pata, budhha abhi nahi hua, aur bacche bade ho gaye. Das saal baad bhi uska shirt wahi ka wahi hai.",
+            "p_abuse": 0.0552
+          },
+          {
+            "row_id": "train-193",
+            "error": "fn",
+            "text": "Thokar khaate hain aur muskurate hain, is dil ko sabr karna sikhate hain. Ham dar se leke bhi logo ko yaad karte hain aur logo dar deke bhi logo ko bhool jate hain.",
+            "p_abuse": 0.0167
+          },
+          {
+            "row_id": "train-221",
+            "error": "fn",
+            "text": "Budhape me pahle hi haddi nahi judti",
+            "p_abuse": 0.3283
+          },
+          {
+            "row_id": "train-354",
+            "error": "fn",
+            "text": "Indian Army Kashmir ki aisii thand mein, jahan par hamesha barf ki baarish hoti hai, us barf mein hamare army 24 ghanta duty karte hain. Hamare Indian Army ko maut se darr nahi lagta, unhe thand se bh",
+            "p_abuse": 0.2695
+          },
+          {
+            "row_id": "train-420",
+            "error": "fn",
+            "text": "Rape, sexual harassment, eve teasing, tight clothes pahana, sab kuch hota hai. Bollywood mein.",
+            "p_abuse": 0.3819
+          },
+          {
+            "row_id": "train-476",
+            "error": "fn",
+            "text": "Tab to pakkay bhikh mangoge ab",
+            "p_abuse": 0.1788
+          },
+          {
+            "row_id": "train-540",
+            "error": "fn",
+            "text": "(•‿•) :- Saza ban jaati hai :-) Gujaraye hue wakt ki nishanien nahi jaan ke kyun (kuch wakt ke liye meherbaan hote hai log (•‿•) (●♡∀♡) 😦😦🤔🤔",
+            "p_abuse": 0.0419
+          },
+          {
+            "row_id": "train-579",
+            "error": "fn",
+            "text": "Tum bhowkte rehho, aayega toh Modi he",
+            "p_abuse": 0.3595
+          }
+        ],
+        "obfuscation": [
+          {
+            "row_id": "train-393",
+            "error": "fp",
+            "text": "Tum amma se bola dena, baccho logon Ramphal ke jhad phelte hain, amma thodi si chutwana dena bol dena",
+            "p_abuse": 0.9951
+          },
+          {
+            "row_id": "train-462",
+            "error": "fp",
+            "text": "Ek gaon me bijli aane wali thi... log khush hone se nache lage! Ek kutta bhi nache laga...! Kisi ne pucha: tu kyun naach raha hai...? Kutta bola: kambey to lagenge bhi yaar 😜😂",
+            "p_abuse": 0.8358
+          },
+          {
+            "row_id": "train-499",
+            "error": "fn",
+            "text": "Is MC ko Assa-Ram jaisa pati chahiye",
+            "p_abuse": 0.2921
+          },
+          {
+            "row_id": "train-504",
+            "error": "fp",
+            "text": "Gandey paani meh naha ke to khujli ho jayega",
+            "p_abuse": 0.9938
+          },
+          {
+            "row_id": "train-1342",
+            "error": "fp",
+            "text": "Ek baar aake dekha, saath land kitna bada rhta hai, tera ko maza aa jata daru peekar.",
+            "p_abuse": 0.9812
+          },
+          {
+            "row_id": "train-1839",
+            "error": "fp",
+            "text": "Ye soch-samaji chaalbaazi hai, koi rail ki patti mein kutte ko kyun band karega, aur koi jab bachane jaayege to phir an waqt par koi video kaise suit kar lega.",
+            "p_abuse": 0.9195
+          },
+          {
+            "row_id": "train-2529",
+            "error": "fp",
+            "text": "Chhota wala ped narial ka DJ doggi kutta ka bachcha baitha hai.",
+            "p_abuse": 0.9339
+          },
+          {
+            "row_id": "train-4062",
+            "error": "fp",
+            "text": "Winston Churchill ne British PM the, Churchill ka statue ke saamne Gandhi ka baap ka statue lagaya hai. Kya yeh sach hai ki unhe Gandhi ke saath nanga fakiyr kehte the aur ab unki statue ke saamne Gan",
+            "p_abuse": 0.6375
+          }
+        ],
+        "caste_religious": [
+          {
+            "row_id": "train-553",
+            "error": "fp",
+            "text": "Nahi gunda raj, nahi corruption, pura majority ke BJP sarkar",
+            "p_abuse": 0.6709
+          },
+          {
+            "row_id": "train-6810",
+            "error": "fn",
+            "text": "Chacha ji aaj kisanon pe aisa hua kahi kal BJP ke rally pe to kya karega.",
+            "p_abuse": 0.3534
+          },
+          {
+            "row_id": "train-2059",
+            "error": "fp",
+            "text": "Babri Masjid ab bhi alive hai ahl-e-dil ke sienon me. Khabar tumhe bhi hai masjid ke pakad wale ko todne wale.",
+            "p_abuse": 0.8088
+          },
+          {
+            "row_id": "train-2719",
+            "error": "fp",
+            "text": "Ye hi IT cell wale BJP log gumrah kar rahe the ki Pakistan ka hai ko dhanki de raha hai aur pakda gaya. Apne he desh ke ye chintu BJP ke log jo padhe likhe log inke baaton me ake apna he career barbad",
+            "p_abuse": 0.9875
+          },
+          {
+            "row_id": "train-3891",
+            "error": "fp",
+            "text": "Main to ye samajh nahi aata, ki agar tum log achhe ho to beina gathbandhan ke chunav kyun nahi ladao? Gathbandhan ki jaroorat kyun hoti hai? BJP ek aisi sarkar hai jo ki kisi gathbandhan ki jaroorat n",
+            "p_abuse": 0.7357
+          },
+          {
+            "row_id": "train-5012",
+            "error": "fn",
+            "text": "Dekho kaise hindu logo ko mookh bana diya jata hai",
+            "p_abuse": 0.3999
+          },
+          {
+            "row_id": "train-5540",
+            "error": "fp",
+            "text": "Kuch nahi hoga, bas Shahrukh BJP membership le le to Arya bhi chhoot jayega aur Rashtriya ke saath deshbhakt bhi ban jayega. Modi hai to mumkin hai !!!!!!!?",
+            "p_abuse": 0.9585
+          },
+          {
+            "row_id": "train-7246",
+            "error": "fp",
+            "text": "India ke Mahbuba Mifti kehte hain hum tranga nahi uthaenge 🇮🇳 aur wahan Ukraine mein Indian Muslim toh chhodo Pakistan ke bhi tranga lharakar jindgi bache hain 😂",
+            "p_abuse": 0.944
+          }
+        ],
+        "english_heavy_mix": [
+          {
+            "row_id": "train-7114",
+            "error": "fp",
+            "text": "You wrote such a crap, why did you write like that in the video song.",
+            "p_abuse": 0.9721
+          },
+          {
+            "row_id": "train-19170",
+            "error": "fp",
+            "text": "I hate you man",
+            "p_abuse": 0.9849
+          }
+        ],
+        "softened_slur": [
+          {
+            "row_id": "train-10008",
+            "error": "fn",
+            "text": "Dil lagaya gandi se, toh pari kya cheez hai.",
+            "p_abuse": 0.417
+          }
+        ]
+      },
+      "errors_path": "/Users/prathamgarg/Desktop/senior-sde-audit-surakshanet/codemix_synth/train_errors.csv"
+    }
+  }
+}

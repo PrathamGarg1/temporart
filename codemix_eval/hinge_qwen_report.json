@@ -1,0 +1,33 @@
+{
+  "n_scored": 1964,
+  "n_qwen_accepted": 1964,
+  "n_qwen_quarantine": 12,
+  "Human_CMI": 35.639,
+  "WAC": {
+    "bleu": 0.1641,
+    "bleu_100": 16.41,
+    "wer": 0.6513,
+    "ter": 0.7441,
+    "nist": 6.1585,
+    "chrf": 47.91,
+    "mean_cmi": 28.876
+  },
+  "PAC": {
+    "bleu": 0.1786,
+    "bleu_100": 17.86,
+    "wer": 0.6713,
+    "ter": 0.731,
+    "nist": 5.6159,
+    "chrf": 46.5,
+    "mean_cmi": 24.258
+  },
+  "Qwen3": {
+    "bleu": 0.177,
+    "bleu_100": 17.7,
+    "wer": 0.7134,
+    "ter": 0.7612,
+    "nist": 5.1632,
+    "chrf": 43.53,
+    "mean_cmi": 22.676
+  }
+}

@@ -1,0 +1,324 @@
+{
+  "decision": "Poster stays SurakshaNet (edge abuse detection). This file is the missing generation-quality eval.",
+  "macd_qwen": {
+    "splits": {
+      "train": {
+        "n": 18920,
+        "mean_cmi": 13.659,
+        "median_cmi": 11.765,
+        "p90_cmi": 33.333,
+        "pct_cmi_eq_0": 25.26,
+        "pct_cmi_lt_10": 45.47,
+        "pct_cmi_ge_20": 24.0,
+        "mean_en_frac": 0.1519,
+        "mean_switch_points": 3.167,
+        "mean_translit_wer": 0.7719,
+        "mean_token_jaccard_vs_roman_hi": 0.2213,
+        "n_abusive": 9291,
+        "n_non_abusive": 9629,
+        "abuse_kept_pct": 96.73,
+        "nonabuse_kept_pct": 77.34,
+        "mean_score_delta": -0.0991,
+        "pearson_hindi_hinglish_p": 0.7919
+      },
+      "val": {
+        "n": 6375,
+        "mean_cmi": 13.879,
+        "median_cmi": 12.0,
+        "p90_cmi": 33.333,
+        "pct_cmi_eq_0": 25.32,
+        "pct_cmi_lt_10": 45.21,
+        "pct_cmi_ge_20": 24.97,
+        "mean_en_frac": 0.1569,
+        "mean_switch_points": 3.131,
+        "mean_translit_wer": 0.7454,
+        "mean_token_jaccard_vs_roman_hi": 0.22,
+        "n_abusive": 3130,
+        "n_non_abusive": 3245,
+        "abuse_kept_pct": 89.74,
+        "nonabuse_kept_pct": 74.88,
+        "mean_score_delta": -0.0739,
+        "pearson_hindi_hinglish_p": 0.7111
+      },
+      "test": {
+        "n": 6368,
+        "mean_cmi": 13.812,
+        "median_cmi": 11.538,
+        "p90_cmi": 33.333,
+        "pct_cmi_eq_0": 25.57,
+        "pct_cmi_lt_10": 45.48,
+        "pct_cmi_ge_20": 24.72,
+        "mean_en_frac": 0.16,
+        "mean_switch_points": 3.166,
+        "mean_translit_wer": 0.759,
+        "mean_token_jaccard_vs_roman_hi": 0.2228,
+        "n_abusive": 3142,
+        "n_non_abusive": 3226,
+        "abuse_kept_pct": 89.94,
+        "nonabuse_kept_pct": 76.1,
+        "mean_score_delta": -0.0671,
+        "pearson_hindi_hinglish_p": 0.7149
+      }
+    },
+    "quarantine": {
+      "train": {
+        "n": 1263,
+        "by_reason": {
+          "abuse_score_drop": 1174,
+          "abuse_lexicon_missing": 41,
+          "collapsed_length": 37,
+          "refusal": 10,
+          "devanagari_remaining": 1
+        },
+        "yield_pct": 93.74
+      },
+      "val": {
+        "n": 353,
+        "by_reason": {
+          "abuse_score_drop": 304,
+          "abuse_lexicon_missing": 21,
+          "collapsed_length": 20,
+          "refusal": 8
+        },
+        "yield_pct": 94.75
+      },
+      "test": {
+        "n": 360,
+        "by_reason": {
+          "abuse_score_drop": 328,
+          "abuse_lexicon_missing": 15,
+          "collapsed_length": 13,
+          "refusal": 4
+        },
+        "yield_pct": 94.65
+      }
+    },
+    "overall": {
+      "n": 31663,
+      "mean_cmi": 13.734,
+      "median_cmi": 11.765,
+      "p90_cmi": 33.333,
+      "pct_cmi_eq_0": 25.33,
+      "pct_cmi_lt_10": 45.42,
+      "pct_cmi_ge_20": 24.34,
+      "mean_en_frac": 0.1545,
+      "mean_switch_points": 3.159,
+      "interpretation": "CMI=0 is romanized Hindi (or English), not code-mixing. CMI>=20 is a real mix. translit_wer vs ITRANS romanization: low WER ≈ transliteration, high WER ≈ rewrite/mix/drift."
+    },
+    "examples_low_cmi": [
+      {
+        "split": "train",
+        "cmi": 0.0,
+        "en_frac": 1.0,
+        "translit_wer": 1.0,
+        "label": 1,
+        "hinglish": "Good morning sister 💐🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹❤🙏😊",
+        "hindi": "गुड मॉर्निंग सिस्टर💐🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹🌹❤🙏😊"
+      },
+      {
+        "split": "train",
+        "cmi": 0.0,
+        "en_frac": 1.0,
+        "translit_wer": 1.0,
+        "label": 1,
+        "hinglish": "Wow super couple",
+        "hindi": "Wao सुपर कपल्स"
+      },
+      {
+        "split": "train",
+        "cmi": 0.0,
+        "en_frac": 1.0,
+        "translit_wer": 1.0,
+        "label": 1,
+        "hinglish": "Please support my channel",
+        "hindi": "प्लीज सपोर्ट मई चैनल"
+      },
+      {
+        "split": "train",
+        "cmi": 0.0,
+        "en_frac": 1.0,
+        "translit_wer": 1.0,
+        "label": 1,
+        "hinglish": "So listen up, dude!",
+        "hindi": "तो लॉरी सुन लो 🖖🏻💨"
+      },
+      {
+        "split": "train",
+        "cmi": 0.0,
+        "en_frac": 1.0,
+        "translit_wer": 1.0,
+        "label": 1,
+        "hinglish": "Special video today, posting soon 🙏🙏🙏",
+        "hindi": "आजचे खास विडियो लवकर पोस्ट करकी 🙏🙏🙏"
+      },
+      {
+        "split": "train",
+        "cmi": 0.0,
+        "en_frac": 1.0,
+        "translit_wer": 1.0,
+        "label": 1,
+        "hinglish": "Army lover sir",
+        "hindi": "आर्मी लवर सर"
+      },
+      {
+        "split": "train",
+        "cmi": 0.0,
+        "en_frac": 1.0,
+        "translit_wer": 1.2,
+        "label": 1,
+        "hinglish": "You look really hot while dancing.",
+        "hindi": "बडे सुन्दर डांस करते हो"
+      },
+      {
+        "split": "train",
+        "cmi": 0.0,
+        "en_frac": 1.0,
+        "translit_wer": 0.667,
+        "label": 1,
+        "hinglish": "So sweet nice",
+        "hindi": "सो स्वीट नाइस"
+      }
+    ],
+    "examples_high_cmi": [
+      {
+        "split": "train",
+        "cmi": 50.0,
+        "en_frac": 0.5,
+        "translit_wer": 0.8,
+        "label": 1,
+        "hinglish": "TV aur mobile se... thanks🙏💕.",
+        "hindi": "टीवी📺 और मोबाईल से.... धन्यवाद🙏💕."
+      },
+      {
+        "split": "train",
+        "cmi": 50.0,
+        "en_frac": 0.5,
+        "translit_wer": 0.909,
+        "label": 1,
+        "hinglish": "Love forever. One sided ka koi idea nahi aaya hai.",
+        "hindi": "लव फोर इवर।वन साइडेड की कल्पना नहीं आ रही है"
+      },
+      {
+        "split": "train",
+        "cmi": 50.0,
+        "en_frac": 0.5,
+        "translit_wer": 1.0,
+        "label": 1,
+        "hinglish": "Good morning ji ☕☕🌹🌹burger👈",
+        "hindi": "गुड मॉर्निंग जी ☕☕🌹🌹🍔👈"
+      },
+      {
+        "split": "train",
+        "cmi": 50.0,
+        "en_frac": 0.5,
+        "translit_wer": 0.75,
+        "label": 1,
+        "hinglish": "Sunder bohot hi sundar",
+        "hindi": "👌🥀❣️❣️ सुंदर❣️❣️🥀👌         👌💗❤️ बोहोत ही सुंदर❤️💗👌"
+      },
+      {
+        "split": "train",
+        "cmi": 50.0,
+        "en_frac": 0.5,
+        "translit_wer": 0.833,
+        "label": 1,
+        "hinglish": "Super best song bhai 👍👍🌹🌹🌹🌹🌹 superhit 💠💠💠 lajawab 💟💟🌴🌴💟💟🌴🌴💟💟🌴🌴💟💟🌸🌸💜💜🌸🌸💜💜🌸🌸💜💜",
+        "hindi": "सुपर बेहतरीन गीत भाई 👍👍🌹🌹🌹🌹🌹 सुपरहिट 💠💠💠 लाजवाब 💟💟🌴🌴💟💟🌴🌴💟💟🌴🌴💟💟🌸🌸💜💜🌸🌸💜💜🌸🌸💜💜"
+      },
+      {
+        "split": "train",
+        "cmi": 50.0,
+        "en_frac": 0.5,
+        "translit_wer": 0.5,
+        "label": 0,
+        "hinglish": "Randi ki real identity",
+        "hindi": "Randi की असली पहचान"
+      },
+      {
+        "split": "train",
+        "cmi": 50.0,
+        "en_frac": 0.5,
+        "translit_wer": 1.5,
+        "label": 1,
+        "hinglish": "Super super hit nahi hai yaar",
+        "hindi": "सुपर सुपर हिट न"
+      },
+      {
+        "split": "train",
+        "cmi": 50.0,
+        "en_frac": 0.5,
+        "translit_wer": 0.882,
+        "label": 0,
+        "hinglish": "Rape, sexual harassment, eve teasing, tight clothes pahana, sab kuch hota hai. Bollywood mein.",
+        "hindi": "रेप बलात्कार छेड़छाड़  अधनंगे कपड़े पहनना, ये सब भी होता है। बॉलीवुड में।"
+      }
+    ]
+  },
+  "hinge": {
+    "n": 1976,
+    "source": "huggingface:LingoIITGN/HinGE",
+    "human": {
+      "n": 1976,
+      "mean_cmi": 35.866,
+      "median_cmi": 36.667,
+      "p90_cmi": 44.295,
+      "pct_cmi_eq_0": 0.05,
+      "pct_cmi_lt_10": 0.35,
+      "pct_cmi_ge_20": 97.17,
+      "mean_en_frac": 0.0,
+      "mean_switch_points": 0.0
+    },
+    "WAC": {
+      "bleu": 0.164,
+      "bleu_100": 16.4,
+      "wer": 0.651,
+      "ter": 0.7438,
+      "nist": 6.1625,
+      "chrf": 47.95,
+      "mean_cmi": 28.894
+    },
+    "PAC": {
+      "bleu": 0.1786,
+      "bleu_100": 17.86,
+      "wer": 0.671,
+      "ter": 0.7308,
+      "nist": 5.6181,
+      "chrf": 46.52,
+      "mean_cmi": 24.274
+    },
+    "human_mean_cmi": 35.866,
+    "correlation_vs_human_rating": {
+      "WAC": {
+        "n": 1976,
+        "mean_human_rating": 7.36,
+        "pearson_bleu": 0.188,
+        "pearson_wer": -0.195,
+        "system": "WAC"
+      },
+      "PAC": {
+        "n": 1976,
+        "mean_human_rating": 7.154,
+        "pearson_bleu": 0.136,
+        "pearson_wer": -0.205,
+        "system": "PAC"
+      }
+    },
+    "paper_table4_100sample": {
+      "note": "HinGE Table 4 is on 100 sampled sentences; ours is the full CSV.",
+      "WAC": {
+        "bleu": 0.1229,
+        "wer": 0.824,
+        "ter": 0.783,
+        "nist": 2.2045,
+        "bertscore": 0.857
+      },
+      "PAC": {
+        "bleu": 0.1202,
+        "wer": 0.8228,
+        "ter": 0.7981,
+        "nist": 2.0497,
+        "bertscore": 0.857
+      }
+    }
+  }
+}

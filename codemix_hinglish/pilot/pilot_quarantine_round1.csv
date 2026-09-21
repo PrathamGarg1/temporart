@@ -1,0 +1,29 @@
+row_id,split,label,text,hindi_text,hindi_abuse,hinglish_abuse,score_delta,attempts,fail_reason,last_output
+train-16507,train,0,,करण जोहर छक्का,0.9984,0.0368,0.9616,3,abuse_score_drop,Karan Johar chhakka hai
+train-3199,train,0,,"अब ब्रा पैटी मे भी नाचो वहीं बाकी रह गया है, vew ज्यादा मिलेगा",0.9992,0.0179,0.9813,3,abuse_score_drop,"Ab bra patti mein bhi naache, wahi baki re gaya hai, vew jyada milega"
+train-14153,train,0,,हराम का पैसा,0.9984,0.0441,0.9543,3,abuse_score_drop,Haram ka paisa
+train-13311,train,0,,बेटा कुछ पढ लिख लो पानी पानी बाद मे हो लेना,0.9543,0.0168,0.9375,3,abuse_score_drop,"Beta kuch padh lixb lo, paani paani badme ho lena"
+train-459,train,0,,कितनो को मरोगी इस लाल खून से 😜🤣🤣,0.9515,0.2265,0.725,3,abuse_score_drop,Kitne ko marogi is laal khoon se 😜🤣🤣
+train-13681,train,0,,ज़हरीले लोग के सामने सांप का जहर भी फीका पड़ जाता है।।बायकाट बालीवुड।।,0.9857,0.0658,0.9199,3,abuse_score_drop,Zahrile log ke samne saap ka jehar bhi feeke pad jaata hai. Bye karo bollywood ka.
+train-16249,train,0,,यह लड़की बीड़ी पीती है उसकी ब्रा में देखो माचिस रखी है,0.9992,0.0312,0.968,3,abuse_score_drop,"Ye ladki beedi peeti hai, uski bra mein dekho, matchstick rakhi hai"
+train-14905,train,0,,तु थोडी देशी पेउन महा तांडव कर,0.9981,0.0427,0.9554,3,abuse_score_drop,Tum thodi deshi peun maha tandav karo
+train-17434,train,0,,समोसा तितली थोडी हि ना होता है । सब के सब पागल है।,0.974,0.0101,0.9639,3,abuse_score_drop,Samosa titli thodi hi na hota hai. Sab ke sab pagal hai.
+train-5493,train,0,,तारीख गांड मार वा माटे,0.9993,0.0643,0.9349,3,abuse_score_drop,Tarikh gand mar wa marte
+train-6991,train,0,,": बेटी ब्रा पहना करो, जब झुकती हो तो ध्यान और ज्ञान दोनों की वाट लग जाती है।",0.9939,0.334,0.66,3,abuse_score_drop,"Beta bra nahi pahna karo, jab jhukti ho toh attention aur knowledge dono ki watt lag jati hai."
+train-416,train,0,,शर्म नाम की चीज ना है,0.9974,0.2176,0.7799,3,abuse_score_drop,"Sharm naam ki cheez na hai, yaar tu baccha hai kya?"
+train-18214,train,0,,"डबल हो ले, आजा",0.9888,0.0051,0.9837,3,abuse_score_drop,"Double ho jaa, aja"
+train-1359,train,0,,डूब के मरजा,0.9924,0.0105,0.9819,3,abuse_score_drop,Dobke mar ja
+train-4595,train,0,,जब एक आदमी खुश करेगा तो 9 महीना का सजा मिल जाएगा आपको,0.8707,0.0154,0.8553,3,abuse_score_drop,Jab ek aadmi khush karega to 9 mahine ka saza mil jayega aapko
+train-17753,train,0,,ओ बाई जि थोङी तो सरम कर लो,0.9979,0.0649,0.933,3,abuse_score_drop,O bai ji thongi toh surma laga lo
+train-2975,train,0,,मुझे शर्म आती है ऐसे वीरों को जवान करते हुए बात गोली बमबारी की करते और हादसे में जान गवा बैठें,0.9972,0.0712,0.926,3,abuse_score_drop,"Mujhe sharm aati hai aise veeron ko jawan kar ke baat karte hai, goli-bambhari ki karte hai aur haadise mein jhan gava baithe"
+train-2301,train,0,,तुम्हारे में घुसने का मन कर रहा है,0.9974,0.0082,0.9892,3,abuse_score_drop,Tumhare me ghuse ke mana ho raha hai
+train-9502,train,0,,बेटा भैया बच्चे हो आप ऐसे वीडियो मत बनाया करो समझी मम्मी पापा को बता दूंगी आपके,0.9913,0.0167,0.9746,3,abuse_score_drop,"Beta bhaiya bacche ho aap aise video mat banao, samajh gaye, mummy papa ko bata dunga aapke"
+train-14381,train,0,,रेलवे स्टेशन पर रहती हो क्या?,0.9519,0.1376,0.8142,3,abuse_score_drop,Railway station pe toh rehti ho na?
+train-8810,train,0,,बूढ़ी हो रही हैं तब भी मोटी को सर्म नहीं है मर जा पागल मोटी,0.9992,0.0124,0.9867,3,abuse_score_drop,"Boodi ho rahi hai tab bhi moti ko sarm nahi hai, mar ja pagal moti"
+train-2706,train,0,,इस किसी भी एक काम से किसी भी राजकुमार या चुडैल  को फायदा नहीं है।तो फिर................?,0.9991,0.7909,0.2082,3,abuse_score_drop,Iske ek bhi kaam se kisi bhi raja-kumar ya chudail ko fayda nahi hai. To fir................?
+train-3230,train,0,,ऐसे ही कट रही है जिंदगी साला जिसको प्यार दो वह दिल से ज्यादा नहीं है और जिसको नहीं दो वह प्यार करके बैठ जाता है,0.9631,0.0282,0.9349,3,abuse_score_drop,"Aise hi kat rahi hai zindagi sala, jiskoo pyaar do voh dil se jyada nahi hai aur jiskoo nahi do voh pyaar karke baithe jata hai"
+train-6665,train,0,,"जरूरत है एक चुड़ैल,👻 की जो  हमारी रातों की नींद व दिन का चैन उड़ा सके😁😁😁😄😜😄😂😂",0.9905,0.0207,0.9698,3,abuse_score_drop,"Need ek chudail, 👻 jo hamari raton ki nind w diin ka chian uddaye 😁😁😁😄😜😄😂😂"
+train-14579,train,0,,नंगा हो जाओ और पहचान बढ़ जाएगी आपकी,0.999,0.0124,0.9866,3,abuse_score_drop,Nanga ho jaao aur pahchaan badh jayegi aapki
+train-6005,train,0,,गांड लाल  कर दी यार,0.9992,0.0136,0.9856,3,abuse_score_drop,Gand laal kar diya yaar
+train-6116,train,0,,घाट घाट पर कपड़े बदले कोस कोस पर वाणी हर प्रदेश में लंबी फेंके ये है ऐसा प्राणी,0.975,0.0101,0.9649,3,abuse_score_drop,"Ghat ghat par kapde badalne wala, kos kos par vani, har pradesh me lambi fena ke, ye hai aisa prani"
+train-13742,train,0,,भाई मैं तो ये बात सोचता हूँ। कि ये ऐसी औरते जब बुड्ढी हो जायेगी तो इनके बच्चे पोते इसके बारे मे क्या सोचेगें कि हमारी मम्मी या अम्मा जवानी में एक नम्बर की ..................... रही होगी,0.9967,0.0081,0.9886,3,abuse_score_drop,Bhai main to ye baat sochta hu ki ye aisi aurate jab budhhi ho jayegi to inke bacche potey ye sohenge ki hamari mummy ya amma jawani me ek number ki...................... rahi hogi.

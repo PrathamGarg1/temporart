@@ -1,0 +1,39 @@
+{
+  "accepted": 977,
+  "by_variant": {
+    "paraphrase": 433,
+    "obfuscation": 290,
+    "mix_hindi_heavy": 139,
+    "contrastive": 69,
+    "mix_english_heavy": 46
+  },
+  "by_label": {
+    "0": 633,
+    "1": 344
+  },
+  "audit_n": 150,
+  "audit_path": "/Users/prathamgarg/Desktop/senior-sde-audit-surakshanet/codemix_synth/audit.csv",
+  "quarantined": 2800,
+  "by_fail": {
+    "judge_mismatch:1": 533,
+    "judge_mismatch:0": 321,
+    "abuse_lexicon_missing": 220,
+    "judge_unreliable": 179,
+    "dup_or_identity": 134,
+    "low_cosine:0.00": 132,
+    "collapsed_length": 45,
+    "low_cosine:0.05": 40,
+    "low_cosine:0.02": 40,
+    "low_cosine:0.04": 39,
+    "low_cosine:0.07": 39,
+    "low_cosine:0.15": 38,
+    "low_cosine:0.09": 37,
+    "low_cosine:0.24": 34,
+    "low_cosine:0.08": 32,
+    "low_cosine:0.14": 31,
+    "low_cosine:0.12": 29,
+    "low_cosine:0.18": 29,
+    "low_cosine:0.03": 29,
+    "low_cosine:0.11": 28
+  }
+}

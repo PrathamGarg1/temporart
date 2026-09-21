@@ -1,0 +1,8 @@
+row_id,split,label,text,hindi_text,hindi_abuse,hinglish_abuse,score_delta,attempts,drop_reason
+train-3,train,0,"Kutta wahan hai, chillana kyun band nahi karta tu",कुत्ता वहा है चिल्ला तू क्यों रहा है,0.9853,0.9867,-0.0013,1,fewshot_leak
+train-4,train,1,"Main chai nahi peeta, isko hi chhod diya ok",चाय नहीं पीता हूं मैं इसी को छोड़ दिया ok,0.0048,0.9974,-0.9926,1,fewshot_leak
+train-10,train,1,Aap bahut cute ho sanam,आप बहुत प्यारे हो सनम,0.0048,0.0051,-0.0003,1,fewshot_leak
+train-12,train,0,Ye BJP wale bahut chutiya hai,ये बीजेपी वाले बहुत चूतिया है,0.9993,0.9993,0.0,1,fewshot_leak
+train-13704,train,1,"Main chai nahi peeta, isko hi chhod diya ok",दुःख का एक लम्हा भी किसी के पास न आए  ईश्वर करे की नया साल सबको रास आए 🤗   Happy New year 💝🥳🥳🥳🥳🥳,0.0045,0.9968,-0.9923,1,fewshot_leak
+train-15768,train,1,"Main chai nahi peeta, isko hi chhod diya ok",Your सोप एड्रेस,0.0049,0.9968,-0.9919,1,fewshot_leak
+train-19798,train,1,"Main chai nahi peeta, isko hi chhod diya ok",🌹👌🌹 ❤️♥️❤️ ❗🌿 ❗🌷 ❗🌿 ❗🌷 ❗🌿 ❗🌷 ❗🌿 ❗🌷 ❗🌿 ❗🌷 ❗🌿 ❗🌷 ❗🌿 ❗🌷 ❗🌿 ❗🌷 ❗🌿 ❗🌷 ❗🌿 ❗🌷 ❗🌿 प्रकाश 🥀 ❗🌷 ❗🌿 ❗🌷 💚 बहुत सुंदर,0.0044,0.9968,-0.9923,1,fewshot_leak

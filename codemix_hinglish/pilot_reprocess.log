@@ -1,0 +1,20 @@
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+{
+  "tag": "pilot",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 2,
+  "accepted": 14,
+  "quarantined": 14,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.5,
+  "mean_score_delta": 0.03534301689692906,
+  "by_fail": {
+    "abuse_score_drop": 14
+  },
+  "accepted_path": "/Users/prathamgarg/Desktop/senior-sde-audit-surakshanet/codemix_hinglish/pilot/pilot.csv",
+  "quarantine_path": "/Users/prathamgarg/Desktop/senior-sde-audit-surakshanet/codemix_hinglish/pilot/pilot_quarantine.csv"
+}

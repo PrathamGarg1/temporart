@@ -1,0 +1,40 @@
+{
+  "poster": "SurakshaNet stays the system (edge abuse detection). HinGE metrics evaluate the Qwen converter.",
+  "labels": {"0": "abusive", "1": "non-abusive"},
+  "shipped_int8": {
+    "test_hinglish": 0.8436,
+    "test_hindi": 0.8514,
+    "test_davidson": 0.9673,
+    "test_mixed": 0.8654
+  },
+  "layer1_int8_clean_train_17962": {
+    "test_hinglish": 0.8376,
+    "test_hindi": 0.8475,
+    "test_davidson": 0.9689,
+    "test_mixed": 0.8620,
+    "delta_vs_shipped_hinglish_pp": -0.60,
+    "verdict": "Do not ship. Frozen Hinglish test got worse."
+  },
+  "synth": {
+    "accepted": 977,
+    "quarantined": 2800,
+    "abusive": 633,
+    "non_abusive": 344,
+    "status": "layer1_synth Modal train running"
+  },
+  "generation_macd_qwen": {
+    "n": 31663,
+    "mean_cmi": 13.73,
+    "pct_cmi_eq_0": 25.33,
+    "pct_cmi_ge_20": 24.34,
+    "test_abuse_kept_pct": 89.94,
+    "conversion_yield_pct_test": 94.65
+  },
+  "generation_hinge_n1964": {
+    "human_cmi": 35.64,
+    "WAC": {"bleu": 0.164, "wer": 0.651, "cmi": 28.88, "ter": 0.744, "nist": 6.16, "chrf": 47.91},
+    "PAC": {"bleu": 0.179, "wer": 0.671, "cmi": 24.26, "ter": 0.731, "nist": 5.62, "chrf": 46.50},
+    "Qwen3_hindi_only": {"bleu": 0.177, "wer": 0.713, "cmi": 22.68, "ter": 0.761, "nist": 5.16, "chrf": 43.53},
+    "note": "Qwen BLEU ≈ PAC. WAC wins WER/CMI because it aligns English+Hindi. Our production converter is Hindi-only like MACD."
+  }
+}

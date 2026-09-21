@@ -1,0 +1,19 @@
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 360,
+  "quarantined": 36,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8401826484018264,
+  "mean_score_delta": -0.04413338201767247,
+  "by_fail": {
+    "abuse_score_drop": 33,
+    "collapsed_length": 2,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}

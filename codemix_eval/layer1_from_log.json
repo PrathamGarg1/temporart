@@ -1,0 +1,39 @@
+{
+  "mix": "layer1",
+  "note": "hinglish_clean train n=17962 + Hindi + Davidson 80%. Frozen test. INT8 from Modal log before job exit.",
+  "fp32": {
+    "test_hinglish": 0.8351130653266332,
+    "test_hindi": 0.8473543400713437,
+    "test_davidson": 0.9677289229528035,
+    "test_mixed": 0.8615088282504013,
+    "val_hinglish": 0.8332549019607843,
+    "val_mixed": 0.8609845324433605
+  },
+  "int8": {
+    "val_mixed": {
+      "accuracy": 0.8626532314999037,
+      "f1_macro": 0.8615625263332851,
+      "n": 15581
+    },
+    "val_hinglish": {
+      "accuracy": 0.8359215686274509,
+      "f1_macro": 0.8358700001299602,
+      "n": 6375
+    },
+    "test_hinglish": {
+      "accuracy": 0.8376256281407035,
+      "f1_macro": 0.837566008347037,
+      "n": 6368
+    },
+    "test_davidson": {
+      "accuracy": 0.9689390883420734,
+      "f1_macro": 0.9455873822178323,
+      "n": 2479
+    }
+  },
+  "vs_shipped_int8_test_hinglish": {
+    "shipped": 0.8435929648241206,
+    "layer1": 0.8376256281407035,
+    "delta_pp": -0.597
+  }
+}

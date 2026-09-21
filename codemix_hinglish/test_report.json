@@ -1,0 +1,17 @@
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 174,
+  "quarantined": 12,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8878504672897196,
+  "mean_score_delta": -0.042767251228870845,
+  "by_fail": {
+    "abuse_score_drop": 12
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}

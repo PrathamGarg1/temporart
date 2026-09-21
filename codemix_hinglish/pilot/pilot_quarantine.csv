@@ -1,0 +1,15 @@
+row_id,split,label,text,hindi_text,hindi_abuse,hinglish_abuse,score_delta,attempts,fail_reason,last_output
+train-16507,train,0,,करण जोहर छक्का,0.9984,0.0474,0.9509,5,abuse_score_drop,Karan Johar chhakka
+train-459,train,0,,कितनो को मरोगी इस लाल खून से 😜🤣🤣,0.9515,0.0207,0.9309,5,abuse_score_drop,Kitne ko marogi is laal khun se 😜🤣🤣
+train-14905,train,0,,तु थोडी देशी पेउन महा तांडव कर,0.9981,0.0242,0.9739,5,abuse_score_drop,"Tu thodi desi pehun, mahi tandav karo"
+train-17434,train,0,,समोसा तितली थोडी हि ना होता है । सब के सब पागल है।,0.974,0.0074,0.9666,5,abuse_score_drop,"Samosa titli thi hai, tho di na hota. Sab ke sab pagal hai."
+train-416,train,0,,शर्म नाम की चीज ना है,0.9974,0.0066,0.9909,5,abuse_score_drop,Sharim naam ki cheez na hai
+train-18214,train,0,,"डबल हो ले, आजा",0.9888,0.0053,0.9835,5,abuse_score_drop,"Double ho jao, aja"
+train-1359,train,0,,डूब के मरजा,0.9924,0.0165,0.9759,5,abuse_score_drop,Dob ke mar ja
+train-4595,train,0,,जब एक आदमी खुश करेगा तो 9 महीना का सजा मिल जाएगा आपको,0.8707,0.0179,0.8528,5,abuse_score_drop,Jab ek aadmi khush karega to 9 mahina ka saza milega aapko
+train-17753,train,0,,ओ बाई जि थोङी तो सरम कर लो,0.9979,0.012,0.9859,5,abuse_score_drop,O bai ji thongi toh saram kar lo
+train-14381,train,0,,रेलवे स्टेशन पर रहती हो क्या?,0.9519,0.0196,0.9322,5,abuse_score_drop,Tum railway station par rehtey ho kya?
+train-8810,train,0,,बूढ़ी हो रही हैं तब भी मोटी को सर्म नहीं है मर जा पागल मोटी,0.9992,0.0173,0.9819,5,abuse_score_drop,"Boori ho rahi hai tab bhi moti ko sarim nahi hai, mar jaa pagal moti"
+train-14579,train,0,,नंगा हो जाओ और पहचान बढ़ जाएगी आपकी,0.999,0.0181,0.9809,5,abuse_score_drop,Nanga ho jaao aur phir phichaan badh jayege aapki
+train-6005,train,0,,गांड लाल  कर दी यार,0.9992,0.0136,0.9856,5,abuse_score_drop,Gand laal kar diya yaar
+train-13742,train,0,,भाई मैं तो ये बात सोचता हूँ। कि ये ऐसी औरते जब बुड्ढी हो जायेगी तो इनके बच्चे पोते इसके बारे मे क्या सोचेगें कि हमारी मम्मी या अम्मा जवानी में एक नम्बर की ..................... रही होगी,0.9967,0.0103,0.9864,5,abuse_score_drop,Bhai main to ye baat sochta hoon ki ye aisi aurat jisne jab budhhi ho jayegi to inke bacche pote iske baare mein kya sochenge ki humari mummy ya amma jawani mein ek number ki..................... rahi hogi

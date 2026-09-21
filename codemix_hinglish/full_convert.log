@@ -1,0 +1,4104 @@
+[2026-09-19T20:11:45+05:30] supervisor start
+[2026-09-19T20:11:45+05:30] chunk train
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 200 new rows
+[train] progress accepted=45 quarantine=5
+[2026-09-19T20:12:58+05:30] chunk train n=61
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 100 new rows
+[train] progress accepted=46 quarantine=4
+[2026-09-19T20:14:02+05:30] durable loop start pid=47063
+[2026-09-19T20:14:02+05:30] chunk train n=115
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 100 new rows
+[train] progress accepted=46 quarantine=4
+[2026-09-19T20:18:41+05:30] durable loop start pid=57053
+[2026-09-19T20:18:42+05:30] chunk train n=183
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 100 new rows
+[2026-09-19T20:19:12+05:30] durable loop start pid=58164
+[2026-09-19T20:19:13+05:30] chunk train n=210
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 100 new rows
+[2026-09-19T20:19:37+05:30] durable loop start pid=59105
+[2026-09-19T20:19:39+05:30] chunk train n=218
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 100 new rows
+[2026-09-19T20:21:13+05:30] durable loop start pid=60262
+[2026-09-19T20:21:14+05:30] chunk train n=235
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 100 new rows
+[2026-09-19T20:22:20+05:30] durable loop start pid=62790
+[2026-09-19T20:22:21+05:30] chunk train n=259
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 100 new rows
+[train] progress accepted=43 quarantine=7
+[train] progress accepted=92 quarantine=8
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 2,
+  "accepted": 92,
+  "quarantined": 8,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8367346938775511,
+  "mean_score_delta": -0.13981256298923297,
+  "by_fail": {
+    "abuse_score_drop": 8
+  },
+  "accepted_path": "/Users/prathamgarg/Desktop/senior-sde-audit-surakshanet/codemix_hinglish/train.csv",
+  "quarantine_path": "/Users/prathamgarg/Desktop/senior-sde-audit-surakshanet/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T20:23:32+05:30] chunk val n=0
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 100 new rows
+[2026-09-19T20:23:59+05:30] loop start pid=66697 workers=4 limit=400
+[2026-09-19T20:23:59+05:30] chunk train n=359/20183
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=48 quarantine=2
+[train] progress accepted=92 quarantine=8
+[train] progress accepted=137 quarantine=13
+[train] progress accepted=181 quarantine=19
+[train] progress accepted=227 quarantine=23
+[train] progress accepted=276 quarantine=24
+[train] progress accepted=321 quarantine=29
+[train] progress accepted=367 quarantine=33
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 367,
+  "quarantined": 33,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8382352941176471,
+  "mean_score_delta": -0.10206058441613082,
+  "by_fail": {
+    "abuse_score_drop": 31,
+    "collapsed_length": 1,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/Users/prathamgarg/Desktop/senior-sde-audit-surakshanet/codemix_hinglish/train.csv",
+  "quarantine_path": "/Users/prathamgarg/Desktop/senior-sde-audit-surakshanet/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T20:26:05+05:30] chunk val n=28/6728
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 400 new rows
+[val] progress accepted=46 quarantine=4
+[val] progress accepted=93 quarantine=7
+[val] progress accepted=139 quarantine=11
+[val] progress accepted=186 quarantine=14
+[val] progress accepted=233 quarantine=17
+[val] progress accepted=280 quarantine=20
+[val] progress accepted=326 quarantine=24
+[val] progress accepted=375 quarantine=25
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 375,
+  "quarantined": 25,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8873239436619719,
+  "mean_score_delta": -0.07484299250443777,
+  "by_fail": {
+    "abuse_score_drop": 23,
+    "collapsed_length": 1,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/Users/prathamgarg/Desktop/senior-sde-audit-surakshanet/codemix_hinglish/val.csv",
+  "quarantine_path": "/Users/prathamgarg/Desktop/senior-sde-audit-surakshanet/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-19T20:28:08+05:30] chunk test n=0/6728
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 400 new rows
+[test] progress accepted=48 quarantine=2
+[test] progress accepted=96 quarantine=4
+[test] progress accepted=143 quarantine=7
+[2026-09-19T15:02:39+00:00] EC2 loop start pid=26544
+[2026-09-19T15:02:39+00:00] chunk train n=759/20183
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 500 new rows
+[train] progress accepted=0 quarantine=50
+[train] progress accepted=0 quarantine=100
+[train] progress accepted=0 quarantine=150
+[train] progress accepted=0 quarantine=200
+[train] progress accepted=0 quarantine=250
+[train] progress accepted=0 quarantine=300
+[train] progress accepted=0 quarantine=350
+[train] progress accepted=0 quarantine=400
+[train] progress accepted=0 quarantine=450
+[train] progress accepted=0 quarantine=500
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 6,
+  "accepted": 0,
+  "quarantined": 500,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.0,
+  "mean_score_delta": null,
+  "by_fail": {
+    "api_error:PermissionDeniedError": 500
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T15:04:14+00:00] chunk val n=428/6728
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 500 new rows
+[val] progress accepted=0 quarantine=50
+[val] progress accepted=0 quarantine=100
+[val] progress accepted=0 quarantine=150
+[val] progress accepted=0 quarantine=200
+[val] progress accepted=0 quarantine=250
+[val] progress accepted=0 quarantine=300
+[val] progress accepted=0 quarantine=350
+[val] progress accepted=0 quarantine=400
+[val] progress accepted=0 quarantine=450
+[val] progress accepted=0 quarantine=500
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 6,
+  "accepted": 0,
+  "quarantined": 500,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.0,
+  "mean_score_delta": null,
+  "by_fail": {
+    "api_error:PermissionDeniedError": 500
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-19T15:05:50+00:00] chunk test n=165/6728
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 500 new rows
+[test] progress accepted=0 quarantine=50
+[test] progress accepted=0 quarantine=100
+[test] progress accepted=0 quarantine=150
+[test] progress accepted=0 quarantine=200
+[test] progress accepted=0 quarantine=250
+[test] progress accepted=0 quarantine=300
+[test] progress accepted=0 quarantine=350
+[test] progress accepted=0 quarantine=400
+[test] progress accepted=0 quarantine=450
+[test] progress accepted=0 quarantine=500
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 6,
+  "accepted": 0,
+  "quarantined": 500,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.0,
+  "mean_score_delta": null,
+  "by_fail": {
+    "api_error:PermissionDeniedError": 500
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-19T15:07:24+00:00] progress train=1259 val=928 test=665
+[2026-09-19T15:07:27+00:00] chunk train n=1259/20183
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 500 new rows
+[train] progress accepted=0 quarantine=50
+[train] progress accepted=0 quarantine=100
+[train] progress accepted=0 quarantine=150
+[train] progress accepted=0 quarantine=200
+[train] progress accepted=0 quarantine=250
+[train] progress accepted=0 quarantine=300
+[train] progress accepted=0 quarantine=350
+[train] progress accepted=0 quarantine=400
+[train] progress accepted=0 quarantine=450
+[train] progress accepted=0 quarantine=500
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 6,
+  "accepted": 0,
+  "quarantined": 500,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.0,
+  "mean_score_delta": null,
+  "by_fail": {
+    "api_error:PermissionDeniedError": 500
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T15:09:03+00:00] chunk val n=928/6728
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 500 new rows
+[val] progress accepted=0 quarantine=50
+[val] progress accepted=0 quarantine=100
+[val] progress accepted=0 quarantine=150
+[val] progress accepted=47 quarantine=153
+[val] progress accepted=95 quarantine=155
+[val] progress accepted=141 quarantine=159
+[val] progress accepted=187 quarantine=163
+[val] progress accepted=234 quarantine=166
+[val] progress accepted=281 quarantine=169
+[val] progress accepted=329 quarantine=171
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 6,
+  "accepted": 329,
+  "quarantined": 171,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.6217228464419475,
+  "mean_score_delta": -0.12016490788983131,
+  "by_fail": {
+    "api_error:PermissionDeniedError": 151,
+    "abuse_score_drop": 18,
+    "abuse_lexicon_missing": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-19T15:10:55+00:00] chunk test n=665/6728
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 500 new rows
+[test] progress accepted=45 quarantine=5
+[test] progress accepted=92 quarantine=8
+[test] progress accepted=138 quarantine=12
+[test] progress accepted=186 quarantine=14
+[test] progress accepted=231 quarantine=19
+[test] progress accepted=279 quarantine=21
+[test] progress accepted=328 quarantine=22
+[test] progress accepted=372 quarantine=28
+[test] progress accepted=419 quarantine=31
+[test] progress accepted=464 quarantine=36
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 6,
+  "accepted": 464,
+  "quarantined": 36,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8582677165354331,
+  "mean_score_delta": -0.0768526872300848,
+  "by_fail": {
+    "abuse_score_drop": 35,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-19T15:12:58+00:00] progress train=1759 val=1428 test=1165
+[2026-09-19T15:13:44+00:00] converse loop
+[2026-09-19T15:13:44+00:00] chunk train a=691 q=1068
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[2026-09-19T15:15:03+00:00] converse loop
+[2026-09-19T15:15:03+00:00] chunk train a=698 q=68
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=10 quarantine=40
+[train] progress accepted=18 quarantine=82
+[train] progress accepted=28 quarantine=122
+[train] progress accepted=36 quarantine=164
+[train] progress accepted=43 quarantine=207
+[train] progress accepted=53 quarantine=247
+[train] progress accepted=59 quarantine=291
+[train] progress accepted=69 quarantine=331
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 69,
+  "quarantined": 331,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.14563106796116504,
+  "mean_score_delta": -0.08608892447976531,
+  "by_fail": {
+    "api_error:ThrottlingException": 331
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T15:29:20+00:00] chunk val a=730 q=47
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+val: converting up to 400 new rows
+[val] progress accepted=8 quarantine=42
+[val] progress accepted=19 quarantine=81
+[val] progress accepted=30 quarantine=120
+[val] progress accepted=38 quarantine=162
+[val] progress accepted=49 quarantine=201
+[val] progress accepted=56 quarantine=244
+[val] progress accepted=62 quarantine=288
+[val] progress accepted=70 quarantine=330
+{
+  "tag": "val",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 70,
+  "quarantined": 330,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.13551401869158877,
+  "mean_score_delta": -0.08594264468577291,
+  "by_fail": {
+    "api_error:ThrottlingException": 330
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-19T15:42:53+00:00] chunk test a=622 q=43
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 400 new rows
+[test] progress accepted=11 quarantine=39
+[test] progress accepted=19 quarantine=81
+[test] progress accepted=27 quarantine=123
+[test] progress accepted=35 quarantine=165
+[test] progress accepted=46 quarantine=204
+[test] progress accepted=52 quarantine=248
+[test] progress accepted=63 quarantine=287
+[test] progress accepted=72 quarantine=328
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 72,
+  "quarantined": 328,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.11428571428571428,
+  "mean_score_delta": -0.17718938575772983,
+  "by_fail": {
+    "api_error:ThrottlingException": 328
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-19T15:56:15+00:00] progress train=1166 val=1177 test=1065
+[2026-09-19T15:56:17+00:00] chunk train a=767 q=399
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=9 quarantine=41
+[train] progress accepted=16 quarantine=84
+[train] progress accepted=24 quarantine=126
+[train] progress accepted=34 quarantine=166
+[train] progress accepted=39 quarantine=211
+[train] progress accepted=46 quarantine=254
+[train] progress accepted=56 quarantine=294
+[train] progress accepted=63 quarantine=337
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 63,
+  "quarantined": 337,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.09905660377358491,
+  "mean_score_delta": -0.06363900152907248,
+  "by_fail": {
+    "api_error:ThrottlingException": 337
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T16:10:31+00:00] chunk val a=800 q=377
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+val: converting up to 400 new rows
+[val] progress accepted=9 quarantine=41
+[val] progress accepted=19 quarantine=81
+[val] progress accepted=28 quarantine=122
+[val] progress accepted=35 quarantine=165
+[val] progress accepted=44 quarantine=206
+[val] progress accepted=53 quarantine=247
+[val] progress accepted=62 quarantine=288
+[val] progress accepted=72 quarantine=328
+{
+  "tag": "val",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 72,
+  "quarantined": 328,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.14622641509433962,
+  "mean_score_delta": -0.021701113586055323,
+  "by_fail": {
+    "api_error:ThrottlingException": 328
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-19T16:24:22+00:00] chunk test a=694 q=371
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 400 new rows
+[test] progress accepted=9 quarantine=41
+[test] progress accepted=17 quarantine=83
+[test] progress accepted=26 quarantine=124
+[test] progress accepted=33 quarantine=167
+[test] progress accepted=42 quarantine=208
+[test] progress accepted=52 quarantine=248
+[test] progress accepted=60 quarantine=290
+[test] progress accepted=70 quarantine=330
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 70,
+  "quarantined": 330,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.135,
+  "mean_score_delta": 0.04818840399384498,
+  "by_fail": {
+    "api_error:ThrottlingException": 328,
+    "refusal": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-19T16:38:36+00:00] progress train=1566 val=1577 test=1465
+[2026-09-19T16:38:38+00:00] chunk train a=830 q=736
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=13 quarantine=37
+[train] progress accepted=20 quarantine=80
+[train] progress accepted=28 quarantine=122
+[train] progress accepted=36 quarantine=164
+[train] progress accepted=46 quarantine=204
+[train] progress accepted=55 quarantine=245
+[train] progress accepted=67 quarantine=283
+[train] progress accepted=77 quarantine=323
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 77,
+  "quarantined": 323,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.1459227467811159,
+  "mean_score_delta": -0.13242969257370024,
+  "by_fail": {
+    "api_error:ThrottlingException": 323
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T16:52:18+00:00] chunk val a=872 q=705
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+val: converting up to 400 new rows
+[val] progress accepted=9 quarantine=41
+[val] progress accepted=18 quarantine=82
+[val] progress accepted=27 quarantine=123
+[val] progress accepted=33 quarantine=167
+[val] progress accepted=43 quarantine=207
+[val] progress accepted=50 quarantine=250
+[val] progress accepted=58 quarantine=292
+[val] progress accepted=67 quarantine=333
+{
+  "tag": "val",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 67,
+  "quarantined": 333,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.13020833333333334,
+  "mean_score_delta": -0.12652321868756813,
+  "by_fail": {
+    "api_error:ThrottlingException": 333
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-19T17:05:38+00:00] chunk test a=764 q=701
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 400 new rows
+[test] progress accepted=7 quarantine=43
+[test] progress accepted=14 quarantine=86
+[test] progress accepted=24 quarantine=126
+[test] progress accepted=32 quarantine=168
+[test] progress accepted=40 quarantine=210
+[test] progress accepted=51 quarantine=249
+[test] progress accepted=58 quarantine=292
+[test] progress accepted=69 quarantine=331
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 69,
+  "quarantined": 331,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.12935323383084577,
+  "mean_score_delta": -0.07651444053466337,
+  "by_fail": {
+    "api_error:ThrottlingException": 331
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-19T17:19:55+00:00] progress train=1966 val=1977 test=1865
+[2026-09-19T17:19:57+00:00] chunk train a=907 q=1059
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=9 quarantine=41
+[train] progress accepted=19 quarantine=81
+[train] progress accepted=26 quarantine=124
+[train] progress accepted=31 quarantine=169
+[train] progress accepted=40 quarantine=210
+[train] progress accepted=48 quarantine=252
+[train] progress accepted=56 quarantine=294
+[train] progress accepted=65 quarantine=335
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 65,
+  "quarantined": 335,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.05154639175257732,
+  "mean_score_delta": -0.20275769826884454,
+  "by_fail": {
+    "api_error:ThrottlingException": 335
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T17:33:25+00:00] chunk val a=939 q=1038
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+val: converting up to 400 new rows
+[val] progress accepted=6 quarantine=44
+[val] progress accepted=18 quarantine=82
+[val] progress accepted=25 quarantine=125
+[val] progress accepted=35 quarantine=165
+[val] progress accepted=45 quarantine=205
+[val] progress accepted=53 quarantine=247
+[val] progress accepted=60 quarantine=290
+[val] progress accepted=69 quarantine=331
+{
+  "tag": "val",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 69,
+  "quarantined": 331,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.14150943396226415,
+  "mean_score_delta": -0.11218221175173919,
+  "by_fail": {
+    "api_error:ThrottlingException": 330,
+    "refusal": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-19T17:47:21+00:00] chunk test a=833 q=1032
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 400 new rows
+[test] progress accepted=11 quarantine=39
+[test] progress accepted=20 quarantine=80
+[test] progress accepted=29 quarantine=121
+[test] progress accepted=33 quarantine=167
+[test] progress accepted=41 quarantine=209
+[test] progress accepted=52 quarantine=248
+[test] progress accepted=63 quarantine=287
+[test] progress accepted=71 quarantine=329
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 71,
+  "quarantined": 329,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.12244897959183673,
+  "mean_score_delta": -0.08516939657307426,
+  "by_fail": {
+    "api_error:ThrottlingException": 329
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-19T18:01:17+00:00] progress train=2366 val=2377 test=2265
+[2026-09-19T18:01:19+00:00] chunk train a=972 q=1394
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=6 quarantine=44
+[train] progress accepted=16 quarantine=84
+[train] progress accepted=26 quarantine=124
+[train] progress accepted=35 quarantine=165
+[train] progress accepted=45 quarantine=205
+[train] progress accepted=55 quarantine=245
+[train] progress accepted=62 quarantine=288
+[train] progress accepted=68 quarantine=332
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 68,
+  "quarantined": 332,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.10900473933649289,
+  "mean_score_delta": -0.1677428407676737,
+  "by_fail": {
+    "api_error:ThrottlingException": 331,
+    "refusal": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T18:15:05+00:00] chunk val a=1008 q=1369
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+val: converting up to 400 new rows
+[val] progress accepted=7 quarantine=43
+[val] progress accepted=16 quarantine=84
+[val] progress accepted=25 quarantine=125
+[val] progress accepted=35 quarantine=165
+[val] progress accepted=43 quarantine=207
+[val] progress accepted=54 quarantine=246
+[val] progress accepted=62 quarantine=288
+[val] progress accepted=70 quarantine=330
+{
+  "tag": "val",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 70,
+  "quarantined": 330,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.12244897959183673,
+  "mean_score_delta": -0.11774419998483998,
+  "by_fail": {
+    "api_error:ThrottlingException": 329,
+    "refusal": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-19T18:28:52+00:00] chunk test a=904 q=1361
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 400 new rows
+[test] progress accepted=8 quarantine=42
+[test] progress accepted=16 quarantine=84
+[test] progress accepted=26 quarantine=124
+[test] progress accepted=36 quarantine=164
+[test] progress accepted=48 quarantine=202
+[test] progress accepted=55 quarantine=245
+[test] progress accepted=62 quarantine=288
+[test] progress accepted=71 quarantine=329
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 71,
+  "quarantined": 329,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.12315270935960591,
+  "mean_score_delta": -0.0404871410926358,
+  "by_fail": {
+    "api_error:ThrottlingException": 328,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-19T18:42:58+00:00] progress train=2766 val=2777 test=2665
+[2026-09-19T18:43:00+00:00] chunk train a=1040 q=1726
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=10 quarantine=40
+[train] progress accepted=20 quarantine=80
+[train] progress accepted=26 quarantine=124
+[train] progress accepted=35 quarantine=165
+[train] progress accepted=43 quarantine=207
+[train] progress accepted=52 quarantine=248
+[train] progress accepted=61 quarantine=289
+[train] progress accepted=68 quarantine=332
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 68,
+  "quarantined": 332,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.10377358490566038,
+  "mean_score_delta": -0.0783397824750008,
+  "by_fail": {
+    "api_error:ThrottlingException": 330,
+    "refusal": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T18:56:48+00:00] chunk val a=1078 q=1699
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+val: converting up to 400 new rows
+[val] progress accepted=8 quarantine=42
+[val] progress accepted=16 quarantine=84
+[val] progress accepted=25 quarantine=125
+[val] progress accepted=32 quarantine=168
+[val] progress accepted=41 quarantine=209
+[val] progress accepted=48 quarantine=252
+[val] progress accepted=58 quarantine=292
+[val] progress accepted=67 quarantine=333
+{
+  "tag": "val",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 67,
+  "quarantined": 333,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.13402061855670103,
+  "mean_score_delta": -0.145568736349302,
+  "by_fail": {
+    "api_error:ThrottlingException": 332,
+    "refusal": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-19T19:10:48+00:00] chunk test a=975 q=1690
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 400 new rows
+[test] progress accepted=9 quarantine=41
+[test] progress accepted=15 quarantine=85
+[test] progress accepted=23 quarantine=127
+[test] progress accepted=33 quarantine=167
+[test] progress accepted=40 quarantine=210
+[test] progress accepted=49 quarantine=251
+[test] progress accepted=58 quarantine=292
+[test] progress accepted=66 quarantine=334
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 66,
+  "quarantined": 334,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.13333333333333333,
+  "mean_score_delta": -0.02467600400136276,
+  "by_fail": {
+    "api_error:ThrottlingException": 334
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-19T19:24:29+00:00] progress train=3166 val=3177 test=3065
+[2026-09-19T19:24:31+00:00] chunk train a=1108 q=2058
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=11 quarantine=39
+[train] progress accepted=20 quarantine=80
+[train] progress accepted=29 quarantine=121
+[train] progress accepted=35 quarantine=165
+[train] progress accepted=43 quarantine=207
+[train] progress accepted=50 quarantine=250
+[train] progress accepted=59 quarantine=291
+[train] progress accepted=67 quarantine=333
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 67,
+  "quarantined": 333,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.0975609756097561,
+  "mean_score_delta": -0.09475823623864953,
+  "by_fail": {
+    "api_error:ThrottlingException": 332,
+    "refusal": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T19:38:48+00:00] chunk val a=1145 q=2032
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+val: converting up to 400 new rows
+[val] progress accepted=11 quarantine=39
+[val] progress accepted=18 quarantine=82
+[val] progress accepted=28 quarantine=122
+[val] progress accepted=37 quarantine=163
+[val] progress accepted=44 quarantine=206
+[val] progress accepted=55 quarantine=245
+[val] progress accepted=64 quarantine=286
+[val] progress accepted=71 quarantine=329
+{
+  "tag": "val",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 71,
+  "quarantined": 329,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.14883720930232558,
+  "mean_score_delta": -0.025638634273388857,
+  "by_fail": {
+    "api_error:ThrottlingException": 329
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-19T19:52:32+00:00] chunk test a=1041 q=2024
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 400 new rows
+[test] progress accepted=10 quarantine=40
+[test] progress accepted=18 quarantine=82
+[test] progress accepted=25 quarantine=125
+[test] progress accepted=33 quarantine=167
+[test] progress accepted=40 quarantine=210
+[test] progress accepted=47 quarantine=253
+[test] progress accepted=53 quarantine=297
+[test] progress accepted=64 quarantine=336
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 64,
+  "quarantined": 336,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.14356435643564355,
+  "mean_score_delta": -0.06020910844381433,
+  "by_fail": {
+    "api_error:ThrottlingException": 336
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-19T20:06:23+00:00] progress train=3566 val=3577 test=3465
+[2026-09-19T20:06:25+00:00] chunk train a=1175 q=2391
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=8 quarantine=42
+[train] progress accepted=15 quarantine=85
+[train] progress accepted=24 quarantine=126
+[train] progress accepted=33 quarantine=167
+[train] progress accepted=38 quarantine=212
+[train] progress accepted=45 quarantine=255
+[train] progress accepted=56 quarantine=294
+[train] progress accepted=63 quarantine=337
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 63,
+  "quarantined": 337,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.11627906976744186,
+  "mean_score_delta": -0.05877341893279836,
+  "by_fail": {
+    "api_error:ThrottlingException": 337
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T20:20:24+00:00] chunk val a=1216 q=2361
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+val: converting up to 400 new rows
+[val] progress accepted=11 quarantine=39
+[val] progress accepted=21 quarantine=79
+[val] progress accepted=32 quarantine=118
+[val] progress accepted=41 quarantine=159
+[val] progress accepted=53 quarantine=197
+[val] progress accepted=63 quarantine=237
+[val] progress accepted=73 quarantine=277
+[val] progress accepted=78 quarantine=322
+{
+  "tag": "val",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 78,
+  "quarantined": 322,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.1308411214953271,
+  "mean_score_delta": -0.06693568688411361,
+  "by_fail": {
+    "api_error:ThrottlingException": 320,
+    "refusal": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-19T20:34:23+00:00] chunk test a=1105 q=2360
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 400 new rows
+[test] progress accepted=10 quarantine=40
+[test] progress accepted=19 quarantine=81
+[test] progress accepted=28 quarantine=122
+[test] progress accepted=36 quarantine=164
+[test] progress accepted=40 quarantine=210
+[test] progress accepted=51 quarantine=249
+[test] progress accepted=62 quarantine=288
+[test] progress accepted=70 quarantine=330
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 70,
+  "quarantined": 330,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.13846153846153847,
+  "mean_score_delta": -0.05936436473524996,
+  "by_fail": {
+    "api_error:ThrottlingException": 330
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-19T20:48:11+00:00] progress train=3966 val=3977 test=3865
+[2026-09-19T20:48:13+00:00] chunk train a=1238 q=2728
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=10 quarantine=40
+[train] progress accepted=18 quarantine=82
+[train] progress accepted=28 quarantine=122
+[train] progress accepted=37 quarantine=163
+[train] progress accepted=44 quarantine=206
+[train] progress accepted=53 quarantine=247
+[train] progress accepted=63 quarantine=287
+[train] progress accepted=72 quarantine=328
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 72,
+  "quarantined": 328,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.11822660098522167,
+  "mean_score_delta": -0.13285130510080811,
+  "by_fail": {
+    "api_error:ThrottlingException": 327,
+    "refusal": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T21:02:17+00:00] chunk val a=1294 q=2683
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+val: converting up to 400 new rows
+[val] progress accepted=9 quarantine=41
+[val] progress accepted=19 quarantine=81
+[val] progress accepted=30 quarantine=120
+[val] progress accepted=37 quarantine=163
+[val] progress accepted=47 quarantine=203
+[val] progress accepted=58 quarantine=242
+[val] progress accepted=66 quarantine=284
+[val] progress accepted=75 quarantine=325
+{
+  "tag": "val",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 75,
+  "quarantined": 325,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.18592964824120603,
+  "mean_score_delta": -0.039749270044267176,
+  "by_fail": {
+    "api_error:ThrottlingException": 325
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-19T21:15:47+00:00] chunk test a=1175 q=2690
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 400 new rows
+[test] progress accepted=10 quarantine=40
+[test] progress accepted=18 quarantine=82
+[test] progress accepted=26 quarantine=124
+[test] progress accepted=36 quarantine=164
+[test] progress accepted=45 quarantine=205
+[test] progress accepted=55 quarantine=245
+[test] progress accepted=61 quarantine=289
+[test] progress accepted=70 quarantine=330
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 70,
+  "quarantined": 330,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.13333333333333333,
+  "mean_score_delta": -0.06544343430016722,
+  "by_fail": {
+    "api_error:ThrottlingException": 329,
+    "refusal": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-19T21:29:09+00:00] progress train=4366 val=4377 test=4265
+[2026-09-19T21:29:11+00:00] chunk train a=1310 q=3056
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=13 quarantine=37
+[train] progress accepted=22 quarantine=78
+[train] progress accepted=27 quarantine=123
+[train] progress accepted=33 quarantine=167
+[train] progress accepted=40 quarantine=210
+[train] progress accepted=49 quarantine=251
+[train] progress accepted=61 quarantine=289
+[train] progress accepted=70 quarantine=330
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 70,
+  "quarantined": 330,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.13917525773195877,
+  "mean_score_delta": -0.10955674621675696,
+  "by_fail": {
+    "api_error:ThrottlingException": 330
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T21:43:12+00:00] chunk val a=1369 q=3008
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+val: converting up to 400 new rows
+[val] progress accepted=9 quarantine=41
+[val] progress accepted=17 quarantine=83
+[val] progress accepted=27 quarantine=123
+[val] progress accepted=36 quarantine=164
+[val] progress accepted=42 quarantine=208
+[val] progress accepted=51 quarantine=249
+[val] progress accepted=62 quarantine=288
+[val] progress accepted=71 quarantine=329
+{
+  "tag": "val",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 71,
+  "quarantined": 329,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.16666666666666666,
+  "mean_score_delta": -0.05340804940771679,
+  "by_fail": {
+    "api_error:ThrottlingException": 328,
+    "refusal": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-19T21:57:41+00:00] chunk test a=1245 q=3020
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 400 new rows
+[test] progress accepted=7 quarantine=43
+[test] progress accepted=17 quarantine=83
+[test] progress accepted=27 quarantine=123
+[test] progress accepted=35 quarantine=165
+[test] progress accepted=42 quarantine=208
+[test] progress accepted=52 quarantine=248
+[test] progress accepted=56 quarantine=294
+[test] progress accepted=66 quarantine=334
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 66,
+  "quarantined": 334,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.1261682242990654,
+  "mean_score_delta": -0.0905057851676688,
+  "by_fail": {
+    "api_error:ThrottlingException": 333,
+    "refusal": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-19T22:11:41+00:00] progress train=4766 val=4777 test=4665
+[2026-09-19T22:11:43+00:00] chunk train a=1380 q=3386
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=11 quarantine=39
+[train] progress accepted=18 quarantine=82
+[train] progress accepted=25 quarantine=125
+[train] progress accepted=32 quarantine=168
+[train] progress accepted=41 quarantine=209
+[train] progress accepted=47 quarantine=253
+[train] progress accepted=55 quarantine=295
+[train] progress accepted=63 quarantine=337
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 63,
+  "quarantined": 337,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.08482142857142858,
+  "mean_score_delta": -0.19103402012426937,
+  "by_fail": {
+    "api_error:ThrottlingException": 337
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T22:25:11+00:00] chunk val a=1440 q=3337
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+val: converting up to 400 new rows
+[val] progress accepted=9 quarantine=41
+[val] progress accepted=17 quarantine=83
+[val] progress accepted=29 quarantine=121
+[val] progress accepted=39 quarantine=161
+[val] progress accepted=49 quarantine=201
+[val] progress accepted=55 quarantine=245
+[val] progress accepted=63 quarantine=287
+[val] progress accepted=69 quarantine=331
+{
+  "tag": "val",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 69,
+  "quarantined": 331,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.1065989847715736,
+  "mean_score_delta": -0.1321351512780656,
+  "by_fail": {
+    "api_error:ThrottlingException": 331
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-19T22:38:24+00:00] chunk test a=1311 q=3354
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 400 new rows
+[test] progress accepted=10 quarantine=40
+[test] progress accepted=21 quarantine=79
+[test] progress accepted=32 quarantine=118
+[test] progress accepted=42 quarantine=158
+[test] progress accepted=51 quarantine=199
+[test] progress accepted=59 quarantine=241
+[test] progress accepted=71 quarantine=279
+[test] progress accepted=80 quarantine=320
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 80,
+  "quarantined": 320,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.17307692307692307,
+  "mean_score_delta": -0.09057462421478704,
+  "by_fail": {
+    "api_error:ThrottlingException": 320
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-19T22:51:57+00:00] progress train=5166 val=5177 test=5065
+[2026-09-19T22:51:59+00:00] chunk train a=1443 q=3723
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=7 quarantine=43
+[train] progress accepted=17 quarantine=83
+[train] progress accepted=27 quarantine=123
+[train] progress accepted=36 quarantine=164
+[train] progress accepted=43 quarantine=207
+[train] progress accepted=54 quarantine=246
+[train] progress accepted=65 quarantine=285
+[train] progress accepted=73 quarantine=327
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 73,
+  "quarantined": 327,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.11594202898550725,
+  "mean_score_delta": -0.03147457633805398,
+  "by_fail": {
+    "api_error:ThrottlingException": 326,
+    "refusal": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T23:05:27+00:00] chunk val a=1509 q=3668
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+val: converting up to 400 new rows
+[val] progress accepted=7 quarantine=43
+[val] progress accepted=16 quarantine=84
+[val] progress accepted=24 quarantine=126
+[val] progress accepted=31 quarantine=169
+[val] progress accepted=39 quarantine=211
+[val] progress accepted=49 quarantine=251
+[val] progress accepted=58 quarantine=292
+[val] progress accepted=66 quarantine=334
+{
+  "tag": "val",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 66,
+  "quarantined": 334,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.1336405529953917,
+  "mean_score_delta": -0.1615369936423094,
+  "by_fail": {
+    "api_error:ThrottlingException": 334
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-19T23:19:40+00:00] chunk test a=1391 q=3674
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 400 new rows
+[test] progress accepted=9 quarantine=41
+[test] progress accepted=16 quarantine=84
+[test] progress accepted=23 quarantine=127
+[test] progress accepted=30 quarantine=170
+[test] progress accepted=39 quarantine=211
+[test] progress accepted=50 quarantine=250
+[test] progress accepted=60 quarantine=290
+[test] progress accepted=71 quarantine=329
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 71,
+  "quarantined": 329,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.15348837209302327,
+  "mean_score_delta": -0.13593127787716583,
+  "by_fail": {
+    "api_error:ThrottlingException": 329
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-19T23:32:53+00:00] progress train=5566 val=5577 test=5465
+[2026-09-19T23:32:55+00:00] chunk train a=1516 q=4050
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=10 quarantine=40
+[train] progress accepted=18 quarantine=82
+[train] progress accepted=28 quarantine=122
+[train] progress accepted=35 quarantine=165
+[train] progress accepted=42 quarantine=208
+[train] progress accepted=47 quarantine=253
+[train] progress accepted=55 quarantine=295
+[train] progress accepted=64 quarantine=336
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 64,
+  "quarantined": 336,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.07729468599033816,
+  "mean_score_delta": -0.1492730507743545,
+  "by_fail": {
+    "api_error:ThrottlingException": 336
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-19T23:47:01+00:00] chunk val a=1575 q=4002
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+val: converting up to 400 new rows
+[val] progress accepted=9 quarantine=41
+[val] progress accepted=21 quarantine=79
+[val] progress accepted=29 quarantine=121
+[val] progress accepted=39 quarantine=161
+[val] progress accepted=48 quarantine=202
+[val] progress accepted=56 quarantine=244
+[val] progress accepted=62 quarantine=288
+[val] progress accepted=72 quarantine=328
+{
+  "tag": "val",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 72,
+  "quarantined": 328,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.12380952380952381,
+  "mean_score_delta": -0.04795710486359894,
+  "by_fail": {
+    "api_error:ThrottlingException": 328
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T00:00:51+00:00] chunk test a=1462 q=4003
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 400 new rows
+[test] progress accepted=7 quarantine=43
+[test] progress accepted=16 quarantine=84
+[test] progress accepted=23 quarantine=127
+[test] progress accepted=32 quarantine=168
+[test] progress accepted=37 quarantine=213
+[test] progress accepted=44 quarantine=256
+[test] progress accepted=51 quarantine=299
+[test] progress accepted=60 quarantine=340
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 60,
+  "quarantined": 340,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.0779816513761468,
+  "mean_score_delta": -0.08632825938208649,
+  "by_fail": {
+    "api_error:ThrottlingException": 340
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T00:14:59+00:00] progress train=5966 val=5977 test=5865
+[2026-09-20T00:15:01+00:00] chunk train a=1580 q=4386
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=11 quarantine=39
+[train] progress accepted=19 quarantine=81
+[train] progress accepted=25 quarantine=125
+[train] progress accepted=34 quarantine=166
+[train] progress accepted=44 quarantine=206
+[train] progress accepted=53 quarantine=247
+[train] progress accepted=62 quarantine=288
+[train] progress accepted=69 quarantine=331
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 69,
+  "quarantined": 331,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.10628019323671498,
+  "mean_score_delta": -0.1426070434567721,
+  "by_fail": {
+    "api_error:ThrottlingException": 330,
+    "refusal": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T00:28:37+00:00] chunk val a=1647 q=4330
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+val: converting up to 400 new rows
+[val] progress accepted=7 quarantine=43
+[val] progress accepted=16 quarantine=84
+[val] progress accepted=27 quarantine=123
+[val] progress accepted=36 quarantine=164
+[val] progress accepted=40 quarantine=210
+[val] progress accepted=47 quarantine=253
+[val] progress accepted=57 quarantine=293
+[val] progress accepted=64 quarantine=336
+{
+  "tag": "val",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 64,
+  "quarantined": 336,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.12307692307692308,
+  "mean_score_delta": -0.043572164911893196,
+  "by_fail": {
+    "api_error:ThrottlingException": 335,
+    "refusal": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T00:42:04+00:00] chunk test a=1522 q=4343
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 400 new rows
+[test] progress accepted=10 quarantine=40
+[test] progress accepted=19 quarantine=81
+[test] progress accepted=29 quarantine=121
+[test] progress accepted=37 quarantine=163
+[test] progress accepted=43 quarantine=207
+[test] progress accepted=50 quarantine=250
+[test] progress accepted=60 quarantine=290
+[test] progress accepted=69 quarantine=331
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 69,
+  "quarantined": 331,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.15350877192982457,
+  "mean_score_delta": 0.02491951240496575,
+  "by_fail": {
+    "api_error:ThrottlingException": 331
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T00:56:05+00:00] progress train=6366 val=6377 test=6265
+[2026-09-20T00:56:07+00:00] chunk train a=1649 q=4717
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=11 quarantine=39
+[train] progress accepted=18 quarantine=82
+[train] progress accepted=25 quarantine=125
+[train] progress accepted=36 quarantine=164
+[train] progress accepted=44 quarantine=206
+[train] progress accepted=54 quarantine=246
+[train] progress accepted=61 quarantine=289
+[train] progress accepted=68 quarantine=332
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 68,
+  "quarantined": 332,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.10454545454545454,
+  "mean_score_delta": -0.07209347856833655,
+  "by_fail": {
+    "api_error:ThrottlingException": 330,
+    "refusal": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T01:10:10+00:00] chunk val a=1711 q=4666
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+val: converting up to 351 new rows
+[val] progress accepted=9 quarantine=41
+[val] progress accepted=19 quarantine=81
+[val] progress accepted=29 quarantine=121
+[val] progress accepted=37 quarantine=163
+[val] progress accepted=47 quarantine=203
+[val] progress accepted=52 quarantine=248
+[val] progress accepted=59 quarantine=291
+{
+  "tag": "val",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 59,
+  "quarantined": 292,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.1276595744680851,
+  "mean_score_delta": -0.11935881200104446,
+  "by_fail": {
+    "api_error:ThrottlingException": 291,
+    "refusal": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T01:22:36+00:00] chunk test a=1591 q=4674
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 400 new rows
+[test] progress accepted=11 quarantine=39
+[test] progress accepted=18 quarantine=82
+[test] progress accepted=26 quarantine=124
+[test] progress accepted=34 quarantine=166
+[test] progress accepted=43 quarantine=207
+[test] progress accepted=49 quarantine=251
+[test] progress accepted=57 quarantine=293
+[test] progress accepted=68 quarantine=332
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 68,
+  "quarantined": 332,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.12149532710280374,
+  "mean_score_delta": -0.09691844812101301,
+  "by_fail": {
+    "api_error:ThrottlingException": 332
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T01:36:33+00:00] progress train=6766 val=6728 test=6665
+[2026-09-20T01:36:35+00:00] chunk train a=1717 q=5049
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=9 quarantine=41
+[train] progress accepted=16 quarantine=84
+[train] progress accepted=21 quarantine=129
+[train] progress accepted=30 quarantine=170
+[train] progress accepted=41 quarantine=209
+[train] progress accepted=52 quarantine=248
+[train] progress accepted=60 quarantine=290
+[train] progress accepted=72 quarantine=328
+{
+  "tag": "train",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 72,
+  "quarantined": 328,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.08796296296296297,
+  "mean_score_delta": -0.1322392652897785,
+  "by_fail": {
+    "api_error:ThrottlingException": 328
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T01:50:34+00:00] chunk test a=1659 q=5006
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+test: converting up to 63 new rows
+[test] progress accepted=10 quarantine=40
+{
+  "tag": "test",
+  "model": "meta.llama3-8b-instruct-v1:0",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 13,
+  "quarantined": 50,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.15789473684210525,
+  "mean_score_delta": -0.1435550615692941,
+  "by_fail": {
+    "api_error:ThrottlingException": 50
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T01:52:47+00:00] progress train=7166 val=6728 test=6728
+[2026-09-20T01:52:49+00:00] chunk train a=1789 q=5377
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=meta.llama3-8b-instruct-v1:0
+train: converting up to 400 new rows
+[train] progress accepted=6 quarantine=44
+[train] progress accepted=12 quarantine=88
+[2026-09-20T01:56:51+00:00] QWEN+MANTLE fix loop workers=2
+[2026-09-20T01:56:51+00:00] chunk train a=1803 q=13
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 150 new rows
+[train] progress accepted=25 quarantine=25
+[train] progress accepted=62 quarantine=38
+[train] progress accepted=110 quarantine=40
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 2,
+  "accepted": 110,
+  "quarantined": 40,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.6330275229357798,
+  "mean_score_delta": -0.06014782813462344,
+  "by_fail": {
+    "abuse_score_drop": 40
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T01:59:42+00:00] chunk val a=1770 q=12
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 150 new rows
+[val] progress accepted=33 quarantine=17
+[val] progress accepted=79 quarantine=21
+[val] progress accepted=118 quarantine=32
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 2,
+  "accepted": 118,
+  "quarantined": 32,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.6893203883495146,
+  "mean_score_delta": -0.0699087973384155,
+  "by_fail": {
+    "abuse_score_drop": 32
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T02:02:06+00:00] chunk test a=1672 q=6
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 150 new rows
+[test] progress accepted=42 quarantine=8
+[2026-09-20T02:03:59+00:00] QWEN Mantle workers=8 limit=400
+[2026-09-20T02:03:59+00:00] chunk train a=1913 q=53
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=47 quarantine=3
+[train] progress accepted=92 quarantine=8
+[train] progress accepted=137 quarantine=13
+[train] progress accepted=186 quarantine=14
+[train] progress accepted=235 quarantine=15
+[train] progress accepted=279 quarantine=21
+[train] progress accepted=324 quarantine=26
+[train] progress accepted=371 quarantine=29
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 371,
+  "quarantined": 29,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8703703703703703,
+  "mean_score_delta": -0.10271574498839536,
+  "by_fail": {
+    "abuse_score_drop": 27,
+    "abuse_lexicon_missing": 1,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T02:05:37+00:00] chunk val a=1888 q=44
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 400 new rows
+[val] progress accepted=47 quarantine=3
+[val] progress accepted=93 quarantine=7
+[val] progress accepted=140 quarantine=10
+[val] progress accepted=183 quarantine=17
+[val] progress accepted=229 quarantine=21
+[val] progress accepted=277 quarantine=23
+[val] progress accepted=327 quarantine=23
+[val] progress accepted=373 quarantine=27
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 373,
+  "quarantined": 27,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8744186046511628,
+  "mean_score_delta": -0.062399428621204144,
+  "by_fail": {
+    "abuse_score_drop": 23,
+    "abuse_lexicon_missing": 4
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T02:07:13+00:00] chunk test a=1728 q=14
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 400 new rows
+[test] progress accepted=43 quarantine=7
+[test] progress accepted=91 quarantine=9
+[test] progress accepted=140 quarantine=10
+[test] progress accepted=183 quarantine=17
+[test] progress accepted=231 quarantine=19
+[test] progress accepted=279 quarantine=21
+[test] progress accepted=322 quarantine=28
+[test] progress accepted=350 quarantine=50
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 350,
+  "quarantined": 50,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.7959183673469388,
+  "mean_score_delta": -0.0710292684073959,
+  "by_fail": {
+    "abuse_score_drop": 47,
+    "collapsed_length": 1,
+    "abuse_lexicon_missing": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T02:09:05+00:00] progress train=2366 val=2332 test=2142
+[2026-09-20T02:09:07+00:00] chunk train a=2284 q=82
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=48 quarantine=2
+[train] progress accepted=94 quarantine=6
+[train] progress accepted=142 quarantine=8
+[train] progress accepted=187 quarantine=13
+[train] progress accepted=231 quarantine=19
+[train] progress accepted=279 quarantine=21
+[train] progress accepted=320 quarantine=30
+[train] progress accepted=361 quarantine=39
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 361,
+  "quarantined": 39,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8414634146341463,
+  "mean_score_delta": -0.07182843034952838,
+  "by_fail": {
+    "abuse_score_drop": 37,
+    "collapsed_length": 1,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T02:10:57+00:00] chunk val a=2261 q=71
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 400 new rows
+[val] progress accepted=40 quarantine=10
+[val] progress accepted=89 quarantine=11
+[val] progress accepted=135 quarantine=15
+[val] progress accepted=180 quarantine=20
+[val] progress accepted=230 quarantine=20
+[val] progress accepted=276 quarantine=24
+[val] progress accepted=321 quarantine=29
+[val] progress accepted=370 quarantine=30
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 370,
+  "quarantined": 30,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8708133971291866,
+  "mean_score_delta": -0.0848856293445302,
+  "by_fail": {
+    "abuse_score_drop": 27,
+    "collapsed_length": 3
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T02:12:39+00:00] chunk test a=2078 q=64
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 400 new rows
+[test] progress accepted=49 quarantine=1
+[test] progress accepted=96 quarantine=4
+[test] progress accepted=142 quarantine=8
+[test] progress accepted=189 quarantine=11
+[test] progress accepted=234 quarantine=16
+[test] progress accepted=282 quarantine=18
+[test] progress accepted=329 quarantine=21
+[test] progress accepted=375 quarantine=25
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 375,
+  "quarantined": 25,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8774509803921569,
+  "mean_score_delta": -0.06632947006076574,
+  "by_fail": {
+    "abuse_score_drop": 21,
+    "abuse_lexicon_missing": 4
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T02:14:18+00:00] progress train=2766 val=2732 test=2542
+[2026-09-20T02:14:20+00:00] chunk train a=2645 q=121
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=48 quarantine=2
+[train] progress accepted=96 quarantine=4
+[train] progress accepted=143 quarantine=7
+[train] progress accepted=190 quarantine=10
+[train] progress accepted=236 quarantine=14
+[train] progress accepted=282 quarantine=18
+[train] progress accepted=331 quarantine=19
+[train] progress accepted=375 quarantine=25
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 375,
+  "quarantined": 25,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8873239436619719,
+  "mean_score_delta": -0.07433176669478417,
+  "by_fail": {
+    "abuse_score_drop": 21,
+    "abuse_lexicon_missing": 2,
+    "collapsed_length": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T02:15:58+00:00] chunk val a=2631 q=101
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 400 new rows
+[val] progress accepted=45 quarantine=5
+[val] progress accepted=92 quarantine=8
+[val] progress accepted=137 quarantine=13
+[val] progress accepted=186 quarantine=14
+[val] progress accepted=232 quarantine=18
+[val] progress accepted=280 quarantine=20
+[val] progress accepted=328 quarantine=22
+[val] progress accepted=374 quarantine=26
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 374,
+  "quarantined": 26,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8828828828828829,
+  "mean_score_delta": -0.0786799760336146,
+  "by_fail": {
+    "abuse_score_drop": 24,
+    "abuse_lexicon_missing": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T02:17:33+00:00] chunk test a=2453 q=89
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 400 new rows
+[test] progress accepted=49 quarantine=1
+[test] progress accepted=97 quarantine=3
+[test] progress accepted=144 quarantine=6
+[test] progress accepted=193 quarantine=7
+[test] progress accepted=241 quarantine=9
+[test] progress accepted=289 quarantine=11
+[test] progress accepted=337 quarantine=13
+[test] progress accepted=383 quarantine=17
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 383,
+  "quarantined": 17,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.9158415841584159,
+  "mean_score_delta": -0.0744843621040371,
+  "by_fail": {
+    "abuse_score_drop": 17
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T02:19:01+00:00] progress train=3166 val=3132 test=2942
+[2026-09-20T02:19:03+00:00] chunk train a=3020 q=146
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=49 quarantine=1
+[train] progress accepted=95 quarantine=5
+[train] progress accepted=141 quarantine=9
+[train] progress accepted=187 quarantine=13
+[train] progress accepted=234 quarantine=16
+[train] progress accepted=283 quarantine=17
+[train] progress accepted=330 quarantine=20
+[train] progress accepted=376 quarantine=24
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 376,
+  "quarantined": 24,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8961038961038961,
+  "mean_score_delta": -0.06688335198076799,
+  "by_fail": {
+    "abuse_score_drop": 23,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T02:20:44+00:00] chunk val a=3005 q=127
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 400 new rows
+[val] progress accepted=49 quarantine=1
+[val] progress accepted=95 quarantine=5
+[val] progress accepted=143 quarantine=7
+[val] progress accepted=191 quarantine=9
+[val] progress accepted=238 quarantine=12
+[val] progress accepted=287 quarantine=13
+[val] progress accepted=335 quarantine=15
+[val] progress accepted=383 quarantine=17
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 383,
+  "quarantined": 17,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.9227053140096618,
+  "mean_score_delta": -0.069697223997653,
+  "by_fail": {
+    "abuse_score_drop": 16,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T02:22:17+00:00] chunk test a=2836 q=106
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 400 new rows
+[test] progress accepted=46 quarantine=4
+[test] progress accepted=91 quarantine=9
+[test] progress accepted=139 quarantine=11
+[test] progress accepted=189 quarantine=11
+[test] progress accepted=235 quarantine=15
+[test] progress accepted=282 quarantine=18
+[test] progress accepted=330 quarantine=20
+[test] progress accepted=376 quarantine=24
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 376,
+  "quarantined": 24,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8973214285714286,
+  "mean_score_delta": -0.07734299167876746,
+  "by_fail": {
+    "abuse_score_drop": 21,
+    "collapsed_length": 2,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T02:23:51+00:00] progress train=3566 val=3532 test=3342
+[2026-09-20T02:23:54+00:00] chunk train a=3396 q=170
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=45 quarantine=5
+[train] progress accepted=93 quarantine=7
+[train] progress accepted=136 quarantine=14
+[train] progress accepted=181 quarantine=19
+[train] progress accepted=227 quarantine=23
+[train] progress accepted=272 quarantine=28
+[train] progress accepted=322 quarantine=28
+[train] progress accepted=368 quarantine=32
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 368,
+  "quarantined": 32,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8626609442060086,
+  "mean_score_delta": -0.09001975820738943,
+  "by_fail": {
+    "abuse_lexicon_missing": 5,
+    "abuse_score_drop": 27
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T02:25:39+00:00] chunk val a=3388 q=144
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 400 new rows
+[val] progress accepted=46 quarantine=4
+[val] progress accepted=92 quarantine=8
+[val] progress accepted=138 quarantine=12
+[val] progress accepted=184 quarantine=16
+[val] progress accepted=231 quarantine=19
+[val] progress accepted=279 quarantine=21
+[val] progress accepted=326 quarantine=24
+[val] progress accepted=374 quarantine=26
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 374,
+  "quarantined": 26,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8894230769230769,
+  "mean_score_delta": -0.05714524486525492,
+  "by_fail": {
+    "abuse_lexicon_missing": 2,
+    "abuse_score_drop": 21,
+    "collapsed_length": 3
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T02:27:22+00:00] chunk test a=3212 q=130
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 400 new rows
+[test] progress accepted=48 quarantine=2
+[test] progress accepted=96 quarantine=4
+[test] progress accepted=143 quarantine=7
+[test] progress accepted=188 quarantine=12
+[test] progress accepted=234 quarantine=16
+[test] progress accepted=278 quarantine=22
+[test] progress accepted=322 quarantine=28
+[test] progress accepted=365 quarantine=35
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 365,
+  "quarantined": 35,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8447488584474886,
+  "mean_score_delta": -0.04205311794880114,
+  "by_fail": {
+    "abuse_score_drop": 33,
+    "abuse_lexicon_missing": 1,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T02:29:06+00:00] progress train=3966 val=3932 test=3742
+[2026-09-20T02:29:08+00:00] chunk train a=3764 q=202
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=49 quarantine=1
+[train] progress accepted=95 quarantine=5
+[train] progress accepted=139 quarantine=11
+[train] progress accepted=183 quarantine=17
+[train] progress accepted=229 quarantine=21
+[train] progress accepted=275 quarantine=25
+[train] progress accepted=323 quarantine=27
+[train] progress accepted=370 quarantine=30
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 370,
+  "quarantined": 30,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8705357142857143,
+  "mean_score_delta": -0.09389745713765356,
+  "by_fail": {
+    "abuse_score_drop": 27,
+    "collapsed_length": 2,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T02:30:49+00:00] chunk val a=3762 q=170
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 400 new rows
+[val] progress accepted=47 quarantine=3
+[val] progress accepted=92 quarantine=8
+[val] progress accepted=139 quarantine=11
+[val] progress accepted=186 quarantine=14
+[val] progress accepted=232 quarantine=18
+[val] progress accepted=279 quarantine=21
+[val] progress accepted=325 quarantine=25
+[val] progress accepted=370 quarantine=30
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 370,
+  "quarantined": 30,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8722466960352423,
+  "mean_score_delta": -0.08263556807100572,
+  "by_fail": {
+    "abuse_score_drop": 25,
+    "abuse_lexicon_missing": 3,
+    "collapsed_length": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T02:32:25+00:00] chunk test a=3577 q=165
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 400 new rows
+[test] progress accepted=44 quarantine=6
+[test] progress accepted=92 quarantine=8
+[test] progress accepted=140 quarantine=10
+[test] progress accepted=184 quarantine=16
+[test] progress accepted=232 quarantine=18
+[test] progress accepted=280 quarantine=20
+[test] progress accepted=327 quarantine=23
+[test] progress accepted=375 quarantine=25
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 375,
+  "quarantined": 25,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8711340206185567,
+  "mean_score_delta": -0.08204210427155097,
+  "by_fail": {
+    "abuse_score_drop": 23,
+    "abuse_lexicon_missing": 1,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T02:34:02+00:00] progress train=4366 val=4332 test=4142
+[2026-09-20T02:34:04+00:00] chunk train a=4134 q=232
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=49 quarantine=1
+[train] progress accepted=93 quarantine=7
+[train] progress accepted=137 quarantine=13
+[train] progress accepted=182 quarantine=18
+[train] progress accepted=228 quarantine=22
+[train] progress accepted=275 quarantine=25
+[train] progress accepted=322 quarantine=28
+[train] progress accepted=369 quarantine=31
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 369,
+  "quarantined": 31,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8609865470852018,
+  "mean_score_delta": -0.10423272869203916,
+  "by_fail": {
+    "abuse_score_drop": 31
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T02:35:44+00:00] chunk val a=4132 q=200
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 400 new rows
+[val] progress accepted=49 quarantine=1
+[val] progress accepted=96 quarantine=4
+[val] progress accepted=141 quarantine=9
+[val] progress accepted=188 quarantine=12
+[val] progress accepted=232 quarantine=18
+[val] progress accepted=281 quarantine=19
+[val] progress accepted=327 quarantine=23
+[val] progress accepted=372 quarantine=28
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 372,
+  "quarantined": 28,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8774509803921569,
+  "mean_score_delta": -0.05660845716834389,
+  "by_fail": {
+    "abuse_score_drop": 23,
+    "abuse_lexicon_missing": 2,
+    "collapsed_length": 3
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T02:37:19+00:00] chunk test a=3952 q=190
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 400 new rows
+[test] progress accepted=48 quarantine=2
+[test] progress accepted=95 quarantine=5
+[test] progress accepted=143 quarantine=7
+[test] progress accepted=190 quarantine=10
+[test] progress accepted=235 quarantine=15
+[test] progress accepted=283 quarantine=17
+[test] progress accepted=330 quarantine=20
+[test] progress accepted=376 quarantine=24
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 376,
+  "quarantined": 24,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8918918918918919,
+  "mean_score_delta": -0.06624682645308488,
+  "by_fail": {
+    "abuse_score_drop": 22,
+    "collapsed_length": 1,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T02:38:54+00:00] progress train=4766 val=4732 test=4542
+[2026-09-20T02:38:56+00:00] chunk train a=4503 q=263
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=46 quarantine=4
+[train] progress accepted=94 quarantine=6
+[train] progress accepted=143 quarantine=7
+[train] progress accepted=190 quarantine=10
+[train] progress accepted=237 quarantine=13
+[train] progress accepted=282 quarantine=18
+[train] progress accepted=329 quarantine=21
+[train] progress accepted=377 quarantine=23
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 377,
+  "quarantined": 23,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8894472361809045,
+  "mean_score_delta": -0.09803842926096537,
+  "by_fail": {
+    "abuse_score_drop": 22,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T02:40:29+00:00] chunk val a=4504 q=228
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 400 new rows
+[val] progress accepted=50 quarantine=0
+[val] progress accepted=98 quarantine=2
+[val] progress accepted=147 quarantine=3
+[val] progress accepted=194 quarantine=6
+[val] progress accepted=243 quarantine=7
+[val] progress accepted=289 quarantine=11
+[val] progress accepted=336 quarantine=14
+[val] progress accepted=383 quarantine=17
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 383,
+  "quarantined": 17,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.9170731707317074,
+  "mean_score_delta": -0.06564622762790509,
+  "by_fail": {
+    "abuse_score_drop": 16,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T02:42:01+00:00] chunk test a=4328 q=214
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 400 new rows
+[test] progress accepted=46 quarantine=4
+[test] progress accepted=92 quarantine=8
+[test] progress accepted=138 quarantine=12
+[test] progress accepted=186 quarantine=14
+[test] progress accepted=236 quarantine=14
+[test] progress accepted=285 quarantine=15
+[test] progress accepted=334 quarantine=16
+[test] progress accepted=378 quarantine=22
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 378,
+  "quarantined": 22,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8986175115207373,
+  "mean_score_delta": -0.033960931819848834,
+  "by_fail": {
+    "abuse_score_drop": 20,
+    "collapsed_length": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T02:43:38+00:00] progress train=5166 val=5132 test=4942
+[2026-09-20T02:43:40+00:00] chunk train a=4880 q=286
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=45 quarantine=5
+[train] progress accepted=93 quarantine=7
+[train] progress accepted=142 quarantine=8
+[train] progress accepted=186 quarantine=14
+[train] progress accepted=228 quarantine=22
+[train] progress accepted=278 quarantine=22
+[train] progress accepted=326 quarantine=24
+[train] progress accepted=373 quarantine=27
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 373,
+  "quarantined": 27,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8921161825726142,
+  "mean_score_delta": -0.11917557609055301,
+  "by_fail": {
+    "abuse_score_drop": 26,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T02:45:18+00:00] chunk val a=4887 q=245
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 400 new rows
+[val] progress accepted=50 quarantine=0
+[val] progress accepted=96 quarantine=4
+[val] progress accepted=144 quarantine=6
+[val] progress accepted=192 quarantine=8
+[val] progress accepted=240 quarantine=10
+[val] progress accepted=289 quarantine=11
+[val] progress accepted=337 quarantine=13
+[val] progress accepted=383 quarantine=17
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 383,
+  "quarantined": 17,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.926605504587156,
+  "mean_score_delta": -0.08371924676788928,
+  "by_fail": {
+    "abuse_score_drop": 16,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T02:46:47+00:00] chunk test a=4706 q=236
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 400 new rows
+[test] progress accepted=49 quarantine=1
+[test] progress accepted=96 quarantine=4
+[test] progress accepted=142 quarantine=8
+[test] progress accepted=191 quarantine=9
+[test] progress accepted=238 quarantine=12
+[test] progress accepted=285 quarantine=15
+[test] progress accepted=333 quarantine=17
+[test] progress accepted=379 quarantine=21
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 379,
+  "quarantined": 21,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.9095022624434389,
+  "mean_score_delta": -0.06752146021426117,
+  "by_fail": {
+    "abuse_score_drop": 20,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T02:48:21+00:00] progress train=5566 val=5532 test=5342
+[2026-09-20T02:48:23+00:00] chunk train a=5253 q=313
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=45 quarantine=5
+[train] progress accepted=91 quarantine=9
+[train] progress accepted=134 quarantine=16
+[train] progress accepted=177 quarantine=23
+[train] progress accepted=221 quarantine=29
+[train] progress accepted=269 quarantine=31
+[train] progress accepted=315 quarantine=35
+[train] progress accepted=360 quarantine=40
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 360,
+  "quarantined": 40,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8181818181818182,
+  "mean_score_delta": -0.09164840170285768,
+  "by_fail": {
+    "abuse_score_drop": 38,
+    "collapsed_length": 1,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T02:50:05+00:00] chunk val a=5270 q=262
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 400 new rows
+[val] progress accepted=47 quarantine=3
+[val] progress accepted=94 quarantine=6
+[val] progress accepted=141 quarantine=9
+[val] progress accepted=190 quarantine=10
+[val] progress accepted=236 quarantine=14
+[val] progress accepted=282 quarantine=18
+[val] progress accepted=330 quarantine=20
+[val] progress accepted=375 quarantine=25
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 375,
+  "quarantined": 25,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8873239436619719,
+  "mean_score_delta": -0.08781847128768762,
+  "by_fail": {
+    "abuse_score_drop": 22,
+    "abuse_lexicon_missing": 2,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T02:51:38+00:00] chunk test a=5085 q=257
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 400 new rows
+[test] progress accepted=50 quarantine=0
+[test] progress accepted=95 quarantine=5
+[test] progress accepted=142 quarantine=8
+[test] progress accepted=190 quarantine=10
+[test] progress accepted=237 quarantine=13
+[test] progress accepted=282 quarantine=18
+[test] progress accepted=328 quarantine=22
+[test] progress accepted=373 quarantine=27
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 373,
+  "quarantined": 27,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8772727272727273,
+  "mean_score_delta": -0.08786008533729545,
+  "by_fail": {
+    "abuse_lexicon_missing": 1,
+    "abuse_score_drop": 26
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T02:53:15+00:00] progress train=5966 val=5932 test=5742
+[2026-09-20T02:53:17+00:00] chunk train a=5613 q=353
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=49 quarantine=1
+[train] progress accepted=96 quarantine=4
+[train] progress accepted=145 quarantine=5
+[train] progress accepted=189 quarantine=11
+[train] progress accepted=238 quarantine=12
+[train] progress accepted=285 quarantine=15
+[train] progress accepted=333 quarantine=17
+[train] progress accepted=378 quarantine=22
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 378,
+  "quarantined": 22,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.9094827586206896,
+  "mean_score_delta": -0.0938986753539808,
+  "by_fail": {
+    "abuse_score_drop": 19,
+    "abuse_lexicon_missing": 2,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T02:54:51+00:00] chunk val a=5645 q=287
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 400 new rows
+[val] progress accepted=46 quarantine=4
+[val] progress accepted=94 quarantine=6
+[val] progress accepted=137 quarantine=13
+[val] progress accepted=185 quarantine=15
+[val] progress accepted=231 quarantine=19
+[val] progress accepted=279 quarantine=21
+[val] progress accepted=326 quarantine=24
+[val] progress accepted=370 quarantine=30
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 370,
+  "quarantined": 30,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8703703703703703,
+  "mean_score_delta": -0.040866879089357884,
+  "by_fail": {
+    "abuse_score_drop": 26,
+    "collapsed_length": 3,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T02:56:34+00:00] chunk test a=5458 q=284
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 400 new rows
+[test] progress accepted=47 quarantine=3
+[test] progress accepted=92 quarantine=8
+[test] progress accepted=142 quarantine=8
+[test] progress accepted=184 quarantine=16
+[test] progress accepted=232 quarantine=18
+[test] progress accepted=278 quarantine=22
+[test] progress accepted=325 quarantine=25
+[test] progress accepted=367 quarantine=33
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 367,
+  "quarantined": 33,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8697478991596639,
+  "mean_score_delta": -0.07137329972219686,
+  "by_fail": {
+    "abuse_score_drop": 30,
+    "collapsed_length": 2,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T02:58:11+00:00] progress train=6366 val=6332 test=6142
+[2026-09-20T02:58:13+00:00] chunk train a=5991 q=375
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=49 quarantine=1
+[train] progress accepted=96 quarantine=4
+[train] progress accepted=142 quarantine=8
+[train] progress accepted=188 quarantine=12
+[train] progress accepted=236 quarantine=14
+[train] progress accepted=282 quarantine=18
+[train] progress accepted=328 quarantine=22
+[train] progress accepted=373 quarantine=27
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 373,
+  "quarantined": 27,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8805309734513275,
+  "mean_score_delta": -0.10411774076461472,
+  "by_fail": {
+    "abuse_score_drop": 27
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T02:59:49+00:00] chunk val a=6015 q=317
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+val: converting up to 396 new rows
+[val] progress accepted=49 quarantine=1
+[val] progress accepted=95 quarantine=5
+[val] progress accepted=140 quarantine=10
+[val] progress accepted=179 quarantine=21
+[val] progress accepted=228 quarantine=22
+[val] progress accepted=272 quarantine=28
+[val] progress accepted=317 quarantine=33
+{
+  "tag": "val",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 360,
+  "quarantined": 36,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8401826484018264,
+  "mean_score_delta": -0.04413338201767247,
+  "by_fail": {
+    "abuse_score_drop": 33,
+    "collapsed_length": 2,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/val.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/val_quarantine.csv"
+}
+[2026-09-20T03:01:29+00:00] chunk test a=5825 q=317
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 400 new rows
+[test] progress accepted=43 quarantine=7
+[test] progress accepted=87 quarantine=13
+[test] progress accepted=133 quarantine=17
+[test] progress accepted=180 quarantine=20
+[test] progress accepted=227 quarantine=23
+[test] progress accepted=275 quarantine=25
+[test] progress accepted=321 quarantine=29
+[test] progress accepted=369 quarantine=31
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 369,
+  "quarantined": 31,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8669527896995708,
+  "mean_score_delta": -0.05122910886700076,
+  "by_fail": {
+    "abuse_score_drop": 28,
+    "abuse_lexicon_missing": 3
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T03:03:04+00:00] progress train=6766 val=6728 test=6542
+[2026-09-20T03:03:06+00:00] chunk train a=6364 q=402
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=47 quarantine=3
+[train] progress accepted=93 quarantine=7
+[train] progress accepted=141 quarantine=9
+[train] progress accepted=185 quarantine=15
+[train] progress accepted=227 quarantine=23
+[train] progress accepted=272 quarantine=28
+[train] progress accepted=320 quarantine=30
+[train] progress accepted=366 quarantine=34
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 366,
+  "quarantined": 34,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8600823045267489,
+  "mean_score_delta": -0.09484957133501239,
+  "by_fail": {
+    "abuse_score_drop": 34
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:04:45+00:00] chunk test a=6194 q=348
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+test: converting up to 186 new rows
+[test] progress accepted=47 quarantine=3
+[test] progress accepted=93 quarantine=7
+[test] progress accepted=141 quarantine=9
+{
+  "tag": "test",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 174,
+  "quarantined": 12,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8878504672897196,
+  "mean_score_delta": -0.042767251228870845,
+  "by_fail": {
+    "abuse_score_drop": 12
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/test.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/test_quarantine.csv"
+}
+[2026-09-20T03:05:37+00:00] progress train=7166 val=6728 test=6728
+[2026-09-20T03:05:39+00:00] chunk train a=6730 q=436
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=45 quarantine=5
+[train] progress accepted=90 quarantine=10
+[train] progress accepted=137 quarantine=13
+[train] progress accepted=186 quarantine=14
+[train] progress accepted=232 quarantine=18
+[train] progress accepted=279 quarantine=21
+[train] progress accepted=327 quarantine=23
+[train] progress accepted=373 quarantine=27
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 373,
+  "quarantined": 27,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8785046728971962,
+  "mean_score_delta": -0.09009434607119647,
+  "by_fail": {
+    "abuse_score_drop": 26,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:07:16+00:00] progress train=7566 val=6728 test=6728
+[2026-09-20T03:07:18+00:00] chunk train a=7103 q=463
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=50 quarantine=0
+[train] progress accepted=98 quarantine=2
+[train] progress accepted=145 quarantine=5
+[train] progress accepted=194 quarantine=6
+[train] progress accepted=243 quarantine=7
+[train] progress accepted=290 quarantine=10
+[train] progress accepted=335 quarantine=15
+[train] progress accepted=384 quarantine=16
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 384,
+  "quarantined": 16,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.9175257731958762,
+  "mean_score_delta": -0.09632275895758842,
+  "by_fail": {
+    "abuse_score_drop": 16
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:08:46+00:00] progress train=7966 val=6728 test=6728
+[2026-09-20T03:08:48+00:00] chunk train a=7487 q=479
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=48 quarantine=2
+[train] progress accepted=95 quarantine=5
+[train] progress accepted=139 quarantine=11
+[train] progress accepted=185 quarantine=15
+[train] progress accepted=233 quarantine=17
+[train] progress accepted=277 quarantine=23
+[train] progress accepted=322 quarantine=28
+[train] progress accepted=370 quarantine=30
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 370,
+  "quarantined": 30,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8535353535353535,
+  "mean_score_delta": -0.11614730660803615,
+  "by_fail": {
+    "abuse_score_drop": 29,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:10:28+00:00] progress train=8366 val=6728 test=6728
+[2026-09-20T03:10:30+00:00] chunk train a=7857 q=509
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=49 quarantine=1
+[train] progress accepted=96 quarantine=4
+[train] progress accepted=143 quarantine=7
+[train] progress accepted=191 quarantine=9
+[train] progress accepted=238 quarantine=12
+[train] progress accepted=287 quarantine=13
+[train] progress accepted=332 quarantine=18
+[train] progress accepted=380 quarantine=20
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 380,
+  "quarantined": 20,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.9076923076923077,
+  "mean_score_delta": -0.09978153312480763,
+  "by_fail": {
+    "abuse_score_drop": 18,
+    "collapsed_length": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:12:03+00:00] progress train=8766 val=6728 test=6728
+[2026-09-20T03:12:05+00:00] chunk train a=8237 q=529
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=47 quarantine=3
+[train] progress accepted=92 quarantine=8
+[train] progress accepted=138 quarantine=12
+[train] progress accepted=186 quarantine=14
+[train] progress accepted=231 quarantine=19
+[train] progress accepted=275 quarantine=25
+[train] progress accepted=323 quarantine=27
+[train] progress accepted=371 quarantine=29
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 371,
+  "quarantined": 29,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8709677419354839,
+  "mean_score_delta": -0.12450540594058739,
+  "by_fail": {
+    "abuse_score_drop": 28,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:13:42+00:00] progress train=9166 val=6728 test=6728
+[2026-09-20T03:13:44+00:00] chunk train a=8608 q=558
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=49 quarantine=1
+[train] progress accepted=97 quarantine=3
+[train] progress accepted=145 quarantine=5
+[train] progress accepted=193 quarantine=7
+[train] progress accepted=236 quarantine=14
+[train] progress accepted=285 quarantine=15
+[train] progress accepted=330 quarantine=20
+[train] progress accepted=378 quarantine=22
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 378,
+  "quarantined": 22,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8894472361809045,
+  "mean_score_delta": -0.14289288842439574,
+  "by_fail": {
+    "abuse_score_drop": 22
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:15:16+00:00] progress train=9566 val=6728 test=6728
+[2026-09-20T03:15:18+00:00] chunk train a=8986 q=580
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=47 quarantine=3
+[train] progress accepted=95 quarantine=5
+[train] progress accepted=142 quarantine=8
+[train] progress accepted=188 quarantine=12
+[train] progress accepted=236 quarantine=14
+[train] progress accepted=282 quarantine=18
+[train] progress accepted=328 quarantine=22
+[train] progress accepted=370 quarantine=30
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 370,
+  "quarantined": 30,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8604651162790697,
+  "mean_score_delta": -0.09348079706038777,
+  "by_fail": {
+    "abuse_score_drop": 30
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:16:58+00:00] progress train=9966 val=6728 test=6728
+[2026-09-20T03:17:00+00:00] chunk train a=9356 q=610
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=48 quarantine=2
+[train] progress accepted=95 quarantine=5
+[train] progress accepted=143 quarantine=7
+[train] progress accepted=188 quarantine=12
+[train] progress accepted=232 quarantine=18
+[train] progress accepted=279 quarantine=21
+[train] progress accepted=327 quarantine=23
+[train] progress accepted=373 quarantine=27
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 373,
+  "quarantined": 27,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8761467889908257,
+  "mean_score_delta": -0.11631907095343634,
+  "by_fail": {
+    "abuse_score_drop": 23,
+    "abuse_lexicon_missing": 4
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:18:38+00:00] progress train=10366 val=6728 test=6728
+[2026-09-20T03:18:40+00:00] chunk train a=9729 q=637
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=48 quarantine=2
+[train] progress accepted=96 quarantine=4
+[train] progress accepted=140 quarantine=10
+[train] progress accepted=186 quarantine=14
+[train] progress accepted=231 quarantine=19
+[train] progress accepted=278 quarantine=22
+[train] progress accepted=326 quarantine=24
+[train] progress accepted=375 quarantine=25
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 375,
+  "quarantined": 25,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8823529411764706,
+  "mean_score_delta": -0.09220196526373427,
+  "by_fail": {
+    "abuse_score_drop": 23,
+    "collapsed_length": 1,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:20:15+00:00] progress train=10766 val=6728 test=6728
+[2026-09-20T03:20:17+00:00] chunk train a=10104 q=662
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=48 quarantine=2
+[train] progress accepted=92 quarantine=8
+[train] progress accepted=141 quarantine=9
+[train] progress accepted=187 quarantine=13
+[train] progress accepted=236 quarantine=14
+[train] progress accepted=282 quarantine=18
+[train] progress accepted=330 quarantine=20
+[train] progress accepted=378 quarantine=22
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 378,
+  "quarantined": 22,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8960396039603961,
+  "mean_score_delta": -0.10385548996753872,
+  "by_fail": {
+    "abuse_score_drop": 18,
+    "collapsed_length": 2,
+    "abuse_lexicon_missing": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:21:46+00:00] progress train=11166 val=6728 test=6728
+[2026-09-20T03:21:48+00:00] chunk train a=10482 q=684
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=49 quarantine=1
+[train] progress accepted=93 quarantine=7
+[train] progress accepted=140 quarantine=10
+[train] progress accepted=187 quarantine=13
+[train] progress accepted=235 quarantine=15
+[train] progress accepted=281 quarantine=19
+[train] progress accepted=329 quarantine=21
+[train] progress accepted=376 quarantine=24
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 376,
+  "quarantined": 24,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8883720930232558,
+  "mean_score_delta": -0.09814261877785456,
+  "by_fail": {
+    "abuse_score_drop": 24
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:23:23+00:00] progress train=11566 val=6728 test=6728
+[2026-09-20T03:23:25+00:00] chunk train a=10858 q=708
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=47 quarantine=3
+[train] progress accepted=94 quarantine=6
+[train] progress accepted=142 quarantine=8
+[train] progress accepted=188 quarantine=12
+[train] progress accepted=237 quarantine=13
+[train] progress accepted=284 quarantine=16
+[train] progress accepted=333 quarantine=17
+[train] progress accepted=379 quarantine=21
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 379,
+  "quarantined": 21,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8960396039603961,
+  "mean_score_delta": -0.10542253195246716,
+  "by_fail": {
+    "abuse_score_drop": 20,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:24:56+00:00] progress train=11966 val=6728 test=6728
+[2026-09-20T03:24:58+00:00] chunk train a=11237 q=729
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=49 quarantine=1
+[train] progress accepted=99 quarantine=1
+[train] progress accepted=146 quarantine=4
+[train] progress accepted=193 quarantine=7
+[train] progress accepted=238 quarantine=12
+[train] progress accepted=286 quarantine=14
+[train] progress accepted=333 quarantine=17
+[train] progress accepted=380 quarantine=20
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 380,
+  "quarantined": 20,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8952879581151832,
+  "mean_score_delta": -0.0912846735617342,
+  "by_fail": {
+    "abuse_score_drop": 19,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:26:28+00:00] progress train=12366 val=6728 test=6728
+[2026-09-20T03:26:30+00:00] chunk train a=11617 q=749
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=46 quarantine=4
+[train] progress accepted=90 quarantine=10
+[train] progress accepted=138 quarantine=12
+[train] progress accepted=183 quarantine=17
+[train] progress accepted=233 quarantine=17
+[train] progress accepted=280 quarantine=20
+[train] progress accepted=326 quarantine=24
+[train] progress accepted=372 quarantine=28
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 372,
+  "quarantined": 28,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8556701030927835,
+  "mean_score_delta": -0.094082609797898,
+  "by_fail": {
+    "abuse_score_drop": 27,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:28:04+00:00] progress train=12766 val=6728 test=6728
+[2026-09-20T03:28:06+00:00] chunk train a=11989 q=777
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=49 quarantine=1
+[train] progress accepted=92 quarantine=8
+[train] progress accepted=139 quarantine=11
+[train] progress accepted=185 quarantine=15
+[train] progress accepted=232 quarantine=18
+[train] progress accepted=277 quarantine=23
+[train] progress accepted=321 quarantine=29
+[train] progress accepted=365 quarantine=35
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 365,
+  "quarantined": 35,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8341463414634146,
+  "mean_score_delta": -0.08979495634031419,
+  "by_fail": {
+    "abuse_score_drop": 34,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:29:46+00:00] progress train=13166 val=6728 test=6728
+[2026-09-20T03:29:48+00:00] chunk train a=12354 q=812
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=48 quarantine=2
+[train] progress accepted=94 quarantine=6
+[train] progress accepted=142 quarantine=8
+[train] progress accepted=187 quarantine=13
+[train] progress accepted=234 quarantine=16
+[train] progress accepted=281 quarantine=19
+[train] progress accepted=327 quarantine=23
+[train] progress accepted=371 quarantine=29
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 371,
+  "quarantined": 29,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8653846153846154,
+  "mean_score_delta": -0.09903157806285028,
+  "by_fail": {
+    "abuse_score_drop": 27,
+    "abuse_lexicon_missing": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:31:23+00:00] progress train=13566 val=6728 test=6728
+[2026-09-20T03:31:25+00:00] chunk train a=12725 q=841
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=50 quarantine=0
+[train] progress accepted=98 quarantine=2
+[train] progress accepted=146 quarantine=4
+[train] progress accepted=193 quarantine=7
+[train] progress accepted=238 quarantine=12
+[train] progress accepted=283 quarantine=17
+[train] progress accepted=327 quarantine=23
+[train] progress accepted=373 quarantine=27
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 373,
+  "quarantined": 27,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.868020304568528,
+  "mean_score_delta": -0.12429025738397688,
+  "by_fail": {
+    "abuse_score_drop": 24,
+    "collapsed_length": 1,
+    "abuse_lexicon_missing": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:33:08+00:00] progress train=13966 val=6728 test=6728
+[2026-09-20T03:33:10+00:00] chunk train a=13098 q=868
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=47 quarantine=3
+[train] progress accepted=92 quarantine=8
+[train] progress accepted=139 quarantine=11
+[train] progress accepted=189 quarantine=11
+[train] progress accepted=238 quarantine=12
+[train] progress accepted=285 quarantine=15
+[train] progress accepted=334 quarantine=16
+[train] progress accepted=381 quarantine=19
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 381,
+  "quarantined": 19,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.9105263157894737,
+  "mean_score_delta": -0.10132884070536322,
+  "by_fail": {
+    "abuse_score_drop": 17,
+    "collapsed_length": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:34:42+00:00] progress train=14366 val=6728 test=6728
+[2026-09-20T03:34:44+00:00] chunk train a=13479 q=887
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=47 quarantine=3
+[train] progress accepted=94 quarantine=6
+[train] progress accepted=140 quarantine=10
+[train] progress accepted=187 quarantine=13
+[train] progress accepted=231 quarantine=19
+[train] progress accepted=279 quarantine=21
+[train] progress accepted=326 quarantine=24
+[train] progress accepted=372 quarantine=28
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 372,
+  "quarantined": 28,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8727272727272727,
+  "mean_score_delta": -0.08123831127479833,
+  "by_fail": {
+    "abuse_score_drop": 27,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:36:23+00:00] progress train=14766 val=6728 test=6728
+[2026-09-20T03:36:25+00:00] chunk train a=13851 q=915
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=48 quarantine=2
+[train] progress accepted=94 quarantine=6
+[train] progress accepted=143 quarantine=7
+[train] progress accepted=191 quarantine=9
+[train] progress accepted=239 quarantine=11
+[train] progress accepted=285 quarantine=15
+[train] progress accepted=331 quarantine=19
+[train] progress accepted=376 quarantine=24
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 376,
+  "quarantined": 24,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8940092165898618,
+  "mean_score_delta": -0.09762207998899108,
+  "by_fail": {
+    "abuse_score_drop": 23,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:38:12+00:00] progress train=15166 val=6728 test=6728
+[2026-09-20T03:38:14+00:00] chunk train a=14227 q=939
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=48 quarantine=2
+[train] progress accepted=95 quarantine=5
+[train] progress accepted=141 quarantine=9
+[train] progress accepted=183 quarantine=17
+[train] progress accepted=229 quarantine=21
+[train] progress accepted=276 quarantine=24
+[train] progress accepted=325 quarantine=25
+[train] progress accepted=368 quarantine=32
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 368,
+  "quarantined": 32,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8620689655172413,
+  "mean_score_delta": -0.08202860154383614,
+  "by_fail": {
+    "abuse_score_drop": 29,
+    "abuse_lexicon_missing": 2,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:40:07+00:00] progress train=15566 val=6728 test=6728
+[2026-09-20T03:40:09+00:00] chunk train a=14595 q=971
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=49 quarantine=1
+[train] progress accepted=95 quarantine=5
+[train] progress accepted=141 quarantine=9
+[train] progress accepted=186 quarantine=14
+[train] progress accepted=233 quarantine=17
+[train] progress accepted=280 quarantine=20
+[train] progress accepted=325 quarantine=25
+[train] progress accepted=372 quarantine=28
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 372,
+  "quarantined": 28,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8676470588235294,
+  "mean_score_delta": -0.12784829644626508,
+  "by_fail": {
+    "abuse_score_drop": 25,
+    "devanagari_remaining": 1,
+    "collapsed_length": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:41:49+00:00] progress train=15966 val=6728 test=6728
+[2026-09-20T03:41:51+00:00] chunk train a=14967 q=999
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=48 quarantine=2
+[train] progress accepted=96 quarantine=4
+[train] progress accepted=143 quarantine=7
+[train] progress accepted=191 quarantine=9
+[train] progress accepted=236 quarantine=14
+[train] progress accepted=279 quarantine=21
+[train] progress accepted=325 quarantine=25
+[train] progress accepted=373 quarantine=27
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 373,
+  "quarantined": 27,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8682926829268293,
+  "mean_score_delta": -0.08409060319590984,
+  "by_fail": {
+    "abuse_score_drop": 26,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:43:29+00:00] progress train=16366 val=6728 test=6728
+[2026-09-20T03:43:31+00:00] chunk train a=15340 q=1026
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=49 quarantine=1
+[train] progress accepted=94 quarantine=6
+[train] progress accepted=143 quarantine=7
+[train] progress accepted=191 quarantine=9
+[train] progress accepted=239 quarantine=11
+[train] progress accepted=285 quarantine=15
+[train] progress accepted=329 quarantine=21
+[train] progress accepted=376 quarantine=24
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 376,
+  "quarantined": 24,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8888888888888888,
+  "mean_score_delta": -0.07522078701963728,
+  "by_fail": {
+    "abuse_score_drop": 19,
+    "abuse_lexicon_missing": 4,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:45:04+00:00] progress train=16766 val=6728 test=6728
+[2026-09-20T03:45:06+00:00] chunk train a=15716 q=1050
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=47 quarantine=3
+[train] progress accepted=95 quarantine=5
+[train] progress accepted=143 quarantine=7
+[train] progress accepted=188 quarantine=12
+[train] progress accepted=234 quarantine=16
+[train] progress accepted=278 quarantine=22
+[train] progress accepted=322 quarantine=28
+[train] progress accepted=367 quarantine=33
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 367,
+  "quarantined": 33,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8558558558558559,
+  "mean_score_delta": -0.10006470720940942,
+  "by_fail": {
+    "abuse_score_drop": 30,
+    "abuse_lexicon_missing": 2,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:46:46+00:00] progress train=17166 val=6728 test=6728
+[2026-09-20T03:46:48+00:00] chunk train a=16083 q=1083
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=46 quarantine=4
+[train] progress accepted=96 quarantine=4
+[train] progress accepted=142 quarantine=8
+[train] progress accepted=190 quarantine=10
+[train] progress accepted=239 quarantine=11
+[train] progress accepted=283 quarantine=17
+[train] progress accepted=329 quarantine=21
+[train] progress accepted=376 quarantine=24
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 376,
+  "quarantined": 24,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8716577540106952,
+  "mean_score_delta": -0.12471033858526696,
+  "by_fail": {
+    "abuse_score_drop": 23,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:48:23+00:00] progress train=17566 val=6728 test=6728
+[2026-09-20T03:48:25+00:00] chunk train a=16459 q=1107
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=47 quarantine=3
+[train] progress accepted=92 quarantine=8
+[train] progress accepted=141 quarantine=9
+[train] progress accepted=190 quarantine=10
+[train] progress accepted=237 quarantine=13
+[train] progress accepted=282 quarantine=18
+[train] progress accepted=331 quarantine=19
+[train] progress accepted=376 quarantine=24
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 376,
+  "quarantined": 24,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8883720930232558,
+  "mean_score_delta": -0.08488255376466847,
+  "by_fail": {
+    "abuse_score_drop": 24
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:50:00+00:00] progress train=17966 val=6728 test=6728
+[2026-09-20T03:50:02+00:00] chunk train a=16835 q=1131
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=49 quarantine=1
+[train] progress accepted=97 quarantine=3
+[train] progress accepted=146 quarantine=4
+[train] progress accepted=193 quarantine=7
+[train] progress accepted=242 quarantine=8
+[train] progress accepted=288 quarantine=12
+[train] progress accepted=334 quarantine=16
+[train] progress accepted=380 quarantine=20
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 380,
+  "quarantined": 20,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8984771573604061,
+  "mean_score_delta": -0.09769941444116595,
+  "by_fail": {
+    "abuse_score_drop": 18,
+    "abuse_lexicon_missing": 1,
+    "collapsed_length": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:51:33+00:00] progress train=18366 val=6728 test=6728
+[2026-09-20T03:51:35+00:00] chunk train a=17215 q=1151
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=49 quarantine=1
+[train] progress accepted=97 quarantine=3
+[train] progress accepted=142 quarantine=8
+[train] progress accepted=188 quarantine=12
+[train] progress accepted=234 quarantine=16
+[train] progress accepted=280 quarantine=20
+[train] progress accepted=328 quarantine=22
+[train] progress accepted=374 quarantine=26
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 374,
+  "quarantined": 26,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8834080717488789,
+  "mean_score_delta": -0.07200509802946313,
+  "by_fail": {
+    "abuse_score_drop": 24,
+    "abuse_lexicon_missing": 2
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:53:12+00:00] progress train=18766 val=6728 test=6728
+[2026-09-20T03:53:14+00:00] chunk train a=17589 q=1177
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=49 quarantine=1
+[train] progress accepted=95 quarantine=5
+[train] progress accepted=141 quarantine=9
+[train] progress accepted=188 quarantine=12
+[train] progress accepted=237 quarantine=13
+[train] progress accepted=286 quarantine=14
+[train] progress accepted=334 quarantine=16
+[train] progress accepted=378 quarantine=22
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 378,
+  "quarantined": 22,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.908675799086758,
+  "mean_score_delta": -0.07557075900129145,
+  "by_fail": {
+    "abuse_score_drop": 19,
+    "collapsed_length": 3
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:54:50+00:00] progress train=19166 val=6728 test=6728
+[2026-09-20T03:54:52+00:00] chunk train a=17967 q=1199
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=46 quarantine=4
+[train] progress accepted=93 quarantine=7
+[train] progress accepted=141 quarantine=9
+[train] progress accepted=187 quarantine=13
+[train] progress accepted=232 quarantine=18
+[train] progress accepted=279 quarantine=21
+[train] progress accepted=327 quarantine=23
+[train] progress accepted=372 quarantine=28
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 372,
+  "quarantined": 28,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8778280542986425,
+  "mean_score_delta": -0.11149728443268286,
+  "by_fail": {
+    "abuse_score_drop": 27,
+    "abuse_lexicon_missing": 1
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:56:30+00:00] progress train=19566 val=6728 test=6728
+[2026-09-20T03:56:32+00:00] chunk train a=18339 q=1227
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 400 new rows
+[train] progress accepted=47 quarantine=3
+[train] progress accepted=93 quarantine=7
+[train] progress accepted=142 quarantine=8
+[train] progress accepted=190 quarantine=10
+[train] progress accepted=238 quarantine=12
+[train] progress accepted=284 quarantine=16
+[train] progress accepted=331 quarantine=19
+[train] progress accepted=376 quarantine=24
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 376,
+  "quarantined": 24,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.8857142857142857,
+  "mean_score_delta": -0.10198859014161961,
+  "by_fail": {
+    "abuse_score_drop": 24
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:58:03+00:00] progress train=19966 val=6728 test=6728
+[2026-09-20T03:58:05+00:00] chunk train a=18715 q=1251
+Loading abuse scorer...
+[transformers] PyTorch was not found. Models won't be available and only tokenizers, configuration and file/data utilities can be used.
+Connecting Mantle region=us-east-1 model=qwen.qwen3-32b
+train: converting up to 217 new rows
+[train] progress accepted=45 quarantine=5
+[train] progress accepted=94 quarantine=6
+[train] progress accepted=139 quarantine=11
+[train] progress accepted=189 quarantine=11
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 205,
+  "quarantined": 12,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.9047619047619048,
+  "mean_score_delta": -0.08024359035146672,
+  "by_fail": {
+    "abuse_score_drop": 12
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}
+[2026-09-20T03:58:57+00:00] progress train=20183 val=6728 test=6728

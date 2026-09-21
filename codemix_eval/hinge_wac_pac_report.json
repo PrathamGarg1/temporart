@@ -1,0 +1,67 @@
+{
+  "n": 1976,
+  "source": "huggingface:LingoIITGN/HinGE",
+  "human": {
+    "n": 1976,
+    "mean_cmi": 35.866,
+    "median_cmi": 36.667,
+    "p90_cmi": 44.295,
+    "pct_cmi_eq_0": 0.05,
+    "pct_cmi_lt_10": 0.35,
+    "pct_cmi_ge_20": 97.17,
+    "mean_en_frac": 0.0,
+    "mean_switch_points": 0.0
+  },
+  "WAC": {
+    "bleu": 0.164,
+    "bleu_100": 16.4,
+    "wer": 0.651,
+    "ter": 0.7438,
+    "nist": 6.1625,
+    "chrf": 47.95,
+    "mean_cmi": 28.894
+  },
+  "PAC": {
+    "bleu": 0.1786,
+    "bleu_100": 17.86,
+    "wer": 0.671,
+    "ter": 0.7308,
+    "nist": 5.6181,
+    "chrf": 46.52,
+    "mean_cmi": 24.274
+  },
+  "human_mean_cmi": 35.866,
+  "correlation_vs_human_rating": {
+    "WAC": {
+      "n": 1976,
+      "mean_human_rating": 7.36,
+      "pearson_bleu": 0.188,
+      "pearson_wer": -0.195,
+      "system": "WAC"
+    },
+    "PAC": {
+      "n": 1976,
+      "mean_human_rating": 7.154,
+      "pearson_bleu": 0.136,
+      "pearson_wer": -0.205,
+      "system": "PAC"
+    }
+  },
+  "paper_table4_100sample": {
+    "note": "HinGE Table 4 is on 100 sampled sentences; ours is the full CSV.",
+    "WAC": {
+      "bleu": 0.1229,
+      "wer": 0.824,
+      "ter": 0.783,
+      "nist": 2.2045,
+      "bertscore": 0.857
+    },
+    "PAC": {
+      "bleu": 0.1202,
+      "wer": 0.8228,
+      "ter": 0.7981,
+      "nist": 2.0497,
+      "bertscore": 0.857
+    }
+  }
+}

@@ -6,3 +6,14 @@ dist/
 assets/models/
 *.onnx
 *.wasm
+aws_train/downloaded/
+
+# Local environments and secrets
+.venv/
+__pycache__/
+*.pyc
+*.env
+
+# macOS AppleDouble / process files
+._*
+*.pid

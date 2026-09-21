@@ -1,0 +1,19 @@
+{
+  "tag": "rescue",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 4,
+  "accepted": 282,
+  "quarantined": 167,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.6332574031890661,
+  "mean_score_delta": -0.030583921225464092,
+  "by_fail": {
+    "abuse_score_drop": 147,
+    "abuse_lexicon_missing": 8,
+    "collapsed_length": 12
+  },
+  "accepted_path": "codemix_hinglish_clean/rescue/rescue.csv",
+  "quarantine_path": "codemix_hinglish_clean/rescue/rescue_quarantine.csv"
+}

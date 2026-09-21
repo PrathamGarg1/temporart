@@ -1,0 +1,17 @@
+{
+  "tag": "train",
+  "model": "qwen.qwen3-32b",
+  "region": "us-east-1",
+  "delta": 0.15,
+  "workers": 8,
+  "accepted": 205,
+  "quarantined": 12,
+  "skipped_done": 0,
+  "abusive_accept_rate": 0.9047619047619048,
+  "mean_score_delta": -0.08024359035146672,
+  "by_fail": {
+    "abuse_score_drop": 12
+  },
+  "accepted_path": "/opt/suraksha/codemix_hinglish/train.csv",
+  "quarantine_path": "/opt/suraksha/codemix_hinglish/train_quarantine.csv"
+}

@@ -1,0 +1,516 @@
+<canvas id="gl"></canvas>
+<div class="veil"></div>
+<div class="grain"></div>
+
+<div class="brand" id="chapter">Poster</div>
+<div class="goal" id="goal"><b>Goal</b> · Score incoming WhatsApp on this device. Do not upload.</div>
+<div class="progress-bar" id="progress"></div>
+<div class="slide-counter" id="counter">1 / 22</div>
+<div class="slide-nav" id="slideNav"></div>
+<div class="rail" aria-hidden="true">
+  <span style="left:0">chat</span>
+  <span style="left:22%">model</span>
+  <span style="left:44%">gap</span>
+  <span style="left:66%">Qwen</span>
+  <span style="left:88%">result</span>
+  <i id="token"></i>
+</div>
+
+<div id="flowWorld">
+  <div class="thought" id="thought">What if we just transliterate?</div>
+  <div class="pipe" id="flow">
+    <div class="stops">
+      <div class="station" id="nA">
+        <i class="dot">A</i>
+        <b>WhatsApp Web</b>
+        <span>incoming DOM. Fail closed.</span>
+      </div>
+      <div class="station" id="nB">
+        <i class="dot">B</i>
+        <b>MiniLM INT8</b>
+        <span>113 MB, 28 ms, WASM.</span>
+      </div>
+      <div class="station" id="nC">
+        <i class="dot">C</i>
+        <b>Banner</b>
+        <span>Local log. No upload.</span>
+      </div>
+      <div class="station" id="nD">
+        <i class="dot">D</i>
+        <b>indic translit</b>
+        <span>Script only. CMI ~ 0.</span>
+      </div>
+      <div class="station accent" id="nQ">
+        <i class="dot">D</i>
+        <b>Qwen3-32B</b>
+        <span>Offline mix, then gates.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="deck">
+
+  <div class="slide active" data-slide="0" data-chapter="Poster" data-token="40" data-goal="Goal · Score incoming WhatsApp on this device. Do not upload.">
+    <div class="copycol">
+      <h1 data-in>A message arrives on WhatsApp Web.</h1>
+      <p class="copy" data-in>SurakshaNet scores it on the laptop. This talk is the on-device detector first, then the Hinglish training work after it.</p>
+      <p class="who" data-in>Aamod Jain, Pratham Garg. Guide: Geeta Yadav. IIT Ropar.</p>
+    </div>
+    <div class="viz">
+      <div class="wa" data-in>
+        <div class="wa-rail">
+          <b>Chats</b>
+          <span>Aarav</span>
+          <span>Group · notes</span>
+          <span>Amma</span>
+        </div>
+        <div class="wa-chat">
+          <div class="wa-head">Aarav<i>web.whatsapp.com</i></div>
+          <div class="wa-body">
+            <div class="bubble">kal meeting hai 4 baje</div>
+            <div class="bubble">bro notes share kar dena</div>
+            <div class="bubble me">haan, 4 baje hi hai</div>
+          </div>
+          <div class="wa-flag"><b>SurakshaNet</b> scored on this device · MiniLM INT8 · <em>p 0.11</em></div>
+        </div>
+      </div>
+    </div>
+    <script type="application/json" class="slide-notes">{"title":"Open","script":"Start on the product. Ordinary chat, scored locally. No slur on the screen.","notes":["20 minutes","Poster first"]}</script>
+  </div>
+
+  <div class="slide" data-slide="1" data-chapter="Poster" data-token="80" data-goal="Goal · The detector stays on-device. This semester teaches it Hinglish.">
+    <div class="copycol">
+      <h2 data-in>Two layers. Only the training data moved.</h2>
+      <p class="copy" data-in>The Chrome extension is still MiniLM INT8. Inference never leaves the laptop. This semester we rewrote MACD Hindi into Roman Hinglish and kept the original labels.</p>
+    </div>
+    <div class="viz">
+      <div class="cols">
+        <article data-in>
+          <div class="k">01 unchanged</div>
+          <b>The detector</b>
+          <p>WhatsApp DOM, WASM MiniLM, local banner. 113 MB, 28 ms. If selectors break, we fail closed.</p>
+        </article>
+        <article data-in>
+          <div class="k">02 this semester</div>
+          <b>The train set</b>
+          <p>MACD Hindi rewritten to conversational Hinglish. Frozen test n=6,368. Qwen3-32B is the converter, not the detector.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="2" data-chapter="Poster" data-token="110" data-goal="Goal · Incoming only. Nothing leaves the laptop.">
+    <div class="copycol">
+      <h2 data-in>Incoming only. Nothing is uploaded.</h2>
+      <p class="copy" data-in>Chrome MV3. Banner, no auto-block. The incident log is a local JSON file. That size limit is why 471 MB XLM-R was never a shipping option.</p>
+    </div>
+    <div class="viz">
+      <div class="overlap">
+        <img class="shot" src="{{IMG_DESK}}" alt="Laptop on a desk, cable unplugged">
+        <div class="log-float" data-in>
+          <header><b>SurakshaNet</b> incident log</header>
+          <ul class="log">
+            <li>kal meeting hai 4 baje <span>p 0.11</span></li>
+            <li>bro notes share kar dena <span>p 0.08</span></li>
+          </ul>
+          <div class="log-foot">incidents.json on this device</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="3" data-chapter="Poster" data-flow="abc" data-token="160" data-goal="Goal · Three on-device steps. No fourth step at inference.">
+    <div class="copycol">
+      <h2 data-in>Three steps. That is the shipped system.</h2>
+      <p class="copy" data-in>Watch the DOM. Run MiniLM in WASM. Paint a banner. Later ideas have to leave A, B and C alone. Conversion is not on this line.</p>
+    </div>
+    <div class="viz"></div>
+  </div>
+
+  <div class="slide" data-slide="4" data-chapter="Poster" data-token="200" data-goal="Goal · Fit in Chrome. Hindi quality cannot cost 471 MB.">
+    <div class="copycol">
+      <h2 data-in><span style="white-space:nowrap">XLM-R</span> does not fit in Chrome.</h2>
+      <p class="copy" data-in>471 MB is the MACD Hindi ceiling. Chrome MV3 will not carry it. We shipped MiniLM INT8 at 113 MB. Hindi dropped under 0.11% under quantization. Latency 28 ms.</p>
+    </div>
+    <div class="viz">
+      <div class="scale" data-in>
+        <div class="scale-label"><span>Chrome MV3 budget</span><span>overflow →</span></div>
+        <div class="scale-track">
+          <div class="scale-bad"></div>
+          <div class="scale-ok"></div>
+        </div>
+        <div class="scale-rows">
+          <div class="scale-row is-ok">
+            <div class="num">113 MB</div>
+            <p>MiniLM INT8. Hindi 84.66%. 28 ms. Fits. Shipped.</p>
+          </div>
+          <div class="scale-row">
+            <div class="num">471 MB</div>
+            <p>XLM-R. Better Hindi. Overflows the extension. Rejected.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="5" data-chapter="Poster" data-token="240" data-goal="Goal · Poster numbers are real. Hinglish was never in that table.">
+    <div class="copycol">
+      <h2 data-in>Poster results, and the missing bar.</h2>
+      <p class="copy" data-in>MACD Hindi (Gupta et al., 2022). Davidson English (2017). Train 42,487. Hindi 84.66%, mixed 88.01%. Hinglish was not in that table. That hole is the rest of this talk.</p>
+    </div>
+    <div class="viz">
+      <div class="bars">
+        <div class="barline" data-in><span>Hindi</span><div class="bar"><i data-w="0.8466"></i></div><em>84.66%</em></div>
+        <div class="barline" data-in><span>Hindi + English</span><div class="bar"><i data-w="0.8801"></i></div><em>88.01%</em></div>
+        <div class="barline" data-in><span>Hinglish</span><div class="bar"><i class="hole" data-w="1"></i></div><em>not tested</em></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide is-section" data-slide="6" data-chapter="This semester" data-token="280" data-goal="Goal · Same detector. New register: Roman Hinglish.">
+    <div class="copycol">
+      <p class="act" data-in>This semester</p>
+      <h1 data-in>The product did not change. The language did.</h1>
+      <p class="copy" data-in>On WhatsApp in India people type Roman letters with Hindi grammar. A Devanagari MiniLM can look fine and still miss that register. The work is to fill the missing bar without touching A, B, C.</p>
+    </div>
+    <div class="viz"></div>
+  </div>
+
+  <div class="slide" data-slide="7" data-chapter="This semester" data-token="320" data-goal="Goal · Match how people actually type, not how MACD is written.">
+    <div class="copycol">
+      <h2 data-in>WhatsApp in India is not this script.</h2>
+      <p class="copy" data-in>Labeled MACD is Devanagari. Chat is Roman letters, Hindi grammar, mixed English words. We have labels for the first. Traffic looks like the second.</p>
+    </div>
+    <div class="viz">
+      <div class="pair">
+        <div class="wa" data-in>
+          <div class="wa-rail"><b>MACD</b><span>labeled</span></div>
+          <div class="wa-chat">
+            <div class="wa-head">Hindi script<i>how the corpus is written</i></div>
+            <div class="wa-body">
+              <div class="bubble dv">कल मीटिंग है चार बजे</div>
+            </div>
+          </div>
+        </div>
+        <div class="wa" data-in>
+          <div class="wa-rail"><b>Chat</b><span>traffic</span></div>
+          <div class="wa-chat">
+            <div class="wa-head">Roman Hinglish<i>how people type</i></div>
+            <div class="wa-body">
+              <div class="bubble">kal meeting hai 4 baje</div>
+              <div class="bubble">bro notes share kar dena</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="8" data-chapter="This semester" data-token="360" data-goal="Goal · Start from MACD Hindi. Do not invent a bitext that is not there.">
+    <div class="copycol">
+      <h2 data-in>The source is MACD: Hindi comments.</h2>
+      <p class="copy" data-in>ShareChat-scale labels. No English pair. WAC and PAC need a parallel sentence. We do not have one, so a mixer library cannot build this train set. Rewrite from Hindi only.</p>
+    </div>
+    <div class="viz">
+      <div class="fork">
+        <div class="rule-block" data-in>
+          <b>MACD Hindi</b>
+          <span>ShareChat-scale comments. No English pair sitting next to them.</span>
+        </div>
+        <div class="varr"></div>
+        <div class="fork-row">
+          <div class="rule-block no" data-in>
+            <b>WAC / PAC</b>
+            <span>Need a parallel English sentence. We do not have one. Stop.</span>
+          </div>
+          <div class="rule-block yes" data-in>
+            <b>Qwen rewrite</b>
+            <span>Hindi in, Hinglish out. No pair required. This is the path.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="9" data-chapter="This semester" data-token="400" data-goal="Goal · Keep label 0 as abuse. Do not clean the text by accident.">
+    <div class="copycol">
+      <h2 data-in>Label 0 is kept. We do not quote it here.</h2>
+      <p class="copy" data-in>MACD class 0 is abusive, class 1 is not. If a rewrite sanitizes class 0, the label is false. On this slide we show a class-1 row in full, and treat class 0 as a count plus a gate, not as display text.</p>
+    </div>
+    <div class="viz">
+      <div class="rows">
+        <table>
+          <thead><tr><th>Source row</th><th>label</th></tr></thead>
+          <tbody>
+            <tr data-in><td class="dv">चाय ना पीने वालों तुम्हारी कोई खता ही नहीं</td><td class="lab">1 · non-abuse</td></tr>
+            <tr data-in><td class="omit">MACD class 0 · abusive comment, not shown</td><td class="lab">0 · held as label</td></tr>
+            <tr data-in><td class="omit">If the rewrite softens class 0, the label is a lie</td><td class="lab">gate required</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="10" data-chapter="This semester" data-flow="abcd" data-thought="1" data-token="480" data-goal="Goal · Cheap conversion is allowed only if the language actually mixes.">
+    <div class="copycol">
+      <h2 data-in>We tried adding a fourth step: transliterate.</h2>
+      <p class="copy" data-in>indic_transliteration (sanscript) maps Devanagari to Roman. Cheap, no GPU. It looked like an obvious D on the same line. Watch what it actually does to the language.</p>
+    </div>
+    <div class="viz"></div>
+  </div>
+
+  <div class="slide" data-slide="11" data-chapter="This semester" data-token="520" data-goal="Goal · Conversational mix, not ITRANS. CMI near 0 is a fail.">
+    <div class="copycol">
+      <h2 data-in>It only changed the script. The language was still Hindi.</h2>
+      <p class="copy" data-in>kala mITiMga hai cAra baje is not chat. CMI stays near zero. Script conversion is not code-mixing. Replace D. Do not add a fifth step at inference.</p>
+    </div>
+    <div class="viz">
+      <div class="compare">
+        <article data-in>
+          <h3>Hindi (MACD script)</h3>
+          <p class="dv">कल मीटिंग है चार बजे</p>
+          <p class="note">Labeled world. Devanagari.</p>
+        </article>
+        <article class="no" data-in>
+          <h3>indic_transliteration</h3>
+          <p>kala mITiMga hai cAra baje</p>
+          <p class="note">Same Hindi. Only the script changed. CMI ~ 0.</p>
+        </article>
+        <article class="yes" data-in>
+          <h3>What chat needed</h3>
+          <p>kal meeting hai 4 baje</p>
+          <p class="note">English letters, Hindi grammar, English words.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="12" data-chapter="This semester" data-flow="qwen" data-morph="1" data-token="640" data-goal="Goal · Offline Qwen writes Hinglish. A, B, C stay on the laptop.">
+    <div class="copycol">
+      <h2 data-in>So we replaced that step with Qwen3-32B.</h2>
+      <p class="copy" data-in>Same A, B, C. D is gone from the product. Qwen runs once, offline, on Bedrock. It writes conversational Hinglish. 31,663 lines converted. Test frozen at 6,368 before we trained.</p>
+    </div>
+    <div class="viz"></div>
+  </div>
+
+  <div class="slide" data-slide="13" data-chapter="This semester" data-token="680" data-goal="Goal · Mix at the sentence. Keep the class-0 stem. Freeze the test.">
+    <div class="copycol">
+      <h2 data-in>Qwen likes to sanitize. The gates stop that.</h2>
+      <p class="copy" data-in>Asked to rewrite class 0, the model often softens it. Then the label is false. 89.9% of abusive lines must still fire after rewrite. Spike rows go to quarantine. Yield 94.7%. Frozen test never enters this funnel.</p>
+    </div>
+    <div class="viz">
+      <div class="mill">
+        <div class="gate">
+          <svg class="spine" viewBox="0 0 2 260" preserveAspectRatio="none" aria-hidden="true"><line data-draw x1="1" y1="0" x2="1" y2="260" stroke="#e24a1a" stroke-width="2"/></svg>
+          <div class="gstep" data-in>
+            <b>Rewrite</b>
+            <span>Qwen3-32B on Bedrock Mantle, us-east-1</span>
+            <em>31,663</em>
+          </div>
+          <div class="gstep" data-in>
+            <b>Lexicon</b>
+            <span>class-0 stems must still fire</span>
+            <em>89.9%</em>
+          </div>
+          <div class="gstep" data-in>
+            <b>Score delta</b>
+            <span>p_hinglish ≥ p_hindi − 0.15</span>
+            <em>Δp</em>
+          </div>
+          <div class="gsplit">
+            <div data-in><b>Train</b><span>yield 94.7%</span></div>
+            <div class="bad" data-in><b>Quarantine</b><span>1,997 spike rows</span></div>
+          </div>
+        </div>
+        <aside class="frozen" data-in>
+          <b>Frozen test</b>
+          <div class="num">6,368</div>
+          <p>Held out. Never mixed after freeze. Not in this funnel.</p>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="14" data-chapter="This semester" data-token="800" data-goal="Goal · Show the rewrite is real MACD, not invented chat.">
+    <div class="copycol">
+      <h2 data-in>Same class-1 row, after the gated rewrite.</h2>
+      <p class="copy" data-in>From the frozen Hinglish train file. Grammar stays Hindi. Letters are Roman. Occasional English words. That is the register transliteration did not give us. Class 0 is gated the same way, and is not quoted on this slide.</p>
+    </div>
+    <div class="viz">
+      <div class="rows">
+        <table>
+          <thead><tr><th>Hindi</th><th>Gated Hinglish</th></tr></thead>
+          <tbody>
+            <tr data-in><td class="dv">चाय ना पीने वालों तुम्हारी कोई खता ही नहीं</td><td>Main chai nahi peene walo tumhari koi khata hi nahi</td></tr>
+            <tr data-in><td class="omit">MACD class 0 · not displayed</td><td>rewritten under lexicon + Δp, then accepted or quarantined</td></tr>
+            <tr data-in><td class="omit">Register we needed</td><td>kal meeting hai 4 baje · English words inside Hindi grammar</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="15" data-chapter="This semester" data-token="860" data-goal="Goal · Train may be cleaned. Test may not. Synth never enters test.">
+    <div class="copycol">
+      <h2 data-in>The contract we will not break.</h2>
+      <p class="copy" data-in>Layer-1 cleaning and 977 synth rows were tried on train. They are allowed to fail. They are not allowed onto the frozen Hinglish test. If we moved the test, 84.36% would not be comparable to the poster.</p>
+    </div>
+    <div class="viz">
+      <div class="contract">
+        <article class="ok" data-in><b>Allowed</b> Clean train. Quarantine spikes. Hold synth out of the test. Report CMI even when it is low.</article>
+        <article class="bad" data-in><b>Not allowed</b> Rewrite the frozen 6,368 after looking at errors. Ship 83.64% synth because the number is close. Put Qwen inside Chrome.</article>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="16" data-chapter="This semester" data-token="920" data-goal="Goal · Shipped INT8, frozen Hinglish test, same 28 ms.">
+    <div class="copycol">
+      <h2 data-in>Shipped INT8, frozen Hinglish test.</h2>
+      <p class="copy" data-in>84.36% Hinglish (n=6,368). Hindi 85.14%. English 96.73%. Mixed 86.54% is lower than poster 88.01% because Hinglish is now in the mix. Same MiniLM. Same 28 ms.</p>
+    </div>
+    <div class="viz">
+      <div class="bars">
+        <div class="barline" data-in><span>Hinglish</span><div class="bar"><i class="flag" data-w="0.8436"></i></div><em>84.36%</em></div>
+        <div class="barline" data-in><span>Hindi</span><div class="bar"><i data-w="0.8514"></i></div><em>85.14%</em></div>
+        <div class="barline" data-in><span>English</span><div class="bar"><i data-w="0.9673"></i></div><em>96.73%</em></div>
+        <div class="barline" data-in><span>Mixed</span><div class="bar"><i data-w="0.8654"></i></div><em>86.54%</em></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="17" data-chapter="This semester" data-token="1000" data-goal="Goal · Report mix depth. Do not pretend we match HinGE humans.">
+    <div class="copycol">
+      <h2 data-in>Mixing is still shallower than humans. We report that.</h2>
+      <p class="copy" data-in>CMI 13.7 on MACD rewrites vs 35.6 HinGE humans. On HinGE Hindi-only, Qwen BLEU is about PAC, not WAC. WAC wins when it has an English pair. We did not. Extra synth scored 83.64%. Not shipped.</p>
+    </div>
+    <div class="viz">
+      <div class="cmi">
+        <div class="cmi-row" data-in>
+          <span>Qwen MACD</span>
+          <div class="chips"><i class="en"></i><i class="en"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <em>13.7</em>
+        </div>
+        <div class="cmi-row" data-in>
+          <span>PAC</span>
+          <div class="chips"><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <em>24.3</em>
+        </div>
+        <div class="cmi-row" data-in>
+          <span>WAC</span>
+          <div class="chips"><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i></i><i></i><i></i><i></i></div>
+          <em>28.9</em>
+        </div>
+        <div class="cmi-row" data-in>
+          <span>Humans</span>
+          <div class="chips"><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i><i class="en"></i></div>
+          <em>35.6</em>
+        </div>
+        <div class="mixex">
+          <p data-in><span>indic</span> <i class="hi">kala</i> <i class="hi">mITiMga</i> <i class="hi">hai</i> <i class="hi">cAra</i> <i class="hi">baje</i></p>
+          <p data-in><span>Qwen</span> <i class="hi">Main</i> <i class="en">chai</i> <i class="hi">nahi</i> <i class="en">peene</i></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="18" data-chapter="This semester" data-token="1040" data-goal="Goal · Close numbers that lost to shipped INT8 stay off the model.">
+    <div class="copycol">
+      <h2 data-in>Close is not shipped.</h2>
+      <p class="copy" data-in>Gated Qwen train, 18,920 lines: 84.36%. Layer-1 clean: 83.76%. Plus 977 synth: 83.64%. Both deltas are negative on the frozen Hinglish test. They stay ablations.</p>
+    </div>
+    <div class="viz">
+      <div class="rows">
+        <table>
+          <thead><tr><th>Train</th><th>Hinglish INT8</th><th></th></tr></thead>
+          <tbody>
+            <tr data-in><td>Gated Qwen, 18,920</td><td>84.36%</td><td>shipped</td></tr>
+            <tr data-in><td>Layer-1 clean</td><td>83.76%</td><td>held out</td></tr>
+            <tr data-in><td>Plus 977 synth</td><td>83.64%</td><td>held out</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="19" data-chapter="This semester" data-token="1080" data-goal="Goal · Name every constraint and the move that closed it.">
+    <div class="copycol">
+      <h2 data-in>Constraint, move, number.</h2>
+      <p class="copy" data-in>If a question comes later, walk back to the row.</p>
+    </div>
+    <div class="viz">
+      <div class="zip">
+        <div class="zip-row" data-in>
+          <div><span class="k">Constraint</span>471 MB XLM-R</div>
+          <div><span class="k">Move</span>MiniLM INT8</div>
+          <div class="out"><span class="k">Result</span>113 MB, 28 ms</div>
+        </div>
+        <div class="zip-row" data-in>
+          <div><span class="k">Constraint</span>Hinglish not tested</div>
+          <div><span class="k">Move</span>Qwen rewrite + freeze</div>
+          <div class="out"><span class="k">Result</span>n=6,368 held out</div>
+        </div>
+        <div class="zip-row" data-in>
+          <div><span class="k">Constraint</span>No EN-HI pair</div>
+          <div><span class="k">Move</span>Skip WAC / PAC</div>
+          <div class="out"><span class="k">Result</span>Hindi-only Qwen</div>
+        </div>
+        <div class="zip-row" data-in>
+          <div><span class="k">Constraint</span>Translit CMI ~ 0</div>
+          <div><span class="k">Move</span>Replace D, not add E</div>
+          <div class="out"><span class="k">Result</span>Conversational mix</div>
+        </div>
+        <div class="zip-row" data-in>
+          <div><span class="k">Constraint</span>Qwen sanitizes</div>
+          <div><span class="k">Move</span>Lexicon + Δp + quarantine</div>
+          <div class="out"><span class="k">Result</span>89.9% class 0 kept</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="20" data-chapter="This semester" data-token="1120" data-goal="Goal · Defend the shipped system, including what we refused.">
+    <div class="copycol">
+      <h2 data-in>What we will defend</h2>
+      <p class="copy" data-in>On-device WhatsApp scoring. 113 MB, 28 ms. Hinglish 84.36% on a frozen test. Converter is gated Qwen, not transliteration, and not untested synth. CMI 13.7 is reported, not hidden.</p>
+    </div>
+    <div class="viz">
+      <div class="kpis">
+        <div class="hero" data-in>
+          <div class="num">84.36%</div>
+          <p>Hinglish INT8, n=6,368, shipped. Layer-1 83.76% and synth 83.64% stay off the model.</p>
+        </div>
+        <div data-in>
+          <div class="num">113 MB</div>
+          <p>28 ms MiniLM. Same detector as the poster.</p>
+        </div>
+        <div data-in>
+          <div class="num">13.7</div>
+          <p>CMI. Shallower than HinGE humans at 35.6. Reported.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="slide" data-slide="21" data-chapter="This semester" data-token="1160" data-goal="Goal · The detector is done enough to defend. Mix depth is the open problem.">
+    <div class="copycol">
+      <h2 data-in>What is still open</h2>
+      <p class="copy" data-in>Human CMI on HinGE is 35.6. Ours is 13.7. A deeper mixer that still keeps class-0 stems, still fits the frozen test, and still does not enter Chrome, is the next measurement.</p>
+    </div>
+    <div class="viz">
+      <div class="cols">
+        <article data-in>
+          <div class="k">Closed</div>
+          <b>On-device path</b>
+          <p>A, B, C. 113 MB. Local log. Hinglish bar filled at 84.36% without moving the test.</p>
+        </article>
+        <article data-in>
+          <div class="k">Open</div>
+          <b>Mix depth</b>
+          <p>Raise CMI toward humans without sanitizing labels and without unfreezing n=6,368.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+</div>
