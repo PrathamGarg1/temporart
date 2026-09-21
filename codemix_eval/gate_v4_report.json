@@ -1,0 +1,98 @@
+{
+  "stratum": "class-0 rows whose Devanagari source contains none of the 20 hand stems",
+  "n_sources": 233,
+  "n_items": 466,
+  "discarded": {
+    "empty": 0,
+    "softened_still_lexically_abusive": 17
+  },
+  "arms": {
+    "preserved": {
+      "n": 233,
+      "mean_cmi": 16.138,
+      "mean_p_abuse": 0.6821
+    },
+    "softened": {
+      "n": 233,
+      "mean_cmi": 13.375,
+      "mean_p_abuse": 0.4691
+    }
+  },
+  "gates": {
+    "hand lexicon (as shipped)": {
+      "sensitivity": 0.0,
+      "sens_ci95": [
+        0.0,
+        0.0
+      ],
+      "false_reject": 0.0,
+      "fr_ci95": [
+        0.0,
+        0.0
+      ],
+      "youden_j": 0.0
+    },
+    "raw dp > 0.15 (as shipped)": {
+      "sensitivity": 0.4378,
+      "sens_ci95": [
+        0.3734,
+        0.5021
+      ],
+      "false_reject": 0.2489,
+      "fr_ci95": [
+        0.1974,
+        0.3047
+      ],
+      "youden_j": 0.1888
+    },
+    "raw dp > 0.03 (calibrated)": {
+      "sensitivity": 0.5279,
+      "sens_ci95": [
+        0.4635,
+        0.5923
+      ],
+      "false_reject": 0.3219,
+      "fr_ci95": [
+        0.266,
+        0.382
+      ],
+      "youden_j": 0.206
+    },
+    "rank dp > 0.24 (calibrated)": {
+      "sensitivity": 0.4936,
+      "sens_ci95": [
+        0.4292,
+        0.5536
+      ],
+      "false_reject": 0.2575,
+      "fr_ci95": [
+        0.2017,
+        0.3133
+      ],
+      "youden_j": 0.2361
+    },
+    "source-referenced judge": {
+      "sensitivity": 0.2704,
+      "sens_ci95": [
+        0.2146,
+        0.3305
+      ],
+      "false_reject": 0.0129,
+      "fr_ci95": [
+        0.0,
+        0.03
+      ],
+      "youden_j": 0.2575
+    }
+  },
+  "auc_raw_dp": 0.6294,
+  "auc_rank_dp": 0.6365,
+  "mcnemar_judge_vs_dp": {
+    "judge_right_dp_wrong": 80,
+    "dp_right_judge_wrong": 64,
+    "p_exact": 0.21115264054329358,
+    "agreement_judge": 0.6288,
+    "agreement_dp": 0.5944
+  },
+  "caveat": "Labels come from the generation instruction, verified only lexically for the softened arm. Human certification of a subsample is the remaining gap."
+}

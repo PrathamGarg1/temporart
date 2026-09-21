@@ -1,0 +1,73 @@
+{
+  "n_source_rows": 300,
+  "n_judgments": 1200,
+  "unparseable": 0,
+  "judge_model": "qwen.qwen3-32b",
+  "gates": {
+    "shipped (lexicon OR dp)": {
+      "sensitivity": 1.0,
+      "sens_ci95": [
+        1.0,
+        1.0
+      ],
+      "false_reject": 0.0267,
+      "fr_ci95": [
+        0.015,
+        0.04
+      ],
+      "youden_j": 0.9733,
+      "by_variant": {
+        "original": 0.03,
+        "inject_english": 0.0233,
+        "drop_slur": 1.0,
+        "swap_benign": 1.0
+      }
+    },
+    "source-referenced judge": {
+      "sensitivity": 0.1033,
+      "sens_ci95": [
+        0.08,
+        0.1283
+      ],
+      "false_reject": 0.0,
+      "fr_ci95": [
+        0.0,
+        0.0
+      ],
+      "youden_j": 0.1033,
+      "by_variant": {
+        "original": 0.0,
+        "inject_english": 0.0,
+        "drop_slur": 0.0933,
+        "swap_benign": 0.1133
+      }
+    }
+  },
+  "mcnemar_judge_vs_shipped": {
+    "judge_right_shipped_wrong": 16,
+    "shipped_right_judge_wrong": 538,
+    "chi2_cc": 489.9657,
+    "p_exact": 1.0569375359675721e-136,
+    "agreement_judge": 0.5517,
+    "agreement_shipped": 0.9867
+  },
+  "codemix_penalty": {
+    "shipped": {
+      "reject_original": 0.03,
+      "reject_injected": 0.0233,
+      "odds_ratio": 0.7725,
+      "fisher_p": 0.800949689113117
+    },
+    "judge": {
+      "reject_original": 0.0,
+      "reject_injected": 0.0,
+      "odds_ratio": NaN,
+      "fisher_p": 1.0
+    }
+  },
+  "verdict_distribution": {
+    "PRESERVED": 1138,
+    "SOFTENED": 49,
+    "UNRELATED": 13
+  }
+}

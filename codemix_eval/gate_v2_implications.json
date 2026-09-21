@@ -1,0 +1,95 @@
+{
+  "scorer_identification": {
+    "custom-macd-model-prev": {
+      "pearson_r": 0.5757,
+      "mean_abs_diff": 0.0099
+    },
+    "custom-macd-model (promoted)": {
+      "pearson_r": 0.1853,
+      "mean_abs_diff": 0.0181
+    },
+    "custom-macd-model-shipped-84": {
+      "pearson_r": 0.1853,
+      "mean_abs_diff": 0.0181
+    }
+  },
+  "operating_point_source": "gate_v4_realistic_bench.py",
+  "stratum": "class-0 rows whose Devanagari source contains none of the 20 hand stems",
+  "lexicon_blind_share_of_class0": 0.646,
+  "gates": {
+    "hand_lexicon": {
+      "sensitivity": 0.0,
+      "sens_ci95": [
+        0.0,
+        0.0
+      ],
+      "false_reject": 0.0,
+      "fr_ci95": [
+        0.0,
+        0.0
+      ],
+      "youden_j": 0.0
+    },
+    "shipped_dp_0_15": {
+      "sensitivity": 0.4378,
+      "sens_ci95": [
+        0.3734,
+        0.5021
+      ],
+      "false_reject": 0.2489,
+      "fr_ci95": [
+        0.1974,
+        0.3047
+      ],
+      "youden_j": 0.1888
+    },
+    "llm_judge": {
+      "sensitivity": 0.2704,
+      "sens_ci95": [
+        0.2146,
+        0.3305
+      ],
+      "false_reject": 0.0129,
+      "fr_ci95": [
+        0.0,
+        0.03
+      ],
+      "youden_j": 0.2575
+    }
+  },
+  "auc_raw_dp": 0.6294,
+  "auc_rank_dp": 0.6365,
+  "contamination_sweep": [
+    {
+      "s": 0.05,
+      "contamination": 0.0379,
+      "reduction_pp": 1.21
+    },
+    {
+      "s": 0.1,
+      "contamination": 0.0768,
+      "reduction_pp": 2.32
+    },
+    {
+      "s": 0.15,
+      "contamination": 0.1167,
+      "reduction_pp": 3.33
+    },
+    {
+      "s": 0.2,
+      "contamination": 0.1576,
+      "reduction_pp": 4.24
+    },
+    {
+      "s": 0.3,
+      "contamination": 0.2429,
+      "reduction_pp": 5.71
+    },
+    {
+      "s": 0.4,
+      "contamination": 0.3329,
+      "reduction_pp": 6.71
+    }
+  ],
+  "retracted": "Earlier Rogan-Gladen estimate of ~14% label noise: invalid, it used the broken corruption benchmark and ignored max_retries."
+}

@@ -1,0 +1,2045 @@
+{
+  "gate_scorer": "custom-macd-model-prev",
+  "sanity_corr_vs_cached": 0.5575,
+  "n_source_rows": 1200,
+  "n_graded_variants": 4800,
+  "mined_terms": 250,
+  "aligned_terms": 244,
+  "terms_missed_by_hand_list": 217,
+  "auc_raw_dp": 0.8341,
+  "auc_rank_dp": 0.8262,
+  "delta_youden_raw": 0.019,
+  "delta_youden_rank": 0.254,
+  "gates": {
+    "shipped (hand lexicon OR raw dp>0.15)": {
+      "detect_removed": 0.9983,
+      "false_reject": 0.0163,
+      "youden_j": 0.9821,
+      "by_variant": {
+        "original": 0.02,
+        "inject_english": 0.0125,
+        "drop_slur": 0.9983,
+        "swap_benign": 0.9983
+      }
+    },
+    "hand lexicon only": {
+      "detect_removed": 0.9975,
+      "false_reject": 0.0,
+      "youden_j": 0.9975,
+      "by_variant": {
+        "original": 0.0,
+        "inject_english": 0.0,
+        "drop_slur": 0.9975,
+        "swap_benign": 0.9975
+      }
+    },
+    "mined lexicon only": {
+      "detect_removed": 0.3,
+      "false_reject": 0.2142,
+      "youden_j": 0.0858,
+      "by_variant": {
+        "original": 0.2142,
+        "inject_english": 0.2142,
+        "drop_slur": 0.3,
+        "swap_benign": 0.3
+      }
+    },
+    "raw dp > 0.15 only": {
+      "detect_removed": 0.48,
+      "false_reject": 0.0163,
+      "youden_j": 0.4637,
+      "by_variant": {
+        "original": 0.02,
+        "inject_english": 0.0125,
+        "drop_slur": 0.4708,
+        "swap_benign": 0.4892
+      }
+    },
+    "raw dp > 0.02 (calibrated)": {
+      "detect_removed": 0.6767,
+      "false_reject": 0.1408,
+      "youden_j": 0.5358,
+      "by_variant": {
+        "original": 0.1675,
+        "inject_english": 0.1142,
+        "drop_slur": 0.6683,
+        "swap_benign": 0.685
+      }
+    },
+    "rank dp > 0.25 (calibrated)": {
+      "detect_removed": 0.6529,
+      "false_reject": 0.1342,
+      "youden_j": 0.5188,
+      "by_variant": {
+        "original": 0.1592,
+        "inject_english": 0.1092,
+        "drop_slur": 0.6567,
+        "swap_benign": 0.6492
+      }
+    },
+    "proposed (mined lexicon OR rank dp)": {
+      "detect_removed": 0.7238,
+      "false_reject": 0.3133,
+      "youden_j": 0.4104,
+      "by_variant": {
+        "original": 0.3308,
+        "inject_english": 0.2958,
+        "drop_slur": 0.73,
+        "swap_benign": 0.7175
+      }
+    },
+    "english_injection_test": {
+      "cmi_original": 9.977,
+      "cmi_injected": 26.993,
+      "shipped_reject_original": 0.02,
+      "shipped_reject_injected": 0.0125
+    }
+  },
+  "mined_lexicon": {
+    "शर्म": [
+      "shame",
+      "sharma",
+      "besharam",
+      "aati",
+      "sharmanak",
+      "sham"
+    ],
+    "साले": [
+      "salle",
+      "aulad",
+      "sala",
+      "kute",
+      "mar",
+      "maro"
+    ],
+    "तेरी": [
+      "dunga",
+      "bhosda",
+      "chod",
+      "ammi",
+      "chodu",
+      "chodo"
+    ],
+    "कुत्ते": [
+      "kuttay",
+      "sher",
+      "kute",
+      "bhonkte",
+      "dum",
+      "kamini"
+    ],
+    "बहन": [
+      "bahan",
+      "behno",
+      "chod",
+      "behna",
+      "bahanon",
+      "lodi"
+    ],
+    "साला": [
+      "sala",
+      "jhukega",
+      "masala",
+      "pushparaj",
+      "pushpa",
+      "sony"
+    ],
+    "बाप": [
+      "baap",
+      "bap",
+      "bappa",
+      "babu",
+      "bapu",
+      "morya"
+    ],
+    "पागल": [
+      "pagal",
+      "paagal",
+      "pagalon",
+      "pagalo",
+      "pagalpan",
+      "pagaal"
+    ],
+    "मां": [
+      "maan",
+      "mang",
+      "mangne",
+      "bhikh",
+      "baap",
+      "bap"
+    ],
+    "अबे": [
+      "bhosd",
+      "bhonsdi",
+      "gandu",
+      "gandhe",
+      "dikho",
+      "banakar"
+    ],
+    "के": [
+      "ladke",
+      "baare",
+      "chuke",
+      "sabke",
+      "akele",
+      "alawa"
+    ],
+    "दिखा": [
+      "dikha",
+      "dikhao",
+      "dikhane",
+      "dikhana",
+      "dikhaane",
+      "dikhate"
+    ],
+    "देश": [
+      "pradesh",
+      "deshdrohi",
+      "des",
+      "deshbhakt",
+      "videsh",
+      "gaddar"
+    ],
+    "मोदी": [
+      "modi",
+      "yogi",
+      "narendra",
+      "sarkar",
+      "chamcho",
+      "congress"
+    ],
+    "तू": [
+      "falto",
+      "faltu",
+      "falatoo",
+      "phaltu",
+      "gazre",
+      "mahaktay"
+    ],
+    "कुत्ता": [
+      "billi",
+      "sher",
+      "ghoda",
+      "hathi",
+      "paal",
+      "dhobi"
+    ],
+    "औलाद": [
+      "aulad",
+      "aulaad",
+      "suar",
+      "ould",
+      "baap",
+      "soor"
+    ],
+    "को": [
+      "aapko",
+      "sabko",
+      "inko",
+      "unko",
+      "corona",
+      "ladkon"
+    ],
+    "मार": [
+      "maro",
+      "mar",
+      "maar",
+      "hmare",
+      "humare",
+      "kumar"
+    ],
+    "साली": [
+      "sali",
+      "saali",
+      "salli",
+      "kutiya",
+      "jija",
+      "salle"
+    ],
+    "वाले": [
+      "walekum",
+      "karnewale",
+      "karne",
+      "aane",
+      "denewale",
+      "bhosadi"
+    ],
+    "बेशर्म": [
+      "besharam",
+      "besharm",
+      "besharami",
+      "shameless",
+      "besharmo",
+      "besharmi"
+    ],
+    "उतार": [
+      "utar",
+      "kapde",
+      "utarke",
+      "utarni",
+      "utaar",
+      "badhane"
+    ],
+    "रहा": [
+      "chal",
+      "lag",
+      "reha",
+      "bucket",
+      "rashion",
+      "tikait"
+    ],
+    "गांड": [
+      "gandu",
+      "marwa",
+      "marwane",
+      "mara",
+      "phad",
+      "marwai"
+    ],
+    "रंडी": [
+      "aulad",
+      "aulaad",
+      "weshya",
+      "sita",
+      "kotha",
+      "lohardi"
+    ],
+    "तेरे": [
+      "terko",
+      "teray",
+      "jaisa",
+      "baap",
+      "sahiba",
+      "tuje"
+    ],
+    "कपड़े": [
+      "kapde",
+      "kapade",
+      "clothes",
+      "pehne",
+      "utar",
+      "kaparde"
+    ],
+    "रही": [
+      "lag",
+      "dik",
+      "dikhara",
+      "rehi",
+      "dikha",
+      "rita"
+    ],
+    "पैदा": [
+      "paida",
+      "paide",
+      "paidaish",
+      "halala",
+      "paadai",
+      "paada"
+    ],
+    "औकात": [
+      "okaat",
+      "aukat",
+      "aukaat",
+      "pakana",
+      "dana",
+      "okat"
+    ],
+    "चोर": [
+      "chor",
+      "chori",
+      "toti",
+      "chorai",
+      "choron",
+      "aabadi"
+    ],
+    "डाल": [
+      "daal",
+      "dal",
+      "dalna",
+      "dalne",
+      "dalte",
+      "daalo"
+    ],
+    "बना": [
+      "bana",
+      "banane",
+      "banaya",
+      "banao",
+      "banate",
+      "banaye"
+    ],
+    "आती": [
+      "aati",
+      "sharmanak",
+      "shame",
+      "yaad",
+      "sham",
+      "banate"
+    ],
+    "ऐसे": [
+      "aisay",
+      "deni",
+      "ise",
+      "aisa",
+      "banate",
+      "saza"
+    ],
+    "इसकी": [
+      "jaanta",
+      "isko",
+      "ticket",
+      "pida",
+      "naare",
+      "jakar"
+    ],
+    "खोल": [
+      "khola",
+      "khol",
+      "khole",
+      "kholo",
+      "dikha",
+      "khul"
+    ],
+    "नंगा": [
+      "nanga",
+      "nangaa",
+      "nangay",
+      "nang",
+      "naach",
+      "naked"
+    ],
+    "अरे": [
+      "arey",
+      "aray",
+      "aare",
+      "budhke",
+      "arrey",
+      "spectacles"
+    ],
+    "होगी": [
+      "kahogi",
+      "suni",
+      "shaadi",
+      "sham",
+      "jayegi",
+      "jis"
+    ],
+    "औरत": [
+      "auraton",
+      "auratein",
+      "pati",
+      "mard",
+      "izzat",
+      "girri"
+    ],
+    "नंगी": [
+      "nangi",
+      "pungi",
+      "puri",
+      "nangee",
+      "prasiddh",
+      "nangay"
+    ],
+    "तुझे": [
+      "tuje",
+      "tumhe",
+      "pillai",
+      "tujhse",
+      "tuze",
+      "muththi"
+    ],
+    "बे": [
+      "besharam",
+      "baby",
+      "bechara",
+      "bete",
+      "bekaar",
+      "besharm"
+    ],
+    "हिंदू": [
+      "dharma",
+      "dharm",
+      "hindus",
+      "dharam",
+      "rashtra",
+      "jihad"
+    ],
+    "नेता": [
+      "nete",
+      "neta",
+      "leader",
+      "netao",
+      "netaji",
+      "netagiri"
+    ],
+    "सेक्स": [
+      "sex",
+      "hot",
+      "saxy",
+      "figure",
+      "sexi",
+      "lag"
+    ],
+    "मुंह": [
+      "mukh",
+      "mouth",
+      "muh",
+      "munh",
+      "moun",
+      "mounh"
+    ],
+    "मुस्लिम": [
+      "muslims",
+      "islam",
+      "christian",
+      "muslimon",
+      "muththi",
+      "muslimo"
+    ],
+    "पूरा": [
+      "khola",
+      "khol",
+      "dikha",
+      "kapda",
+      "paura",
+      "unique"
+    ],
+    "कर": [
+      "karne",
+      "kare",
+      "karein",
+      "karni",
+      "lekar",
+      "crore"
+    ],
+    "गधे": [
+      "gade",
+      "ghadhe",
+      "gande",
+      "gandhe",
+      "gandey",
+      "gandu"
+    ],
+    "सरम": [
+      "saram",
+      "sarm",
+      "sarma",
+      "surma",
+      "sarim",
+      "besarim"
+    ],
+    "चड्डी": [
+      "chaddi",
+      "utar",
+      "pehna",
+      "bra",
+      "laal",
+      "dik"
+    ],
+    "जैसी": [
+      "jaisi",
+      "ladkiyon",
+      "aabadi",
+      "gundagardi",
+      "badhegi",
+      "uthke"
+    ],
+    "मादर": [
+      "madar",
+      "chod",
+      "madarchodo",
+      "pahije",
+      "maderchod",
+      "motherfucker"
+    ],
+    "गद्दार": [
+      "gaddar",
+      "gaddaron",
+      "gaddaro",
+      "gaddari",
+      "deshdrohi",
+      "naare"
+    ],
+    "सरकार": [
+      "sarkar",
+      "govt",
+      "sarkari",
+      "sarakar",
+      "modi",
+      "bjp"
+    ],
+    "मारो": [
+      "maro",
+      "jute",
+      "maaro",
+      "goli",
+      "juta",
+      "maroge"
+    ],
+    "तुम्हारी": [
+      "tumhari",
+      "tumhare",
+      "chaho",
+      "tumhara",
+      "bhosda",
+      "nibhala"
+    ],
+    "ऐसी": [
+      "aisi",
+      "aisii",
+      "pakana",
+      "aisay",
+      "such",
+      "dana"
+    ],
+    "इसको": [
+      "isko",
+      "andolan",
+      "dene",
+      "nikal",
+      "bolte",
+      "gandagi"
+    ],
+    "हिन्दू": [
+      "dharma",
+      "rashtra",
+      "hinduon",
+      "ayesha",
+      "muththi",
+      "dharm"
+    ],
+    "सूअर": [
+      "suar",
+      "suaar",
+      "soor",
+      "sura",
+      "aulad",
+      "aabadi"
+    ],
+    "गांधी": [
+      "gandhi",
+      "rahul",
+      "gandhiji",
+      "rajiv",
+      "indira",
+      "mahatma"
+    ],
+    "रे": [
+      "arey",
+      "congress",
+      "kare",
+      "dusre",
+      "tumhare",
+      "sare"
+    ],
+    "कांग्रेस": [
+      "congress",
+      "congressi",
+      "gandhi",
+      "gudari",
+      "akhil",
+      "rahul"
+    ],
+    "गंदी": [
+      "gandi",
+      "chii",
+      "naali",
+      "harakat",
+      "banati",
+      "nali"
+    ],
+    "बेवकूफ": [
+      "bevakuf",
+      "janta",
+      "pagal",
+      "bana",
+      "banaate",
+      "ilaaj"
+    ],
+    "कुत्तों": [
+      "kuttay",
+      "kuttan",
+      "kutton",
+      "kutto",
+      "kamino",
+      "saalo"
+    ],
+    "सालो": [
+      "saalo",
+      "saalon",
+      "salo",
+      "salon",
+      "goli",
+      "maaro"
+    ],
+    "मुसलमान": [
+      "muslims",
+      "musalman",
+      "hindus",
+      "aabadi",
+      "muslimon",
+      "gundagardi"
+    ],
+    "घटिया": [
+      "ghatiya",
+      "tube",
+      "soch",
+      "tyre",
+      "quality",
+      "kism"
+    ],
+    "जैसे": [
+      "jaisa",
+      "patang",
+      "kimat",
+      "deshdrohi",
+      "tumhare",
+      "hote"
+    ],
+    "ले": [
+      "lena",
+      "lete",
+      "chale",
+      "akhilesh",
+      "lekar",
+      "leta"
+    ],
+    "हराम": [
+      "haraam",
+      "haraamkhore",
+      "haraami",
+      "haram",
+      "haramee",
+      "harame"
+    ],
+    "योगी": [
+      "yogi",
+      "adityanath",
+      "modi",
+      "akhilesh",
+      "bjp",
+      "sarkar"
+    ],
+    "हरामी": [
+      "haraami",
+      "haramee",
+      "haraam",
+      "harame",
+      "suvar",
+      "bade"
+    ],
+    "चोद": [
+      "chod",
+      "choda",
+      "chodo",
+      "chodne",
+      "madharchod",
+      "chodi"
+    ],
+    "पहन": [
+      "pehna",
+      "pehne",
+      "pehkar",
+      "kapde",
+      "pahana",
+      "pahena"
+    ],
+    "कपडे": [
+      "kapde",
+      "ghala",
+      "clothes",
+      "peheno",
+      "utar",
+      "pore"
+    ],
+    "बर्बाद": [
+      "barbad",
+      "barbaad",
+      "barbarad",
+      "barbadhi",
+      "barbar",
+      "bardas"
+    ],
+    "गोली": [
+      "goli",
+      "maar",
+      "deni",
+      "rashid",
+      "marna",
+      "maarna"
+    ],
+    "बकवास": [
+      "bakwas",
+      "bakwaas",
+      "ekdam",
+      "rhe",
+      "banate",
+      "saali"
+    ],
+    "लोगों": [
+      "khilaaf",
+      "turant",
+      "crore",
+      "jisse",
+      "unique",
+      "draw"
+    ],
+    "चाहिए": [
+      "hona",
+      "aani",
+      "chaiye",
+      "honi",
+      "deni",
+      "dena"
+    ],
+    "चुड़ैल": [
+      "chudail",
+      "dikhti",
+      "jaisi",
+      "kali",
+      "moti",
+      "shadi"
+    ],
+    "पाकिस्तान": [
+      "pakistan",
+      "pakistani",
+      "bangladesh",
+      "china",
+      "pakistanie",
+      "australia"
+    ],
+    "इन": [
+      "inko",
+      "inki",
+      "inbox",
+      "inhone",
+      "inme",
+      "inhi"
+    ],
+    "भोसड़ी": [
+      "bhosadi",
+      "bhosdari",
+      "bhosd",
+      "bhosdki",
+      "bhosdke",
+      "maya"
+    ],
+    "मर": [
+      "mar",
+      "marwa",
+      "marne",
+      "doob",
+      "chullu",
+      "mara"
+    ],
+    "बनाने": [
+      "banane",
+      "banaane",
+      "banaaye",
+      "koshish",
+      "chakkar",
+      "bana"
+    ],
+    "फट": [
+      "phat",
+      "fatti",
+      "fatta",
+      "fat",
+      "phati",
+      "fatake"
+    ],
+    "धर्म": [
+      "dharma",
+      "dharm",
+      "dharam",
+      "sanatan",
+      "religion",
+      "mazak"
+    ],
+    "चमचे": [
+      "chamche",
+      "chamcha",
+      "chame",
+      "chamcho",
+      "pappu",
+      "kaju"
+    ],
+    "की": [
+      "aapki",
+      "inki",
+      "chuki",
+      "baaki",
+      "baki",
+      "larki"
+    ],
+    "आनी": [
+      "aani",
+      "shame",
+      "sharman",
+      "seena",
+      "chaiye",
+      "chakar"
+    ],
+    "दिखाने": [
+      "dikhane",
+      "dikhaane",
+      "talent",
+      "shauk",
+      "jism",
+      "ladkiyan"
+    ],
+    "शक्ल": [
+      "shakal",
+      "shape",
+      "shakl",
+      "jaisi",
+      "bandar",
+      "dekh"
+    ],
+    "दूंगा": [
+      "dunga",
+      "chodunga",
+      "chodaunga",
+      "phad",
+      "dungi",
+      "chod"
+    ],
+    "बदनाम": [
+      "badnam",
+      "badname",
+      "badnaam",
+      "badnami",
+      "karne",
+      "badnaami"
+    ],
+    "जाएगी": [
+      "jayegi",
+      "jaayegi",
+      "jaegi",
+      "jayega",
+      "jaye",
+      "famous"
+    ],
+    "मजाक": [
+      "mazak",
+      "mazaak",
+      "joke",
+      "majak",
+      "uda",
+      "dharma"
+    ],
+    "का": [
+      "aapka",
+      "sarkar",
+      "congress",
+      "kali",
+      "govt",
+      "chuka"
+    ],
+    "फेमस": [
+      "famous",
+      "fame",
+      "hone",
+      "jaldi",
+      "jism",
+      "nangi"
+    ],
+    "इज्जत": [
+      "izzat",
+      "beijjat",
+      "beijjati",
+      "izzatdaar",
+      "bap",
+      "kapre"
+    ],
+    "ये": [
+      "aaye",
+      "ayega",
+      "jayega",
+      "laayenge",
+      "aayenge",
+      "yee"
+    ],
+    "मोटी": [
+      "moti",
+      "patli",
+      "chhoti",
+      "mota",
+      "gori",
+      "bhains"
+    ],
+    "दिखाओ": [
+      "dikhao",
+      "dikhaao",
+      "dikho",
+      "khola",
+      "dikha",
+      "prasiddh"
+    ],
+    "सुअर": [
+      "suar",
+      "sura",
+      "suaro",
+      "sur",
+      "aulad",
+      "pala"
+    ],
+    "आतंकवादी": [
+      "terrorist",
+      "terrorists",
+      "terror",
+      "jamat",
+      "khalistani",
+      "gundagardi"
+    ],
+    "खड़ा": [
+      "khada",
+      "dekhke",
+      "chodne",
+      "khade",
+      "tak",
+      "hone"
+    ],
+    "अखिलेश": [
+      "akhilesh",
+      "yadav",
+      "yogi",
+      "sarkar",
+      "mayawati",
+      "mulayam"
+    ],
+    "किसान": [
+      "kisan",
+      "kisaan",
+      "kisanon",
+      "kisaanon",
+      "andolan",
+      "khalistani"
+    ],
+    "लड़कियों": [
+      "ladkiyon",
+      "larkiyon",
+      "jaisi",
+      "ladkiyo",
+      "ladkon",
+      "ladkiyan"
+    ],
+    "गंदे": [
+      "gande",
+      "naale",
+      "gandi",
+      "comments",
+      "society",
+      "banati"
+    ],
+    "इनको": [
+      "inko",
+      "chaurahe",
+      "corrupt",
+      "inki",
+      "bolenge",
+      "paiso"
+    ],
+    "शेर": [
+      "sher",
+      "sherani",
+      "sherni",
+      "giddar",
+      "shikaar",
+      "shera"
+    ],
+    "चू": [
+      "chuchi",
+      "choochi",
+      "chu",
+      "chus",
+      "chum",
+      "fatima"
+    ],
+    "खान": [
+      "khana",
+      "khan",
+      "khane",
+      "dikhane",
+      "khaane",
+      "dikhaane"
+    ],
+    "मरवा": [
+      "marwa",
+      "marwane",
+      "marwai",
+      "marwaya",
+      "marwati",
+      "marvana"
+    ],
+    "जा": [
+      "jata",
+      "jaan",
+      "jaye",
+      "jati",
+      "jayega",
+      "jate"
+    ],
+    "हरामखोर": [
+      "haraamkhore",
+      "haraamkhoro",
+      "haramkhore",
+      "harameez",
+      "haraamkhor",
+      "haramkhor"
+    ],
+    "मारने": [
+      "marne",
+      "marane",
+      "maarna",
+      "marna",
+      "saza",
+      "layak"
+    ],
+    "डूब": [
+      "doob",
+      "chullu",
+      "dub",
+      "paani",
+      "dooba",
+      "maro"
+    ],
+    "पूरे": [
+      "pure",
+      "poore",
+      "purane",
+      "jokhim",
+      "nar",
+      "puri"
+    ],
+    "बेशरम": [
+      "besharam",
+      "gale",
+      "raho",
+      "dena"
+    ],
+    "दूध": [
+      "doodh",
+      "dhood",
+      "dhoodh",
+      "pilado",
+      "milk",
+      "anda"
+    ],
+    "निकाल": [
+      "nikal",
+      "nikalne",
+      "nikalo",
+      "nikalke",
+      "nikalte",
+      "nikala"
+    ],
+    "देगा": [
+      "dege",
+      "bhej",
+      "jis",
+      "usme",
+      "bakwas",
+      "jahan"
+    ],
+    "मा": [
+      "mata",
+      "maan",
+      "sharma",
+      "dimaag",
+      "maro",
+      "maar"
+    ],
+    "बनाकर": [
+      "banakar",
+      "banake",
+      "bana",
+      "konsa",
+      "daal",
+      "dalna"
+    ],
+    "इनकी": [
+      "inki",
+      "shanti",
+      "aatma",
+      "raksha",
+      "inse",
+      "inko"
+    ],
+    "रहे": [
+      "rhe",
+      "rehenge",
+      "rehaye",
+      "rehenga",
+      "raheinge",
+      "rhega"
+    ],
+    "दिखाना": [
+      "dikhana",
+      "dikhaana",
+      "dikha",
+      "dikhane",
+      "dikho",
+      "dikhaane"
+    ],
+    "हिंदुओं": [
+      "hinduon",
+      "hindus",
+      "muslims",
+      "ovaisi",
+      "dharma",
+      "shri"
+    ],
+    "शरम": [
+      "besharam",
+      "shame",
+      "aati",
+      "laaj",
+      "shameless",
+      "raho"
+    ],
+    "पार्टी": [
+      "samajwadi",
+      "congress",
+      "bjp",
+      "deshdrohiyon",
+      "shamil",
+      "bahujan"
+    ],
+    "बच्चे": [
+      "bacche",
+      "bachche",
+      "baccho",
+      "dekte",
+      "aabadi",
+      "gundagardi"
+    ],
+    "सीधा": [
+      "sidha",
+      "straight",
+      "kaori",
+      "thok",
+      "mita",
+      "ulta"
+    ],
+    "मरा": [
+      "mara",
+      "camera",
+      "imran",
+      "marathi",
+      "kamra",
+      "bhimrao"
+    ],
+    "कपड़ा": [
+      "kapda",
+      "kapra",
+      "pehna",
+      "makhan",
+      "khola",
+      "pahena"
+    ],
+    "हिला": [
+      "hila",
+      "mahila",
+      "hilaane",
+      "hilane",
+      "mahilaon",
+      "hilaya"
+    ],
+    "बेच": [
+      "bech",
+      "bechara",
+      "becha",
+      "bechari",
+      "bechna",
+      "becho"
+    ],
+    "दिख": [
+      "dikha",
+      "dikhao",
+      "dikhta",
+      "dikhane",
+      "dikh",
+      "dikhana"
+    ],
+    "शौक": [
+      "shauk",
+      "khilone",
+      "takdeer",
+      "uchhala",
+      "paala",
+      "asaan"
+    ],
+    "गिरी": [
+      "giri",
+      "netagiri",
+      "girri",
+      "gir",
+      "che",
+      "samaj"
+    ],
+    "वोट": [
+      "bjp",
+      "yogi",
+      "voters",
+      "voting",
+      "nota",
+      "nete"
+    ],
+    "रख": [
+      "rakho",
+      "rakha",
+      "rakh",
+      "rakhe",
+      "rakhte",
+      "rakhi"
+    ],
+    "लड़की": [
+      "larki",
+      "larka",
+      "ladke",
+      "ladkiyan",
+      "kahaana",
+      "izzatdaar"
+    ],
+    "पुलिस": [
+      "prashasan",
+      "walo",
+      "turant",
+      "suspend",
+      "uniform",
+      "beech"
+    ],
+    "जूते": [
+      "jute",
+      "jootey",
+      "maro",
+      "paon",
+      "pehne",
+      "gaddar"
+    ],
+    "फैला": [
+      "phaila",
+      "phela",
+      "gandagi",
+      "fela",
+      "nafrat",
+      "phailane"
+    ],
+    "इस्लाम": [
+      "islam",
+      "islamic",
+      "ayesha",
+      "muththi",
+      "shaitan",
+      "dharma"
+    ],
+    "हद": [
+      "hadd",
+      "besharami",
+      "paar",
+      "sarhad",
+      "hud",
+      "limit"
+    ],
+    "रेप": [
+      "rape",
+      "rapist",
+      "ladkiyon",
+      "kanoon",
+      "bacchi",
+      "hota"
+    ],
+    "देनी": [
+      "deni",
+      "goli",
+      "saza",
+      "maar",
+      "phansi",
+      "death"
+    ],
+    "बनाता": [
+      "banata",
+      "banta",
+      "banaata",
+      "bana",
+      "choda",
+      "banate"
+    ],
+    "अपनी": [
+      "jokhim",
+      "gazre",
+      "dusron",
+      "izzat",
+      "mahaktay",
+      "aapni"
+    ],
+    "दिखाती": [
+      "dikhati",
+      "dikhate",
+      "dikhaati",
+      "dikhata",
+      "badan",
+      "choochi"
+    ],
+    "कहीं": [
+      "kahin",
+      "kahi",
+      "kahiin",
+      "dhandha",
+      "dub",
+      "mil"
+    ],
+    "गाली": [
+      "dena",
+      "dene",
+      "mukki",
+      "falto",
+      "kosish",
+      "deta"
+    ],
+    "करो": [
+      "crore",
+      "karooge",
+      "devdas",
+      "bindaas",
+      "follow",
+      "udas"
+    ],
+    "गर्मी": [
+      "garmi",
+      "thandi",
+      "thand",
+      "nikal",
+      "utar",
+      "dunga"
+    ],
+    "फाड़": [
+      "phad",
+      "phaad",
+      "dunga",
+      "ukhad",
+      "chud",
+      "aane"
+    ],
+    "थोड़ी": [
+      "der",
+      "sham",
+      "shame",
+      "sochna",
+      "doob",
+      "chullu"
+    ],
+    "मजा": [
+      "maza",
+      "mazak",
+      "mazaak",
+      "aayega",
+      "majak",
+      "joke"
+    ],
+    "बीजेपी": [
+      "bjp",
+      "vikas",
+      "andhbhakt",
+      "yogi",
+      "congress",
+      "rss"
+    ],
+    "सालों": [
+      "saalon",
+      "saalo",
+      "salo",
+      "salon",
+      "maaro",
+      "congress"
+    ],
+    "तुम": [
+      "tumhari",
+      "tumhare",
+      "tumhe",
+      "tumhara",
+      "tumko",
+      "tumse"
+    ],
+    "मुह": [
+      "muh",
+      "muhammad",
+      "mukh",
+      "ayesha",
+      "hazrat",
+      "fatima"
+    ],
+    "अंध": [
+      "andhbhakt",
+      "andha",
+      "blind",
+      "andhe",
+      "andhbhakton",
+      "andhi"
+    ],
+    "टट्टी": [
+      "tatti",
+      "kha",
+      "pala",
+      "khaya",
+      "khana",
+      "mara"
+    ],
+    "इसे": [
+      "isko",
+      "ise",
+      "kehte",
+      "kahate",
+      "arya",
+      "kehate"
+    ],
+    "नाच": [
+      "naach",
+      "nache",
+      "nach",
+      "naache",
+      "naachne",
+      "naachte"
+    ],
+    "आजादी": [
+      "azaadi",
+      "azadi",
+      "angrezon",
+      "mili",
+      "aajadi",
+      "aazadi"
+    ],
+    "थोड़ा": [
+      "vastre",
+      "jeera",
+      "suiti",
+      "swaad",
+      "kida",
+      "sham"
+    ],
+    "चु": [
+      "chuki",
+      "chunav",
+      "chuka",
+      "chup",
+      "chudail",
+      "chuke"
+    ],
+    "तरह": [
+      "tare",
+      "tarike",
+      "isi",
+      "rok",
+      "buri",
+      "vastre"
+    ],
+    "क्यों": [
+      "kyoon",
+      "kyonki",
+      "takdeer",
+      "uchhala",
+      "khilone",
+      "kyon"
+    ],
+    "हरकत": [
+      "harakat",
+      "harakt",
+      "haraktein",
+      "harakate",
+      "harakato",
+      "aisi"
+    ],
+    "राहुल": [
+      "rahul",
+      "gandhi",
+      "congress",
+      "sonia",
+      "dusman",
+      "varun"
+    ],
+    "छक्का": [
+      "chhakka",
+      "chakka",
+      "navjot",
+      "banega",
+      "arey"
+    ],
+    "भक्तों": [
+      "bhakton",
+      "andhbhakton",
+      "bhakto",
+      "andh",
+      "gobar",
+      "deshbhakt"
+    ],
+    "ढंग": [
+      "dhang",
+      "proper",
+      "kapre",
+      "pehna",
+      "tarika",
+      "pehkar"
+    ],
+    "बंदर": [
+      "bandar",
+      "bandariya",
+      "bande",
+      "shakal",
+      "sakal",
+      "shape"
+    ],
+    "तेरा": [
+      "baap",
+      "bap",
+      "badan",
+      "chehra",
+      "bigad",
+      "sabar"
+    ],
+    "तुम्हारे": [
+      "tumhare",
+      "tumhara",
+      "tumhari",
+      "tumharen",
+      "tumhe",
+      "tumko"
+    ],
+    "कलंक": [
+      "kalank",
+      "kalankit",
+      "tumhe",
+      "dharma",
+      "badnam",
+      "jai"
+    ],
+    "विरोध": [
+      "virudh",
+      "virodi",
+      "virodh",
+      "virod",
+      "virodhi",
+      "viruddh"
+    ],
+    "भारत": [
+      "bharatiya",
+      "hind",
+      "pakistan",
+      "vande",
+      "bharati",
+      "matram"
+    ],
+    "देख": [
+      "dekh",
+      "dekhke",
+      "dekhne",
+      "dekhna",
+      "dekhte",
+      "dekhta"
+    ],
+    "गधा": [
+      "ghadha",
+      "gandha",
+      "ganda",
+      "gandhar",
+      "ghadhe",
+      "gandu"
+    ],
+    "अम्मी": [
+      "ammi",
+      "halala",
+      "khala",
+      "chu",
+      "abbu",
+      "dunga"
+    ],
+    "कुत्तो": [
+      "kuttay",
+      "kuttan",
+      "kutto",
+      "kutton",
+      "kamino",
+      "saalo"
+    ],
+    "अम्मा": [
+      "amma",
+      "chodunga",
+      "baccho",
+      "bap",
+      "paida",
+      "baccha"
+    ],
+    "यह": [
+      "yahi",
+      "yah",
+      "soch",
+      "tak",
+      "walo",
+      "hal"
+    ],
+    "फांसी": [
+      "fansi",
+      "phansi",
+      "saza",
+      "fasi",
+      "bhagat",
+      "rashid"
+    ],
+    "माल": [
+      "kamal",
+      "malik",
+      "istemal",
+      "maal",
+      "mala",
+      "malum"
+    ],
+    "फालतू": [
+      "falto",
+      "faltu",
+      "falatoo",
+      "phaltu",
+      "faltoo",
+      "jeera"
+    ],
+    "किसानों": [
+      "kisanon",
+      "kisaanon",
+      "kisan",
+      "andolan",
+      "tikait",
+      "kisaano"
+    ],
+    "भाजपा": [
+      "bjp",
+      "sarkar",
+      "nete",
+      "spa",
+      "abki",
+      "janata"
+    ],
+    "करने": [
+      "karne",
+      "karnay",
+      "karnewale",
+      "karni",
+      "paala",
+      "uchhala"
+    ],
+    "रखी": [
+      "rakhi",
+      "rakhdi",
+      "gandagi",
+      "macha",
+      "rakhay",
+      "rakha"
+    ],
+    "बोलता": [
+      "bolta",
+      "kashmiri",
+      "kehta",
+      "bolne",
+      "pandit",
+      "socho"
+    ],
+    "नालायक": [
+      "nalaayak",
+      "naalayak",
+      "besharam"
+    ],
+    "देगी": [
+      "naukari",
+      "jada",
+      "haraam",
+      "larki",
+      "bjp",
+      "inki"
+    ],
+    "सकल": [
+      "sakal",
+      "sakhel",
+      "sakkal",
+      "jaisi",
+      "dekh",
+      "sala"
+    ],
+    "बाल": [
+      "baal",
+      "bal",
+      "bala",
+      "bale",
+      "bali",
+      "bucket"
+    ],
+    "नही": [
+      "aati",
+      "balki",
+      "sharmanak",
+      "layak",
+      "alawa",
+      "kami"
+    ],
+    "जेल": [
+      "jail",
+      "arrest",
+      "nashedi",
+      "daalo",
+      "bhejna",
+      "daal"
+    ],
+    "नहीं": [
+      "aati",
+      "balki",
+      "sharmanak",
+      "alawa",
+      "chhodte",
+      "maanta"
+    ],
+    "नंगे": [
+      "nange",
+      "bhage",
+      "bhukhe",
+      "pade",
+      "nanga",
+      "aaye"
+    ],
+    "पहना": [
+      "pehana",
+      "badhane",
+      "pahana",
+      "pahena",
+      "utar",
+      "pehna"
+    ],
+    "दलाल": [
+      "dalal",
+      "dalaal",
+      "dalaali",
+      "dalalon",
+      "dalali",
+      "muththi"
+    ],
+    "पेल": [
+      "pel",
+      "pelo",
+      "pella",
+      "pela",
+      "pelne",
+      "pele"
+    ],
+    "गंदगी": [
+      "gandagi",
+      "society",
+      "rakhi",
+      "wajah",
+      "ladkiyon",
+      "karne"
+    ],
+    "रखा": [
+      "rakha",
+      "rakh",
+      "nadi",
+      "kinare",
+      "aasmaan",
+      "condom"
+    ],
+    "मादरचोद": [
+      "madarchodo",
+      "pahije",
+      "mardchoda",
+      "bhadwe",
+      "mullon",
+      "motherchod"
+    ],
+    "तु": [
+      "tumhe",
+      "tumhari",
+      "tumhare",
+      "tumhara",
+      "tumko",
+      "tumse"
+    ],
+    "नीचे": [
+      "unique",
+      "neechay",
+      "neche",
+      "draw",
+      "gir",
+      "corner"
+    ],
+    "घुस": [
+      "ghus",
+      "ghusa",
+      "ghuss",
+      "ghuske",
+      "ghusne",
+      "ghuse"
+    ],
+    "क्यो": [
+      "kyoon",
+      "kyo",
+      "kyoki",
+      "kyon",
+      "kyonki",
+      "takdeer"
+    ],
+    "गां": [
+      "gandhi",
+      "rahul",
+      "gandu",
+      "gaon",
+      "marwa",
+      "gaoon"
+    ],
+    "दोगला": [
+      "dogla",
+      "pana",
+      "gandhi",
+      "chor",
+      "ban",
+      "jata"
+    ],
+    "बेशर्मी": [
+      "besharami",
+      "besharmi",
+      "hadd",
+      "sharmi",
+      "paar",
+      "hoti"
+    ],
+    "चौराहे": [
+      "chaurahe",
+      "beech",
+      "chowk",
+      "goli",
+      "khada",
+      "inko"
+    ],
+    "औरतों": [
+      "auraton",
+      "badnam",
+      "unko",
+      "gandi",
+      "jata",
+      "aaj"
+    ],
+    "चलेगा": [
+      "chalega",
+      "pata",
+      "chalta",
+      "inch",
+      "terko",
+      "tak"
+    ],
+    "वालों": [
+      "walo",
+      "muththi",
+      "gharwalo",
+      "gharwalon",
+      "gasti",
+      "pillai"
+    ],
+    "लोहड़ी": [
+      "lodi",
+      "lohardi",
+      "loddri",
+      "lohri",
+      "bahan",
+      "dikha"
+    ],
+    "दोगले": [
+      "dogle",
+      "dogla",
+      "dogale",
+      "priyanka",
+      "jis",
+      "gaddar"
+    ],
+    "लड़कियां": [
+      "ladkiyan",
+      "ladkiya",
+      "ladkiyaan",
+      "ladkiyon",
+      "larkiyon",
+      "ladke"
+    ],
+    "आंटी": [
+      "aunti",
+      "anty",
+      "auntie",
+      "chahti",
+      "inbox",
+      "nikalna"
+    ],
+    "खोलकर": [
+      "khola",
+      "kholke",
+      "kaparde",
+      "khul",
+      "badan",
+      "milega"
+    ],
+    "उड़ा": [
+      "uda",
+      "mazak",
+      "udha",
+      "udana",
+      "uddana",
+      "mazaak"
+    ],
+    "डालना": [
+      "daalna",
+      "dalna",
+      "haddi",
+      "sex",
+      "post",
+      "comment"
+    ],
+    "नाजायज": [
+      "najayaz",
+      "nayaajaz",
+      "aulad",
+      "baap",
+      "paida",
+      "gandu"
+    ],
+    "सामने": [
+      "saamne",
+      "jhukna",
+      "sabke",
+      "khade",
+      "khada",
+      "barbar"
+    ],
+    "अपने": [
+      "baap",
+      "baccho",
+      "bap",
+      "pita",
+      "pati",
+      "dharma"
+    ],
+    "इनके": [
+      "inki",
+      "khilaaf",
+      "sochna",
+      "sunte",
+      "record",
+      "dada"
+    ],
+    "मुल्ले": [
+      "mullay",
+      "mulle",
+      "jehadi",
+      "gandu",
+      "bap"
+    ],
+    "कमीने": [
+      "kaminey",
+      "kameene",
+      "kamino",
+      "barbad",
+      "rehne",
+      "keh"
+    ]
+  }
+}

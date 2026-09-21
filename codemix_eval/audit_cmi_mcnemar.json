@@ -1,0 +1,105 @@
+{
+  "n": 6368,
+  "cmi_buckets_shipped": [
+    {
+      "bucket": "CMI = 0 (not mixed)",
+      "n": 1628,
+      "share_pct": 25.57,
+      "accuracy": 0.8624,
+      "ci95": [
+        0.8448,
+        0.8783
+      ],
+      "n_abusive": 890,
+      "recall_abusive": 0.8742
+    },
+    {
+      "bucket": "0 < CMI < 10",
+      "n": 1268,
+      "share_pct": 19.91,
+      "accuracy": 0.832,
+      "ci95": [
+        0.8104,
+        0.8516
+      ],
+      "n_abusive": 698,
+      "recall_abusive": 0.8209
+    },
+    {
+      "bucket": "10 <= CMI < 20",
+      "n": 1898,
+      "share_pct": 29.81,
+      "accuracy": 0.8246,
+      "ci95": [
+        0.8068,
+        0.841
+      ],
+      "n_abusive": 1017,
+      "recall_abusive": 0.8092
+    },
+    {
+      "bucket": "20 <= CMI < 30",
+      "n": 755,
+      "share_pct": 11.86,
+      "accuracy": 0.8238,
+      "ci95": [
+        0.795,
+        0.8494
+      ],
+      "n_abusive": 327,
+      "recall_abusive": 0.7584
+    },
+    {
+      "bucket": "CMI >= 30 (human-like)",
+      "n": 819,
+      "share_pct": 12.86,
+      "accuracy": 0.8803,
+      "ci95": [
+        0.8563,
+        0.9008
+      ],
+      "n_abusive": 210,
+      "recall_abusive": 0.6714
+    }
+  ],
+  "low_vs_deep_mix": {
+    "acc_cmi_lt_10": 0.8491,
+    "n_cmi_lt_10": 2896,
+    "acc_cmi_ge_20": 0.8532,
+    "n_cmi_ge_20": 1574,
+    "fisher_odds": 0.9679,
+    "fisher_p": 0.7254964056196425
+  },
+  "test_cmi": {
+    "mean": 13.812,
+    "pct_eq_0": 25.57,
+    "pct_ge_20": 24.72,
+    "pct_ge_30": 12.86
+  },
+  "mcnemar_vs_shipped": {
+    "layer1": {
+      "b_shipped_right_other_wrong": 248,
+      "c_shipped_wrong_other_right": 218,
+      "discordant": 466,
+      "chi2_cc": 1.8047,
+      "p_chi2": 0.17914,
+      "p_exact_binomial": 0.17908,
+      "acc_shipped": 0.8428,
+      "acc_other": 0.8381,
+      "diff_pp": 0.471,
+      "verdict": "NOT significant"
+    },
+    "layer1_synth": {
+      "b_shipped_right_other_wrong": 293,
+      "c_shipped_wrong_other_right": 241,
+      "discordant": 534,
+      "chi2_cc": 4.8708,
+      "p_chi2": 0.02732,
+      "p_exact_binomial": 0.02722,
+      "acc_shipped": 0.8428,
+      "acc_other": 0.8346,
+      "diff_pp": 0.817,
+      "verdict": "significant"
+    }
+  }
+}

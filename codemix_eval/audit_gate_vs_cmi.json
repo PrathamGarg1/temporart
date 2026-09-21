@@ -1,0 +1,62 @@
+{
+  "cmi_kept_vs_quarantined": {
+    "kept (trained on)": {
+      "n": 15563,
+      "mean_cmi": 11.278,
+      "median_cmi": 10.0,
+      "pct_cmi_0": 29.1,
+      "pct_cmi_ge_20": 16.4,
+      "pct_cmi_ge_30": 6.39
+    },
+    "quarantined (discarded)": {
+      "n": 1924,
+      "mean_cmi": 12.236,
+      "median_cmi": 11.111,
+      "pct_cmi_0": 32.64,
+      "pct_cmi_ge_20": 21.21,
+      "pct_cmi_ge_30": 9.41
+    }
+  },
+  "mannwhitney_p": 0.01421174983067333,
+  "mannwhitney_p_delta_p_only": 0.023420037226504875,
+  "p_abuse_by_cmi_bucket": [
+    {
+      "bucket": "CMI = 0",
+      "n": 5157,
+      "mean_p_mix": 0.8375,
+      "mean_p_dev": 0.9278
+    },
+    {
+      "bucket": "0 < CMI < 10",
+      "n": 3754,
+      "mean_p_mix": 0.8687,
+      "mean_p_dev": 0.9112
+    },
+    {
+      "bucket": "10 <= CMI < 20",
+      "n": 5616,
+      "mean_p_mix": 0.8362,
+      "mean_p_dev": 0.904
+    },
+    {
+      "bucket": "20 <= CMI < 30",
+      "n": 1785,
+      "mean_p_mix": 0.7945,
+      "mean_p_dev": 0.8832
+    },
+    {
+      "bucket": "CMI >= 30",
+      "n": 1175,
+      "mean_p_mix": 0.7227,
+      "mean_p_dev": 0.8323
+    }
+  ],
+  "spearman_cmi_vs_p_mix": {
+    "rho": -0.0993238962680126,
+    "p": 1.375892952351321e-39
+  },
+  "spearman_cmi_vs_p_dev": {
+    "rho": -0.09936123807884409,
+    "p": 1.2881690564955292e-39
+  }
+}

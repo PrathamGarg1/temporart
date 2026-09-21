@@ -1,0 +1,71 @@
+{
+  "per_bucket": [
+    {
+      "bucket": "CMI = 0",
+      "n_abusive": 890,
+      "recall_abusive": 0.8742,
+      "ci95": [
+        0.8507,
+        0.8944
+      ],
+      "n_clean": 738,
+      "specificity": 0.8482
+    },
+    {
+      "bucket": "0 < CMI < 10",
+      "n_abusive": 698,
+      "recall_abusive": 0.8209,
+      "ci95": [
+        0.7907,
+        0.8476
+      ],
+      "n_clean": 570,
+      "specificity": 0.8456
+    },
+    {
+      "bucket": "10 <= CMI < 20",
+      "n_abusive": 1017,
+      "recall_abusive": 0.8092,
+      "ci95": [
+        0.7839,
+        0.8322
+      ],
+      "n_clean": 881,
+      "specificity": 0.8422
+    },
+    {
+      "bucket": "20 <= CMI < 30",
+      "n_abusive": 327,
+      "recall_abusive": 0.7584,
+      "ci95": [
+        0.7092,
+        0.8016
+      ],
+      "n_clean": 428,
+      "specificity": 0.8738
+    },
+    {
+      "bucket": "CMI >= 30",
+      "n_abusive": 210,
+      "recall_abusive": 0.6714,
+      "ci95": [
+        0.6053,
+        0.7314
+      ],
+      "n_clean": 609,
+      "specificity": 0.9524
+    }
+  ],
+  "trend_test": {
+    "chi2": 52.01840988752726,
+    "p": 5.497824417943775e-13
+  },
+  "shallow_vs_deep_recall": {
+    "recall_cmi_lt_10": 0.8508,
+    "n_cmi_lt_10": 1588,
+    "recall_cmi_ge_20": 0.7244,
+    "n_cmi_ge_20": 537,
+    "fisher_odds": 2.1688,
+    "fisher_p": 2.3201945265933952e-10
+  }
+}
