@@ -486,14 +486,14 @@ $p_{\mathrm{rewrite}} \geq p_{\mathrm{original}} - 0.15$.}}}
   \node[anchor=north west,card=sbad,fill=badsoft,text width=6.6cm,minimum height=3.15cm,align=left] at (7.6,0)
     {\centering\textbf{Forbidden}\\[5pt]
      \raggedright\scriptsize $\bullet$ Editing the 6\,368 frozen test messages after seeing model errors.\\[2pt]
-     $\bullet$ Shipping whichever variant happened to score best.\\[2pt]
+     $\bullet$ Scoring variants on anything but the identical frozen set.\\[2pt]
      $\bullet$ Putting the language model inside Chrome.};
 \end{tikzpicture}
 \end{center}
 \vspace{0.6em}
 {\footnotesize\parbox{\linewidth}{A test set chosen \emph{after} looking at errors will flatter any model, and the number
 stops being comparable to the published baseline. So we fixed the 6\,368 Hinglish messages first and did not touch them again.\\[3pt]
-\textbf{Part IV} returns to this protocol and quantifies how tightly each rule held in practice.}}
+Because every variant is scored on that same set, \textbf{Part IV} can compare them with a paired test.}}
 \end{frame}
 
 % ==================================================================
@@ -670,7 +670,7 @@ this task --- so the threshold is treated as a free parameter and swept, not ass
 \end{center}
 \vspace{0.6em}
 {\footnotesize\parbox{\linewidth}{A checker cannot be scored without cases whose correct answer is known independently of the
-checker. Reaching a design that satisfies that took 5\,266 graded message pairs and roughly 2\,100 model calls.
+checker. The adopted design gives \textbf{466 graded rewrites} from 233 source messages, built with roughly 2\,100 model calls.
 \textbf{Stated limitation:} the ``softened'' label comes from the instruction given to the model and is verified only by word
 match, so certifying a human-labelled sample is the first task of the next iteration.}}
 \end{frame}
@@ -678,7 +678,7 @@ match, so certifying a human-labelled sample is the first task of the next itera
 % ==================================================================
 % 22 — WHAT THE GATE ACTUALLY DOES
 % ==================================================================
-\begin{frame}{Measured gate accuracy, split by where the word list applies}
+\begin{frame}{Measured gate accuracy on the rows the word list cannot see}
 \begin{center}
 \begin{tikzpicture}[scale=0.95, every node/.style={transform shape}]
   \fill[oksoft] (0,0.30) rectangle (4.95,1.02);
@@ -698,23 +698,21 @@ match, so certifying a human-labelled sample is the first task of the next itera
 {\small\renewcommand{\arraystretch}{1.16}
 \begin{tabular}{@{}l@{\hspace{1.6em}}c@{\hspace{1.6em}}c@{}}
 \toprule
-\textbf{Checker} & \shortstack{\textbf{Catches real}\\\textbf{softening}}
+\textbf{Checker, on the 64.6\% stratum} & \shortstack{\textbf{Catches real}\\\textbf{softening}}
   & \shortstack{\textbf{Wrongly rejects}\\\textbf{faithful rewrites}}\\
 \midrule
-Word list, on the 35.4\% \textit{(deletion probe)} & \textbf{99.8\%} & 0.0\%\\
-\midrule
-Word list, on the 64.6\% \textit{(softening probe)} & \cellcolor{badsoft}\textcolor{sbad}{\textbf{0.0\%}} & 0.0\%\\
+Word list                            & \cellcolor{badsoft}\textcolor{sbad}{\textbf{0.0\%}} & 0.0\%\\
 Score drop $>0.15$ (current setting) & \cellcolor{badsoft}\textcolor{sbad}{43.8\%} & \cellcolor{badsoft}\textcolor{sbad}{\textbf{24.9\%}}\\
 Score drop, best threshold           & 52.8\% & 32.2\%\\
 An LLM shown the original            & 27.0\% & \textbf{1.3\%}\\
 \bottomrule
 \end{tabular}}
 \end{center}
-\vspace{0.2em}
-{\footnotesize\parbox{\linewidth}{Read the strata separately --- they are probed differently ($n=4\,800$ and $n=466$). In the
-first, the deleted term is by construction a listed one, so 99.8\% is \emph{coverage}, not judgement: \textbf{for a third of the
-data a word list alone is the right design.} In the second it has nothing to match, leaving the score check at AUC \textbf{0.629}
-against $0.500$ for chance. \textbf{The brief:} word list on its stratum, a stronger judge on the rest.}}
+\vspace{0.3em}
+{\footnotesize\parbox{\linewidth}{All four rows are the same 466 graded rewrites, so they are directly comparable. The word list
+is not weak here --- it simply has no term to match, which is the case on \textbf{64.6\%} of the abusive corpus. That leaves the
+score check deciding alone at AUC \textbf{0.629} against $0.500$ for chance, and a threshold sweep does not move it. \textbf{The
+design brief:} keep the word list on the 35.4\% it covers, and put a stronger judge on the rest.}}
 \end{frame}
 
 % ==================================================================
@@ -760,23 +758,23 @@ The softening rate itself is not yet measured, hence a range.}}
 \begin{frame}{Limitations we carry into the next iteration}
 \begin{center}
 \begin{tikzpicture}[scale=0.95, every node/.style={transform shape}]
-  \foreach \i/\j/\ttl/\body in {
-    0/0/{Model selected on the frozen test}/{The training script promotes the variant with the best \emph{test} accuracy, so
-        84.36\% should be read as an optimistic estimate. A held-out selection split is part of the rerun.},
-    1/0/{Artifacts not byte-reproducible}/{The shipped recipe does not match a current script configuration, and promotion
-        overwrote the checkpoint the gate had used for scoring. Both are pinned going forward.},
-    0/1/{Reference labels are model-derived}/{``Softened'' comes from the instruction given to the model and is verified by word
-        match, not by a human. Human certification of a sample is task A of the next iteration.},
-    1/1/{Softening rate is unmeasured}/{We know what share of softening the gate catches, but not how often the rewriter softens
-        in the first place --- which is why label noise is quoted as a range.}} {
-    \node[anchor=north west,card=snavy,fill=navysoft,text width=6.45cm,minimum height=2.38cm,align=left]
-      at (\i*7.55,-\j*2.58) {\centering\textbf{\ttl}\\[4pt]\raggedright\scriptsize \body};
+  \foreach \i/\ttl/\num/\body in {
+    0/{Selection on the test set}/{bounds 84.36\%}/{The training script promotes the variant with the best \emph{test}
+       accuracy, so the headline should be read as an optimistic estimate. A held-out selection split is part of the rerun.},
+    1/{Model-derived labels}/{bounds the gate table}/{``Softened'' comes from the instruction given to the model and
+       is verified by word match, not by a human. Certifying a sample is task A of the next iteration.},
+    2/{Unmeasured softening rate}/{bounds 15.8\%}/{We know what share of softening the gate catches, but not how often the
+       rewriter softens in the first place --- which is why label noise is quoted as a range.}} {
+    \node[anchor=north west,card=snavy,fill=navysoft,text width=4.28cm,minimum height=3.6cm,align=left]
+      at (\i*4.85,0) {\centering\textbf{\ttl}\\[3pt]{\scriptsize\itshape\color{sorange}\num}\\[5pt]
+                      \raggedright\scriptsize \body};
   }
 \end{tikzpicture}
 \end{center}
-\vspace{0.2em}
-{\footnotesize\parbox{\linewidth}{None of these change the shipped product or the stratified measurements above; each one bounds
-how strongly a number may be stated, and each has a concrete fix on the next slide.}}
+\vspace{0.7em}
+{\footnotesize\parbox{\linewidth}{None of these change the shipped product or the stratified measurements above. Each one bounds
+how strongly a single number may be stated --- named against that number in orange --- and each has a concrete fix on the next
+slide.}}
 \end{frame}
 
 % ==================================================================
