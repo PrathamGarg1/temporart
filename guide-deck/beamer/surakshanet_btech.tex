@@ -139,28 +139,28 @@
 \begin{tikzpicture}[scale=0.96, every node/.style={transform shape}]
   \foreach \x/\lab/\sub/\col in {
     0/I/System/steal,
-    2.95/II/Gap/snavy,
-    5.90/III/Method/sorange,
-    8.85/IV/Results/sok,
-    11.80/V/Outlook/snavy} {
-    \fill[\col] (\x,0) rectangle (\x+2.75,1.15);
-    \node[text=white,font=\bfseries\small\sffamily,align=center] at (\x+1.375,0.58) {\lab\\\scriptsize \sub};
+    2.45/II/Gap/snavy,
+    4.90/III/Method/sorange,
+    7.35/IV/Results/sok,
+    9.80/V/Outlook/snavy,
+    12.25/VI/Audit/sbad} {
+    \fill[\col] (\x,0) rectangle (\x+2.25,1.15);
+    \node[text=white,font=\bfseries\small\sffamily,align=center] at (\x+1.125,0.58) {\lab\\\scriptsize \sub};
   }
-  \draw[flowline] (2.75,0.58) -- (2.95,0.58);
-  \draw[flowline] (5.70,0.58) -- (5.90,0.58);
-  \draw[flowline] (8.65,0.58) -- (8.85,0.58);
-  \draw[flowline] (11.60,0.58) -- (11.80,0.58);
+  \foreach \x in {2.25,4.70,7.15,9.60,12.05} { \draw[flowline] (\x,0.58) -- (\x+0.20,0.58); }
 
-  \node[anchor=north west,text width=2.6cm,font=\scriptsize\sffamily,align=left] at (0,-0.25)
+  \node[anchor=north west,text width=2.15cm,font=\scriptsize\sffamily,align=left] at (0,-0.25)
     {On-device Chrome path and MiniLM INT8.};
-  \node[anchor=north west,text width=2.6cm,font=\scriptsize\sffamily,align=left] at (2.95,-0.25)
+  \node[anchor=north west,text width=2.15cm,font=\scriptsize\sffamily,align=left] at (2.45,-0.25)
     {Hinglish absent from the poster; MACD has no English pair.};
-  \node[anchor=north west,text width=2.6cm,font=\scriptsize\sffamily,align=left] at (5.90,-0.25)
+  \node[anchor=north west,text width=2.15cm,font=\scriptsize\sffamily,align=left] at (4.90,-0.25)
     {Mixer baselines not applicable; transliteration fails; gated Qwen.};
-  \node[anchor=north west,text width=2.6cm,font=\scriptsize\sffamily,align=left] at (8.85,-0.25)
+  \node[anchor=north west,text width=2.15cm,font=\scriptsize\sffamily,align=left] at (7.35,-0.25)
     {Corrected mix; 84.36\% INT8 Hinglish; held-out ablations.};
-  \node[anchor=north west,text width=2.6cm,font=\scriptsize\sffamily,align=left] at (11.80,-0.25)
+  \node[anchor=north west,text width=2.15cm,font=\scriptsize\sffamily,align=left] at (9.80,-0.25)
     {Shipped detector versus remaining mix-depth gap.};
+  \node[anchor=north west,text width=2.15cm,font=\scriptsize\sffamily,align=left] at (12.25,-0.25)
+    {We test our own claims; three do not hold.};
 \end{tikzpicture}
 \end{center}
 \vspace{0.45em}
@@ -576,13 +576,304 @@
 \end{frame}
 
 % ------------------------------------------------------------------
-\begin{frame}{Closed results and remaining measurement}
+\begin{frame}{Where we stood before auditing our own work.}
 \begin{center}
 \begin{tikzpicture}
-  \node[card=sok,fill=oksoft,text width=6.5cm,minimum height=3.4cm] at (0,0)
-    {\textbf{Closed}\\[6pt]On-device A--B--C, 113\,MB, 28\,ms.\\Hinglish 84.36\% on a frozen test.\\Hindi recovered after 70.04\%.\\Gated Qwen; transliteration and synth rejected.};
-  \node[card=snavy,fill=navysoft,text width=6.5cm,minimum height=3.4cm] at (7.5,0)
+  \node[card=sok,fill=oksoft,text width=6.5cm,minimum height=3.4cm,anchor=north] at (0,1.7)
+    {\textbf{Believed closed}\\[6pt]On-device A--B--C, 113\,MB, 28\,ms.\\Hinglish 84.36\% on a frozen test.\\Hindi recovered after 70.04\%.\\Gated Qwen; transliteration and synth rejected.};
+  \node[card=snavy,fill=navysoft,text width=6.5cm,minimum height=3.4cm,anchor=north] at (7.5,1.7)
     {\textbf{Open}\\[6pt]Raise CMI toward HinGE humans (35.6)\\without sanitising class 0,\\without unfreezing $n=6368$,\\and without placing Qwen in Chrome.};
+\end{tikzpicture}
+\end{center}
+\vspace{0.45em}
+{\footnotesize\parbox{\linewidth}{Part VI re-examines the left-hand column against the artifacts on disk. Only the first line
+survives unchanged; three of the others do not. Raising CMI stays the right move, but it has to be judged on a different
+metric than the one implied here.}}
+\end{frame}
+
+% ==================================================================
+% AUDIT ITERATION
+% ==================================================================
+
+% ------------------------------------------------------------------
+\begin{frame}[plain]
+\begin{tikzpicture}[overlay,remember picture]
+  \fill[snavy] (current page.north west) rectangle ([yshift=-0.92cm]current page.north east);
+  \fill[sorange] ([yshift=-0.92cm]current page.north west) rectangle ([yshift=-0.99cm]current page.north east);
+  \node[anchor=west,text=white,font=\small\sffamily] at ([xshift=0.55cm,yshift=-0.46cm]current page.north west)
+    {\textbf{Part VI} \textperiodcentered{} Audit iteration};
+\end{tikzpicture}
+\vspace*{2.1cm}
+\begin{center}
+\begin{tikzpicture}
+  \node[anchor=north west,font=\LARGE\bfseries\sffamily,text=snavy,text width=13.4cm,align=left] at (0,2.2)
+    {We audited our own results. Three of them did not hold.};
+  \node[anchor=north west,font=\small\sffamily,text=snavy,text width=13.4cm,align=left] at (0,0.75)
+    {Every number in this section is recomputed from artifacts on disk, not carried over from
+     the earlier slides. Scripts: \texttt{aws\_train/audit\_*.py}, \texttt{aws\_train/gate\_v*.py}.};
+\end{tikzpicture}
+\end{center}
+\end{frame}
+
+% ------------------------------------------------------------------
+\begin{frame}{What the audit asked, and what it found.}
+\begin{center}
+\begin{tikzpicture}[scale=0.95, every node/.style={transform shape}]
+  \node[card=sbad,fill=badsoft,text width=4.05cm,minimum height=4.3cm,anchor=north] (a) at (0,2.15)
+    {\textbf{1. One number, one blind spot}\\[6pt]
+     Is 84.36\% informative?\\[6pt]
+     {\scriptsize No. Abuse recall falls 87.4\,$\to$\,67.1\% with mixing depth while accuracy stays flat.}};
+  \node[card=sbad,fill=badsoft,text width=4.05cm,minimum height=4.3cm,anchor=north] (b) at (4.85,2.15)
+    {\textbf{2. The gate was never measured}\\[6pt]
+     Where did ``89.9\% retained'' come from?\\[6pt]
+     {\scriptsize It is the gate's own pass rate. Against real ground truth: AUC 0.63 on 64.6\% of abusive rows.}};
+  \node[card=sbad,fill=badsoft,text width=4.05cm,minimum height=4.3cm,anchor=north] (c) at (9.7,2.15)
+    {\textbf{3. Verdicts drawn\\without a test}\\[6pt]
+     Is Layer-1 really worse?\\[6pt]
+     {\scriptsize Not established. McNemar $p=0.179$, so the $-0.60$\,pp ``do not ship'' verdict is withdrawn.}};
+\end{tikzpicture}
+\end{center}
+\vspace{0.3em}
+{\footnotesize\parbox{\linewidth}{The inference path A--B--C is unchanged. What changes is what we are entitled to claim about it.}}
+\end{frame}
+
+% ------------------------------------------------------------------
+\begin{frame}{Issue 1: abuse recall collapses with mixing depth.}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  width=12.3cm, height=5.0cm,
+  xlabel={Code-mixing index (CMI) band of the test sentence},
+  ylabel={Rate (\%)},
+  symbolic x coords={b1,b2,b3,b4,b5},
+  xtick=data,
+  xticklabels={$0$, $0$--$10$, $10$--$20$, $20$--$30$, $\geq 30$},
+  ymin=60, ymax=100,
+  legend style={font=\scriptsize\sffamily, at={(0.02,0.03)}, anchor=south west,
+                draw=none, fill=spaper, legend columns=1},
+  axis line style={snavy},
+  tick label style={font=\small\sffamily,color=snavy},
+  label style={font=\small\sffamily,color=snavy},
+  grid=major, grid style={navysoft}, xtick style={draw=none},
+  mark size=1.7pt,
+]
+\addplot[sbad,line width=1.2pt,mark=*] coordinates {(b1,87.4) (b2,82.1) (b3,80.9) (b4,75.8) (b5,67.1)};
+\addplot[sok,line width=1.2pt,mark=square*] coordinates {(b1,84.8) (b2,84.6) (b3,84.2) (b4,87.4) (b5,95.2)};
+\addplot[snavy,line width=1.0pt,dashed,mark=triangle*] coordinates {(b1,86.2) (b2,83.2) (b3,82.5) (b4,82.4) (b5,88.0)};
+\legend{Recall on abusive (class 0), Specificity on non-abusive (class 1), Overall accuracy}
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\vspace{-0.2em}
+{\footnotesize\parbox{\linewidth}{Shipped INT8, frozen Hinglish test $n=6368$. Cochran--Armitage trend on recall:
+$\chi^2=52.0$, $p=5.5\times10^{-13}$. Shallow (CMI $<10$) recall 85.1\% versus deep (CMI $\geq 20$) 72.4\%, Fisher $p=2.3\times10^{-10}$.\\
+\textbf{Why accuracy hides it.} Deep mixes are mostly non-abusive --- the abusive share falls 54.7\% $\to$ 25.6\% across
+these bands --- so a model drifting toward ``non-abusive'' scores \emph{well} there while missing a third of real abuse.}}
+\end{frame}
+
+% ------------------------------------------------------------------
+\begin{frame}{Issue 2: the retention figure is the gate's own pass rate.}
+\begin{center}
+\begin{tikzpicture}[scale=0.95, every node/.style={transform shape}]
+  \node[card=sorange,fill=orangesoft,text width=2.75cm] (r) at (0,0) {\textbf{17\,487}\\abusive rows in};
+  \node[card=snavy,fill=navysoft,text width=3.1cm,minimum height=1.8cm] (g) at (3.7,0)
+    {\textbf{Gate}\\decides which rewrites kept their abuse};
+  \node[card=sok,fill=oksoft,text width=2.9cm] (a) at (7.5,0) {\textbf{15\,563} kept\\\textbf{89.0\%}};
+  \node[card=sbad,fill=badsoft,text width=3.05cm,minimum height=1.8cm] (c) at (11.3,0)
+    {\textbf{Quoted as}\\``quarantine \emph{preserves} class-0 labels''};
+  \draw[flowline] (r) -- (g);
+  \draw[flowline] (g) -- (a);
+  \draw[flowline] (a) -- (c);
+  \draw[arr,sbad,dashed] (c.south) to[out=-90,in=-90]
+    node[midway,below,font=\scriptsize\sffamily\bfseries,text=sbad,text width=7.4cm,align=center]
+    {the claim and the instrument are the same object\\nothing external ever saw the 1\,924 discarded rows} (g.south);
+\end{tikzpicture}
+\end{center}
+\vspace{0.7em}
+{\footnotesize\parbox{\linewidth}{\textbf{It is also mis-attributed.} The earlier slide puts the figure under a
+\emph{Lexicon} box, but of the 1\,924 discards the word list made \textbf{74} and the $\Delta p$ score made \textbf{1\,806}
+--- 94\% of the decisions came from the component that diagram never names.\\[3pt]
+\textbf{The threshold was never derived.} $\delta=0.15$ is an \texttt{argparse} default, reused unchanged for a second,
+different gate. A repository-wide search finds no human annotation, no threshold sweep, no sensitivity analysis. Where
+detection can be scored at all, Youden's $J$ puts the optimum at $0.019$ --- roughly eight times stricter.}}
+\end{frame}
+
+% ------------------------------------------------------------------
+\begin{frame}{What we did: generate ground truth. Two designs failed first.}
+\begin{center}
+\begin{tikzpicture}[scale=0.95, every node/.style={transform shape}]
+  \node[card=sbad,fill=badsoft,text width=3.95cm,minimum height=3.6cm] (v1) at (0,0)
+    {\textbf{Attempt 1 --- invalid}\\[4pt]
+     {\scriptsize Mine the word list automatically, delete one slur occurrence.}\\[5pt]
+     {\scriptsize 24.3\% of ``abuse removed'' rows still contained a slur; neutral words such as
+     \texttt{kapde} were deleted.}};
+  \node[card=sorange,fill=orangesoft,text width=3.95cm,minimum height=3.6cm] (v2) at (4.75,0)
+    {\textbf{Attempt 2 --- tautological}\\[4pt]
+     {\scriptsize Require exactly one hard slur aligned to a Devanagari stem, with post-conditions.}\\[5pt]
+     {\scriptsize Labels sound, but deletion leaves a broken fragment and the word check \emph{is}
+     ``is that token gone'': it scores 100\%, an LLM judge only 10.3\%.}};
+  \node[card=sok,fill=oksoft,text width=3.95cm,minimum height=3.6cm] (v3) at (9.5,0)
+    {\textbf{Attempt 3 --- used}\\[4pt]
+     {\scriptsize Negatives are \emph{fluent} softened rewrites from the same Qwen3-32B; positives are
+     fluent faithful rewrites.}\\[5pt]
+     {\scriptsize Both arms natural text, so no gate wins by spotting bad grammar.}};
+  \draw[flowline] (v1) -- (v2);
+  \draw[flowline] (v2) -- (v3);
+\end{tikzpicture}
+\end{center}
+\vspace{0.35em}
+{\footnotesize\parbox{\linewidth}{4\,800 graded items over 1\,200 sources for the covered stratum, 466 over 233 sources for
+the blind stratum, $\approx$2\,100 Bedrock generation and judging calls. Remaining gap, stated plainly: labels come from the
+generation instruction and are verified only lexically. Human certification of a subsample is Stage A of the next iteration.}}
+\end{frame}
+
+% ------------------------------------------------------------------
+\begin{frame}{Metric: the gate splits into two strata that need different tools.}
+\vspace{-0.2em}
+\begin{center}
+{\small\renewcommand{\arraystretch}{1.32}
+\begin{tabular}{@{}l@{\hspace{1.4em}}c@{\hspace{1.4em}}c@{}}
+\toprule
+ & \textbf{Word list applies} & \textbf{Word list vacuous}\\
+ & 35.4\% of abusive rows & \textbf{64.6\%} of abusive rows\\
+\midrule
+Lexicon check, sensitivity      & \textbf{99.8\%} & \cellcolor{badsoft}\textcolor{sbad}{\textbf{0.0\%}}\\
+Lexicon check, false rejection  & 0.0\%           & 0.0\%\\
+$\Delta p>0.15$, sensitivity    & 48.0\%          & \cellcolor{badsoft}\textcolor{sbad}{43.8\%}\\
+$\Delta p>0.15$, false rejection& 1.6\%           & \cellcolor{badsoft}\textcolor{sbad}{\textbf{24.9\%}}\\
+\midrule
+AUC of $\Delta p$ vs real softening & 0.834 & \cellcolor{badsoft}\textcolor{sbad}{\textbf{0.629}}\\
+\bottomrule
+\end{tabular}}
+\end{center}
+\vspace{0.5em}
+{\footnotesize\parbox{\linewidth}{\textbf{Left column.} Where the 20 stems fire, word-level checking is essentially perfect and
+the $\Delta p$ score contributes nothing but false rejections. A word list \emph{is} sufficient here.\\
+\textbf{Right column.} On the majority of abusive rows \texttt{lexicon\_preserved} returns true because nothing was required,
+so $\Delta p$ decides alone --- at AUC 0.629, where chance is 0.500.}}
+\end{frame}
+
+% ------------------------------------------------------------------
+\begin{frame}{Metric: no automatic substitute reached a usable operating point.}
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+  ybar=3pt, bar width=9pt,
+  width=12.6cm, height=4.9cm,
+  ylabel={Rate (\%)},
+  symbolic x coords={g1,g2,g3,g4,g5},
+  xtick=data,
+  xticklabels={Word list, $\Delta p>0.15$, $\Delta p$ calibrated, Rank-matched, LLM judge},
+  ymin=0, ymax=62, ytick={0,10,20,30,40,50},
+  legend style={font=\scriptsize\sffamily, at={(0.5,1.03)}, anchor=south, draw=none,
+                fill=none, legend columns=2,
+                /tikz/every even column/.append style={column sep=12pt}},
+  axis line style={snavy},
+  tick label style={font=\scriptsize\sffamily,color=snavy},
+  label style={font=\small\sffamily,color=snavy},
+  grid=major, grid style={navysoft}, xtick style={draw=none},
+  nodes near coords={\pgfmathprintnumber[fixed,fixed zerofill,precision=1]{\pgfplotspointmeta}},
+  every node near coord/.append style={font=\tiny\sffamily,color=snavy,anchor=south,yshift=1pt},
+]
+\addplot[fill=sok,draw=sok] coordinates {(g1,0.0) (g2,43.8) (g3,52.8) (g4,49.4) (g5,27.0)};
+\addplot[fill=sbad,draw=sbad] coordinates {(g1,0.0) (g2,24.9) (g3,32.2) (g4,25.8) (g5,1.3)};
+\legend{Sensitivity to real softening, False rejection of faithful rewrites}
+\end{axis}
+\end{tikzpicture}
+\end{center}
+\vspace{-0.35em}
+{\footnotesize\parbox{\linewidth}{Lexicon-blind stratum, 466 items from 233 sources.
+\textbf{Calibrating} the threshold buys 9\,pp of sensitivity for 7\,pp of false rejection.
+\textbf{Rank-matching} the two probabilities so both are read in the same script --- our first proposed fix --- moves AUC
+$0.629\to0.636$, i.e.\ nothing, so the defect is not calibration.
+\textbf{An LLM judge} shown the Devanagari source is far more precise but catches only 27.0\%, and is not significantly
+better overall than the shipped rule (McNemar $p=0.21$).}}
+\end{frame}
+
+% ------------------------------------------------------------------
+\begin{frame}{Issue 3: ship/no-ship decisions needed a paired test.}
+\begin{center}
+{\small\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{@{}l@{\hspace{1.2em}}c@{\hspace{1.2em}}c@{\hspace{1.2em}}c@{\hspace{1.2em}}c@{\hspace{1.2em}}c@{}}
+\toprule
+\textbf{Comparison} & \textbf{Shipped} & \textbf{Variant} & \textbf{Diff} & \textbf{$p$ (McNemar)} & \textbf{Verdict}\\
+\midrule
+shipped vs Layer-1        & 84.28\% & 83.81\% & $+0.47$\,pp & $0.179$
+  & \cellcolor{badsoft}\textcolor{sbad}{\textbf{not significant}}\\
+shipped vs Layer-1 $+$ synth& 84.28\% & 83.46\% & $+0.82$\,pp & $0.027$
+  & \cellcolor{oksoft}\textcolor{sok}{\textbf{significant}}\\
+\bottomrule
+\end{tabular}}
+\end{center}
+\vspace{0.6em}
+\begin{center}
+\begin{tikzpicture}[scale=0.95, every node/.style={transform shape}]
+  \node[card=sbad,fill=badsoft,text width=6.1cm,minimum height=2.45cm,anchor=north] (s) at (0,1.2)
+    {\textbf{Selection ran on the frozen test}\\[3pt]
+     {\scriptsize \texttt{\_int8\_hinglish()} reads \texttt{int8.test\_hinglish.accuracy};
+     the best mix is picked by it and promoted if it beats the extension. 84.36\% is a selected-on-test estimate.}};
+  \node[card=sbad,fill=badsoft,text width=6.1cm,minimum height=2.45cm,anchor=north] (rp) at (7.1,1.2)
+    {\textbf{Neither artifact is reproducible}\\[3pt]
+     {\scriptsize The shipped recipe matches no \texttt{MIX\_CONFIG} entry (\texttt{mix: None}), and
+     promotion overwrote the checkpoint that gated the corpus.}};
+\end{tikzpicture}
+\end{center}
+\vspace{0.3em}
+{\footnotesize Re-running the bundles reproduces the logged accuracies to within $0.18$\,pp, so padding and batching alone
+move the metric as much as the verdicts drawn from it.}
+\end{frame}
+
+% ------------------------------------------------------------------
+\begin{frame}{Two claims of our own are withdrawn.}
+\begin{center}
+\begin{tikzpicture}[scale=0.95, every node/.style={transform shape}]
+  \node[card=sbad,fill=badsoft,text width=6.2cm,minimum height=3.1cm,anchor=north] (w1) at (0,1.55)
+    {\textbf{Withdrawn: ``the gate penalises code-mixing''}\\[4pt]
+     {\scriptsize On the invalid first benchmark, injecting benign English words appeared to raise rejection odds
+     significantly. On the corrected benchmark the same injection lifts CMI $9.98\to26.99$ and rejection \emph{falls},
+     $2.00\to1.25\%$: paired odds $0.61$, McNemar $p=0.19$. The direction is opposite to the claim.}};
+  \node[card=sbad,fill=badsoft,text width=6.2cm,minimum height=3.1cm,anchor=north] (w2) at (7.2,1.55)
+    {\textbf{Withdrawn: the\\``$\sim$14\% label noise'' estimate}\\[4pt]
+     {\scriptsize A Rogan--Gladen inversion of the 11\% quarantine rate. Invalid: it used the broken benchmark and
+     ignored \texttt{max\_retries}, so the observed rate is not a single-test positive rate.}};
+\end{tikzpicture}
+\end{center}
+\vspace{0.7em}
+{\footnotesize\parbox{\linewidth}{\textbf{What replaces the second one.} With sensitivity and false rejection measured,
+contamination of the accepted corpus is $s(1-\mathrm{TPR})/[\,s(1-\mathrm{TPR})+(1-s)(1-\mathrm{FPR})\,]$, reported as a
+sweep over the unmeasured softening rate $s$ rather than as a point estimate. At $s=20\%$ the gate takes contamination from
+20\% to 15.8\% --- it removes about a fifth of what it exists to remove, while discarding 1\,924 abusive rows outright.\\[3pt]
+The surviving observational claim is weak and we state it as such: quarantined rewrites mix slightly more deeply than kept
+ones, CMI $12.24$ versus $11.28$, Mann--Whitney $p=0.014$, and a control shows most of it tracks source difficulty.}}
+\end{frame}
+
+% ------------------------------------------------------------------
+\begin{frame}{Conclusion: the claim we can defend, and the number to beat.}
+\begin{center}
+\begin{tikzpicture}[scale=0.95, every node/.style={transform shape}]
+  \node[card=sok,fill=oksoft,text width=6.3cm,minimum height=4.35cm,anchor=north,align=left] (est) at (0,2.1)
+    {\centering\textbf{Established}\\[5pt]
+     \raggedright\scriptsize On-device A--B--C unchanged: 113\,MB, $\approx$28\,ms.\\[3pt]
+     Code-mix \emph{depth}, not Hinglish as such, is what breaks detection: recall $87.4\to67.1\%$,
+     $p=5.5\times10^{-13}$.\\[3pt]
+     The gate that built the corpus runs at AUC 0.629 on 64.6\% of abusive rows, and no automatic
+     substitute we tested repairs it.};
+  \node[card=snavy,fill=navysoft,text width=6.3cm,minimum height=4.35cm,anchor=north,align=left] (nxt) at (7.3,2.1)
+    {\centering\textbf{Next iteration}\\[5pt]
+     \raggedright\scriptsize \textbf{A} Human-label 400 rewrites, report $\kappa$ --- needed because every automatic gate failed.\\[2pt]
+     \textbf{B} Rebuild per stratum: drop $\Delta p$ where the word list fires, combine judge precision with score recall
+     where it does not.\\[2pt]
+     \textbf{C} Generate a depth-balanced abusive corpus.\\[2pt]
+     \textbf{D} Re-freeze a depth-stratified test set; McNemar for every ship decision.};
+\end{tikzpicture}
+\end{center}
+\vspace{0.45em}
+\begin{center}
+\begin{tikzpicture}
+  \fill[orangesoft,rounded corners=4pt] (0,-0.52) rectangle (13.6,0.62);
+  \node[anchor=west,font=\small\sffamily,text=snavy,text width=13.0cm] at (0.3,0.05)
+    {\textbf{Target for the final report.} Recall at CMI $\geq20$ from \textbf{72.4\%} to \textbf{$\geq$82\%},
+     specificity not below 84\%. Not accuracy: raising CMI does nothing for accuracy (Fisher $p=0.73$).};
 \end{tikzpicture}
 \end{center}
 \end{frame}
