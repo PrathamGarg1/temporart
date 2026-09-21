@@ -643,9 +643,9 @@ recall by depth is therefore the metric we track alongside accuracy from here on
 \end{center}
 \vspace{0.55em}
 {\footnotesize\parbox{\linewidth}{\textbf{Two details that shaped the study.} Of the 1\,924 rejections the word list accounts for
-\textbf{74}; the score-drop check accounts for \textbf{1\,806}, so the gate's behaviour is dominated by the score check rather
-than the word list. And its $0.15$ threshold was inherited from an earlier script rather than tuned for this task --- so the
-threshold is treated as a free parameter and swept, not assumed.}}
+\textbf{74} and format checks for 44; the score-drop check accounts for \textbf{1\,806}, so the gate's behaviour is dominated by
+the score check rather than the word list. And its $0.15$ threshold was inherited from an earlier script rather than tuned for
+this task --- so the threshold is treated as a free parameter and swept, not assumed.}}
 \end{frame}
 
 % ==================================================================
@@ -693,27 +693,28 @@ match, so certifying a human-labelled sample is the first task of the next itera
     {no listed word anywhere, so the word list has nothing to look for};
 \end{tikzpicture}
 \end{center}
-\vspace{0.1em}
+\vspace{-0.05em}
 \begin{center}
-{\small\renewcommand{\arraystretch}{1.24}
+{\small\renewcommand{\arraystretch}{1.16}
 \begin{tabular}{@{}l@{\hspace{1.6em}}c@{\hspace{1.6em}}c@{}}
 \toprule
 \textbf{Checker} & \shortstack{\textbf{Catches real}\\\textbf{softening}}
   & \shortstack{\textbf{Wrongly rejects}\\\textbf{faithful rewrites}}\\
 \midrule
-Word list, on the 35.4\%             & \textbf{99.8\%} & 0.0\%\\
-Word list, on the other 64.6\%       & \cellcolor{badsoft}\textcolor{sbad}{\textbf{0.0\%}} & 0.0\%\\
+Word list, on the 35.4\% \textit{(deletion probe)} & \textbf{99.8\%} & 0.0\%\\
+\midrule
+Word list, on the 64.6\% \textit{(softening probe)} & \cellcolor{badsoft}\textcolor{sbad}{\textbf{0.0\%}} & 0.0\%\\
 Score drop $>0.15$ (current setting) & \cellcolor{badsoft}\textcolor{sbad}{43.8\%} & \cellcolor{badsoft}\textcolor{sbad}{\textbf{24.9\%}}\\
 Score drop, best threshold           & 52.8\% & 32.2\%\\
 An LLM shown the original            & 27.0\% & \textbf{1.3\%}\\
 \bottomrule
 \end{tabular}}
 \end{center}
-\vspace{0.25em}
-{\footnotesize\parbox{\linewidth}{Where the word list applies it is near-perfect and the score check only adds false rejections
---- so \textbf{for a third of the data a word list alone is the right design.} On the other two thirds it has no term to match,
-leaving the score check alone at an AUC of \textbf{0.629} against $0.500$ for chance, and a threshold sweep does not move it.
-\textbf{Hence the design brief:} word list on its stratum, a stronger judge on the rest.}}
+\vspace{0.2em}
+{\footnotesize\parbox{\linewidth}{Read the strata separately --- they are probed differently ($n=4\,800$ and $n=466$). In the
+first, the deleted term is by construction a listed one, so 99.8\% is \emph{coverage}, not judgement: \textbf{for a third of the
+data a word list alone is the right design.} In the second it has nothing to match, leaving the score check at AUC \textbf{0.629}
+against $0.500$ for chance. \textbf{The brief:} word list on its stratum, a stronger judge on the rest.}}
 \end{frame}
 
 % ==================================================================
@@ -727,7 +728,7 @@ leaving the score check alone at an AUC of \textbf{0.629} against $0.500$ for ch
 \textbf{Comparison} & \textbf{Current} & \textbf{Alternative} & \textbf{$p$-value} & \textbf{Conclusion}\\
 \midrule
 current mix vs extra data cleaning     & 84.28\% & 83.81\% & $0.179$
-  & \cellcolor{navysoft}\textcolor{snavy}{\textbf{within run-to-run noise}}\\
+  & \cellcolor{navysoft}\textcolor{snavy}{\textbf{not distinguishable}}\\
 current mix vs cleaning $+$ synthetic  & 84.28\% & 83.46\% & $0.027$
   & \cellcolor{oksoft}\textcolor{sok}{\textbf{significantly worse}}\\
 \bottomrule
@@ -738,9 +739,9 @@ current mix vs cleaning $+$ synthetic  & 84.28\% & 83.46\% & $0.027$
 \begin{tikzpicture}[scale=0.95, every node/.style={transform shape}]
   \node[anchor=north west,card=snavy,fill=navysoft,text width=6.4cm,minimum height=2.3cm,align=left] at (0,0)
     {\centering\textbf{Why the test was necessary}\\[4pt]
-     \raggedright\scriptsize Re-running the three models reproduces their logged scores to within $0.18$\,pp --- the same size as
-     the gaps compared. McNemar's test scores both models on the same messages, separating a real difference from run-to-run
-     variation.};
+     \raggedright\scriptsize On $n=6368$, a single accuracy carries a $95\%$ interval of about $\pm0.89$\,pp --- wider than both
+     gaps below. McNemar's test scores the two models on the \emph{same} messages and counts only where they disagree, which
+     resolves differences that small.};
   \node[anchor=north west,card=steal,fill=tealsoft,text width=6.4cm,minimum height=2.3cm,align=left] at (7.4,0)
     {\centering\textbf{What it changes}\\[4pt]
      \raggedright\scriptsize The synthetic-row variant is ruled out on evidence. The cleaning variant is reported as
