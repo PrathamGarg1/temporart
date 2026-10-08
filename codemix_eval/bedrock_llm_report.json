@@ -1,0 +1,65 @@
+{
+  "purpose": "Bounded one-shot Bedrock abuse labels on a frozen Hinglish subsample. Offline benchmark only. The extension does not call Bedrock.",
+  "region": "us-east-1",
+  "bucket": "suraksha-codemix-439446323592-20260919202858",
+  "sample": "codemix_eval/bedrock_llm_sample.json",
+  "sample_seed": 7,
+  "protocol": {
+    "temperature": 0,
+    "max_tokens": "8 for Nova Micro, 12 for Qwen3 32B",
+    "prompt": "one-shot; reply with exactly one word: abusive or non-abusive",
+    "int8_threshold": 0.5,
+    "int8_scores": "codemix_eval/bedrock_llm_sample_int8.json"
+  },
+  "models": ["amazon.nova-micro-v1:0", "qwen.qwen3-32b-v1:0"],
+  "s3_keys": [
+    "eval/bedrock_llm_sample.json",
+    "eval/bedrock_nova_utt.json",
+    "eval/bedrock_nova_split.json",
+    "eval/bedrock_nova_benign.json",
+    "eval/bedrock_nova_camo.json",
+    "eval/bedrock_qwen_utt.json",
+    "eval/bedrock_qwen_split.json"
+  ],
+  "paired": {
+    "utterance_nova_vs_int8_n80": {
+      "nova_micro": {"n": 80, "parsed": 79, "accuracy": 0.6203, "abusive_recall": 0.4082, "fpr": 0.0333, "n_pos_parsed": 49, "n_neg_parsed": 30},
+      "int8": {"n": 80, "accuracy": 0.7875, "abusive_recall": 0.78, "fpr": 0.2}
+    },
+    "utterance_qwen_vs_int8_n50_all_abusive": {
+      "qwen3_32b": {"n": 50, "parsed": 50, "abusive_recall": 0.76, "fpr": null},
+      "int8": {"n": 50, "abusive_recall": 0.78, "fpr": null}
+    },
+    "split_nova_vs_int8_n40": {
+      "nova_micro_isolated_recall": 0.1,
+      "nova_micro_window_recall": 0.4,
+      "int8_isolated_recall": 0.175,
+      "int8_window_recall": 0.775
+    },
+    "split_qwen_vs_int8_n20": {
+      "qwen3_32b_isolated_recall": 0.15,
+      "qwen3_32b_window_recall": 0.65,
+      "int8_isolated_recall": 0.2,
+      "int8_window_recall": 0.8
+    },
+    "benign_nova_vs_int8_n35": {
+      "nova_micro_isolated": {"accuracy": 0.9143, "fpr": 0.0857},
+      "nova_micro_window": {"accuracy": 0.7714, "fpr": 0.2286},
+      "int8_isolated": {"accuracy": 0.9429, "fpr": 0.0571},
+      "int8_window": {"accuracy": 0.8857, "fpr": 0.1143}
+    },
+    "camouflage_nova_vs_int8_n30": {
+      "nova_micro_isolated_recall": 0.6207,
+      "nova_micro_window_recall": 0.6552,
+      "nova_parsed": 29,
+      "int8_isolated_recall": 0.8333,
+      "int8_window_recall": 0.7333
+    }
+  },
+  "not_done": [
+    "Did not re-run CodeMixBench Table 2",
+    "Did not call GPT-4 synthesis or LaBSE",
+    "Did not change the extension to call the cloud",
+    "Qwen3 32B was not scored on benign or camouflage slices"
+  ]
+}

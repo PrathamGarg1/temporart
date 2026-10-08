@@ -1,0 +1,706 @@
+{
+  "paper": {
+    "title": "CodeMixBench: Evaluating Code-Mixing Capabilities of LLMs Across 18 Languages",
+    "authors": "Yilun Yang, Yekun Chai",
+    "venue": "EMNLP 2025",
+    "equations": {
+      "M-index": "(1 - sum_j p_j^2) / ((k - 1) * sum_j p_j^2)",
+      "I-index": "sum_i S(i, i+1) / (n - 1)",
+      "k": 2,
+      "filter": "drop sentence if M < 0.1 or I < 0.1"
+    }
+  },
+  "task": {
+    "labels": {
+      "abusive": 0,
+      "non_abusive": 1,
+      "model_positive": "abusive"
+    },
+    "train_rows": 15136,
+    "val_rows": 3784,
+    "test_rows": 6368,
+    "test_example_counts": {
+      "utterance": 6368,
+      "split": 1500,
+      "benign_window": 800,
+      "camouflage": 800
+    },
+    "split_slur_not_in_final_turn": 1468,
+    "constraints": {
+      "max_slots": 8,
+      "max_window_tokens": 96,
+      "dim": 16
+    },
+    "hinglish_test_codemix_filter": {
+      "n": 6368,
+      "mean_m_index": 0.0911,
+      "mean_i_index": 0.0678,
+      "pct_passing_paper_filter_m_and_i_ge_0.1": 21.12
+    },
+    "abuse_stems_train_only": [
+      "randi",
+      "bhosdri",
+      "madarchod",
+      "andhbhakt",
+      "bhosadi",
+      "bhosda",
+      "chutiye",
+      "bhonsdi",
+      "madharchod",
+      "bhosd",
+      "bhosdi",
+      "kuttiya"
+    ],
+    "benign_stems_train_only": [
+      "ganpati",
+      "prabhat",
+      "shubh",
+      "morning",
+      "gham",
+      "namah"
+    ]
+  },
+  "published_llm_scores": {
+    "source": "Yang & Chai, CodeMixBench, EMNLP 2025, Table 2, one-shot accuracy",
+    "CM-MMLU": {
+      "GPT-4o": {
+        "en_only": 85.6,
+        "hi-en": 82.13,
+        "average_code_mixed": 80.97
+      },
+      "GPT-4 Turbo": {
+        "en_only": 83.1,
+        "hi-en": 77.83,
+        "average_code_mixed": 76.47
+      },
+      "LLaMA3-70B-Instruct": {
+        "en_only": 77.2,
+        "hi-en": 74.61,
+        "average_code_mixed": 72.79
+      },
+      "LLaMA3-8B-Instruct": {
+        "en_only": 65.6,
+        "hi-en": 56.93,
+        "average_code_mixed": 54.99
+      },
+      "Mistral-7B": {
+        "en_only": 55.3,
+        "hi-en": 40.82,
+        "average_code_mixed": 44.85
+      }
+    },
+    "CM-GSM8K": {
+      "GPT-4 Turbo": {
+        "en_only": 95.23,
+        "hi-en": 93.6,
+        "average_code_mixed": 93.42
+      },
+      "GPT-4o": {
+        "en_only": 92.5,
+        "hi-en": 89.57,
+        "average_code_mixed": 90.3
+      },
+      "LLaMA3-70B-Instruct": {
+        "en_only": 93.91,
+        "hi-en": 90.45,
+        "average_code_mixed": 90.61
+      }
+    },
+    "CM-TruthfulQA": {
+      "GPT-4 Turbo": {
+        "en_only": 83.72,
+        "hi-en": 81.11,
+        "average_code_mixed": 80.49
+      },
+      "GPT-4o": {
+        "en_only": 81.76,
+        "hi-en": 78.47,
+        "average_code_mixed": 77.59
+      },
+      "LLaMA3-70B-Instruct": {
+        "en_only": 70.87,
+        "hi-en": 66.31,
+        "average_code_mixed": 67.41
+      }
+    },
+    "paper_stated_drop_vs_english_only_points": {
+      "zh-en": 2.63,
+      "hi-en": 3.47,
+      "ar-en": 5.25,
+      "bn-en": 7.32,
+      "mr-en": 7.62,
+      "ne-en": 8.9,
+      "ta-en": 14.83,
+      "note": "Section 4.3. Cross-family mixes drop more than Germanic/Romance mixes."
+    }
+  },
+  "val_thresholds": {
+    "codemixbench_isolated": 0.43,
+    "llm_window": 0.31,
+    "kv_cache": 0.41,
+    "kv_contrastive": 0.31
+  },
+  "val_mean_slice_accuracy": {
+    "kv_cache": 0.6504,
+    "kv_contrastive": 0.662
+  },
+  "shipped_local_arm": "kv_contrastive",
+  "precision_threshold_fpr15": 0.65,
+  "gated_window_coverage": {
+    "utterance": 0.0,
+    "split": 0.8607,
+    "benign_window": 0.3775,
+    "camouflage": 0.29
+  },
+  "test": {
+    "codemixbench_isolated": {
+      "utterance": {
+        "n": 6368,
+        "accuracy": 0.5829,
+        "precision_abusive": 0.5472,
+        "recall_abusive": 0.8959,
+        "f1_abusive": 0.6795,
+        "fpr": 0.7219,
+        "positives": 3142
+      },
+      "split": {
+        "n": 1500,
+        "accuracy": 0.8407,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.8407,
+        "f1_abusive": 0.9134,
+        "fpr": null,
+        "positives": 1500
+      },
+      "benign_window": {
+        "n": 800,
+        "accuracy": 0.2662,
+        "precision_abusive": 0.0,
+        "recall_abusive": 0.0,
+        "f1_abusive": 0.0,
+        "fpr": 0.7338,
+        "positives": 0
+      },
+      "camouflage": {
+        "n": 800,
+        "accuracy": 0.9137,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.9137,
+        "f1_abusive": 0.9549,
+        "fpr": null,
+        "positives": 800
+      },
+      "split_slur_not_in_final_turn": {
+        "n": 1468,
+        "accuracy": 0.8372,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.8372,
+        "f1_abusive": 0.9114,
+        "fpr": null,
+        "positives": 1468
+      },
+      "split_slur_in_final_turn": {
+        "n": 32,
+        "accuracy": 1.0,
+        "precision_abusive": 1.0,
+        "recall_abusive": 1.0,
+        "f1_abusive": 1.0,
+        "fpr": null,
+        "positives": 32
+      }
+    },
+    "llm_window": {
+      "utterance": {
+        "n": 6368,
+        "accuracy": 0.5656,
+        "precision_abusive": 0.5329,
+        "recall_abusive": 0.9679,
+        "f1_abusive": 0.6874,
+        "fpr": 0.8261,
+        "positives": 3142
+      },
+      "split": {
+        "n": 1500,
+        "accuracy": 0.9807,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.9807,
+        "f1_abusive": 0.9902,
+        "fpr": null,
+        "positives": 1500
+      },
+      "benign_window": {
+        "n": 800,
+        "accuracy": 0.1462,
+        "precision_abusive": 0.0,
+        "recall_abusive": 0.0,
+        "f1_abusive": 0.0,
+        "fpr": 0.8538,
+        "positives": 0
+      },
+      "camouflage": {
+        "n": 800,
+        "accuracy": 0.9075,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.9075,
+        "f1_abusive": 0.9515,
+        "fpr": null,
+        "positives": 800
+      },
+      "split_slur_not_in_final_turn": {
+        "n": 1468,
+        "accuracy": 0.9802,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.9802,
+        "f1_abusive": 0.99,
+        "fpr": null,
+        "positives": 1468
+      },
+      "split_slur_in_final_turn": {
+        "n": 32,
+        "accuracy": 1.0,
+        "precision_abusive": 1.0,
+        "recall_abusive": 1.0,
+        "f1_abusive": 1.0,
+        "fpr": null,
+        "positives": 32
+      }
+    },
+    "kv_cache": {
+      "utterance": {
+        "n": 6368,
+        "accuracy": 0.5375,
+        "precision_abusive": 0.5192,
+        "recall_abusive": 0.846,
+        "f1_abusive": 0.6435,
+        "fpr": 0.7629,
+        "positives": 3142
+      },
+      "split": {
+        "n": 1500,
+        "accuracy": 0.9787,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.9787,
+        "f1_abusive": 0.9892,
+        "fpr": null,
+        "positives": 1500
+      },
+      "benign_window": {
+        "n": 800,
+        "accuracy": 0.2225,
+        "precision_abusive": 0.0,
+        "recall_abusive": 0.0,
+        "f1_abusive": 0.0,
+        "fpr": 0.7775,
+        "positives": 0
+      },
+      "camouflage": {
+        "n": 800,
+        "accuracy": 0.8313,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.8313,
+        "f1_abusive": 0.9078,
+        "fpr": null,
+        "positives": 800
+      },
+      "split_slur_not_in_final_turn": {
+        "n": 1468,
+        "accuracy": 0.9782,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.9782,
+        "f1_abusive": 0.989,
+        "fpr": null,
+        "positives": 1468
+      },
+      "split_slur_in_final_turn": {
+        "n": 32,
+        "accuracy": 1.0,
+        "precision_abusive": 1.0,
+        "recall_abusive": 1.0,
+        "f1_abusive": 1.0,
+        "fpr": null,
+        "positives": 32
+      }
+    },
+    "kv_contrastive": {
+      "utterance": {
+        "n": 6368,
+        "accuracy": 0.5636,
+        "precision_abusive": 0.5323,
+        "recall_abusive": 0.9532,
+        "f1_abusive": 0.6831,
+        "fpr": 0.8159,
+        "positives": 3142
+      },
+      "split": {
+        "n": 1500,
+        "accuracy": 0.994,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.994,
+        "f1_abusive": 0.997,
+        "fpr": null,
+        "positives": 1500
+      },
+      "benign_window": {
+        "n": 800,
+        "accuracy": 0.1388,
+        "precision_abusive": 0.0,
+        "recall_abusive": 0.0,
+        "f1_abusive": 0.0,
+        "fpr": 0.8612,
+        "positives": 0
+      },
+      "camouflage": {
+        "n": 800,
+        "accuracy": 0.97,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.97,
+        "f1_abusive": 0.9848,
+        "fpr": null,
+        "positives": 800
+      },
+      "split_slur_not_in_final_turn": {
+        "n": 1468,
+        "accuracy": 0.9939,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.9939,
+        "f1_abusive": 0.9969,
+        "fpr": null,
+        "positives": 1468
+      },
+      "split_slur_in_final_turn": {
+        "n": 32,
+        "accuracy": 1.0,
+        "precision_abusive": 1.0,
+        "recall_abusive": 1.0,
+        "f1_abusive": 1.0,
+        "fpr": null,
+        "positives": 32
+      }
+    },
+    "kv_contrastive_slots2": {
+      "utterance": {
+        "n": 6368,
+        "accuracy": 0.5636,
+        "precision_abusive": 0.5323,
+        "recall_abusive": 0.9532,
+        "f1_abusive": 0.6831,
+        "fpr": 0.8159,
+        "positives": 3142
+      },
+      "split": {
+        "n": 1500,
+        "accuracy": 0.9907,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.9907,
+        "f1_abusive": 0.9953,
+        "fpr": null,
+        "positives": 1500
+      },
+      "benign_window": {
+        "n": 800,
+        "accuracy": 0.1487,
+        "precision_abusive": 0.0,
+        "recall_abusive": 0.0,
+        "f1_abusive": 0.0,
+        "fpr": 0.8512,
+        "positives": 0
+      },
+      "camouflage": {
+        "n": 800,
+        "accuracy": 0.97,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.97,
+        "f1_abusive": 0.9848,
+        "fpr": null,
+        "positives": 800
+      },
+      "split_slur_not_in_final_turn": {
+        "n": 1468,
+        "accuracy": 0.9905,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.9905,
+        "f1_abusive": 0.9952,
+        "fpr": null,
+        "positives": 1468
+      },
+      "split_slur_in_final_turn": {
+        "n": 32,
+        "accuracy": 1.0,
+        "precision_abusive": 1.0,
+        "recall_abusive": 1.0,
+        "f1_abusive": 1.0,
+        "fpr": null,
+        "positives": 32
+      }
+    },
+    "kv_contrastive_fpr15": {
+      "utterance": {
+        "n": 6368,
+        "accuracy": 0.5568,
+        "precision_abusive": 0.5808,
+        "recall_abusive": 0.366,
+        "f1_abusive": 0.449,
+        "fpr": 0.2573,
+        "positives": 3142
+      },
+      "split": {
+        "n": 1500,
+        "accuracy": 0.8293,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.8293,
+        "f1_abusive": 0.9067,
+        "fpr": null,
+        "positives": 1500
+      },
+      "benign_window": {
+        "n": 800,
+        "accuracy": 0.8838,
+        "precision_abusive": 0.0,
+        "recall_abusive": 0.0,
+        "f1_abusive": 0.0,
+        "fpr": 0.1163,
+        "positives": 0
+      },
+      "camouflage": {
+        "n": 800,
+        "accuracy": 0.2537,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.2537,
+        "f1_abusive": 0.4048,
+        "fpr": null,
+        "positives": 800
+      },
+      "split_slur_not_in_final_turn": {
+        "n": 1468,
+        "accuracy": 0.8256,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.8256,
+        "f1_abusive": 0.9045,
+        "fpr": null,
+        "positives": 1468
+      },
+      "split_slur_in_final_turn": {
+        "n": 32,
+        "accuracy": 1.0,
+        "precision_abusive": 1.0,
+        "recall_abusive": 1.0,
+        "f1_abusive": 1.0,
+        "fpr": null,
+        "positives": 32
+      }
+    },
+    "shipped_int8": {
+      "utterance": {
+        "n": 6368,
+        "accuracy": 0.8423,
+        "precision_abusive": 0.8599,
+        "recall_abusive": 0.8129,
+        "f1_abusive": 0.8357,
+        "fpr": 0.129,
+        "positives": 3142
+      },
+      "split": {
+        "n": 1500,
+        "accuracy": 0.2887,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.2887,
+        "f1_abusive": 0.448,
+        "fpr": null,
+        "positives": 1500
+      },
+      "benign_window": {
+        "n": 800,
+        "accuracy": 0.865,
+        "precision_abusive": 0.0,
+        "recall_abusive": 0.0,
+        "f1_abusive": 0.0,
+        "fpr": 0.135,
+        "positives": 0
+      },
+      "camouflage": {
+        "n": 800,
+        "accuracy": 0.8237,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.8237,
+        "f1_abusive": 0.9034,
+        "fpr": null,
+        "positives": 800
+      },
+      "split_slur_not_in_final_turn": {
+        "n": 1468,
+        "accuracy": 0.2732,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.2732,
+        "f1_abusive": 0.4291,
+        "fpr": null,
+        "positives": 1468
+      },
+      "split_slur_in_final_turn": {
+        "n": 32,
+        "accuracy": 1.0,
+        "precision_abusive": 1.0,
+        "recall_abusive": 1.0,
+        "f1_abusive": 1.0,
+        "fpr": null,
+        "positives": 32
+      }
+    },
+    "shipped_int8_window": {
+      "utterance": {
+        "n": 6368,
+        "accuracy": 0.8423,
+        "precision_abusive": 0.8599,
+        "recall_abusive": 0.8129,
+        "f1_abusive": 0.8357,
+        "fpr": 0.129,
+        "positives": 3142
+      },
+      "split": {
+        "n": 1500,
+        "accuracy": 0.7927,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.7927,
+        "f1_abusive": 0.8843,
+        "fpr": null,
+        "positives": 1500
+      },
+      "benign_window": {
+        "n": 800,
+        "accuracy": 0.8363,
+        "precision_abusive": 0.0,
+        "recall_abusive": 0.0,
+        "f1_abusive": 0.0,
+        "fpr": 0.1638,
+        "positives": 0
+      },
+      "camouflage": {
+        "n": 800,
+        "accuracy": 0.6225,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.6225,
+        "f1_abusive": 0.7673,
+        "fpr": null,
+        "positives": 800
+      },
+      "split_slur_not_in_final_turn": {
+        "n": 1468,
+        "accuracy": 0.7888,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.7888,
+        "f1_abusive": 0.8819,
+        "fpr": null,
+        "positives": 1468
+      },
+      "split_slur_in_final_turn": {
+        "n": 32,
+        "accuracy": 0.9688,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.9688,
+        "f1_abusive": 0.9841,
+        "fpr": null,
+        "positives": 32
+      }
+    },
+    "shipped_int8_gated_window": {
+      "utterance": {
+        "n": 6368,
+        "accuracy": 0.8423,
+        "precision_abusive": 0.8599,
+        "recall_abusive": 0.8129,
+        "f1_abusive": 0.8357,
+        "fpr": 0.129,
+        "positives": 3142
+      },
+      "split": {
+        "n": 1500,
+        "accuracy": 0.7607,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.7607,
+        "f1_abusive": 0.8641,
+        "fpr": null,
+        "positives": 1500
+      },
+      "benign_window": {
+        "n": 800,
+        "accuracy": 0.83,
+        "precision_abusive": 0.0,
+        "recall_abusive": 0.0,
+        "f1_abusive": 0.0,
+        "fpr": 0.17,
+        "positives": 0
+      },
+      "camouflage": {
+        "n": 800,
+        "accuracy": 0.8287,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.8287,
+        "f1_abusive": 0.9064,
+        "fpr": null,
+        "positives": 800
+      },
+      "split_slur_not_in_final_turn": {
+        "n": 1468,
+        "accuracy": 0.7554,
+        "precision_abusive": 1.0,
+        "recall_abusive": 0.7554,
+        "f1_abusive": 0.8607,
+        "fpr": null,
+        "positives": 1468
+      },
+      "split_slur_in_final_turn": {
+        "n": 32,
+        "accuracy": 1.0,
+        "precision_abusive": 1.0,
+        "recall_abusive": 1.0,
+        "f1_abusive": 1.0,
+        "fpr": null,
+        "positives": 32
+      }
+    }
+  },
+  "parity_cases": [
+    {
+      "name": "single_abusive",
+      "history": [],
+      "text": "Teri gand mei pyaz kat dega gujjjar bhosdri ke",
+      "m_index": 0.0,
+      "i_index": 0.0,
+      "prob_abusive": 0.9998679561427487,
+      "attn_last": 1.0,
+      "slots": 1
+    },
+    {
+      "name": "split_narrative",
+      "history": [
+        "Teri gand mei",
+        "pyaz kat dega"
+      ],
+      "text": "gujjjar bhosdri ke",
+      "m_index": 0.0,
+      "i_index": 0.0,
+      "prob_abusive": 0.9996471344285022,
+      "attn_last": 0.010368920784096115,
+      "slots": 3
+    },
+    {
+      "name": "benign_codemix",
+      "history": [
+        "Kal park mein milte hain"
+      ],
+      "text": "Kutta billi paal lena magar galat fahmi kabhi nahi",
+      "m_index": 0.0,
+      "i_index": 0.0,
+      "prob_abusive": 0.6577473878914054,
+      "attn_last": 0.7331268236743699,
+      "slots": 2
+    }
+  ],
+  "notes": [
+    "codemixbench_isolated scores only the current turn, which is the CodeMixBench evaluation protocol.",
+    "llm_window scores the concatenated rolling window, which is the text an LLM prompt would receive.",
+    "kv_cache is the same window under an 8-slot key/value budget for the browser service worker.",
+    "kv_contrastive adds supervised contrastive loss so abusive narrative states separate from benign code-mix with a similar M-index.",
+    "shipped_int8 is the deployed MiniLM INT8 encoder at the extension threshold 0.5. It is a reference, not a CodeMixBench model.",
+    "Thresholds for learned arms are selected on the train-derived validation split. Test is scored once."
+  ]
+}

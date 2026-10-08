@@ -1,0 +1,37 @@
+[
+  {
+    "name": "single_abusive",
+    "history": [],
+    "text": "Teri gand mei pyaz kat dega gujjjar bhosdri ke",
+    "m_index": 0.0,
+    "i_index": 0.0,
+    "prob_abusive": 0.9998679561427487,
+    "attn_last": 1.0,
+    "slots": 1
+  },
+  {
+    "name": "split_narrative",
+    "history": [
+      "Teri gand mei",
+      "pyaz kat dega"
+    ],
+    "text": "gujjjar bhosdri ke",
+    "m_index": 0.0,
+    "i_index": 0.0,
+    "prob_abusive": 0.9996471344285022,
+    "attn_last": 0.010368920784096115,
+    "slots": 3
+  },
+  {
+    "name": "benign_codemix",
+    "history": [
+      "Kal park mein milte hain"
+    ],
+    "text": "Kutta billi paal lena magar galat fahmi kabhi nahi",
+    "m_index": 0.0,
+    "i_index": 0.0,
+    "prob_abusive": 0.6577473878914054,
+    "attn_last": 0.7331268236743699,
+    "slots": 2
+  }
+]

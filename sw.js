@@ -1,4 +1,6 @@
 import { pipeline, env } from '@xenova/transformers';
+import weights from './assets/narrative/kv_weights.json' with { type: 'json' };
+import { NarrativeCache, RollingWindow } from './narrative_cache.js';
 import { saveIncident } from './store.js';
 
 env.allowLocalModels = true;
@@ -20,6 +22,12 @@ let classifier = null;
 let modelPromise = null;
 const queue = [];
 let busy = false;
+const rolling = new RollingWindow({
+  maxSlots: weights.maxSlots,
+  maxTokens: weights.maxWindowTokens,
+  shortTokens: weights.shortTokens || 8,
+});
+const narrativeFallback = new NarrativeCache(weights);
 
 function log(event, details = {}) {
   if (DEBUG) console.info(PREFIX, event, details);
@@ -75,15 +83,47 @@ function abusiveScore(results) {
   return 0;
 }
 
-async function classify(text) {
-  log('classify:start', { text: debugText(text), textLength: text.length });
-  await ensureModel();
-  const score = abusiveScore(await classifier(text));
-  const flagged = score > FLAG;
+async function classify(text, contact) {
+  const view = rolling.observe(contact, text);
+  const fallback = narrativeFallback.score(contact, text);
+  log('classify:start', {
+    text: debugText(text),
+    textLength: text.length,
+    slots: view.slots,
+    useWindow: view.useWindow,
+    mIndex: Number(fallback.mIndex.toFixed(3)),
+    iIndex: Number(fallback.iIndex.toFixed(3)),
+  });
+  let score;
+  let mode;
+  try {
+    await ensureModel();
+    score = abusiveScore(await classifier(text));
+    mode = 'current';
+    if (view.useWindow) {
+      const windowScore = abusiveScore(await classifier(view.windowText));
+      score = Math.max(score, windowScore);
+      mode = 'rolling-window';
+    }
+  } catch (error) {
+    logError('classify:onnx:fallback', error, { slots: view.slots });
+    score = fallback.abusive;
+    mode = 'kv-fallback';
+  }
+  const flagged = mode === 'kv-fallback'
+    ? score >= (weights.precisionThreshold ?? weights.threshold ?? FLAG)
+    : score > FLAG;
   const result = {
     flagged,
     score,
     severity: !flagged ? null : score >= HIGH ? 'high' : 'medium',
+    narrative: {
+      mode,
+      slots: view.slots,
+      currentTokens: view.currentTokens,
+      mIndex: fallback.mIndex,
+      iIndex: fallback.iIndex,
+    },
   };
   log('classify:complete', {
     text: debugText(text),
@@ -91,6 +131,7 @@ async function classify(text) {
     flagged: result.flagged,
     score: Number(result.score.toFixed(4)),
     severity: result.severity,
+    mode: result.narrative.mode,
   });
   return result;
 }
@@ -109,7 +150,7 @@ async function drain() {
         contact: job.contact,
       });
       try {
-        const result = await classify(job.text);
+        const result = await classify(job.text, job.contact);
         if (result.flagged) {
           const saved = await saveIncident({
             text: job.text,
