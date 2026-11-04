@@ -1,0 +1,454 @@
+round 0: 115680 specs, cap 45.0 USD
+  250/115680 ok=249 rate=9.7/s usd=0.044 fails={'script': 1}
+  500/115680 ok=497 rate=9.8/s usd=0.091 fails={'script': 1, 'refusal': 1, 'profanity_in_clean_class': 1}
+  750/115680 ok=742 rate=9.5/s usd=0.139 fails={'script': 2, 'refusal': 2, 'profanity_in_clean_class': 3, 'parse': 1}
+round 0: 114681 specs, cap 45.0 USD
+  250/114681 ok=247 rate=9.7/s usd=0.043 fails={'script': 2, 'parse': 1}
+  500/114681 ok=491 rate=10.2/s usd=0.090 fails={'script': 3, 'parse': 1, 'profanity_in_clean_class': 4, 'refusal': 1}
+  750/114681 ok=738 rate=10.2/s usd=0.141 fails={'script': 5, 'parse': 2, 'profanity_in_clean_class': 4, 'refusal': 1}
+  1000/114681 ok=985 rate=9.8/s usd=0.189 fails={'script': 6, 'parse': 2, 'profanity_in_clean_class': 5, 'refusal': 1, 'grooming_sexualised': 1}
+  1250/114681 ok=1231 rate=9.7/s usd=0.238 fails={'script': 7, 'parse': 3, 'profanity_in_clean_class': 7, 'refusal': 1, 'grooming_sexualised': 1}
+  1500/114681 ok=1477 rate=9.7/s usd=0.290 fails={'script': 8, 'parse': 3, 'profanity_in_clean_class': 10, 'refusal': 1, 'grooming_sexualised': 1}
+  1750/114681 ok=1721 rate=9.7/s usd=0.340 fails={'script': 11, 'parse': 3, 'profanity_in_clean_class': 11, 'refusal': 3, 'grooming_sexualised': 1}
+  2000/114681 ok=1967 rate=9.6/s usd=0.390 fails={'script': 13, 'parse': 3, 'profanity_in_clean_class': 11, 'refusal': 4, 'grooming_sexualised': 1, 'explicit': 1}
+  2250/114681 ok=2215 rate=9.6/s usd=0.439 fails={'script': 14, 'parse': 3, 'profanity_in_clean_class': 12, 'refusal': 4, 'grooming_sexualised': 1, 'explicit': 1}
+  2500/114681 ok=2462 rate=9.6/s usd=0.487 fails={'script': 15, 'parse': 3, 'profanity_in_clean_class': 12, 'refusal': 5, 'grooming_sexualised': 2, 'explicit': 1}
+  2750/114681 ok=2710 rate=9.5/s usd=0.536 fails={'script': 15, 'parse': 3, 'profanity_in_clean_class': 13, 'refusal': 6, 'grooming_sexualised': 2, 'explicit': 1}
+  3000/114681 ok=2958 rate=9.4/s usd=0.583 fails={'script': 15, 'parse': 3, 'profanity_in_clean_class': 14, 'refusal': 7, 'grooming_sexualised': 2, 'explicit': 1}
+  3250/114681 ok=3206 rate=9.4/s usd=0.633 fails={'script': 15, 'parse': 4, 'profanity_in_clean_class': 14, 'refusal': 7, 'grooming_sexualised': 3, 'explicit': 1}
+  3500/114681 ok=3453 rate=9.4/s usd=0.678 fails={'script': 15, 'parse': 4, 'profanity_in_clean_class': 16, 'refusal': 8, 'grooming_sexualised': 3, 'explicit': 1}
+  3750/114681 ok=3698 rate=9.3/s usd=0.727 fails={'script': 16, 'parse': 4, 'profanity_in_clean_class': 18, 'refusal': 10, 'grooming_sexualised': 3, 'explicit': 1}
+  4000/114681 ok=3939 rate=9.3/s usd=0.775 fails={'script': 20, 'parse': 4, 'profanity_in_clean_class': 21, 'refusal': 11, 'grooming_sexualised': 4, 'explicit': 1}
+  4250/114681 ok=4185 rate=9.3/s usd=0.821 fails={'script': 21, 'parse': 4, 'profanity_in_clean_class': 22, 'refusal': 13, 'grooming_sexualised': 4, 'explicit': 1}
+  4500/114681 ok=4435 rate=9.2/s usd=0.874 fails={'script': 21, 'parse': 4, 'profanity_in_clean_class': 22, 'refusal': 13, 'grooming_sexualised': 4, 'explicit': 1}
+  4750/114681 ok=4683 rate=9.2/s usd=0.921 fails={'script': 22, 'parse': 4, 'profanity_in_clean_class': 23, 'refusal': 13, 'grooming_sexualised': 4, 'explicit': 1}
+  5000/114681 ok=4927 rate=8.6/s usd=0.968 fails={'script': 22, 'parse': 5, 'profanity_in_clean_class': 25, 'refusal': 16, 'grooming_sexualised': 4, 'explicit': 1}
+  5250/114681 ok=5165 rate=8.6/s usd=1.020 fails={'script': 26, 'parse': 8, 'profanity_in_clean_class': 27, 'refusal': 19, 'grooming_sexualised': 4, 'explicit': 1}
+  5500/114681 ok=5405 rate=8.6/s usd=1.070 fails={'script': 26, 'parse': 10, 'profanity_in_clean_class': 31, 'refusal': 22, 'grooming_sexualised': 5, 'explicit': 1}
+  5750/114681 ok=5651 rate=8.6/s usd=1.119 fails={'script': 28, 'parse': 10, 'profanity_in_clean_class': 33, 'refusal': 22, 'grooming_sexualised': 5, 'explicit': 1}
+  6000/114681 ok=5892 rate=8.6/s usd=1.169 fails={'script': 29, 'parse': 10, 'profanity_in_clean_class': 38, 'refusal': 24, 'grooming_sexualised': 6, 'explicit': 1}
+  6250/114681 ok=6140 rate=8.7/s usd=1.217 fails={'script': 30, 'parse': 10, 'profanity_in_clean_class': 38, 'refusal': 24, 'grooming_sexualised': 7, 'explicit': 1}
+  6500/114681 ok=6387 rate=8.7/s usd=1.265 fails={'script': 30, 'parse': 11, 'profanity_in_clean_class': 38, 'refusal': 25, 'grooming_sexualised': 8, 'explicit': 1}
+  6750/114681 ok=6635 rate=8.8/s usd=1.314 fails={'script': 30, 'parse': 11, 'profanity_in_clean_class': 39, 'refusal': 26, 'grooming_sexualised': 8, 'explicit': 1}
+  7000/114681 ok=6880 rate=8.8/s usd=1.364 fails={'script': 30, 'parse': 12, 'profanity_in_clean_class': 42, 'refusal': 27, 'grooming_sexualised': 8, 'explicit': 1}
+  7250/114681 ok=7123 rate=8.8/s usd=1.414 fails={'script': 30, 'parse': 14, 'profanity_in_clean_class': 45, 'refusal': 29, 'grooming_sexualised': 8, 'explicit': 1}
+  7500/114681 ok=7370 rate=8.9/s usd=1.465 fails={'script': 30, 'parse': 15, 'profanity_in_clean_class': 45, 'refusal': 31, 'grooming_sexualised': 8, 'explicit': 1}
+  7750/114681 ok=7615 rate=8.9/s usd=1.514 fails={'script': 31, 'parse': 15, 'profanity_in_clean_class': 46, 'refusal': 33, 'grooming_sexualised': 9, 'explicit': 1}
+  8000/114681 ok=7862 rate=8.9/s usd=1.563 fails={'script': 32, 'parse': 15, 'profanity_in_clean_class': 46, 'refusal': 35, 'grooming_sexualised': 9, 'explicit': 1}
+  8250/114681 ok=8108 rate=8.9/s usd=1.608 fails={'script': 34, 'parse': 15, 'profanity_in_clean_class': 47, 'refusal': 36, 'grooming_sexualised': 9, 'explicit': 1}
+  8500/114681 ok=8353 rate=9.0/s usd=1.656 fails={'script': 34, 'parse': 15, 'profanity_in_clean_class': 47, 'refusal': 41, 'grooming_sexualised': 9, 'explicit': 1}
+  8750/114681 ok=8596 rate=9.0/s usd=1.705 fails={'script': 36, 'parse': 16, 'profanity_in_clean_class': 50, 'refusal': 42, 'grooming_sexualised': 9, 'explicit': 1}
+  9000/114681 ok=8844 rate=9.1/s usd=1.752 fails={'script': 37, 'parse': 16, 'profanity_in_clean_class': 50, 'refusal': 42, 'grooming_sexualised': 10, 'explicit': 1}
+  9250/114681 ok=9091 rate=9.1/s usd=1.801 fails={'script': 37, 'parse': 17, 'profanity_in_clean_class': 51, 'refusal': 43, 'grooming_sexualised': 10, 'explicit': 1}
+  9500/114681 ok=9332 rate=9.1/s usd=1.850 fails={'script': 41, 'parse': 18, 'profanity_in_clean_class': 53, 'refusal': 45, 'grooming_sexualised': 10, 'explicit': 1}
+  9750/114681 ok=9579 rate=9.2/s usd=1.898 fails={'script': 41, 'parse': 19, 'profanity_in_clean_class': 53, 'refusal': 47, 'grooming_sexualised': 10, 'explicit': 1}
+  10000/114681 ok=9827 rate=9.2/s usd=1.948 fails={'script': 42, 'parse': 19, 'profanity_in_clean_class': 53, 'refusal': 48, 'grooming_sexualised': 10, 'explicit': 1}
+  10250/114681 ok=10075 rate=9.2/s usd=1.998 fails={'script': 42, 'parse': 20, 'profanity_in_clean_class': 54, 'refusal': 48, 'grooming_sexualised': 10, 'explicit': 1}
+  10500/114681 ok=10322 rate=9.3/s usd=2.046 fails={'script': 42, 'parse': 21, 'profanity_in_clean_class': 54, 'refusal': 50, 'grooming_sexualised': 10, 'explicit': 1}
+  10750/114681 ok=10567 rate=9.3/s usd=2.094 fails={'script': 43, 'parse': 21, 'profanity_in_clean_class': 56, 'refusal': 52, 'grooming_sexualised': 10, 'explicit': 1}
+  11000/114681 ok=10816 rate=9.3/s usd=2.143 fails={'script': 43, 'parse': 21, 'profanity_in_clean_class': 56, 'refusal': 53, 'grooming_sexualised': 10, 'explicit': 1}
+  11250/114681 ok=11061 rate=9.4/s usd=2.194 fails={'script': 45, 'parse': 22, 'profanity_in_clean_class': 58, 'refusal': 53, 'grooming_sexualised': 10, 'explicit': 1}
+  11500/114681 ok=11306 rate=9.4/s usd=2.242 fails={'script': 45, 'parse': 22, 'profanity_in_clean_class': 59, 'refusal': 56, 'grooming_sexualised': 11, 'explicit': 1}
+  11750/114681 ok=11554 rate=9.4/s usd=2.289 fails={'script': 45, 'parse': 23, 'profanity_in_clean_class': 60, 'refusal': 56, 'grooming_sexualised': 11, 'explicit': 1}
+  12000/114681 ok=11803 rate=9.4/s usd=2.338 fails={'script': 45, 'parse': 23, 'profanity_in_clean_class': 60, 'refusal': 57, 'grooming_sexualised': 11, 'explicit': 1}
+  12250/114681 ok=12050 rate=9.4/s usd=2.386 fails={'script': 47, 'parse': 23, 'profanity_in_clean_class': 60, 'refusal': 58, 'grooming_sexualised': 11, 'explicit': 1}
+  12500/114681 ok=12297 rate=9.4/s usd=2.434 fails={'script': 48, 'parse': 23, 'profanity_in_clean_class': 60, 'refusal': 59, 'grooming_sexualised': 12, 'explicit': 1}
+  12750/114681 ok=12542 rate=9.4/s usd=2.482 fails={'script': 49, 'parse': 23, 'profanity_in_clean_class': 63, 'refusal': 60, 'grooming_sexualised': 12, 'explicit': 1}
+  13000/114681 ok=12785 rate=9.4/s usd=2.527 fails={'script': 53, 'parse': 24, 'profanity_in_clean_class': 65, 'refusal': 60, 'grooming_sexualised': 12, 'explicit': 1}
+  13250/114681 ok=13028 rate=9.4/s usd=2.577 fails={'script': 53, 'parse': 24, 'profanity_in_clean_class': 67, 'refusal': 65, 'grooming_sexualised': 12, 'explicit': 1}
+  13500/114681 ok=13276 rate=9.4/s usd=2.627 fails={'script': 53, 'parse': 24, 'profanity_in_clean_class': 68, 'refusal': 65, 'grooming_sexualised': 13, 'explicit': 1}
+  13750/114681 ok=13523 rate=9.4/s usd=2.673 fails={'script': 53, 'parse': 25, 'profanity_in_clean_class': 69, 'refusal': 66, 'grooming_sexualised': 13, 'explicit': 1}
+  14000/114681 ok=13771 rate=9.4/s usd=2.721 fails={'script': 53, 'parse': 26, 'profanity_in_clean_class': 70, 'refusal': 66, 'grooming_sexualised': 13, 'explicit': 1}
+  14250/114681 ok=14015 rate=9.4/s usd=2.771 fails={'script': 54, 'parse': 28, 'profanity_in_clean_class': 72, 'refusal': 66, 'grooming_sexualised': 14, 'explicit': 1}
+  14500/114681 ok=14262 rate=9.4/s usd=2.820 fails={'script': 55, 'parse': 28, 'profanity_in_clean_class': 74, 'refusal': 66, 'grooming_sexualised': 14, 'explicit': 1}
+  14750/114681 ok=14509 rate=9.4/s usd=2.866 fails={'script': 56, 'parse': 29, 'profanity_in_clean_class': 74, 'refusal': 66, 'grooming_sexualised': 15, 'explicit': 1}
+  15000/114681 ok=14754 rate=9.5/s usd=2.913 fails={'script': 57, 'parse': 31, 'profanity_in_clean_class': 76, 'refusal': 66, 'grooming_sexualised': 15, 'explicit': 1}
+  15250/114681 ok=15001 rate=9.5/s usd=2.963 fails={'script': 57, 'parse': 31, 'profanity_in_clean_class': 76, 'refusal': 69, 'grooming_sexualised': 15, 'explicit': 1}
+  15500/114681 ok=15242 rate=9.5/s usd=3.014 fails={'script': 60, 'parse': 31, 'profanity_in_clean_class': 78, 'refusal': 73, 'grooming_sexualised': 15, 'explicit': 1}
+  15750/114681 ok=15487 rate=9.5/s usd=3.063 fails={'script': 62, 'parse': 31, 'profanity_in_clean_class': 79, 'refusal': 74, 'grooming_sexualised': 16, 'explicit': 1}
+  16000/114681 ok=15736 rate=9.5/s usd=3.109 fails={'script': 62, 'parse': 31, 'profanity_in_clean_class': 79, 'refusal': 75, 'grooming_sexualised': 16, 'explicit': 1}
+  16250/114681 ok=15981 rate=9.5/s usd=3.158 fails={'script': 63, 'parse': 32, 'profanity_in_clean_class': 80, 'refusal': 76, 'grooming_sexualised': 17, 'explicit': 1}
+  16500/114681 ok=16228 rate=9.5/s usd=3.209 fails={'script': 63, 'parse': 32, 'profanity_in_clean_class': 81, 'refusal': 77, 'grooming_sexualised': 18, 'explicit': 1}
+  16750/114681 ok=16472 rate=9.5/s usd=3.257 fails={'script': 65, 'parse': 32, 'profanity_in_clean_class': 83, 'refusal': 79, 'grooming_sexualised': 18, 'explicit': 1}
+  17000/114681 ok=16719 rate=9.5/s usd=3.307 fails={'script': 66, 'parse': 32, 'profanity_in_clean_class': 83, 'refusal': 81, 'grooming_sexualised': 18, 'explicit': 1}
+  17250/114681 ok=16966 rate=9.6/s usd=3.357 fails={'script': 67, 'parse': 33, 'profanity_in_clean_class': 83, 'refusal': 81, 'grooming_sexualised': 19, 'explicit': 1}
+  17500/114681 ok=17216 rate=9.6/s usd=3.404 fails={'script': 67, 'parse': 33, 'profanity_in_clean_class': 83, 'refusal': 81, 'grooming_sexualised': 19, 'explicit': 1}
+  17750/114681 ok=17459 rate=9.6/s usd=3.452 fails={'script': 70, 'parse': 33, 'profanity_in_clean_class': 87, 'refusal': 81, 'grooming_sexualised': 19, 'explicit': 1}
+  18000/114681 ok=17705 rate=9.6/s usd=3.500 fails={'script': 70, 'parse': 34, 'profanity_in_clean_class': 88, 'refusal': 83, 'grooming_sexualised': 19, 'explicit': 1}
+  18250/114681 ok=17953 rate=9.6/s usd=3.549 fails={'script': 71, 'parse': 34, 'profanity_in_clean_class': 89, 'refusal': 83, 'grooming_sexualised': 19, 'explicit': 1}
+  18500/114681 ok=18198 rate=9.6/s usd=3.599 fails={'script': 71, 'parse': 35, 'profanity_in_clean_class': 91, 'refusal': 84, 'grooming_sexualised': 20, 'explicit': 1}
+  18750/114681 ok=18446 rate=9.7/s usd=3.649 fails={'script': 72, 'parse': 35, 'profanity_in_clean_class': 92, 'refusal': 84, 'grooming_sexualised': 20, 'explicit': 1}
+  19000/114681 ok=18693 rate=9.7/s usd=3.695 fails={'script': 72, 'parse': 35, 'profanity_in_clean_class': 95, 'refusal': 84, 'grooming_sexualised': 20, 'explicit': 1}
+  19250/114681 ok=18939 rate=9.7/s usd=3.744 fails={'script': 72, 'parse': 35, 'profanity_in_clean_class': 97, 'refusal': 86, 'grooming_sexualised': 20, 'explicit': 1}
+  19500/114681 ok=19185 rate=9.7/s usd=3.789 fails={'script': 74, 'parse': 35, 'profanity_in_clean_class': 98, 'refusal': 87, 'grooming_sexualised': 20, 'explicit': 1}
+  19750/114681 ok=19430 rate=9.8/s usd=3.837 fails={'script': 76, 'parse': 35, 'profanity_in_clean_class': 100, 'refusal': 87, 'grooming_sexualised': 21, 'explicit': 1}
+  20000/114681 ok=19673 rate=9.8/s usd=3.885 fails={'script': 78, 'parse': 35, 'profanity_in_clean_class': 103, 'refusal': 89, 'grooming_sexualised': 21, 'explicit': 1}
+  20250/114681 ok=19920 rate=9.8/s usd=3.933 fails={'script': 78, 'parse': 35, 'profanity_in_clean_class': 104, 'refusal': 91, 'grooming_sexualised': 21, 'explicit': 1}
+  20500/114681 ok=20168 rate=9.8/s usd=3.981 fails={'script': 79, 'parse': 35, 'profanity_in_clean_class': 104, 'refusal': 92, 'grooming_sexualised': 21, 'explicit': 1}
+  20750/114681 ok=20416 rate=9.8/s usd=4.031 fails={'script': 81, 'parse': 35, 'profanity_in_clean_class': 104, 'refusal': 92, 'grooming_sexualised': 21, 'explicit': 1}
+  21000/114681 ok=20659 rate=9.9/s usd=4.077 fails={'script': 82, 'parse': 38, 'profanity_in_clean_class': 105, 'refusal': 93, 'grooming_sexualised': 22, 'explicit': 1}
+  21250/114681 ok=20907 rate=9.9/s usd=4.129 fails={'script': 82, 'parse': 38, 'profanity_in_clean_class': 105, 'refusal': 93, 'grooming_sexualised': 24, 'explicit': 1}
+  21500/114681 ok=21150 rate=9.9/s usd=4.176 fails={'script': 83, 'parse': 38, 'profanity_in_clean_class': 108, 'refusal': 96, 'grooming_sexualised': 24, 'explicit': 1}
+  21750/114681 ok=21396 rate=9.9/s usd=4.223 fails={'script': 84, 'parse': 38, 'profanity_in_clean_class': 108, 'refusal': 99, 'grooming_sexualised': 24, 'explicit': 1}
+  22000/114681 ok=21640 rate=9.9/s usd=4.271 fails={'script': 85, 'parse': 39, 'profanity_in_clean_class': 110, 'refusal': 101, 'grooming_sexualised': 24, 'explicit': 1}
+  22250/114681 ok=21885 rate=9.9/s usd=4.320 fails={'script': 86, 'parse': 39, 'profanity_in_clean_class': 114, 'refusal': 101, 'grooming_sexualised': 24, 'explicit': 1}
+  22500/114681 ok=22134 rate=9.9/s usd=4.369 fails={'script': 86, 'parse': 39, 'profanity_in_clean_class': 115, 'refusal': 101, 'grooming_sexualised': 24, 'explicit': 1}
+  22750/114681 ok=22381 rate=9.9/s usd=4.419 fails={'script': 87, 'parse': 39, 'profanity_in_clean_class': 116, 'refusal': 102, 'grooming_sexualised': 24, 'explicit': 1}
+  23000/114681 ok=22628 rate=9.9/s usd=4.472 fails={'script': 87, 'parse': 39, 'profanity_in_clean_class': 119, 'refusal': 102, 'grooming_sexualised': 24, 'explicit': 1}
+  23250/114681 ok=22876 rate=9.9/s usd=4.523 fails={'script': 89, 'parse': 39, 'profanity_in_clean_class': 119, 'refusal': 102, 'grooming_sexualised': 24, 'explicit': 1}
+  23500/114681 ok=23121 rate=9.9/s usd=4.573 fails={'script': 91, 'parse': 40, 'profanity_in_clean_class': 121, 'refusal': 102, 'grooming_sexualised': 24, 'explicit': 1}
+  23750/114681 ok=23365 rate=9.9/s usd=4.623 fails={'script': 92, 'parse': 40, 'profanity_in_clean_class': 122, 'refusal': 105, 'grooming_sexualised': 24, 'explicit': 1, 'pair_line_changed': 1}
+  24000/114681 ok=23610 rate=10.0/s usd=4.673 fails={'script': 92, 'parse': 40, 'profanity_in_clean_class': 125, 'refusal': 107, 'grooming_sexualised': 24, 'explicit': 1, 'pair_line_changed': 1}
+  24250/114681 ok=23857 rate=10.0/s usd=4.720 fails={'script': 93, 'parse': 40, 'profanity_in_clean_class': 126, 'refusal': 108, 'grooming_sexualised': 24, 'explicit': 1, 'pair_line_changed': 1}
+  24500/114681 ok=24104 rate=10.0/s usd=4.770 fails={'script': 94, 'parse': 41, 'profanity_in_clean_class': 127, 'refusal': 108, 'grooming_sexualised': 24, 'explicit': 1, 'pair_line_changed': 1}
+  24750/114681 ok=24351 rate=10.0/s usd=4.817 fails={'script': 96, 'parse': 41, 'profanity_in_clean_class': 127, 'refusal': 109, 'grooming_sexualised': 24, 'explicit': 1, 'pair_line_changed': 1}
+  25000/114681 ok=24598 rate=10.0/s usd=4.865 fails={'script': 98, 'parse': 41, 'profanity_in_clean_class': 127, 'refusal': 110, 'grooming_sexualised': 24, 'explicit': 1, 'pair_line_changed': 1}
+  25250/114681 ok=24846 rate=10.0/s usd=4.916 fails={'script': 98, 'parse': 41, 'profanity_in_clean_class': 127, 'refusal': 111, 'grooming_sexualised': 25, 'explicit': 1, 'pair_line_changed': 1}
+  25500/114681 ok=25093 rate=10.0/s usd=4.962 fails={'script': 99, 'parse': 41, 'profanity_in_clean_class': 129, 'refusal': 111, 'grooming_sexualised': 25, 'explicit': 1, 'pair_line_changed': 1}
+  25750/114681 ok=25340 rate=10.0/s usd=5.011 fails={'script': 99, 'parse': 41, 'profanity_in_clean_class': 131, 'refusal': 112, 'grooming_sexualised': 25, 'explicit': 1, 'pair_line_changed': 1}
+  26000/114681 ok=25587 rate=10.0/s usd=5.057 fails={'script': 100, 'parse': 41, 'profanity_in_clean_class': 131, 'refusal': 114, 'grooming_sexualised': 25, 'explicit': 1, 'pair_line_changed': 1}
+  26250/114681 ok=25831 rate=10.0/s usd=5.105 fails={'script': 103, 'parse': 41, 'profanity_in_clean_class': 133, 'refusal': 114, 'grooming_sexualised': 25, 'explicit': 1, 'pair_line_changed': 2}
+  26500/114681 ok=26074 rate=10.1/s usd=5.153 fails={'script': 105, 'parse': 41, 'profanity_in_clean_class': 136, 'refusal': 116, 'grooming_sexualised': 25, 'explicit': 1, 'pair_line_changed': 2}
+  26750/114681 ok=26321 rate=10.1/s usd=5.203 fails={'script': 105, 'parse': 41, 'profanity_in_clean_class': 138, 'refusal': 117, 'grooming_sexualised': 25, 'explicit': 1, 'pair_line_changed': 2}
+  27000/114681 ok=26568 rate=10.1/s usd=5.250 fails={'script': 106, 'parse': 42, 'profanity_in_clean_class': 138, 'refusal': 118, 'grooming_sexualised': 25, 'explicit': 1, 'pair_line_changed': 2}
+  27250/114681 ok=26814 rate=10.1/s usd=5.302 fails={'script': 108, 'parse': 42, 'profanity_in_clean_class': 140, 'refusal': 118, 'grooming_sexualised': 25, 'explicit': 1, 'pair_line_changed': 2}
+  27500/114681 ok=27060 rate=10.1/s usd=5.351 fails={'script': 110, 'parse': 43, 'profanity_in_clean_class': 141, 'refusal': 118, 'grooming_sexualised': 25, 'explicit': 1, 'pair_line_changed': 2}
+  27750/114681 ok=27306 rate=10.1/s usd=5.398 fails={'script': 110, 'parse': 43, 'profanity_in_clean_class': 143, 'refusal': 120, 'grooming_sexualised': 25, 'explicit': 1, 'pair_line_changed': 2}
+  28000/114681 ok=27550 rate=10.1/s usd=5.449 fails={'script': 111, 'parse': 44, 'profanity_in_clean_class': 145, 'refusal': 121, 'grooming_sexualised': 26, 'explicit': 1, 'pair_line_changed': 2}
+  28250/114681 ok=27796 rate=10.2/s usd=5.496 fails={'script': 111, 'parse': 46, 'profanity_in_clean_class': 146, 'refusal': 122, 'grooming_sexualised': 26, 'explicit': 1, 'pair_line_changed': 2}
+  28500/114681 ok=28043 rate=10.2/s usd=5.543 fails={'script': 113, 'parse': 46, 'profanity_in_clean_class': 147, 'refusal': 122, 'grooming_sexualised': 26, 'explicit': 1, 'pair_line_changed': 2}
+  28750/114681 ok=28291 rate=10.2/s usd=5.593 fails={'script': 113, 'parse': 46, 'profanity_in_clean_class': 149, 'refusal': 122, 'grooming_sexualised': 26, 'explicit': 1, 'pair_line_changed': 2}
+  29000/114681 ok=28534 rate=10.2/s usd=5.643 fails={'script': 114, 'parse': 47, 'profanity_in_clean_class': 149, 'refusal': 126, 'grooming_sexualised': 27, 'explicit': 1, 'pair_line_changed': 2}
+  29250/114681 ok=28780 rate=10.2/s usd=5.693 fails={'script': 115, 'parse': 47, 'profanity_in_clean_class': 151, 'refusal': 127, 'grooming_sexualised': 27, 'explicit': 1, 'pair_line_changed': 2}
+  29500/114681 ok=29024 rate=10.2/s usd=5.742 fails={'script': 117, 'parse': 47, 'profanity_in_clean_class': 152, 'refusal': 130, 'grooming_sexualised': 27, 'explicit': 1, 'pair_line_changed': 2}
+  29750/114681 ok=29267 rate=10.3/s usd=5.792 fails={'script': 119, 'parse': 47, 'profanity_in_clean_class': 154, 'refusal': 132, 'grooming_sexualised': 28, 'explicit': 1, 'pair_line_changed': 2}
+  30000/114681 ok=29511 rate=10.3/s usd=5.843 fails={'script': 121, 'parse': 48, 'profanity_in_clean_class': 156, 'refusal': 133, 'grooming_sexualised': 28, 'explicit': 1, 'pair_line_changed': 2}
+  30250/114681 ok=29758 rate=10.3/s usd=5.892 fails={'script': 122, 'parse': 48, 'profanity_in_clean_class': 158, 'refusal': 133, 'grooming_sexualised': 28, 'explicit': 1, 'pair_line_changed': 2}
+  30500/114681 ok=30004 rate=10.3/s usd=5.943 fails={'script': 122, 'parse': 49, 'profanity_in_clean_class': 159, 'refusal': 135, 'grooming_sexualised': 28, 'explicit': 1, 'pair_line_changed': 2}
+  30750/114681 ok=30251 rate=10.3/s usd=5.990 fails={'script': 123, 'parse': 49, 'profanity_in_clean_class': 159, 'refusal': 137, 'grooming_sexualised': 28, 'explicit': 1, 'pair_line_changed': 2}
+  31000/114681 ok=30496 rate=10.3/s usd=6.041 fails={'script': 123, 'parse': 49, 'profanity_in_clean_class': 162, 'refusal': 138, 'grooming_sexualised': 29, 'explicit': 1, 'pair_line_changed': 2}
+  31250/114681 ok=30742 rate=10.3/s usd=6.092 fails={'script': 125, 'parse': 49, 'profanity_in_clean_class': 162, 'refusal': 140, 'grooming_sexualised': 29, 'explicit': 1, 'pair_line_changed': 2}
+  31500/114681 ok=30987 rate=10.3/s usd=6.141 fails={'script': 125, 'parse': 49, 'profanity_in_clean_class': 164, 'refusal': 143, 'grooming_sexualised': 29, 'explicit': 1, 'pair_line_changed': 2}
+  31750/114681 ok=31233 rate=10.3/s usd=6.195 fails={'script': 126, 'parse': 49, 'profanity_in_clean_class': 165, 'refusal': 144, 'grooming_sexualised': 30, 'explicit': 1, 'pair_line_changed': 2}
+  32000/114681 ok=31477 rate=10.3/s usd=6.247 fails={'script': 127, 'parse': 50, 'profanity_in_clean_class': 168, 'refusal': 144, 'grooming_sexualised': 31, 'explicit': 1, 'pair_line_changed': 2}
+  32250/114681 ok=31722 rate=10.4/s usd=6.293 fails={'script': 129, 'parse': 51, 'profanity_in_clean_class': 169, 'refusal': 145, 'grooming_sexualised': 31, 'explicit': 1, 'pair_line_changed': 2}
+  32500/114681 ok=31963 rate=10.4/s usd=6.342 fails={'script': 130, 'parse': 54, 'profanity_in_clean_class': 172, 'refusal': 147, 'grooming_sexualised': 31, 'explicit': 1, 'pair_line_changed': 2}
+  32750/114681 ok=32211 rate=10.4/s usd=6.388 fails={'script': 131, 'parse': 54, 'profanity_in_clean_class': 172, 'refusal': 148, 'grooming_sexualised': 31, 'explicit': 1, 'pair_line_changed': 2}
+  33000/114681 ok=32460 rate=10.4/s usd=6.436 fails={'script': 131, 'parse': 54, 'profanity_in_clean_class': 173, 'refusal': 148, 'grooming_sexualised': 31, 'explicit': 1, 'pair_line_changed': 2}
+  33250/114681 ok=32704 rate=10.4/s usd=6.488 fails={'script': 131, 'parse': 54, 'profanity_in_clean_class': 178, 'refusal': 149, 'grooming_sexualised': 31, 'explicit': 1, 'pair_line_changed': 2}
+  33500/114681 ok=32949 rate=10.4/s usd=6.537 fails={'script': 133, 'parse': 54, 'profanity_in_clean_class': 180, 'refusal': 149, 'grooming_sexualised': 32, 'explicit': 1, 'pair_line_changed': 2}
+  33750/114681 ok=33193 rate=10.4/s usd=6.587 fails={'script': 134, 'parse': 54, 'profanity_in_clean_class': 183, 'refusal': 150, 'grooming_sexualised': 33, 'explicit': 1, 'pair_line_changed': 2}
+  34000/114681 ok=33441 rate=10.4/s usd=6.636 fails={'script': 135, 'parse': 54, 'profanity_in_clean_class': 183, 'refusal': 151, 'grooming_sexualised': 33, 'explicit': 1, 'pair_line_changed': 2}
+  34250/114681 ok=33687 rate=10.4/s usd=6.684 fails={'script': 135, 'parse': 55, 'profanity_in_clean_class': 184, 'refusal': 153, 'grooming_sexualised': 33, 'explicit': 1, 'pair_line_changed': 2}
+  34500/114681 ok=33932 rate=10.4/s usd=6.736 fails={'script': 138, 'parse': 55, 'profanity_in_clean_class': 186, 'refusal': 153, 'grooming_sexualised': 33, 'explicit': 1, 'pair_line_changed': 2}
+  34750/114681 ok=34180 rate=10.4/s usd=6.785 fails={'script': 138, 'parse': 55, 'profanity_in_clean_class': 187, 'refusal': 154, 'grooming_sexualised': 33, 'explicit': 1, 'pair_line_changed': 2}
+  35000/114681 ok=34429 rate=10.4/s usd=6.834 fails={'script': 139, 'parse': 55, 'profanity_in_clean_class': 187, 'refusal': 154, 'grooming_sexualised': 33, 'explicit': 1, 'pair_line_changed': 2}
+  35250/114681 ok=34677 rate=10.5/s usd=6.882 fails={'script': 140, 'parse': 55, 'profanity_in_clean_class': 187, 'refusal': 154, 'grooming_sexualised': 33, 'explicit': 2, 'pair_line_changed': 2}
+  35500/114681 ok=34923 rate=10.5/s usd=6.931 fails={'script': 141, 'parse': 56, 'profanity_in_clean_class': 188, 'refusal': 155, 'grooming_sexualised': 33, 'explicit': 2, 'pair_line_changed': 2}
+  35750/114681 ok=35170 rate=10.5/s usd=6.979 fails={'script': 143, 'parse': 56, 'profanity_in_clean_class': 189, 'refusal': 155, 'grooming_sexualised': 33, 'explicit': 2, 'pair_line_changed': 2}
+  36000/114681 ok=35417 rate=10.5/s usd=7.031 fails={'script': 144, 'parse': 56, 'profanity_in_clean_class': 189, 'refusal': 157, 'grooming_sexualised': 33, 'explicit': 2, 'pair_line_changed': 2}
+  36250/114681 ok=35664 rate=10.5/s usd=7.079 fails={'script': 145, 'parse': 56, 'profanity_in_clean_class': 191, 'refusal': 157, 'grooming_sexualised': 33, 'explicit': 2, 'pair_line_changed': 2}
+  36500/114681 ok=35912 rate=10.5/s usd=7.127 fails={'script': 146, 'parse': 56, 'profanity_in_clean_class': 192, 'refusal': 157, 'grooming_sexualised': 33, 'explicit': 2, 'pair_line_changed': 2}
+  36750/114681 ok=36159 rate=10.5/s usd=7.177 fails={'script': 146, 'parse': 57, 'profanity_in_clean_class': 193, 'refusal': 158, 'grooming_sexualised': 33, 'explicit': 2, 'pair_line_changed': 2}
+  37000/114681 ok=36407 rate=10.5/s usd=7.226 fails={'script': 146, 'parse': 57, 'profanity_in_clean_class': 195, 'refusal': 158, 'grooming_sexualised': 33, 'explicit': 2, 'pair_line_changed': 2}
+  37250/114681 ok=36654 rate=10.5/s usd=7.274 fails={'script': 147, 'parse': 58, 'profanity_in_clean_class': 196, 'refusal': 158, 'grooming_sexualised': 33, 'explicit': 2, 'pair_line_changed': 2}
+  37500/114681 ok=36902 rate=10.5/s usd=7.322 fails={'script': 147, 'parse': 59, 'profanity_in_clean_class': 196, 'refusal': 159, 'grooming_sexualised': 33, 'explicit': 2, 'pair_line_changed': 2}
+  37750/114681 ok=37151 rate=10.5/s usd=7.369 fails={'script': 147, 'parse': 59, 'profanity_in_clean_class': 197, 'refusal': 159, 'grooming_sexualised': 33, 'explicit': 2, 'pair_line_changed': 2}
+  38000/114681 ok=37393 rate=10.5/s usd=7.418 fails={'script': 149, 'parse': 60, 'profanity_in_clean_class': 199, 'refusal': 161, 'grooming_sexualised': 34, 'explicit': 2, 'pair_line_changed': 2}
+  38250/114681 ok=37640 rate=10.5/s usd=7.464 fails={'script': 149, 'parse': 61, 'profanity_in_clean_class': 199, 'refusal': 162, 'grooming_sexualised': 35, 'explicit': 2, 'pair_line_changed': 2}
+  38500/114681 ok=37889 rate=10.5/s usd=7.512 fails={'script': 150, 'parse': 61, 'profanity_in_clean_class': 199, 'refusal': 162, 'grooming_sexualised': 35, 'explicit': 2, 'pair_line_changed': 2}
+  38750/114681 ok=38132 rate=10.5/s usd=7.560 fails={'script': 152, 'parse': 61, 'profanity_in_clean_class': 204, 'refusal': 162, 'grooming_sexualised': 35, 'explicit': 2, 'pair_line_changed': 2}
+  39000/114681 ok=38379 rate=10.5/s usd=7.607 fails={'script': 154, 'parse': 62, 'profanity_in_clean_class': 204, 'refusal': 162, 'grooming_sexualised': 35, 'explicit': 2, 'pair_line_changed': 2}
+  39250/114681 ok=38625 rate=10.5/s usd=7.656 fails={'script': 154, 'parse': 62, 'profanity_in_clean_class': 204, 'refusal': 166, 'grooming_sexualised': 35, 'explicit': 2, 'pair_line_changed': 2}
+  39500/114681 ok=38872 rate=10.5/s usd=7.706 fails={'script': 155, 'parse': 62, 'profanity_in_clean_class': 204, 'refusal': 168, 'grooming_sexualised': 35, 'explicit': 2, 'pair_line_changed': 2}
+  39750/114681 ok=39120 rate=10.5/s usd=7.754 fails={'script': 155, 'parse': 62, 'profanity_in_clean_class': 206, 'refusal': 168, 'grooming_sexualised': 35, 'explicit': 2, 'pair_line_changed': 2}
+  40000/114681 ok=39363 rate=10.5/s usd=7.808 fails={'script': 156, 'parse': 63, 'profanity_in_clean_class': 210, 'refusal': 168, 'grooming_sexualised': 36, 'explicit': 2, 'pair_line_changed': 2}
+  40250/114681 ok=39610 rate=10.5/s usd=7.859 fails={'script': 157, 'parse': 63, 'profanity_in_clean_class': 211, 'refusal': 168, 'grooming_sexualised': 37, 'explicit': 2, 'pair_line_changed': 2}
+  40500/114681 ok=39857 rate=10.5/s usd=7.909 fails={'script': 157, 'parse': 63, 'profanity_in_clean_class': 213, 'refusal': 169, 'grooming_sexualised': 37, 'explicit': 2, 'pair_line_changed': 2}
+  40750/114681 ok=40105 rate=10.5/s usd=7.960 fails={'script': 157, 'parse': 63, 'profanity_in_clean_class': 213, 'refusal': 170, 'grooming_sexualised': 38, 'explicit': 2, 'pair_line_changed': 2}
+  41000/114681 ok=40354 rate=10.5/s usd=8.009 fails={'script': 158, 'parse': 63, 'profanity_in_clean_class': 213, 'refusal': 170, 'grooming_sexualised': 38, 'explicit': 2, 'pair_line_changed': 2}
+  41250/114681 ok=40603 rate=10.5/s usd=8.056 fails={'script': 158, 'parse': 63, 'profanity_in_clean_class': 213, 'refusal': 171, 'grooming_sexualised': 38, 'explicit': 2, 'pair_line_changed': 2}
+  41500/114681 ok=40852 rate=10.5/s usd=8.106 fails={'script': 159, 'parse': 63, 'profanity_in_clean_class': 213, 'refusal': 171, 'grooming_sexualised': 38, 'explicit': 2, 'pair_line_changed': 2}
+round 0: 69624 specs, cap 45.0 USD
+  250/69624 ok=247 rate=11.0/s usd=0.045 fails={'refusal': 2, 'script': 1}
+  500/69624 ok=492 rate=11.6/s usd=0.094 fails={'refusal': 5, 'script': 2, 'profanity_in_clean_class': 1}
+  750/69624 ok=737 rate=11.4/s usd=0.145 fails={'refusal': 6, 'script': 3, 'profanity_in_clean_class': 2, 'parse': 1, 'grooming_sexualised': 1}
+  1000/69624 ok=983 rate=11.8/s usd=0.193 fails={'refusal': 7, 'script': 4, 'profanity_in_clean_class': 4, 'parse': 1, 'grooming_sexualised': 1}
+  1250/69624 ok=1231 rate=11.8/s usd=0.242 fails={'refusal': 8, 'script': 4, 'profanity_in_clean_class': 5, 'parse': 1, 'grooming_sexualised': 1}
+  1500/69624 ok=1479 rate=11.9/s usd=0.292 fails={'refusal': 8, 'script': 5, 'profanity_in_clean_class': 5, 'parse': 1, 'grooming_sexualised': 1, 'adjacent_dup': 1}
+  1750/69624 ok=1727 rate=12.1/s usd=0.337 fails={'refusal': 8, 'script': 6, 'profanity_in_clean_class': 6, 'parse': 1, 'grooming_sexualised': 1, 'adjacent_dup': 1}
+  2000/69624 ok=1974 rate=12.2/s usd=0.383 fails={'refusal': 9, 'script': 8, 'profanity_in_clean_class': 6, 'parse': 1, 'grooming_sexualised': 1, 'adjacent_dup': 1}
+  2250/69624 ok=2220 rate=12.3/s usd=0.429 fails={'refusal': 10, 'script': 9, 'profanity_in_clean_class': 8, 'parse': 1, 'grooming_sexualised': 1, 'adjacent_dup': 1}
+  2500/69624 ok=2469 rate=12.3/s usd=0.478 fails={'refusal': 10, 'script': 9, 'profanity_in_clean_class': 9, 'parse': 1, 'grooming_sexualised': 1, 'adjacent_dup': 1}
+  2750/69624 ok=2717 rate=12.4/s usd=0.525 fails={'refusal': 11, 'script': 10, 'profanity_in_clean_class': 9, 'parse': 1, 'grooming_sexualised': 1, 'adjacent_dup': 1}
+  3000/69624 ok=2962 rate=12.3/s usd=0.574 fails={'refusal': 11, 'script': 10, 'profanity_in_clean_class': 14, 'parse': 1, 'grooming_sexualised': 1, 'adjacent_dup': 1}
+  3250/69624 ok=3208 rate=12.3/s usd=0.622 fails={'refusal': 11, 'script': 11, 'profanity_in_clean_class': 16, 'parse': 2, 'grooming_sexualised': 1, 'adjacent_dup': 1}
+  3500/69624 ok=3454 rate=12.2/s usd=0.673 fails={'refusal': 14, 'script': 11, 'profanity_in_clean_class': 16, 'parse': 3, 'grooming_sexualised': 1, 'adjacent_dup': 1}
+  3750/69624 ok=3699 rate=12.2/s usd=0.724 fails={'refusal': 14, 'script': 13, 'profanity_in_clean_class': 19, 'parse': 3, 'grooming_sexualised': 1, 'adjacent_dup': 1}
+  4000/69624 ok=3946 rate=12.3/s usd=0.772 fails={'refusal': 15, 'script': 13, 'profanity_in_clean_class': 21, 'parse': 3, 'grooming_sexualised': 1, 'adjacent_dup': 1}
+  4250/69624 ok=4195 rate=12.3/s usd=0.820 fails={'refusal': 16, 'script': 13, 'profanity_in_clean_class': 21, 'parse': 3, 'grooming_sexualised': 1, 'adjacent_dup': 1}
+  4500/69624 ok=4439 rate=12.3/s usd=0.869 fails={'refusal': 16, 'script': 15, 'profanity_in_clean_class': 24, 'parse': 4, 'grooming_sexualised': 1, 'adjacent_dup': 1}
+  4750/69624 ok=4683 rate=12.3/s usd=0.917 fails={'refusal': 17, 'script': 18, 'profanity_in_clean_class': 24, 'parse': 6, 'grooming_sexualised': 1, 'adjacent_dup': 1}
+  5000/69624 ok=4930 rate=12.3/s usd=0.966 fails={'refusal': 17, 'script': 18, 'profanity_in_clean_class': 25, 'parse': 6, 'grooming_sexualised': 3, 'adjacent_dup': 1}
+  5250/69624 ok=5180 rate=12.3/s usd=1.017 fails={'refusal': 17, 'script': 18, 'profanity_in_clean_class': 25, 'parse': 6, 'grooming_sexualised': 3, 'adjacent_dup': 1}
+  5500/69624 ok=5424 rate=12.3/s usd=1.068 fails={'refusal': 17, 'script': 19, 'profanity_in_clean_class': 29, 'parse': 7, 'grooming_sexualised': 3, 'adjacent_dup': 1}
+  5750/69624 ok=5668 rate=12.4/s usd=1.118 fails={'refusal': 18, 'script': 20, 'profanity_in_clean_class': 32, 'parse': 7, 'grooming_sexualised': 4, 'adjacent_dup': 1}
+  6000/69624 ok=5913 rate=12.3/s usd=1.168 fails={'refusal': 19, 'script': 20, 'profanity_in_clean_class': 35, 'parse': 7, 'grooming_sexualised': 5, 'adjacent_dup': 1}
+  6250/69624 ok=6156 rate=12.3/s usd=1.217 fails={'refusal': 21, 'script': 22, 'profanity_in_clean_class': 37, 'parse': 7, 'grooming_sexualised': 6, 'adjacent_dup': 1}
+  6500/69624 ok=6402 rate=12.3/s usd=1.264 fails={'refusal': 21, 'script': 24, 'profanity_in_clean_class': 38, 'parse': 7, 'grooming_sexualised': 7, 'adjacent_dup': 1}
+  6750/69624 ok=6648 rate=12.4/s usd=1.311 fails={'refusal': 22, 'script': 24, 'profanity_in_clean_class': 39, 'parse': 8, 'grooming_sexualised': 8, 'adjacent_dup': 1}
+  7000/69624 ok=6895 rate=12.4/s usd=1.362 fails={'refusal': 22, 'script': 24, 'profanity_in_clean_class': 41, 'parse': 8, 'grooming_sexualised': 9, 'adjacent_dup': 1}
+  7250/69624 ok=7142 rate=12.4/s usd=1.410 fails={'refusal': 24, 'script': 24, 'profanity_in_clean_class': 41, 'parse': 8, 'grooming_sexualised': 9, 'adjacent_dup': 1, 'explicit': 1}
+  7500/69624 ok=7388 rate=12.4/s usd=1.461 fails={'refusal': 25, 'script': 24, 'profanity_in_clean_class': 44, 'parse': 8, 'grooming_sexualised': 9, 'adjacent_dup': 1, 'explicit': 1}
+  7750/69624 ok=7633 rate=12.4/s usd=1.510 fails={'refusal': 25, 'script': 26, 'profanity_in_clean_class': 46, 'parse': 9, 'grooming_sexualised': 9, 'adjacent_dup': 1, 'explicit': 1}
+  8000/69624 ok=7877 rate=12.4/s usd=1.560 fails={'refusal': 26, 'script': 26, 'profanity_in_clean_class': 48, 'parse': 10, 'grooming_sexualised': 11, 'adjacent_dup': 1, 'explicit': 1}
+  8250/69624 ok=8125 rate=12.4/s usd=1.610 fails={'refusal': 26, 'script': 27, 'profanity_in_clean_class': 49, 'parse': 10, 'grooming_sexualised': 11, 'adjacent_dup': 1, 'explicit': 1}
+  8500/69624 ok=8371 rate=12.4/s usd=1.658 fails={'refusal': 27, 'script': 28, 'profanity_in_clean_class': 51, 'parse': 10, 'grooming_sexualised': 11, 'adjacent_dup': 1, 'explicit': 1}
+  8750/69624 ok=8619 rate=12.4/s usd=1.705 fails={'refusal': 27, 'script': 28, 'profanity_in_clean_class': 53, 'parse': 10, 'grooming_sexualised': 11, 'adjacent_dup': 1, 'explicit': 1}
+  9000/69624 ok=8865 rate=12.4/s usd=1.757 fails={'refusal': 28, 'script': 29, 'profanity_in_clean_class': 53, 'parse': 11, 'grooming_sexualised': 12, 'adjacent_dup': 1, 'explicit': 1}
+  9250/69624 ok=9110 rate=12.5/s usd=1.806 fails={'refusal': 30, 'script': 29, 'profanity_in_clean_class': 55, 'parse': 11, 'grooming_sexualised': 13, 'adjacent_dup': 1, 'explicit': 1}
+  9500/69624 ok=9357 rate=12.5/s usd=1.852 fails={'refusal': 30, 'script': 29, 'profanity_in_clean_class': 57, 'parse': 11, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  9750/69624 ok=9604 rate=12.5/s usd=1.901 fails={'refusal': 30, 'script': 30, 'profanity_in_clean_class': 59, 'parse': 11, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  10000/69624 ok=9852 rate=12.5/s usd=1.952 fails={'refusal': 31, 'script': 30, 'profanity_in_clean_class': 60, 'parse': 11, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  10250/69624 ok=10102 rate=12.5/s usd=2.001 fails={'refusal': 31, 'script': 30, 'profanity_in_clean_class': 60, 'parse': 11, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  10500/69624 ok=10350 rate=12.4/s usd=2.051 fails={'refusal': 32, 'script': 30, 'profanity_in_clean_class': 61, 'parse': 11, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  10750/69624 ok=10596 rate=12.5/s usd=2.098 fails={'refusal': 33, 'script': 32, 'profanity_in_clean_class': 62, 'parse': 11, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  11000/69624 ok=10841 rate=12.5/s usd=2.148 fails={'refusal': 35, 'script': 33, 'profanity_in_clean_class': 64, 'parse': 11, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  11250/69624 ok=11086 rate=12.4/s usd=2.196 fails={'refusal': 36, 'script': 34, 'profanity_in_clean_class': 67, 'parse': 11, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  11500/69624 ok=11333 rate=12.5/s usd=2.243 fails={'refusal': 37, 'script': 36, 'profanity_in_clean_class': 67, 'parse': 11, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  11750/69624 ok=11582 rate=12.5/s usd=2.294 fails={'refusal': 37, 'script': 36, 'profanity_in_clean_class': 68, 'parse': 11, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  12000/69624 ok=11829 rate=12.5/s usd=2.343 fails={'refusal': 39, 'script': 37, 'profanity_in_clean_class': 68, 'parse': 11, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  12250/69624 ok=12076 rate=12.4/s usd=2.392 fails={'refusal': 40, 'script': 38, 'profanity_in_clean_class': 69, 'parse': 11, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  12500/69624 ok=12321 rate=12.4/s usd=2.438 fails={'refusal': 43, 'script': 39, 'profanity_in_clean_class': 70, 'parse': 11, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  12750/69624 ok=12567 rate=12.4/s usd=2.487 fails={'refusal': 46, 'script': 39, 'profanity_in_clean_class': 70, 'parse': 12, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  13000/69624 ok=12811 rate=12.5/s usd=2.535 fails={'refusal': 49, 'script': 40, 'profanity_in_clean_class': 71, 'parse': 13, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  13250/69624 ok=13061 rate=12.5/s usd=2.581 fails={'refusal': 49, 'script': 40, 'profanity_in_clean_class': 71, 'parse': 13, 'grooming_sexualised': 14, 'adjacent_dup': 1, 'explicit': 1}
+  13500/69624 ok=13308 rate=12.5/s usd=2.629 fails={'refusal': 50, 'script': 40, 'profanity_in_clean_class': 71, 'parse': 14, 'grooming_sexualised': 15, 'adjacent_dup': 1, 'explicit': 1}
+  13750/69624 ok=13557 rate=12.5/s usd=2.679 fails={'refusal': 50, 'script': 41, 'profanity_in_clean_class': 71, 'parse': 14, 'grooming_sexualised': 15, 'adjacent_dup': 1, 'explicit': 1}
+  14000/69624 ok=13803 rate=12.5/s usd=2.728 fails={'refusal': 50, 'script': 43, 'profanity_in_clean_class': 73, 'parse': 14, 'grooming_sexualised': 15, 'adjacent_dup': 1, 'explicit': 1}
+  14250/69624 ok=14048 rate=12.4/s usd=2.778 fails={'refusal': 51, 'script': 44, 'profanity_in_clean_class': 75, 'parse': 15, 'grooming_sexualised': 15, 'adjacent_dup': 1, 'explicit': 1}
+  14500/69624 ok=14293 rate=12.4/s usd=2.830 fails={'refusal': 51, 'script': 47, 'profanity_in_clean_class': 76, 'parse': 15, 'grooming_sexualised': 16, 'adjacent_dup': 1, 'explicit': 1}
+  14750/69624 ok=14540 rate=12.4/s usd=2.880 fails={'refusal': 51, 'script': 48, 'profanity_in_clean_class': 77, 'parse': 16, 'grooming_sexualised': 16, 'adjacent_dup': 1, 'explicit': 1}
+  15000/69624 ok=14786 rate=12.4/s usd=2.932 fails={'refusal': 52, 'script': 50, 'profanity_in_clean_class': 78, 'parse': 16, 'grooming_sexualised': 16, 'adjacent_dup': 1, 'explicit': 1}
+  15250/69624 ok=15033 rate=12.4/s usd=2.979 fails={'refusal': 52, 'script': 51, 'profanity_in_clean_class': 79, 'parse': 16, 'grooming_sexualised': 17, 'adjacent_dup': 1, 'explicit': 1}
+  15500/69624 ok=15278 rate=12.4/s usd=3.025 fails={'refusal': 54, 'script': 52, 'profanity_in_clean_class': 80, 'parse': 16, 'grooming_sexualised': 18, 'adjacent_dup': 1, 'explicit': 1}
+  15750/69624 ok=15526 rate=12.4/s usd=3.071 fails={'refusal': 54, 'script': 52, 'profanity_in_clean_class': 82, 'parse': 16, 'grooming_sexualised': 18, 'adjacent_dup': 1, 'explicit': 1}
+  16000/69624 ok=15769 rate=12.4/s usd=3.120 fails={'refusal': 56, 'script': 53, 'profanity_in_clean_class': 85, 'parse': 16, 'grooming_sexualised': 19, 'adjacent_dup': 1, 'explicit': 1}
+  16250/69624 ok=16015 rate=12.4/s usd=3.171 fails={'refusal': 58, 'script': 53, 'profanity_in_clean_class': 86, 'parse': 16, 'grooming_sexualised': 20, 'adjacent_dup': 1, 'explicit': 1}
+  16500/69624 ok=16260 rate=12.3/s usd=3.221 fails={'refusal': 58, 'script': 54, 'profanity_in_clean_class': 89, 'parse': 16, 'grooming_sexualised': 21, 'adjacent_dup': 1, 'explicit': 1}
+  16750/69624 ok=16508 rate=12.4/s usd=3.266 fails={'refusal': 59, 'script': 55, 'profanity_in_clean_class': 89, 'parse': 16, 'grooming_sexualised': 21, 'adjacent_dup': 1, 'explicit': 1}
+  17000/69624 ok=16755 rate=12.4/s usd=3.313 fails={'refusal': 59, 'script': 56, 'profanity_in_clean_class': 90, 'parse': 16, 'grooming_sexualised': 22, 'adjacent_dup': 1, 'explicit': 1}
+  17250/69624 ok=17001 rate=12.4/s usd=3.364 fails={'refusal': 59, 'script': 57, 'profanity_in_clean_class': 92, 'parse': 16, 'grooming_sexualised': 23, 'adjacent_dup': 1, 'explicit': 1}
+  17500/69624 ok=17246 rate=12.4/s usd=3.412 fails={'refusal': 60, 'script': 58, 'profanity_in_clean_class': 94, 'parse': 16, 'grooming_sexualised': 24, 'adjacent_dup': 1, 'explicit': 1}
+  17750/69624 ok=17493 rate=12.4/s usd=3.457 fails={'refusal': 61, 'script': 59, 'profanity_in_clean_class': 95, 'parse': 16, 'grooming_sexualised': 24, 'adjacent_dup': 1, 'explicit': 1}
+  18000/69624 ok=17738 rate=12.4/s usd=3.505 fails={'refusal': 63, 'script': 59, 'profanity_in_clean_class': 97, 'parse': 16, 'grooming_sexualised': 25, 'adjacent_dup': 1, 'explicit': 1}
+  18250/69624 ok=17982 rate=12.4/s usd=3.551 fails={'refusal': 64, 'script': 60, 'profanity_in_clean_class': 99, 'parse': 18, 'grooming_sexualised': 25, 'adjacent_dup': 1, 'explicit': 1}
+  18500/69624 ok=18231 rate=12.4/s usd=3.601 fails={'refusal': 64, 'script': 60, 'profanity_in_clean_class': 100, 'parse': 18, 'grooming_sexualised': 25, 'adjacent_dup': 1, 'explicit': 1}
+  18750/69624 ok=18478 rate=12.4/s usd=3.648 fails={'refusal': 65, 'script': 60, 'profanity_in_clean_class': 101, 'parse': 18, 'grooming_sexualised': 26, 'adjacent_dup': 1, 'explicit': 1}
+  19000/69624 ok=18725 rate=12.4/s usd=3.700 fails={'refusal': 65, 'script': 62, 'profanity_in_clean_class': 102, 'parse': 18, 'grooming_sexualised': 26, 'adjacent_dup': 1, 'explicit': 1}
+  19250/69624 ok=18971 rate=12.4/s usd=3.751 fails={'refusal': 66, 'script': 63, 'profanity_in_clean_class': 103, 'parse': 18, 'grooming_sexualised': 27, 'adjacent_dup': 1, 'explicit': 1}
+  19500/69624 ok=19221 rate=12.4/s usd=3.798 fails={'refusal': 66, 'script': 63, 'profanity_in_clean_class': 103, 'parse': 18, 'grooming_sexualised': 27, 'adjacent_dup': 1, 'explicit': 1}
+  19750/69624 ok=19465 rate=12.4/s usd=3.849 fails={'refusal': 68, 'script': 65, 'profanity_in_clean_class': 105, 'parse': 18, 'grooming_sexualised': 27, 'adjacent_dup': 1, 'explicit': 1}
+  20000/69624 ok=19710 rate=12.4/s usd=3.901 fails={'refusal': 68, 'script': 69, 'profanity_in_clean_class': 105, 'parse': 19, 'grooming_sexualised': 27, 'adjacent_dup': 1, 'explicit': 1}
+  20250/69624 ok=19958 rate=12.4/s usd=3.949 fails={'refusal': 68, 'script': 70, 'profanity_in_clean_class': 106, 'parse': 19, 'grooming_sexualised': 27, 'adjacent_dup': 1, 'explicit': 1}
+  20500/69624 ok=20204 rate=12.4/s usd=3.998 fails={'refusal': 70, 'script': 71, 'profanity_in_clean_class': 107, 'parse': 19, 'grooming_sexualised': 27, 'adjacent_dup': 1, 'explicit': 1}
+  20750/69624 ok=20451 rate=12.4/s usd=4.049 fails={'refusal': 70, 'script': 72, 'profanity_in_clean_class': 109, 'parse': 19, 'grooming_sexualised': 27, 'adjacent_dup': 1, 'explicit': 1}
+  21000/69624 ok=20698 rate=12.4/s usd=4.098 fails={'refusal': 71, 'script': 72, 'profanity_in_clean_class': 111, 'parse': 19, 'grooming_sexualised': 27, 'adjacent_dup': 1, 'explicit': 1}
+  21250/69624 ok=20945 rate=12.4/s usd=4.146 fails={'refusal': 74, 'script': 72, 'profanity_in_clean_class': 111, 'parse': 19, 'grooming_sexualised': 27, 'adjacent_dup': 1, 'explicit': 1}
+  21500/69624 ok=21191 rate=12.4/s usd=4.193 fails={'refusal': 76, 'script': 73, 'profanity_in_clean_class': 112, 'parse': 19, 'grooming_sexualised': 27, 'adjacent_dup': 1, 'explicit': 1}
+  21750/69624 ok=21441 rate=12.4/s usd=4.241 fails={'refusal': 76, 'script': 73, 'profanity_in_clean_class': 112, 'parse': 19, 'grooming_sexualised': 27, 'adjacent_dup': 1, 'explicit': 1}
+  22000/69624 ok=21691 rate=12.4/s usd=4.290 fails={'refusal': 76, 'script': 73, 'profanity_in_clean_class': 112, 'parse': 19, 'grooming_sexualised': 27, 'adjacent_dup': 1, 'explicit': 1}
+  22250/69624 ok=21938 rate=12.4/s usd=4.337 fails={'refusal': 78, 'script': 73, 'profanity_in_clean_class': 113, 'parse': 19, 'grooming_sexualised': 27, 'adjacent_dup': 1, 'explicit': 1}
+  22500/69624 ok=22184 rate=12.4/s usd=4.383 fails={'refusal': 79, 'script': 74, 'profanity_in_clean_class': 114, 'parse': 19, 'grooming_sexualised': 28, 'adjacent_dup': 1, 'explicit': 1}
+  22750/69624 ok=22430 rate=12.4/s usd=4.429 fails={'refusal': 82, 'script': 74, 'profanity_in_clean_class': 115, 'parse': 19, 'grooming_sexualised': 28, 'adjacent_dup': 1, 'explicit': 1}
+  23000/69624 ok=22676 rate=12.4/s usd=4.477 fails={'refusal': 83, 'script': 74, 'profanity_in_clean_class': 117, 'parse': 19, 'grooming_sexualised': 29, 'adjacent_dup': 1, 'explicit': 1}
+  23250/69624 ok=22924 rate=12.4/s usd=4.526 fails={'refusal': 84, 'script': 75, 'profanity_in_clean_class': 117, 'parse': 19, 'grooming_sexualised': 29, 'adjacent_dup': 1, 'explicit': 1}
+  23500/69624 ok=23168 rate=12.4/s usd=4.573 fails={'refusal': 86, 'script': 77, 'profanity_in_clean_class': 119, 'parse': 19, 'grooming_sexualised': 29, 'adjacent_dup': 1, 'explicit': 1}
+  23750/69624 ok=23414 rate=12.4/s usd=4.623 fails={'refusal': 87, 'script': 79, 'profanity_in_clean_class': 120, 'parse': 19, 'grooming_sexualised': 29, 'adjacent_dup': 1, 'explicit': 1}
+  24000/69624 ok=23660 rate=12.4/s usd=4.673 fails={'refusal': 87, 'script': 79, 'profanity_in_clean_class': 124, 'parse': 19, 'grooming_sexualised': 29, 'adjacent_dup': 1, 'explicit': 1}
+  24250/69624 ok=23908 rate=12.4/s usd=4.722 fails={'refusal': 88, 'script': 79, 'profanity_in_clean_class': 125, 'parse': 19, 'grooming_sexualised': 29, 'adjacent_dup': 1, 'explicit': 1}
+  24500/69624 ok=24155 rate=12.4/s usd=4.770 fails={'refusal': 89, 'script': 80, 'profanity_in_clean_class': 126, 'parse': 19, 'grooming_sexualised': 29, 'adjacent_dup': 1, 'explicit': 1}
+  24750/69624 ok=24403 rate=12.4/s usd=4.818 fails={'refusal': 90, 'script': 81, 'profanity_in_clean_class': 126, 'parse': 19, 'grooming_sexualised': 29, 'adjacent_dup': 1, 'explicit': 1}
+  25000/69624 ok=24649 rate=12.4/s usd=4.869 fails={'refusal': 90, 'script': 82, 'profanity_in_clean_class': 128, 'parse': 20, 'grooming_sexualised': 29, 'adjacent_dup': 1, 'explicit': 1}
+  25250/69624 ok=24897 rate=12.4/s usd=4.915 fails={'refusal': 90, 'script': 83, 'profanity_in_clean_class': 128, 'parse': 20, 'grooming_sexualised': 30, 'adjacent_dup': 1, 'explicit': 1}
+  25500/69624 ok=25142 rate=12.4/s usd=4.963 fails={'refusal': 91, 'script': 84, 'profanity_in_clean_class': 130, 'parse': 21, 'grooming_sexualised': 30, 'adjacent_dup': 1, 'explicit': 1}
+  25750/69624 ok=25389 rate=12.4/s usd=5.012 fails={'refusal': 91, 'script': 87, 'profanity_in_clean_class': 130, 'parse': 21, 'grooming_sexualised': 30, 'adjacent_dup': 1, 'explicit': 1}
+  26000/69624 ok=25637 rate=12.4/s usd=5.061 fails={'refusal': 91, 'script': 89, 'profanity_in_clean_class': 130, 'parse': 21, 'grooming_sexualised': 30, 'adjacent_dup': 1, 'explicit': 1}
+  26250/69624 ok=25886 rate=12.4/s usd=5.109 fails={'refusal': 91, 'script': 89, 'profanity_in_clean_class': 131, 'parse': 21, 'grooming_sexualised': 30, 'adjacent_dup': 1, 'explicit': 1}
+  26500/69624 ok=26135 rate=12.4/s usd=5.155 fails={'refusal': 91, 'script': 89, 'profanity_in_clean_class': 131, 'parse': 21, 'grooming_sexualised': 31, 'adjacent_dup': 1, 'explicit': 1}
+  26750/69624 ok=26381 rate=12.4/s usd=5.202 fails={'refusal': 92, 'script': 91, 'profanity_in_clean_class': 132, 'parse': 21, 'grooming_sexualised': 31, 'adjacent_dup': 1, 'explicit': 1}
+  27000/69624 ok=26627 rate=12.4/s usd=5.252 fails={'refusal': 93, 'script': 92, 'profanity_in_clean_class': 134, 'parse': 21, 'grooming_sexualised': 31, 'adjacent_dup': 1, 'explicit': 1}
+  27250/69624 ok=26873 rate=12.4/s usd=5.301 fails={'refusal': 95, 'script': 94, 'profanity_in_clean_class': 134, 'parse': 21, 'grooming_sexualised': 31, 'adjacent_dup': 1, 'explicit': 1}
+  27500/69624 ok=27122 rate=12.4/s usd=5.351 fails={'refusal': 96, 'script': 94, 'profanity_in_clean_class': 134, 'parse': 21, 'grooming_sexualised': 31, 'adjacent_dup': 1, 'explicit': 1}
+  27750/69624 ok=27370 rate=12.4/s usd=5.399 fails={'refusal': 97, 'script': 95, 'profanity_in_clean_class': 134, 'parse': 21, 'grooming_sexualised': 31, 'adjacent_dup': 1, 'explicit': 1}
+  28000/69624 ok=27617 rate=12.4/s usd=5.448 fails={'refusal': 98, 'script': 97, 'profanity_in_clean_class': 134, 'parse': 21, 'grooming_sexualised': 31, 'adjacent_dup': 1, 'explicit': 1}
+  28250/69624 ok=27861 rate=12.4/s usd=5.497 fails={'refusal': 98, 'script': 99, 'profanity_in_clean_class': 137, 'parse': 22, 'grooming_sexualised': 31, 'adjacent_dup': 1, 'explicit': 1}
+  28500/69624 ok=28107 rate=12.4/s usd=5.549 fails={'refusal': 98, 'script': 100, 'profanity_in_clean_class': 138, 'parse': 24, 'grooming_sexualised': 31, 'adjacent_dup': 1, 'explicit': 1}
+  28750/69624 ok=28355 rate=12.4/s usd=5.593 fails={'refusal': 98, 'script': 100, 'profanity_in_clean_class': 140, 'parse': 24, 'grooming_sexualised': 31, 'adjacent_dup': 1, 'explicit': 1}
+  29000/69624 ok=28602 rate=12.5/s usd=5.640 fails={'refusal': 98, 'script': 101, 'profanity_in_clean_class': 141, 'parse': 25, 'grooming_sexualised': 31, 'adjacent_dup': 1, 'explicit': 1}
+  29250/69624 ok=28848 rate=12.5/s usd=5.691 fails={'refusal': 98, 'script': 102, 'profanity_in_clean_class': 142, 'parse': 26, 'grooming_sexualised': 32, 'adjacent_dup': 1, 'explicit': 1}
+  29500/69624 ok=29096 rate=12.5/s usd=5.738 fails={'refusal': 99, 'script': 103, 'profanity_in_clean_class': 142, 'parse': 26, 'grooming_sexualised': 32, 'adjacent_dup': 1, 'explicit': 1}
+  29750/69624 ok=29342 rate=12.5/s usd=5.789 fails={'refusal': 101, 'script': 104, 'profanity_in_clean_class': 143, 'parse': 26, 'grooming_sexualised': 32, 'adjacent_dup': 1, 'explicit': 1}
+  30000/69624 ok=29588 rate=12.5/s usd=5.841 fails={'refusal': 102, 'script': 105, 'profanity_in_clean_class': 144, 'parse': 27, 'grooming_sexualised': 32, 'adjacent_dup': 1, 'explicit': 1}
+  30250/69624 ok=29833 rate=12.5/s usd=5.891 fails={'refusal': 104, 'script': 106, 'profanity_in_clean_class': 145, 'parse': 28, 'grooming_sexualised': 32, 'adjacent_dup': 1, 'explicit': 1}
+  30500/69624 ok=30080 rate=12.5/s usd=5.941 fails={'refusal': 104, 'script': 107, 'profanity_in_clean_class': 147, 'parse': 28, 'grooming_sexualised': 32, 'adjacent_dup': 1, 'explicit': 1}
+  30750/69624 ok=30330 rate=12.5/s usd=5.990 fails={'refusal': 104, 'script': 107, 'profanity_in_clean_class': 147, 'parse': 28, 'grooming_sexualised': 32, 'adjacent_dup': 1, 'explicit': 1}
+  31000/69624 ok=30577 rate=12.5/s usd=6.040 fails={'refusal': 105, 'script': 108, 'profanity_in_clean_class': 147, 'parse': 29, 'grooming_sexualised': 32, 'adjacent_dup': 1, 'explicit': 1}
+  31250/69624 ok=30827 rate=12.5/s usd=6.087 fails={'refusal': 105, 'script': 108, 'profanity_in_clean_class': 147, 'parse': 29, 'grooming_sexualised': 32, 'adjacent_dup': 1, 'explicit': 1}
+  31500/69624 ok=31073 rate=12.5/s usd=6.138 fails={'refusal': 106, 'script': 109, 'profanity_in_clean_class': 149, 'parse': 29, 'grooming_sexualised': 32, 'adjacent_dup': 1, 'explicit': 1}
+  31750/69624 ok=31320 rate=12.5/s usd=6.187 fails={'refusal': 107, 'script': 110, 'profanity_in_clean_class': 150, 'parse': 29, 'grooming_sexualised': 32, 'adjacent_dup': 1, 'explicit': 1}
+  32000/69624 ok=31566 rate=12.5/s usd=6.237 fails={'refusal': 110, 'script': 111, 'profanity_in_clean_class': 150, 'parse': 29, 'grooming_sexualised': 32, 'adjacent_dup': 1, 'explicit': 1}
+  32250/69624 ok=31810 rate=12.5/s usd=6.287 fails={'refusal': 111, 'script': 112, 'profanity_in_clean_class': 153, 'parse': 30, 'grooming_sexualised': 32, 'adjacent_dup': 1, 'explicit': 1}
+  32500/69624 ok=32056 rate=12.5/s usd=6.335 fails={'refusal': 113, 'script': 112, 'profanity_in_clean_class': 155, 'parse': 30, 'grooming_sexualised': 32, 'adjacent_dup': 1, 'explicit': 1}
+  32750/69624 ok=32301 rate=12.5/s usd=6.383 fails={'refusal': 115, 'script': 113, 'profanity_in_clean_class': 156, 'parse': 30, 'grooming_sexualised': 33, 'adjacent_dup': 1, 'explicit': 1}
+  33000/69624 ok=32546 rate=12.5/s usd=6.435 fails={'refusal': 116, 'script': 115, 'profanity_in_clean_class': 157, 'parse': 30, 'grooming_sexualised': 34, 'adjacent_dup': 1, 'explicit': 1}
+  33250/69624 ok=32792 rate=12.5/s usd=6.481 fails={'refusal': 118, 'script': 116, 'profanity_in_clean_class': 158, 'parse': 30, 'grooming_sexualised': 34, 'adjacent_dup': 1, 'explicit': 1}
+  33500/69624 ok=33040 rate=12.5/s usd=6.533 fails={'refusal': 118, 'script': 117, 'profanity_in_clean_class': 159, 'parse': 30, 'grooming_sexualised': 34, 'adjacent_dup': 1, 'explicit': 1}
+  33750/69624 ok=33287 rate=12.5/s usd=6.582 fails={'refusal': 120, 'script': 117, 'profanity_in_clean_class': 160, 'parse': 30, 'grooming_sexualised': 34, 'adjacent_dup': 1, 'explicit': 1}
+  34000/69624 ok=33533 rate=12.5/s usd=6.633 fails={'refusal': 122, 'script': 118, 'profanity_in_clean_class': 160, 'parse': 30, 'grooming_sexualised': 35, 'adjacent_dup': 1, 'explicit': 1}
+  34250/69624 ok=33780 rate=12.5/s usd=6.680 fails={'refusal': 124, 'script': 118, 'profanity_in_clean_class': 161, 'parse': 30, 'grooming_sexualised': 35, 'adjacent_dup': 1, 'explicit': 1}
+  34500/69624 ok=34028 rate=12.5/s usd=6.724 fails={'refusal': 125, 'script': 119, 'profanity_in_clean_class': 161, 'parse': 30, 'grooming_sexualised': 35, 'adjacent_dup': 1, 'explicit': 1}
+  34750/69624 ok=34275 rate=12.5/s usd=6.773 fails={'refusal': 126, 'script': 120, 'profanity_in_clean_class': 162, 'parse': 30, 'grooming_sexualised': 35, 'adjacent_dup': 1, 'explicit': 1}
+  35000/69624 ok=34521 rate=12.5/s usd=6.822 fails={'refusal': 126, 'script': 122, 'profanity_in_clean_class': 163, 'parse': 30, 'grooming_sexualised': 35, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  35250/69624 ok=34768 rate=12.5/s usd=6.872 fails={'refusal': 126, 'script': 122, 'profanity_in_clean_class': 166, 'parse': 30, 'grooming_sexualised': 35, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  35500/69624 ok=35010 rate=12.5/s usd=6.921 fails={'refusal': 127, 'script': 122, 'profanity_in_clean_class': 171, 'parse': 31, 'grooming_sexualised': 36, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  35750/69624 ok=35257 rate=12.5/s usd=6.967 fails={'refusal': 128, 'script': 123, 'profanity_in_clean_class': 172, 'parse': 31, 'grooming_sexualised': 36, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  36000/69624 ok=35505 rate=12.5/s usd=7.013 fails={'refusal': 128, 'script': 123, 'profanity_in_clean_class': 173, 'parse': 31, 'grooming_sexualised': 37, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  36250/69624 ok=35745 rate=12.5/s usd=7.063 fails={'refusal': 130, 'script': 126, 'profanity_in_clean_class': 177, 'parse': 31, 'grooming_sexualised': 38, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  36500/69624 ok=35993 rate=12.5/s usd=7.109 fails={'refusal': 130, 'script': 126, 'profanity_in_clean_class': 179, 'parse': 31, 'grooming_sexualised': 38, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  36750/69624 ok=36239 rate=12.5/s usd=7.160 fails={'refusal': 130, 'script': 127, 'profanity_in_clean_class': 182, 'parse': 31, 'grooming_sexualised': 38, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  37000/69624 ok=36485 rate=12.5/s usd=7.207 fails={'refusal': 130, 'script': 131, 'profanity_in_clean_class': 182, 'parse': 31, 'grooming_sexualised': 38, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  37250/69624 ok=36729 rate=12.5/s usd=7.256 fails={'refusal': 131, 'script': 132, 'profanity_in_clean_class': 186, 'parse': 31, 'grooming_sexualised': 38, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  37500/69624 ok=36976 rate=12.4/s usd=7.305 fails={'refusal': 133, 'script': 133, 'profanity_in_clean_class': 186, 'parse': 31, 'grooming_sexualised': 38, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  37750/69624 ok=37221 rate=12.4/s usd=7.356 fails={'refusal': 134, 'script': 133, 'profanity_in_clean_class': 189, 'parse': 31, 'grooming_sexualised': 39, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  38000/69624 ok=37466 rate=12.4/s usd=7.408 fails={'refusal': 134, 'script': 136, 'profanity_in_clean_class': 190, 'parse': 32, 'grooming_sexualised': 39, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  38250/69624 ok=37711 rate=12.4/s usd=7.455 fails={'refusal': 134, 'script': 140, 'profanity_in_clean_class': 191, 'parse': 32, 'grooming_sexualised': 39, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  38500/69624 ok=37959 rate=12.4/s usd=7.503 fails={'refusal': 135, 'script': 140, 'profanity_in_clean_class': 192, 'parse': 32, 'grooming_sexualised': 39, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  38750/69624 ok=38206 rate=12.4/s usd=7.552 fails={'refusal': 135, 'script': 140, 'profanity_in_clean_class': 193, 'parse': 33, 'grooming_sexualised': 40, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  39000/69624 ok=38450 rate=12.4/s usd=7.600 fails={'refusal': 137, 'script': 142, 'profanity_in_clean_class': 194, 'parse': 33, 'grooming_sexualised': 41, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  39250/69624 ok=38695 rate=12.4/s usd=7.648 fails={'refusal': 139, 'script': 142, 'profanity_in_clean_class': 194, 'parse': 36, 'grooming_sexualised': 41, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  39500/69624 ok=38939 rate=12.4/s usd=7.701 fails={'refusal': 140, 'script': 143, 'profanity_in_clean_class': 197, 'parse': 37, 'grooming_sexualised': 41, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  39750/69624 ok=39186 rate=12.4/s usd=7.748 fails={'refusal': 140, 'script': 144, 'profanity_in_clean_class': 198, 'parse': 38, 'grooming_sexualised': 41, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  40000/69624 ok=39435 rate=12.4/s usd=7.800 fails={'refusal': 140, 'script': 144, 'profanity_in_clean_class': 199, 'parse': 38, 'grooming_sexualised': 41, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  40250/69624 ok=39683 rate=12.4/s usd=7.850 fails={'refusal': 140, 'script': 145, 'profanity_in_clean_class': 200, 'parse': 38, 'grooming_sexualised': 41, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  40500/69624 ok=39930 rate=12.4/s usd=7.899 fails={'refusal': 141, 'script': 145, 'profanity_in_clean_class': 200, 'parse': 39, 'grooming_sexualised': 42, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  40750/69624 ok=40180 rate=12.4/s usd=7.945 fails={'refusal': 141, 'script': 145, 'profanity_in_clean_class': 200, 'parse': 39, 'grooming_sexualised': 42, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  41000/69624 ok=40426 rate=12.4/s usd=7.993 fails={'refusal': 142, 'script': 146, 'profanity_in_clean_class': 201, 'parse': 39, 'grooming_sexualised': 43, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  41250/69624 ok=40671 rate=12.5/s usd=8.044 fails={'refusal': 142, 'script': 147, 'profanity_in_clean_class': 204, 'parse': 40, 'grooming_sexualised': 43, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  41500/69624 ok=40915 rate=12.5/s usd=8.090 fails={'refusal': 144, 'script': 149, 'profanity_in_clean_class': 204, 'parse': 41, 'grooming_sexualised': 44, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  41750/69624 ok=41163 rate=12.5/s usd=8.139 fails={'refusal': 144, 'script': 149, 'profanity_in_clean_class': 205, 'parse': 42, 'grooming_sexualised': 44, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  42000/69624 ok=41409 rate=12.5/s usd=8.194 fails={'refusal': 144, 'script': 150, 'profanity_in_clean_class': 207, 'parse': 42, 'grooming_sexualised': 45, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  42250/69624 ok=41652 rate=12.5/s usd=8.245 fails={'refusal': 146, 'script': 152, 'profanity_in_clean_class': 209, 'parse': 43, 'grooming_sexualised': 45, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  42500/69624 ok=41897 rate=12.4/s usd=8.298 fails={'refusal': 147, 'script': 154, 'profanity_in_clean_class': 210, 'parse': 43, 'grooming_sexualised': 46, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  42750/69624 ok=42142 rate=12.5/s usd=8.345 fails={'refusal': 149, 'script': 154, 'profanity_in_clean_class': 211, 'parse': 44, 'grooming_sexualised': 47, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  43000/69624 ok=42388 rate=12.5/s usd=8.393 fails={'refusal': 150, 'script': 154, 'profanity_in_clean_class': 213, 'parse': 45, 'grooming_sexualised': 47, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  43250/69624 ok=42637 rate=12.5/s usd=8.439 fails={'refusal': 151, 'script': 154, 'profanity_in_clean_class': 213, 'parse': 45, 'grooming_sexualised': 47, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  43500/69624 ok=42884 rate=12.5/s usd=8.487 fails={'refusal': 151, 'script': 154, 'profanity_in_clean_class': 215, 'parse': 45, 'grooming_sexualised': 48, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  43750/69624 ok=43130 rate=12.5/s usd=8.539 fails={'refusal': 152, 'script': 156, 'profanity_in_clean_class': 216, 'parse': 45, 'grooming_sexualised': 48, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  44000/69624 ok=43376 rate=12.5/s usd=8.591 fails={'refusal': 154, 'script': 156, 'profanity_in_clean_class': 217, 'parse': 45, 'grooming_sexualised': 49, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  44250/69624 ok=43619 rate=12.5/s usd=8.640 fails={'refusal': 157, 'script': 156, 'profanity_in_clean_class': 220, 'parse': 46, 'grooming_sexualised': 49, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  44500/69624 ok=43866 rate=12.5/s usd=8.690 fails={'refusal': 158, 'script': 156, 'profanity_in_clean_class': 221, 'parse': 46, 'grooming_sexualised': 50, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  44750/69624 ok=44114 rate=12.5/s usd=8.740 fails={'refusal': 158, 'script': 157, 'profanity_in_clean_class': 222, 'parse': 46, 'grooming_sexualised': 50, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  45000/69624 ok=44361 rate=12.5/s usd=8.787 fails={'refusal': 159, 'script': 157, 'profanity_in_clean_class': 224, 'parse': 46, 'grooming_sexualised': 50, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  45250/69624 ok=44606 rate=12.5/s usd=8.837 fails={'refusal': 160, 'script': 158, 'profanity_in_clean_class': 226, 'parse': 46, 'grooming_sexualised': 51, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  45500/69624 ok=44853 rate=12.5/s usd=8.886 fails={'refusal': 162, 'script': 158, 'profanity_in_clean_class': 227, 'parse': 46, 'grooming_sexualised': 51, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  45750/69624 ok=45097 rate=12.5/s usd=8.935 fails={'refusal': 163, 'script': 160, 'profanity_in_clean_class': 230, 'parse': 46, 'grooming_sexualised': 51, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  46000/69624 ok=45342 rate=12.5/s usd=8.985 fails={'refusal': 165, 'script': 162, 'profanity_in_clean_class': 231, 'parse': 46, 'grooming_sexualised': 51, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  46250/69624 ok=45585 rate=12.5/s usd=9.035 fails={'refusal': 165, 'script': 164, 'profanity_in_clean_class': 236, 'parse': 46, 'grooming_sexualised': 51, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  46500/69624 ok=45831 rate=12.5/s usd=9.084 fails={'refusal': 165, 'script': 166, 'profanity_in_clean_class': 237, 'parse': 47, 'grooming_sexualised': 51, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  46750/69624 ok=46077 rate=12.5/s usd=9.130 fails={'refusal': 165, 'script': 168, 'profanity_in_clean_class': 238, 'parse': 47, 'grooming_sexualised': 52, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  47000/69624 ok=46319 rate=12.5/s usd=9.179 fails={'refusal': 166, 'script': 173, 'profanity_in_clean_class': 240, 'parse': 47, 'grooming_sexualised': 52, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  47250/69624 ok=46566 rate=12.5/s usd=9.231 fails={'refusal': 166, 'script': 174, 'profanity_in_clean_class': 241, 'parse': 48, 'grooming_sexualised': 52, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  47500/69624 ok=46814 rate=12.5/s usd=9.279 fails={'refusal': 167, 'script': 175, 'profanity_in_clean_class': 241, 'parse': 48, 'grooming_sexualised': 52, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  47750/69624 ok=47064 rate=12.5/s usd=9.328 fails={'refusal': 167, 'script': 175, 'profanity_in_clean_class': 241, 'parse': 48, 'grooming_sexualised': 52, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  48000/69624 ok=47311 rate=12.5/s usd=9.379 fails={'refusal': 169, 'script': 175, 'profanity_in_clean_class': 242, 'parse': 48, 'grooming_sexualised': 52, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  48250/69624 ok=47559 rate=12.5/s usd=9.425 fails={'refusal': 170, 'script': 175, 'profanity_in_clean_class': 242, 'parse': 49, 'grooming_sexualised': 52, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  48500/69624 ok=47805 rate=12.5/s usd=9.475 fails={'refusal': 171, 'script': 176, 'profanity_in_clean_class': 244, 'parse': 49, 'grooming_sexualised': 52, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  48750/69624 ok=48052 rate=12.5/s usd=9.523 fails={'refusal': 171, 'script': 179, 'profanity_in_clean_class': 244, 'parse': 49, 'grooming_sexualised': 52, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  49000/69624 ok=48300 rate=12.5/s usd=9.572 fails={'refusal': 172, 'script': 179, 'profanity_in_clean_class': 245, 'parse': 49, 'grooming_sexualised': 52, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  49250/69624 ok=48546 rate=12.5/s usd=9.619 fails={'refusal': 173, 'script': 180, 'profanity_in_clean_class': 246, 'parse': 49, 'grooming_sexualised': 53, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  49500/69624 ok=48793 rate=12.5/s usd=9.667 fails={'refusal': 174, 'script': 181, 'profanity_in_clean_class': 247, 'parse': 49, 'grooming_sexualised': 53, 'adjacent_dup': 1, 'explicit': 1, 'pair_line_changed': 1}
+  49750/69624 ok=49037 rate=12.5/s usd=9.717 fails={'refusal': 175, 'script': 181, 'profanity_in_clean_class': 248, 'parse': 50, 'grooming_sexualised': 55, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  50000/69624 ok=49283 rate=12.5/s usd=9.764 fails={'refusal': 175, 'script': 183, 'profanity_in_clean_class': 249, 'parse': 51, 'grooming_sexualised': 55, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  50250/69624 ok=49531 rate=12.5/s usd=9.813 fails={'refusal': 177, 'script': 183, 'profanity_in_clean_class': 249, 'parse': 51, 'grooming_sexualised': 55, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  50500/69624 ok=49775 rate=12.5/s usd=9.862 fails={'refusal': 180, 'script': 184, 'profanity_in_clean_class': 250, 'parse': 52, 'grooming_sexualised': 55, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  50750/69624 ok=50020 rate=12.5/s usd=9.909 fails={'refusal': 180, 'script': 186, 'profanity_in_clean_class': 253, 'parse': 52, 'grooming_sexualised': 55, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  51000/69624 ok=50268 rate=12.5/s usd=9.954 fails={'refusal': 180, 'script': 187, 'profanity_in_clean_class': 254, 'parse': 52, 'grooming_sexualised': 55, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  51250/69624 ok=50518 rate=12.5/s usd=10.002 fails={'refusal': 180, 'script': 187, 'profanity_in_clean_class': 254, 'parse': 52, 'grooming_sexualised': 55, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  51500/69624 ok=50765 rate=12.5/s usd=10.053 fails={'refusal': 180, 'script': 189, 'profanity_in_clean_class': 255, 'parse': 52, 'grooming_sexualised': 55, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  51750/69624 ok=51011 rate=12.5/s usd=10.100 fails={'refusal': 180, 'script': 190, 'profanity_in_clean_class': 257, 'parse': 53, 'grooming_sexualised': 55, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  52000/69624 ok=51259 rate=12.5/s usd=10.150 fails={'refusal': 181, 'script': 190, 'profanity_in_clean_class': 258, 'parse': 53, 'grooming_sexualised': 55, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  52250/69624 ok=51502 rate=12.5/s usd=10.197 fails={'refusal': 184, 'script': 192, 'profanity_in_clean_class': 258, 'parse': 53, 'grooming_sexualised': 57, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  52500/69624 ok=51750 rate=12.5/s usd=10.249 fails={'refusal': 184, 'script': 193, 'profanity_in_clean_class': 259, 'parse': 53, 'grooming_sexualised': 57, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  52750/69624 ok=51997 rate=12.5/s usd=10.297 fails={'refusal': 184, 'script': 193, 'profanity_in_clean_class': 261, 'parse': 54, 'grooming_sexualised': 57, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  53000/69624 ok=52244 rate=12.6/s usd=10.346 fails={'refusal': 184, 'script': 193, 'profanity_in_clean_class': 264, 'parse': 54, 'grooming_sexualised': 57, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  53250/69624 ok=52492 rate=12.5/s usd=10.396 fails={'refusal': 184, 'script': 193, 'profanity_in_clean_class': 265, 'parse': 54, 'grooming_sexualised': 58, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  53500/69624 ok=52739 rate=12.5/s usd=10.448 fails={'refusal': 185, 'script': 193, 'profanity_in_clean_class': 265, 'parse': 55, 'grooming_sexualised': 59, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  53750/69624 ok=52985 rate=12.6/s usd=10.496 fails={'refusal': 188, 'script': 194, 'profanity_in_clean_class': 265, 'parse': 55, 'grooming_sexualised': 59, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  54000/69624 ok=53231 rate=12.6/s usd=10.546 fails={'refusal': 189, 'script': 194, 'profanity_in_clean_class': 268, 'parse': 55, 'grooming_sexualised': 59, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  54250/69624 ok=53476 rate=12.6/s usd=10.598 fails={'refusal': 191, 'script': 194, 'profanity_in_clean_class': 270, 'parse': 56, 'grooming_sexualised': 59, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  54500/69624 ok=53717 rate=12.6/s usd=10.646 fails={'refusal': 194, 'script': 195, 'profanity_in_clean_class': 273, 'parse': 56, 'grooming_sexualised': 61, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  54750/69624 ok=53963 rate=12.6/s usd=10.694 fails={'refusal': 196, 'script': 195, 'profanity_in_clean_class': 275, 'parse': 56, 'grooming_sexualised': 61, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  55000/69624 ok=54211 rate=12.6/s usd=10.740 fails={'refusal': 197, 'script': 196, 'profanity_in_clean_class': 275, 'parse': 56, 'grooming_sexualised': 61, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  55250/69624 ok=54455 rate=12.6/s usd=10.789 fails={'refusal': 198, 'script': 197, 'profanity_in_clean_class': 277, 'parse': 56, 'grooming_sexualised': 63, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  55500/69624 ok=54703 rate=12.6/s usd=10.838 fails={'refusal': 198, 'script': 197, 'profanity_in_clean_class': 279, 'parse': 56, 'grooming_sexualised': 63, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  55750/69624 ok=54949 rate=12.6/s usd=10.886 fails={'refusal': 200, 'script': 198, 'profanity_in_clean_class': 280, 'parse': 56, 'grooming_sexualised': 63, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  56000/69624 ok=55193 rate=12.6/s usd=10.936 fails={'refusal': 202, 'script': 201, 'profanity_in_clean_class': 281, 'parse': 56, 'grooming_sexualised': 63, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  56250/69624 ok=55438 rate=12.6/s usd=10.986 fails={'refusal': 203, 'script': 203, 'profanity_in_clean_class': 283, 'parse': 56, 'grooming_sexualised': 63, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  56500/69624 ok=55683 rate=12.6/s usd=11.034 fails={'refusal': 204, 'script': 203, 'profanity_in_clean_class': 286, 'parse': 56, 'grooming_sexualised': 64, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  56750/69624 ok=55930 rate=12.6/s usd=11.084 fails={'refusal': 204, 'script': 204, 'profanity_in_clean_class': 287, 'parse': 56, 'grooming_sexualised': 65, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  57000/69624 ok=56175 rate=12.6/s usd=11.133 fails={'refusal': 206, 'script': 205, 'profanity_in_clean_class': 289, 'parse': 56, 'grooming_sexualised': 65, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  57250/69624 ok=56421 rate=12.6/s usd=11.179 fails={'refusal': 207, 'script': 206, 'profanity_in_clean_class': 291, 'parse': 56, 'grooming_sexualised': 65, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  57500/69624 ok=56669 rate=12.6/s usd=11.229 fails={'refusal': 207, 'script': 207, 'profanity_in_clean_class': 292, 'parse': 56, 'grooming_sexualised': 65, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  57750/69624 ok=56916 rate=12.6/s usd=11.275 fails={'refusal': 207, 'script': 208, 'profanity_in_clean_class': 293, 'parse': 56, 'grooming_sexualised': 66, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  58000/69624 ok=57163 rate=12.6/s usd=11.325 fails={'refusal': 207, 'script': 209, 'profanity_in_clean_class': 293, 'parse': 57, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  58250/69624 ok=57410 rate=12.6/s usd=11.376 fails={'refusal': 207, 'script': 210, 'profanity_in_clean_class': 295, 'parse': 57, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  58500/69624 ok=57655 rate=12.6/s usd=11.427 fails={'refusal': 209, 'script': 210, 'profanity_in_clean_class': 298, 'parse': 57, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  58750/69624 ok=57904 rate=12.6/s usd=11.475 fails={'refusal': 209, 'script': 210, 'profanity_in_clean_class': 298, 'parse': 58, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  59000/69624 ok=58148 rate=12.6/s usd=11.523 fails={'refusal': 211, 'script': 211, 'profanity_in_clean_class': 301, 'parse': 58, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  59250/69624 ok=58397 rate=12.6/s usd=11.572 fails={'refusal': 211, 'script': 211, 'profanity_in_clean_class': 302, 'parse': 58, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  59500/69624 ok=58642 rate=12.6/s usd=11.621 fails={'refusal': 212, 'script': 214, 'profanity_in_clean_class': 303, 'parse': 58, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  59750/69624 ok=58889 rate=12.6/s usd=11.671 fails={'refusal': 212, 'script': 215, 'profanity_in_clean_class': 305, 'parse': 58, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  60000/69624 ok=59136 rate=12.5/s usd=11.721 fails={'refusal': 213, 'script': 215, 'profanity_in_clean_class': 307, 'parse': 58, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  60250/69624 ok=59383 rate=12.5/s usd=11.774 fails={'refusal': 214, 'script': 215, 'profanity_in_clean_class': 309, 'parse': 58, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  60500/69624 ok=59628 rate=12.5/s usd=11.822 fails={'refusal': 217, 'script': 216, 'profanity_in_clean_class': 310, 'parse': 58, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  60750/69624 ok=59875 rate=12.5/s usd=11.870 fails={'refusal': 217, 'script': 217, 'profanity_in_clean_class': 312, 'parse': 58, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  61000/69624 ok=60122 rate=12.5/s usd=11.917 fails={'refusal': 218, 'script': 217, 'profanity_in_clean_class': 314, 'parse': 58, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  61250/69624 ok=60370 rate=12.5/s usd=11.963 fails={'refusal': 219, 'script': 217, 'profanity_in_clean_class': 314, 'parse': 59, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  61500/69624 ok=60616 rate=12.5/s usd=12.013 fails={'refusal': 220, 'script': 217, 'profanity_in_clean_class': 315, 'parse': 61, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  61750/69624 ok=60864 rate=12.5/s usd=12.061 fails={'refusal': 220, 'script': 219, 'profanity_in_clean_class': 315, 'parse': 61, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  62000/69624 ok=61110 rate=12.5/s usd=12.110 fails={'refusal': 221, 'script': 221, 'profanity_in_clean_class': 316, 'parse': 61, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  62250/69624 ok=61357 rate=12.5/s usd=12.157 fails={'refusal': 222, 'script': 221, 'profanity_in_clean_class': 318, 'parse': 61, 'grooming_sexualised': 67, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  62500/69624 ok=61603 rate=12.5/s usd=12.205 fails={'refusal': 224, 'script': 222, 'profanity_in_clean_class': 318, 'parse': 61, 'grooming_sexualised': 68, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  62750/69624 ok=61849 rate=12.5/s usd=12.256 fails={'refusal': 226, 'script': 222, 'profanity_in_clean_class': 320, 'parse': 61, 'grooming_sexualised': 68, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  63000/69624 ok=62096 rate=12.5/s usd=12.301 fails={'refusal': 226, 'script': 223, 'profanity_in_clean_class': 322, 'parse': 61, 'grooming_sexualised': 68, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  63250/69624 ok=62345 rate=12.5/s usd=12.346 fails={'refusal': 226, 'script': 223, 'profanity_in_clean_class': 323, 'parse': 61, 'grooming_sexualised': 68, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  63500/69624 ok=62593 rate=12.6/s usd=12.392 fails={'refusal': 226, 'script': 224, 'profanity_in_clean_class': 324, 'parse': 61, 'grooming_sexualised': 68, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  63750/69624 ok=62837 rate=12.6/s usd=12.444 fails={'refusal': 227, 'script': 224, 'profanity_in_clean_class': 328, 'parse': 62, 'grooming_sexualised': 68, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  64000/69624 ok=63085 rate=12.6/s usd=12.491 fails={'refusal': 227, 'script': 225, 'profanity_in_clean_class': 328, 'parse': 62, 'grooming_sexualised': 69, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  64250/69624 ok=63334 rate=12.6/s usd=12.537 fails={'refusal': 227, 'script': 225, 'profanity_in_clean_class': 329, 'parse': 62, 'grooming_sexualised': 69, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  64500/69624 ok=63581 rate=12.6/s usd=12.589 fails={'refusal': 228, 'script': 225, 'profanity_in_clean_class': 330, 'parse': 62, 'grooming_sexualised': 70, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  64750/69624 ok=63824 rate=12.6/s usd=12.635 fails={'refusal': 228, 'script': 228, 'profanity_in_clean_class': 332, 'parse': 63, 'grooming_sexualised': 71, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  65000/69624 ok=64072 rate=12.6/s usd=12.680 fails={'refusal': 229, 'script': 229, 'profanity_in_clean_class': 332, 'parse': 63, 'grooming_sexualised': 71, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  65250/69624 ok=64316 rate=12.6/s usd=12.725 fails={'refusal': 230, 'script': 231, 'profanity_in_clean_class': 333, 'parse': 64, 'grooming_sexualised': 72, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  65500/69624 ok=64563 rate=12.6/s usd=12.774 fails={'refusal': 231, 'script': 232, 'profanity_in_clean_class': 334, 'parse': 64, 'grooming_sexualised': 72, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  65750/69624 ok=64810 rate=12.6/s usd=12.818 fails={'refusal': 231, 'script': 233, 'profanity_in_clean_class': 335, 'parse': 64, 'grooming_sexualised': 73, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  66000/69624 ok=65057 rate=12.6/s usd=12.869 fails={'refusal': 231, 'script': 234, 'profanity_in_clean_class': 337, 'parse': 64, 'grooming_sexualised': 73, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  66250/69624 ok=65297 rate=12.6/s usd=12.918 fails={'refusal': 234, 'script': 237, 'profanity_in_clean_class': 341, 'parse': 64, 'grooming_sexualised': 73, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  66500/69624 ok=65544 rate=12.6/s usd=12.967 fails={'refusal': 235, 'script': 239, 'profanity_in_clean_class': 341, 'parse': 64, 'grooming_sexualised': 73, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  66750/69624 ok=65791 rate=12.6/s usd=13.018 fails={'refusal': 236, 'script': 240, 'profanity_in_clean_class': 342, 'parse': 64, 'grooming_sexualised': 73, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  67000/69624 ok=66039 rate=12.6/s usd=13.062 fails={'refusal': 236, 'script': 241, 'profanity_in_clean_class': 342, 'parse': 65, 'grooming_sexualised': 73, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  67250/69624 ok=66287 rate=12.6/s usd=13.110 fails={'refusal': 236, 'script': 242, 'profanity_in_clean_class': 343, 'parse': 65, 'grooming_sexualised': 73, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  67500/69624 ok=66535 rate=12.6/s usd=13.164 fails={'refusal': 236, 'script': 242, 'profanity_in_clean_class': 344, 'parse': 65, 'grooming_sexualised': 74, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  67750/69624 ok=66783 rate=12.6/s usd=13.211 fails={'refusal': 237, 'script': 242, 'profanity_in_clean_class': 344, 'parse': 66, 'grooming_sexualised': 74, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  68000/69624 ok=67032 rate=12.6/s usd=13.257 fails={'refusal': 237, 'script': 242, 'profanity_in_clean_class': 345, 'parse': 66, 'grooming_sexualised': 74, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  68250/69624 ok=67280 rate=12.6/s usd=13.306 fails={'refusal': 237, 'script': 242, 'profanity_in_clean_class': 346, 'parse': 66, 'grooming_sexualised': 75, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  68500/69624 ok=67525 rate=12.6/s usd=13.353 fails={'refusal': 238, 'script': 243, 'profanity_in_clean_class': 348, 'parse': 66, 'grooming_sexualised': 76, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  68750/69624 ok=67773 rate=12.6/s usd=13.401 fails={'refusal': 238, 'script': 245, 'profanity_in_clean_class': 348, 'parse': 66, 'grooming_sexualised': 76, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  69000/69624 ok=68019 rate=12.6/s usd=13.451 fails={'refusal': 238, 'script': 246, 'profanity_in_clean_class': 351, 'parse': 66, 'grooming_sexualised': 76, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  69250/69624 ok=68264 rate=12.6/s usd=13.498 fails={'refusal': 238, 'script': 250, 'profanity_in_clean_class': 352, 'parse': 66, 'grooming_sexualised': 76, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  69500/69624 ok=68508 rate=12.6/s usd=13.546 fails={'refusal': 241, 'script': 253, 'profanity_in_clean_class': 352, 'parse': 66, 'grooming_sexualised': 76, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+  69624/69624 ok=68631 rate=12.6/s usd=13.571 fails={'refusal': 242, 'script': 253, 'profanity_in_clean_class': 352, 'parse': 66, 'grooming_sexualised': 76, 'adjacent_dup': 1, 'explicit': 2, 'pair_line_changed': 1}
+all cells filled
+ledger {'n_calls': 121825, 'input_tokens': 27752340, 'output_tokens': 29848193, 'usd_estimated': 22.071767}
+wrote dataset tree: total=105000 splits={'train': 83672, 'test': 10563, 'val': 10765} len={3: 26250, 5: 26250, 7: 26250, 10: 26250} script={'english': 35000, 'hindi_devanagari': 35000, 'hinglish': 35000} label={'benign': 21000, 'friendly_sarcasm': 21000, 'hostile_abuse': 21000, 'predatory_grooming': 21000, 'sexual_harassment': 21000}
