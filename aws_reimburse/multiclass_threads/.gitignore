@@ -1,0 +1,15 @@
+# model weights / checkpoints (470 MB each) - keep on S3 / local
+artifacts/
+artifacts_v2/
+
+# regenerable or oversized
+dataset/_cache/
+dataset/all/
+site/data/
+external_eval/data/
+external_eval/results/*.npy
+
+# contains AWS account id
+cloud/run_state.json
+logs/cloud_job.log
+external_eval/results/preds_*.jsonl   # contains third-party text

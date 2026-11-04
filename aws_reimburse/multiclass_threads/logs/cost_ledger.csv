@@ -1,0 +1,12 @@
+date_utc,job,service,model,n_calls,input_tokens,output_tokens,usd_estimated,notes
+2026-11-03,multiclass_dataset_v2,bedrock-mantle,qwen.qwen3-32b,28211,6467431,6920452,5.122386,
+2026-11-03,multiclass_dataset_v2,bedrock-runtime,qwen.qwen3-32b-v1:0,17608,4042238,4390472,3.240619,
+2026-11-03,multiclass_thread_gen,bedrock-mantle,qwen.qwen3-32b,1600,184308,183303,0.137628,
+2026-11-03,multiclass_train,local,local,1,0,0,0.000000,
+2026-11-03,multiclass_train_v2,local,local,3,0,0,0.000000,
+2026-11-04,multiclass_dataset_v2,bedrock-mantle,qwen.qwen3-32b,72301,16576763,17842279,13.191882,
+2026-11-04,multiclass_dataset_v2,bedrock-runtime,qwen.qwen3-32b-v1:0,2101,481600,511687,0.379252,
+2026-11-04,multiclass_train_v2,local,local,1,0,0,0.000000,
+2026-11-04,multiclass_train_v2_gpu,ebs_gp3,100GB,1,0,0,0.003613,
+2026-11-04,multiclass_train_v2_gpu,ec2,g4dn.xlarge,1,0,0,0.173434,
+2026-11-04,multiclass_train_v2_gpu,s3,standard,1,0,0,0.000010,

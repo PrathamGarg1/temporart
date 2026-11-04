@@ -1,0 +1,11 @@
+{
+  "instance_id": "i-0d39207cf74a78608",
+  "instance_type": "g4dn.xlarge",
+  "launch_utc": "2026-11-04T06:20:01+00:00",
+  "end_utc": "2026-11-04T06:39:48+00:00",
+  "hours": 0.3297,
+  "usd_ec2": 0.1734,
+  "usd_ebs": 0.0036,
+  "usd_s3": 0.0,
+  "usd_total": 0.1771
+}
