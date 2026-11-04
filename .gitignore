@@ -10,6 +10,14 @@ aws_train/downloaded/
 
 # Local environments and secrets
 .venv/
+.venv_codemix/
+
+# Regenerated flatten of the per-cell thread dataset (over GitHub's file limit)
+aws_reimburse/multiclass_threads/dataset/all/
+
+# Local training outputs
+aws_reimburse/multiclass_threads/artifacts/
+aws_reimburse/multiclass_threads/artifacts_v2/
 __pycache__/
 *.pyc
 *.env
