@@ -1,0 +1,20 @@
+% Figure 3: models, training and evaluation (verified against train_v2.py, train_gru.py, export_quantize.py, eval_*.py)
+\begin{tikzpicture}
+  \node[blk=gray!12, text width=2.4cm] (data) at (0.9,0) {\textbf{Dataset}\\105,000 threads\\train 83,672\\val 10,765\\test 10,563};
+  \node[blk=blue!8, text width=5.4cm] (A) at (5.75,2.1) {\textbf{A. Thread classifier}\\input: \texttt{last [SEP] prev$_{k-1}$ [TURN] \dots\ [TURN] prev$_1$}\\(latest context first, $\le$256 tokens)\\MiniLM-L12 multilingual, fine-tuned, 5-way};
+  \node[blk=blue!8, text width=5.4cm] (B) at (5.75,0) {\textbf{B. Last-message-only classifier}\\input: last message only ($\le$64 tokens)\\same model and training recipe as A};
+  \node[blk=blue!8, text width=5.4cm] (C) at (5.75,-2.2) {\textbf{C. Frozen MiniLM + GRU}\\each line encoded once: \texttt{in:}/\texttt{out:} + text, 384-d\\GRU(384$\to$128) $\to$ linear(128$\to$5), 198,021 weights};
+  \node[blk=orange!14, text width=4.4cm] (train) at (11.5,0) {\textbf{Training}\\A, B: 2 epochs, learning rate $4{\times}10^{-5}$, batch 32, fp16, word-embedding table frozen, one T4 GPU (19.8 min, \$0.18)\\C: AdamW, early stopping on validation macro-F1};
+  \node[blk=green!10, text width=3.2cm] (test) at (16.1,2.1) {\textbf{Synthetic test}\\10,563 threads: accuracy and macro-F1 by length, script, class; same-last-line pairs};
+  \node[blk=green!10, text width=3.2cm] (int8) at (16.1,0) {\textbf{INT8 export}\\ONNX, dynamic INT8 (A: 470.8 $\to$ 118.2\,MB); re-test on the same 10,563};
+  \node[blk=red!8, text width=3.2cm] (ext) at (16.1,-2.2) {\textbf{External check}\\zero-shot AUROC on CAD, ConvAbuse, PRISM (real, human-labelled)};
+  \draw[arr] (data.east) -- ++(3mm,0) |- (A.west);
+  \draw[arr] (data.east) -- (B.west);
+  \draw[arr] (data.east) -- ++(3mm,0) |- (C.west);
+  \draw[arr] (A.east) -- ++(3mm,0) |- (train.west);
+  \draw[arr] (B.east) -- (train.west);
+  \draw[arr] (C.east) -- ++(3mm,0) |- (train.west);
+  \draw[arr] (train.east) -- ++(3mm,0) |- (test.west);
+  \draw[arr] (test.south) -- (int8.north);
+  \draw[arr] (int8.south) -- (ext.north);
+\end{tikzpicture}

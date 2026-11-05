@@ -1,0 +1,18 @@
+% Figure 1: what runs inside the browser extension (verified against sw.js, narrative_cache.js, store.js)
+\begin{tikzpicture}[node distance=7mm and 5mm]
+  \node[blk=gray!12, text width=2.1cm] (wa) {\textbf{WhatsApp Web}\\incoming message\\in the page DOM};
+  \node[blk=blue!8, text width=2.5cm, right=of wa] (cs) {\textbf{Content script}\\\texttt{MutationObserver}\\new message + chat name};
+  \node[blk=blue!8, text width=3.1cm, right=of cs] (sw) {\textbf{Service worker}\\rolling window:\\$\le$8 turns, $\le$96 tokens\\\textit{gate:} use window only if\\history exists and the new\\turn has $<$8 content tokens};
+  \node[blk=orange!14, text width=2.7cm, right=of sw] (m) {\textbf{INT8 MiniLM}\\ONNX Runtime Web\\(WebAssembly), binary\\abusive / non-abusive\\score $=\max(\text{msg},\text{window})$};
+  \node[blk=green!10, text width=2.3cm, below=9mm of m] (dec) {\textbf{Decision}\\score $>0.5$: flag\\score $\ge0.9$: \textit{high}\\otherwise \textit{medium}};
+  \node[blk=green!10, text width=2.4cm, left=of dec] (ban) {\textbf{Warning banner}\\shown on the chat\\message};
+  \node[blk=green!10, text width=3.1cm, left=of ban] (log) {\textbf{Local incident log}\\\texttt{chrome.storage.local}, cap 200\\id $=$ SHA-256(chat, text)\\(de-duplication only)\\JSON / PDF export};
+  \draw[arr] (wa) -- (cs); \draw[arr] (cs) -- (sw); \draw[arr] (sw) -- (m);
+  \draw[arr] (m) -- (dec); \draw[arr] (dec) -- (ban); \draw[arr] (ban) -- (log);
+  \begin{scope}[on background layer]
+    \node[draw=black!60, dashed, rounded corners=4pt, inner sep=5pt, fit=(cs)(sw)(m)(dec)(ban)(log),
+          label={[font=\scriptsize\itshape, text=black!70]above left:Everything inside the browser; no network call for inference}] {};
+  \end{scope}
+  \node[font=\scriptsize\itshape, text=black!65, text width=9cm, align=left, below=4mm of log.south west, anchor=north west]
+    {Amazon Bedrock LLMs were used \emph{offline} for benchmarking only (Section~\ref{sec:context}); the extension makes no Bedrock call.};
+\end{tikzpicture}

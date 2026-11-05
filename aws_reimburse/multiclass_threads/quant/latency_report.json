@@ -1,0 +1,18 @@
+[
+ {
+  "model": "shipped_binary_int8 (Hinglish test messages)",
+  "n": 300,
+  "tokens_median": 21.0,
+  "median_ms_total": 4.956000000674976,
+  "p95_ms_total": 16.805918148384094,
+  "median_ms_inference": 4.780770500474318
+ },
+ {
+  "model": "thread_int8, 5-message Hinglish threads",
+  "n": 300,
+  "tokens_median": 12.5,
+  "median_ms_total": 28.318124998804706,
+  "p95_ms_total": 36.97677324971664,
+  "median_ms_inference": 27.9613539996717
+ }
+]

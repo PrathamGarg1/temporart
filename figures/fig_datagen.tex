@@ -1,0 +1,18 @@
+% Figure 2: how the 105,000-thread dataset was generated (verified against dataset_spec.py and build_dataset.py)
+\begin{tikzpicture}[node distance=5.5mm]
+  % row 1: build a scenario and ask the LLM
+  \node[blk=gray!12, text width=3.4cm] (grid) {\textbf{1. Cell grid}\\3 scripts $\times$ 4 lengths $\times$ 5 classes $=$ 60 cells\\1,750 threads per cell\\$=$ 105,000 threads};
+  \node[blk=blue!8, text width=5.0cm, right=of grid] (spec) {\textbf{2. Scenario sampler} (seeded)\\31 class-specific subtypes, 40 topics, 30 names (gender-consistent), audience\\target gender (harassment: 75\% woman) and child age 10--15 (grooming)\\half of sarcasm/hostile: fixed shared last line (36 per script)};
+  \node[blk=blue!8, text width=4.2cm, right=of spec] (prompt) {\textbf{3. Prompt builder}\\script rule (Devanagari / Roman Hinglish / English), setting, persona, topic, rule for the \emph{last} message, class rules (e.g.\ no sexual content in grooming), ``under 30 words, JSON only''};
+  \node[blk=orange!14, text width=3.4cm, right=of prompt] (llm) {\textbf{4. Qwen3-32B}\\Amazon Bedrock, $T=0.85$\\returns \texttt{\{"turns": [k]\}}\\2 attempts per scenario};
+  % row 2 (right to left): check, de-duplicate, split, write
+  \node[blk=red!8, text width=5.0cm, below=12mm of llm.south east, anchor=north east] (val) {\textbf{5. Rule-based validators} (any failure rejects)\\wrong turn count $\cdot$ refusal text $\cdot$ turn length $\cdot$ adjacent duplicate $\cdot$ last line repeated from context $\cdot$ shared line altered $\cdot$ wrong script (heuristic) $\cdot$ profanity or explicit words outside hostile class $\cdot$ sexualised words in grooming};
+  \node[blk=green!10, text width=3.1cm, left=9mm of val] (dedup) {\textbf{6. De-duplicate}\\hash of normalised thread text; refill the cell until 1,750 are accepted};
+  \node[blk=green!10, text width=3.8cm, left=9mm of dedup] (split) {\textbf{7. Split 80/10/10}\\hash of scenario key; shared-line threads split \emph{by line} (index mod 10: 0 test, 1 val, else train)};
+  \node[blk=gray!12, text width=3.9cm, left=9mm of split] (out) {\textbf{8. Write dataset}\\one \texttt{jsonl} file per length, script, class and split, plus \texttt{MANIFEST.csv} and a dataset card\\train 83,672 $\cdot$ val 10,765 $\cdot$ test 10,563};
+  \draw[arr] (grid) -- (spec); \draw[arr] (spec) -- (prompt); \draw[arr] (prompt) -- (llm);
+  \draw[arr] (llm.south) -- (llm.south |- val.north);
+  \draw[arr] (val) -- node[above, font=\scriptsize]{accepted} (dedup);
+  \draw[arr] (dedup) -- (split); \draw[arr] (split) -- (out);
+  \node[font=\scriptsize, text=red!50!black, below=1mm of val.south, text width=5cm, align=center] {rejected: the scenario is regenerated (second attempt), then dropped};
+\end{tikzpicture}
