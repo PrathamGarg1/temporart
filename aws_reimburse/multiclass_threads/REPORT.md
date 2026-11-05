@@ -51,3 +51,12 @@ The GRU work ran locally and cost nothing on AWS.
 3. Extension: build a frozen INT8 MiniLM encoder file and wire in `gru_runtime.js` (the shipped binary INT8 model is untouched).
 4. Synthetic Hindi quality is weak; the viewer is not hosted.
 5. Cloud agent: paused; the repo is public (`PrathamGarg1/temporart`), so decide whether to make it private.
+
+## 6. Quantized (INT8) models, tested on the same 10,563 test threads
+
+| Model | Size | Acc | Macro-F1 | Len 3 / 5 / 7 / 10 | Hinglish | Pairs | Speed (CPU) |
+|---|---|---|---|---|---|---|---|
+| INT8 fine-tuned thread classifier | 118 MB | **97.88%** | 0.979 | 96.9 / 98.3 / 98.1 / 98.3 | 96.9% | 97.5% | 15.5 ms / thread |
+| INT8 frozen encoder + GRU | 118 MB + 4 MB | **94.91%** | 0.950 | 92.3 / 95.1 / 95.7 / 96.7 | 91.5% | 93.1% | encoder per line + GRU 2.5 ms |
+
+Quantization costs 0.08 points (thread classifier: 97.96 -> 97.88) and 0.26 points (GRU route: 95.17 -> 94.91). Files: `quant/export_quantize.py`, `quant/eval_quant.py`, `quant/int8_report.json`. The `.onnx` files (118 MB each, over GitHub's 100 MB limit) are kept locally in `quant/onnx/`.
