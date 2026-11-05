@@ -1,0 +1,13 @@
+% Five-class benchmark: accuracy by thread length
+\begin{tikzpicture}
+\begin{axis}[ybar, width=8.4cm, height=5.2cm, bar width=8pt, ymajorgrids, grid style={black!10}, ymin=60, ymax=104,
+  symbolic x coords={3,5,7,10}, xtick=data, xlabel={messages per thread}, ylabel={accuracy (\%)},
+  tick label style={font=\scriptsize}, label style={font=\scriptsize}, enlarge x limits=0.2,
+  legend style={font=\fontsize{6.5}{7.5}\selectfont, at={(0.5,1.03)}, anchor=south, legend columns=3, draw=none, /tikz/every even column/.append style={column sep=4pt}},
+  nodes near coords, every node near coord/.append style={font=\fontsize{5.5}{6}\selectfont, rotate=90, anchor=west}]
+  \addplot[fill=orange!75, draw=orange!90!black] coordinates {(3,96.9) (5,98.3) (7,98.1) (10,98.3)};
+  \addplot[fill=blue!40, draw=blue!65] coordinates {(3,92.3) (5,95.1) (7,95.7) (10,96.7)};
+  \addplot[fill=gray!50, draw=gray!70] coordinates {(3,85.1) (5,84.1) (7,82.7) (10,80.8)};
+  \legend{Thread model, Frozen encoder + GRU, Last message only}
+\end{axis}
+\end{tikzpicture}
